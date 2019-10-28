@@ -68,8 +68,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -97,9 +95,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -503,13 +506,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1326,9 +1329,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1347,24 +1348,88 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1442,8 +1507,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1452,6 +1515,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1470,8 +1543,8 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Exercise 1 - LaTeX introduction</h1>
-<h4 class="author"><em>Gerko Vink</em></h4>
-<h4 class="date"><em>Markup Languages and Reproducible Programming in Statistics</em></h4>
+<h4 class="author">Gerko Vink</h4>
+<h4 class="date">Markup Languages and Reproducible Programming in Statistics</h4>
 
 </div>
 
@@ -1488,7 +1561,7 @@ div.tocify {
 <li>Setting up a reproducable workflow in <code>R</code> with <code>Markdown</code></li>
 </ol>
 <p>Mastering a new <em>programming</em> environment is not done by simple exercises, but requires practice and repetition. Don’t worry, the documents you will have to produce during this course will require you to repeat the <code>LaTeX</code> process over and over again. However, you should work together with others and share your insights, findings and documents.</p>
-<p>For example, you have to upload your work documents on a regular basis. There is a specific folder in the <a href="https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73">SurfDrive</a> for uploading your work (<code>\Documents by students</code>). Create a folder with your name, and create subfolders for the exercises you have to hand in. This will make it easier for your classmates and your teachers to identify your work. When you place an finished exercise file in the SurfDrive, make sure to include all code files that are necessary to compile that finished file (i.e. your <code>.tex</code> file and/or your references in <code>.bib</code> format). This allows one of your classmates who has identified something interesting or useful in your work (e.g. when peer-reviewing your documents or watching your presentation) to explore your solution in depth.</p>
+<p>For example, you have to upload your work documents on a regular basis. There is a specific folder in the <a href="https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9">SurfDrive</a> for uploading your work (<code>\Documents by students</code>). Create a folder with your name, and create subfolders for the exercises you have to hand in. This will make it easier for your classmates and your teachers to identify your work. When you place an finished exercise file in the SurfDrive, make sure to include all code files that are necessary to compile that finished file (i.e. your <code>.tex</code> file and/or your references in <code>.bib</code> format). This allows one of your classmates who has identified something interesting or useful in your work (e.g. when peer-reviewing your documents or watching your presentation) to explore your solution in depth.</p>
 <p>Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck; please contact me. Make sure to look in the <code>How to contact Gerko</code> file on the course page for instruction on how to contact me when time is of the essence. I will troubleshoot your problem and help you reach a solution. If you contact me outside of class hours, I would be just as happy to help you, but an answer may take longer as I have other duties.</p>
 <p>I will post the solution to the exercises and all relevant code that generates the documents on the course page the day the exercise is due.</p>
 <p><code>LaTeX</code> is extremely flexible and allows you to typeset documents with ‘surgical precision’. There are however languages that allow you to create basic documents much quicker, but without the level of detail that <code>LaTeX</code> offers. One such a language is <code>Markdown</code>. This document is created with <code>rMarkdown</code>, an implementation of <code>Markdown</code> within <code>RStudio</code>. Of course it is required that you learn <code>LaTeX</code>, but since <code>rMarkdown</code> allows for direct integration of <code>LaTeX</code> and Html5, it can be a very valuable tool. Therefore, I will give you all the <code>rMarkdown</code> files that I present. You can recognize them by the <code>.Rmd</code> extension.</p>
@@ -1505,6 +1578,7 @@ div.tocify {
 <div id="installing-a-tex-framework" class="section level2">
 <h2><span class="header-section-number">1.1</span> Installing a <code>Tex</code> framework</h2>
 <p>If you are on Windows or Linux, I suggest you install the easy to install <a href="http://tug.org/protext/">ProTeXt</a> distribution or the <a href="http://www.tug.org/texlive/">TexLive distribution</a>. If you are on a Mac, the <a href="http://www.tug.org/mactex/">MacTex distribution</a> will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent editor (<code>Texworks</code> in <code>Texlive</code> and <code>TexShop</code> in <code>MacTex</code>), but if you want to go the fancy way: <a href="http://www.texstudio.org/">TexStudio</a> and <a href="http://texiteasy.com/">TexItEasy</a> are very good alternatives. See <a href="https://en.wikipedia.org/wiki/Comparison_of_TeX_editors">this page</a> for a comprehensive overview of all <code>Tex</code> editors.</p>
+<p>Alternatively, you can use the online <code>Tex</code> editor <a href="https://www.overleaf.com">Overleaf</a>. Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors.</p>
 <hr />
 </div>
 <div id="the-mlrps-latex-template" class="section level2">
@@ -1576,7 +1650,7 @@ text text text</code></pre>
 <li>A minimal document with 12 point font size on A5 paper.</li>
 <li>A letter with 12 point font size on A5 paper.</li>
 </ol>
-<p>Use the <code>Virgil - Aeneid.rtf</code> file as the content of the document. Specify the paragraphs correctly. Upload the documents to <a href="https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73">SurfDrive</a> before the second lecture.</p>
+<p>Use the <code>Virgil - Aeneid.rtf</code> file as the content of the document. Specify the paragraphs correctly. Upload the documents to <a href="https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9">SurfDrive</a> before the second lecture.</p>
 <hr />
 </div>
 

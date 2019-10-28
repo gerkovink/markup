@@ -29,7 +29,7 @@ I will take you through the basics of the scientific `LaTeX` family in a couple 
 
 Mastering a new *programming* environment is not done by simple exercises, but requires practice and repetition. Don't worry, the documents you will have to produce during this course will require you to repeat the `LaTeX` process over and over again. However, you should work together with others and share your insights, findings and documents. 
 
-For example, you have to upload your work documents on a regular basis. There is a specific folder in the [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73) for uploading your work (`\Documents by students`). Create a folder with your name, and create subfolders for the exercises you have to hand in. This will make it easier for your classmates and your teachers to identify your work. When you place an finished exercise file in the SurfDrive, make sure to include all code files that are necessary to compile that finished file (i.e. your `.tex` file and/or your references in `.bib` format). This allows one of your classmates who has identified something interesting or useful in your work (e.g. when peer-reviewing your documents or watching your presentation) to explore your solution in depth. 
+For example, you have to upload your work documents on a regular basis. There is a specific folder in the [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9) for uploading your work (`\Documents by students`). Create a folder with your name, and create subfolders for the exercises you have to hand in. This will make it easier for your classmates and your teachers to identify your work. When you place an finished exercise file in the SurfDrive, make sure to include all code files that are necessary to compile that finished file (i.e. your `.tex` file and/or your references in `.bib` format). This allows one of your classmates who has identified something interesting or useful in your work (e.g. when peer-reviewing your documents or watching your presentation) to explore your solution in depth. 
 
 Of course you will run into problems and/or difficulties. In general: the internet is your friend. Chances are that someone else encountered the same issue and, most likely, a solution has been posed by an expert user. If, however, you seem stuck; please contact me. Make sure to look in the `How to contact Gerko` file on the course page for instruction on how to contact me when time is of the essence. I will troubleshoot your problem and help you reach a solution. If you contact me outside of class hours, I would be just as happy to help you, but an answer may take longer as I have other duties. 
 
@@ -56,6 +56,8 @@ Just like with `R`, `Tex` is a software implementation that requires an editor t
 
 ## Installing a `Tex` framework
 If you are on Windows or Linux, I suggest you install the easy to install [ProTeXt](http://tug.org/protext/) distribution or the [TexLive distribution](http://www.tug.org/texlive/). If you are on a Mac, the [MacTex distribution](http://www.tug.org/mactex/) will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent editor (`Texworks` in `Texlive` and `TexShop` in `MacTex`), but if you want to go the fancy way: [TexStudio](http://www.texstudio.org/) and [TexItEasy](http://texiteasy.com/) are very good alternatives. See [this page](https://en.wikipedia.org/wiki/Comparison_of_TeX_editors) for a comprehensive overview of all `Tex` editors. 
+
+Alternatively, you can use the online `Tex` editor [Overleaf](https://www.overleaf.com). Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors. 
 
 ---
 
@@ -155,6 +157,6 @@ Create five documents:
 4. A minimal document with 12 point font size on A5 paper. 
 5. A letter with 12 point font size on A5 paper. 
 
-Use the `Virgil - Aeneid.rtf` file as the content of the document. Specify the paragraphs correctly. Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73) before the second lecture. 
+Use the `Virgil - Aeneid.rtf` file as the content of the document. Specify the paragraphs correctly. Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9) before the second lecture. 
 
 ---

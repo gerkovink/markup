@@ -24,7 +24,7 @@ Let's start.
 ---
 
 # Referencing in `Tex`
-There are two general (read: widely used) ways of referencing in `Tex`:
+There are three general (read: widely used) ways of referencing in `Tex`:
 
 1. The standard citation environment in Tex
 2. The [`natbib`](http://merkel.zoneo.net/Latex/natbib.php?lang=en) citation environment
@@ -58,6 +58,8 @@ BibTeX chooses from the `.bib` file(s) only those entries specified by the `.aux
 In other words; you have a global bibliography (library) - or a seperate bibliography for each project, if you wish -  with all your references. This is your `.bib` file. When you run `tex`, an `.aux` file is produced. If you reference to something in your text, these citations will be recorded in the `.aux` file. `bibtex` will match the citations in your `.aux` file to those in the specified `.bib` file (and produce an error if you reference somthing that is not in your `.bib` file) to produce a `.bbl` file that specifically matches the bibliography style (e.g. numbers, APA style, sorted, alphabetized, etc.) that you have specified in `tex`. If you re-run your `tex` code now, the references will be printed in your pdf. 
 
 Have a look at the manuscript in the `\Latex background` folder in this week's course page folder for an example of a `natbib` implementation. Especially take a look at the `.bib` and `.bbl` files. See e.g. [here](https://en.wikipedia.org/wiki/BibTeX) for a list of all possible citation elements you can refer to with `bibtex`. 
+
+---
 
 ## Re-running `tex` after `bibtex`
 This is important. In fact, it is so important (and a common error by students and experts) that I devote a seperate paragraph to it! `bibtex` and `tex` are NOT the same and their code has not by default run simultaneously --> you need the following order:
@@ -96,11 +98,13 @@ Create five documents:
 4. Produce a document named `Ex2V3.pdf` document in APA style. Make sure that reference URL's are printed in the References Section. 
 5. Produce a document named `Ex2V4.pdf` document in APA style, with references highlighted in black. 
 
-You may use `biblatex` or `natbib` interchangeably. Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73) before the next lecture starts. I will post the code solutions after that lecture.
+You may use `biblatex` or `natbib` interchangeably. Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9) before the next lecture starts. I will post the code solutions after that lecture.
 
 ---
 
-**IF YOU RUN INTO PROBLEMS: ASK ME!** Do not spend too much time debugging your code; you can dedicate the rest of your career to that. 
+**IF YOU RUN INTO PROBLEMS: ASK ME!** 
+
+Do not spend too much time debugging your code; you can dedicate the rest of your career to that. 
 
 ---
 
