@@ -1,0 +1,50 @@
+\documentclass[10pt, fullpage, a4paper, titlepage]{article}
+\usepackage{graphicx, latexsym}
+\usepackage{setspace}
+\usepackage{apalike}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{bm}
+\usepackage{epstopdf}
+%\singlespacing
+%\onehalfspacing
+\doublespacing
+
+
+
+\title{title of your paper}
+\author{name}
+
+
+\begin{document}
+\title{THIS IS A VERY IMPORTANT TITLE}
+
+\author{Arthur First$^{1}$\thanks{Correspondence to: Arthur First, Department name, PO Box, Postal Code, City, State, Country. Tel: 000000000, Fax: 000000001, E-mail: \texttt{author@nameless.domain}}, Johnny Second$^{1,2}$\\
+\small{\textsl{$^1$Department name, Institution, country}}\\
+\small{\textsl{$^2$Department name, Institution 2, country}}\\
+\newline\\
+\date{}}
+\maketitle
+\thispagestyle{empty}
+
+\section*{Abstract}
+text of abstract
+
+\section{Introduction}
+text introduction text text text text
+
+\subsection{sub introduction}
+text text text
+
+
+\section{Using references}
+text text text text text Warner(1965)\nocite{WarnerSL1965} text text text. Text text text text text text text 
+
+text text (Agresti, 2002)\nocite{AgrestiA2002}. Text text text text text text text.
+
+%%%%%%REFERENCES%%%%%%%
+\newpage
+\bibliographystyle{apalike}
+\bibliography{Examplelibrary_GV}
+
+\end{document}
+

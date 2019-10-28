@@ -1,0 +1,59 @@
+\documentclass[10pt, fullpage, a4paper, titlepage]{article}
+\usepackage{graphicx, latexsym}
+\usepackage{setspace}
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{bm}
+\usepackage{epstopdf}
+\usepackage[]{hyperref}
+\usepackage[numbers, sort&compress]{natbib}
+\hypersetup{
+    pdftitle={title of the pdf},
+    pdfauthor={your name},
+    pdfsubject={cool stuff},
+    pdfkeywords={koala, chuck norris},
+    bookmarksnumbered=true,     
+    bookmarksopen=true,         
+    bookmarksopenlevel=1,       
+    colorlinks=true,      
+    colorlinks=true,
+    citecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue,           
+    pdfstartview=Fit,           
+    pdfpagemode=UseOutlines,      
+    pdfpagelayout=TwoPageRight
+}
+
+\singlespacing
+%\onehalfspacing
+%\doublespacing
+
+\begin{document}
+
+\section{Imputation strategies for multivariate data}
+\label{strategies}
+Multiple imputation for multivariate data comes in two main flavors: joint modeling (JM) and fully conditional specification (FCS). With JM, imputations are drawn from an assumed joint multivariate distribution. Often a multivariate normal model is used for both continuous and categorical data, although other joint models have been proposed \citep[see e.g.][]{olkin1961multivariate, van1992imputation, SchaferJ1997, vGinkel2007, goldstein2009multilevel, chen2011multiple}. Joint modeling imputations generated under the normal model are usually robust to misspecification of the imputation model \citep{SchaferJ1997, demirtas2008plausibility}, although transformation towards normality is generally beneficial. 
+
+Contrary to JM, multiple imputation by means of FCS does not start from an explicit multivariate model. With FCS, multivariate missing data is imputed by univariately specifying an imputation model for each incomplete variable, conditional on a set of other (possibly incomplete) variables. The multivariate distribution for the data is thereby implicitly specified through the univariate conditional densities and imputations are obtained by iterating over the conditionally specified imputation models. 
+
+The general idea of using conditionally specified models to deal with missing data has been discussed and applied by many authors \citep[see e.g.][]{kennickell1991imputation, raghunathan1996multiple, oudshoorn1999flexible, brand1999development, stef1999fcs, van2000multivariate, raghunathan2001multivariate, faris2002multiple, VanbuurenFCS}. Comparisons between JM and FCS have been made that indicate that FCS is a useful and flexible alternative to JM when the joint distribution of the data is not easily specified \citep{van2007multiple} and that similar results may be expected from both imputation approaches \citep{lee2010multiple}.
+
+In this dissertation, new methodology based on FCS is introduced, although comparisons are occasionally made to imputation approaches that utilize some form of joint modeling. The choice for FCS is based on applicability, by avoiding the complex specification and estimation of multivariate models that observe different kinds of restrictions. Because the multidimensional imputation problem is split in multiple unidimensional imputation problems, it is relatively simple to specify imputation models that do not conform to standard multivariate distributions. Moreover, this flexibility in specifying univariate imputation models makes it much easier to adapt imputation models to accommodate for some form of restriction. As a result, the incomplete data can be more efficiently addressed and unique data features can be preserved. For example, in official statistics many restrictions are posed on survey or register data, such as bounds (no unrealistic human age), strict non-negativity (no negative incomes) and conditional restrictions (girls under twelve years of age are not allowed to have children, nor can they be married). 
+
+\section{Current modeling practice}
+\label{algor}
+A straightforward implementation of FCS (for more detail on FCS, see Section \ref{strategies}) can be found in the MICE algorithm proposed by Van Buuren and Groothuis-Oudshoorn (2000, 2011)\nocite{van2000multivariate,vanbuuren2010}. The MICE algorithm is a Markov Chain Monte Carlo (MCMC) method, which becomes a Gibbs sampler in situations where the conditional densities are said to be compatible. Compatibility is reached when the joint multivariate distribution has the separate conditional distributions as its conditional densities. For the MICE algorithm, the joint distribution is only implicitly known and compatibility may be difficult to prove. In some situations, compatibility may not actually exists. However, in practice FCS seems to be robust when compatibility conditions are not met \citep{VanbuurenFCS}. Recently, \cite{Bartlett12022014} introduced a substantive model compatible FCS (SMC-FCS) that ensures that each covariate is imputed from a model which is compatible with the substantive model. This may be particularly of interest when the substantive analysis model contains non-linearities or interactions. 
+
+The MICE algorithm starts with randomly drawing imputations from the observed data. Subsequently, the variables are imputed in a variable-by-variable approach. A single iteration of the algorithm cycles through all incomplete variables. 
+
+The number of iterations for the MICE algorithm has to be carefully chosen. In most situations, a low number of iterations appears to be enough \citep{brand1999development, stef1999fcs}, but slow convergence can occur if, for example, the amount of missing data is large or if there is high autocorrelation in the imputation chains. After imputation, convergence of the $m$ multiple imputation chains should be investigated. 
+
+The number of imputations is also of importance when doing multiple imputation. Usually, the default amount of imputations in software is set to be as low as three to five. Many authors have investigated the role of $m$ with regard to several criteria, such as the confidence interval, statistical power and the proportion of missingness attributable to the nonresponse \citep[see e.g.][]{royston2004multiple, graham2007many, bodner2008improves, white2011multiple}. The work by these authors suggests that it may often be beneficial to set the amount of imputations much larger, although it comes at a cost in terms of data storage and computational time.
+
+In general it holds that using a higher $m$ is always better. This does not necessarily mean that outcomes from resulting analyses will be better. In fact, \citet{SchaferJ1997} suggests that resources can often be better spent and \citet{schafer1998multiple} indicate that in most situations there is only little advantage to analyzing more than a few imputed datasets. To save computation time and resources, \citet{fimd} suggests to set $m=5$ during model building and to increase $m$ only for the `actual' imputation stage. However, with computers becoming increasingly faster and data storage solutions becoming more accommodative of large datasets, one can imagine that today's drawbacks in performing more imputations are becoming increasingly less important in the future. 
+
+\bibliographystyle{unsrtnat} 
+\bibliography{exercises}
+
+\end{document}
+

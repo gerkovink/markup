@@ -1,0 +1,122 @@
+---
+title: "Introduction to LaTeX and BibTex"
+author: "Markup Languages and Reproducible Programming in Statistics"
+date: ""
+output: 
+  ioslides_presentation:
+    toc: true
+    logo: figures/gerko.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# About us
+
+# About the course
+
+## Format
+- Every Monday till the end of the year:
+  
+    - 10 am - 12.45 pm
+    - Ruppert 031
+    - The first part of every meeting will be a lecture. 
+    - Every second part will be hands-on / Q&A
+
+If you cannot make a meeting; I'd like to know beforehand. 
+
+### **I'd strongly suggest to participate in every meeting**
+
+## Topics
+
+1. Intro to $\LaTeX$ and ${Bib}\TeX$
+2. Beamer-presentations and equations
+3. Tables and Figures
+4. Reproducible workflows with rMarkdown
+5. Version control and GitHub repositories
+6. Presentations with rMarkdown
+7. GitHub pages and Shiny
+8. $\star$ *Showcase your progress*
+
+$\star$ *In week 8 you have to showcase what you have mastered in this course.*
+
+## Exercises
+To develop the necessary skills for completing this course, 7 exercises (weeks 1-7) must be made and submitted:
+
+- These exercises are not graded, but students must fulfil them to pass the course. 
+- Exercises have to be handed in **before** the next meeting.
+- Answers will be posted after the next meeting.
+
+## Grading {.smaller}
+The final grade is computed as follows:
+
+| Topic | % of Total   |
+|-----+-------|
+| Markup manuscript  | 30% |
+| Research repository   | 30%  |
+| Personal repository   | 10%  |
+| Shiny app             | 15%  |
+| Visual presentation   | 15%  |
+
+### Good to know
+Grading considers concepts like visual appearance, readability, usefulness, efficiency of the code. *Grading does not consider the theoretical or qualitative properties of the content*!
+  
+## Contact
+If you need any help outside of class hours, see [this link](Contacting_Gerko.html)
+
+- send me an e-mail at G.Vink@uu.nl' containing your question or a [MWE](https://en.wikipedia.org/wiki/Minimal_Working_Example):
+
+    - if your problem is with $\LaTeX$, please send me your '.tex' and (if relevant)
+    '.bib' file. 
+    - if your problem is with `R`, send me the code and source files
+    
+- Whatsapp: If you're really in a pickle and need a blazingly fast response
+
+- G+ Hangouts: If the problem warrants video and screen sharing, I'll invite you to a G+ hangout
+    
+
+## Goal of this course {.smaller}
+
+***Learn the skills and tools to present yourself and your work.***
+
+**Useful for**: a phd, career in data science, being at the state-of-the-art in markup programming. 
+
+**What to do** (not in any definitive order)
+
+1. Perform a (monte carlo) simulation study
+2. Create a scientific manuscript 
+3. Program your simulation such that it creates a data archive
+4. Publish this archive to GitHub
+5. Tell people about yourself on GitHub
+6. Showcase your findings through a shiny web-app
+7. Create a presentation about your simulations
+
+## Before next meeting
+
+1. Choose a subject for your project
+2. Install TeX, an editor and a bibliography editor
+3. Request a [GitHub educational discounted account](https://help.github.com/articles/applying-for-a-student-developer-pack/)
+4. Make exercise 1 and 2
+
+# $\LaTeX$
+
+## LaTeX
+
+LaTeX is a document preparation system
+
+- its goal is typesetting
+- it produces high quality type-set documents
+- publishers use it
+- you can virtually produce anything in document form with LaTeX
+- it provides you with a system to focus solely on writing
+
+    - you do not have to worry about the layout, etc. LaTeX does. 
+    
+## An example
+
+I'll demonstrate to you a typical LaTeX document. 
+
+If you could not make it to class, and you feel the exercises are not sufficient for getting you started; please ask me: I'll be happy to show you in real life or through G+ Hangouts.
+
+

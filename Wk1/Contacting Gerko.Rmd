@@ -1,0 +1,30 @@
+---
+title: "How to contact Gerko"
+author: "Gerko Vink"
+date: "Markup Languages and Reproducible Programming in Statistics"
+output: html_document
+---
+
+---
+
+I am not always in the office. Luckily, G+ Hangouts allows us to talk to one another as if we were in the same room. If you need me, use the methods described below to contact me. You can contact me for anything related to this course. I will respond as quickly as possible to your inquiries. 
+
+---
+
+#### Contacting me through e-mail
+
+You can always e-mail me through my Utrecht University e-mail address: G.Vink@uu.nl. 
+
+---
+
+#### Contacting me through Whatsapp
+
+Use the phone number provided in the first meeting. 
+
+---
+
+#### G+ Hangouts
+
+If need be, I will invite you to a private hangout for video conferencing and screen sharing.
+
+---

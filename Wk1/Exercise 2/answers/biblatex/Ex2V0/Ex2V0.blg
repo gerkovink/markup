@@ -1,0 +1,15 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'Ex2V0.blg'
+[33] biber-darwin:303> INFO - === Mon Oct 29, 2018, 08:44:04
+[50] Biber.pm:359> INFO - Reading 'Ex2V0.bcf'
+[124] Biber.pm:835> INFO - Found 26 citekeys in bib section 0
+[134] Biber.pm:3670> INFO - Processing section 0
+[145] Biber.pm:3840> INFO - Looking for bibtex format file 'exercises.bib' for section 0
+[155] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[165] bibtex.pm:1292> INFO - Found BibTeX data source 'exercises.bib'
+[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[227] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[227] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[227] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[250] bbl.pm:608> INFO - Writing 'Ex2V0.bbl' with encoding 'ascii'
+[255] bbl.pm:712> INFO - Output to Ex2V0.bbl
