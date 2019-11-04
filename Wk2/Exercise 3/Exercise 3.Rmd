@@ -3,12 +3,42 @@ title: "Exercise 3 - Beamer and equations"
 author: "Gerko Vink"
 date: "Markup Languages and Reproducible Programming in Statistics"
 output: 
-  html_document:
+   html_document:
     toc: true
     toc_depth: 5
     toc_float: true
-    number_sections: true
+    number_sections: false
 ---
+
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
 
 ---
 
@@ -23,7 +53,7 @@ Gerko
 ---
 
 # Presentations with beamer
-We use the `beamer` package to create presentations with `tex`. If all is well, you should now be able to create and compile your own `tex` documents (if not, please ask me for help!). Therefore I refer you to [this page](http://userpages.umbc.edu/~rostamia/beamer/) and to the `Beamer_Userguide.pdf` file on [this week's course page](https://www.gerkovink.com/Markup-Programming/#week-2). For the more tech-savvy users among you, [this](http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer) discusses fancy stuff with `beamer`. You can simply ignore the part about `linux` and focus on the `tex` code. 
+We use the `beamer` package to create presentations with `tex`. If all is well, you should now be able to create and compile your own `tex` documents (if not, please ask me for help!). Therefore I refer you to [this page](http://userpages.umbc.edu/~rostamia/beamer/) and to the `Beamer_Userguide.pdf` file on [this week's course page](https://www.gerkovink.com/markup/#week-2). For the more tech-savvy users among you, [this](http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer) discusses fancy stuff with `beamer`. You can simply ignore the part about `linux` and focus on the `tex` code. 
 
 ---
 
@@ -33,7 +63,7 @@ The [beamer theme matrix](https://www.hartwork.org/beamer-theme-matrix/) gives y
 ---
 
 # Mathematical notation
-Anything that is presented between `$`-signs is printed as a mathematical element: the use of `$` makes `LaTeX` enter *math mode*. Most often, the `$` operator is used to denote in-line equations. For example, `$y_i = a + \beta x_i + \epsilon_i$` is printed as $y_i = a + \beta x_i + \epsilon_i$. To find out what the `tex` code for the mathematical notation elements is (and much more) have a look at the [`Math Symbols`](LaTeX background/Math in LaTeX/Math Symbols.pdf) document on [this week's course page](https://www.gerkovink.com/Markup-Programming/#week-2)  
+Anything that is presented between `$`-signs is printed as a mathematical element: the use of `$` makes `LaTeX` enter *math mode*. Most often, the `$` operator is used to denote in-line equations. For example, `$y_i = a + \beta x_i + \epsilon_i$` is printed as $y_i = a + \beta x_i + \epsilon_i$. To find out what the `tex` code for the mathematical notation elements is (and much more) have a look at the [`Math Symbols`](LaTeX background/Math in LaTeX/Math Symbols.pdf) document on [this week's course page](https://www.gerkovink.com/markup/#week-2)  
 
 To present mathematical equations, use
 
@@ -58,6 +88,6 @@ So far the very brief intro.
 
 ---
 
-Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73) before the next lecture starts. I will post the code solutions after that lecture. We will discuss the solution next week. As answers, I will give you the `tex` and `markdown` (`html` and `pdf`) solutions. 
+Upload the documents to [SurfDrive](https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9) before the next lecture starts. I will post the code solutions after that lecture. We will discuss the solution next week. As answers, I will give you the `tex` and `markdown` (`html` and `pdf`) solutions. 
 
 ---

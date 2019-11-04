@@ -68,8 +68,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -97,9 +95,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -503,13 +506,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1326,9 +1329,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1353,21 +1354,82 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1445,8 +1507,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1455,6 +1515,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1473,12 +1543,40 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Exercise 3 - Beamer and equations</h1>
-<h4 class="author"><em>Gerko Vink</em></h4>
-<h4 class="date"><em>Markup Languages and Reproducible Programming in Statistics</em></h4>
+<h4 class="author">Gerko Vink</h4>
+<h4 class="date">Markup Languages and Reproducible Programming in Statistics</h4>
 
 </div>
 
 
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
 <hr />
 <p>Dear all,</p>
 <p>This week we will learn how to use <span class="math inline">\(\LaTeX\)</span> to create presentations and we will explore how to use <span class="math inline">\(\LaTeX\)</span> for mathematical notation.</p>
@@ -1486,18 +1584,18 @@ div.tocify {
 <p>Gerko</p>
 <hr />
 <div id="presentations-with-beamer" class="section level1">
-<h1><span class="header-section-number">1</span> Presentations with beamer</h1>
-<p>We use the <code>beamer</code> package to create presentations with <code>tex</code>. If all is well, you should now be able to create and compile your own <code>tex</code> documents (if not, please ask me for help!). Therefore I refer you to <a href="http://userpages.umbc.edu/~rostamia/beamer/">this page</a> and to the <code>Beamer_Userguide.pdf</code> file on <a href="https://www.gerkovink.com/Markup-Programming/#week-2">this week’s course page</a>. For the more tech-savvy users among you, <a href="http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer">this</a> discusses fancy stuff with <code>beamer</code>. You can simply ignore the part about <code>linux</code> and focus on the <code>tex</code> code.</p>
+<h1>Presentations with beamer</h1>
+<p>We use the <code>beamer</code> package to create presentations with <code>tex</code>. If all is well, you should now be able to create and compile your own <code>tex</code> documents (if not, please ask me for help!). Therefore I refer you to <a href="http://userpages.umbc.edu/~rostamia/beamer/">this page</a> and to the <code>Beamer_Userguide.pdf</code> file on <a href="https://www.gerkovink.com/markup/#week-2">this week’s course page</a>. For the more tech-savvy users among you, <a href="http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer">this</a> discusses fancy stuff with <code>beamer</code>. You can simply ignore the part about <code>linux</code> and focus on the <code>tex</code> code.</p>
 <hr />
 <div id="beamer-themes" class="section level2">
-<h2><span class="header-section-number">1.1</span> <code>beamer</code> themes</h2>
+<h2><code>beamer</code> themes</h2>
 <p>The <a href="https://www.hartwork.org/beamer-theme-matrix/">beamer theme matrix</a> gives you an overview of the aesthetics of combinations between default beamer themes and standard color themes. Utrecht University also has a <code>beamer</code> theme (although unofficial), which uses the UU colors (this week’s course page). Let’s say that it is rather yellow and leave it at that. Still, many people use it and it is a well-developed style.</p>
 <hr />
 </div>
 </div>
 <div id="mathematical-notation" class="section level1">
-<h1><span class="header-section-number">2</span> Mathematical notation</h1>
-<p>Anything that is presented between <code>$</code>-signs is printed as a mathematical element: the use of <code>$</code> makes <code>LaTeX</code> enter <em>math mode</em>. Most often, the <code>$</code> operator is used to denote in-line equations. For example, <code>$y_i = a + \beta x_i + \epsilon_i$</code> is printed as <span class="math inline">\(y_i = a + \beta x_i + \epsilon_i\)</span>. To find out what the <code>tex</code> code for the mathematical notation elements is (and much more) have a look at the <a href="LaTeX%20background/Math%20in%20LaTeX/Math%20Symbols.pdf"><code>Math Symbols</code></a> document on <a href="https://www.gerkovink.com/Markup-Programming/#week-2">this week’s course page</a></p>
+<h1>Mathematical notation</h1>
+<p>Anything that is presented between <code>$</code>-signs is printed as a mathematical element: the use of <code>$</code> makes <code>LaTeX</code> enter <em>math mode</em>. Most often, the <code>$</code> operator is used to denote in-line equations. For example, <code>$y_i = a + \beta x_i + \epsilon_i$</code> is printed as <span class="math inline">\(y_i = a + \beta x_i + \epsilon_i\)</span>. To find out what the <code>tex</code> code for the mathematical notation elements is (and much more) have a look at the <a href="LaTeX%20background/Math%20in%20LaTeX/Math%20Symbols.pdf"><code>Math Symbols</code></a> document on <a href="https://www.gerkovink.com/markup/#week-2">this week’s course page</a></p>
 <p>To present mathematical equations, use</p>
 <pre><code>\begin{equation}
 y_i = a + \beta x_i + \epsilon_i.
@@ -1509,14 +1607,14 @@ y_i = a + \beta x_i + \epsilon_i.
 <hr />
 </div>
 <div id="exercises" class="section level1">
-<h1><span class="header-section-number">3</span> Exercises</h1>
+<h1>Exercises</h1>
 <ol style="list-style-type: decimal">
 <li>Study <a href="http://userpages.umbc.edu/~rostamia/beamer/">this page</a> to get yourself acquainted with beamer</li>
 <li>Study the <code>AMS example file.pdf</code> and <code>AMS example file.tex</code> to get yourself acquainted with mathematical notation in <code>tex</code>.</li>
 <li>Recreate the example presentation file <code>beamer_exercise.pdf</code> with <code>beamer</code> in <span class="math inline">\(\LaTeX\)</span>.</li>
 </ol>
 <hr />
-<p>Upload the documents to <a href="https://surfdrive.surf.nl/files/index.php/s/tiBnPyIZy8B9w73">SurfDrive</a> before the next lecture starts. I will post the code solutions after that lecture. We will discuss the solution next week. As answers, I will give you the <code>tex</code> and <code>markdown</code> (<code>html</code> and <code>pdf</code>) solutions.</p>
+<p>Upload the documents to <a href="https://surfdrive.surf.nl/files/index.php/s/2rJYcImUkYEvIC9">SurfDrive</a> before the next lecture starts. I will post the code solutions after that lecture. We will discuss the solution next week. As answers, I will give you the <code>tex</code> and <code>markdown</code> (<code>html</code> and <code>pdf</code>) solutions.</p>
 <hr />
 </div>
 
