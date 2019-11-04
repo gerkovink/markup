@@ -207,7 +207,7 @@ You can print the presentation to pdf if you prefer a paginated format.
 
 ***
 
-<!-- [Solutions to the excercises!](Wk1/Solutions.zip) -->
+- [**Solutions to the excercises!**](Wk1/Solutions.zip)
 
 # Week 2
 
