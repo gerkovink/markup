@@ -228,8 +228,8 @@ The following links are very useful:
 - [`beamer` quickstart](https://userpages.umbc.edu/~rostamia/beamer/)
 - [`beamer` themes](https://hartwork.org/beamer-theme-matrix/)
 - [Short and fancy intro to `beamer`](https://math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer)
-- [Math symbols cheat sheet](Wk2/Exercise 3/LaTeX background 2/Math in LaTeX/Math Symbols.pdf)
-- [Short math guide](Wk2/Exercise 3/LaTeX background 2/Math in LaTeX/short-math-guide.pdf)
+- [Math symbols cheat sheet](Wk2/Exercise 3/LaTeX background/Math in LaTeX/Math Symbols.pdf)
+- [Short math guide](Wk2/Exercise 3/LaTeX background/Math in LaTeX/short-math-guide.pdf)
 
 
 
