@@ -172,7 +172,7 @@ If your references contain long urls:
 
 ### For fun
 <div>
-<img src="https://www.gerkovink.com/Markup-Programming/images/funny.png" width="50%">
+<img src="https://www.gerkovink.com/markup/images/funny.png" width="50%">
 </div>
 
 [source](https://xkcd.com/184/) and [LaTeX code](images/funny.tex)
@@ -250,7 +250,7 @@ This week's excercise:
 
 ***
 
-<!-- - [Solution to the exercise](Wk2/Solution.zip) -->
+- [Solution to the exercise](Wk2/Solution.zip)
 
  
 
