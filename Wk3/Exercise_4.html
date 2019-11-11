@@ -68,8 +68,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -97,9 +95,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -503,13 +506,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1326,9 +1329,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1353,21 +1354,82 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1445,8 +1507,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1455,6 +1515,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1473,12 +1543,40 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Exercise 4 - Tables and Figures</h1>
-<h4 class="author"><em>Gerko Vink</em></h4>
-<h4 class="date"><em>Markup Languages and Reproducible Programming in Statistics</em></h4>
+<h4 class="author">Gerko Vink</h4>
+<h4 class="date">Markup Languages and Reproducible Programming in Statistics</h4>
 
 </div>
 
 
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
 <hr />
 <p>Dear all,</p>
 <p>This week we will learn how to use <span class="math inline">\(\LaTeX\)</span> to create tables and how to print figures. As a matter of fact, we are using R to gives us figures and tables that we can directly implement in <span class="math inline">\(\LaTeX\)</span>.</p>
@@ -1490,7 +1588,7 @@ div.tocify {
 <p>So far the very brief intro. Have fun!</p>
 <hr />
 <div id="exercise" class="section level1">
-<h1><span class="header-section-number">1</span> Exercise</h1>
+<h1>Exercise</h1>
 <ol style="list-style-type: decimal">
 <li>Study the figure documents in the <code>LaTeX background.zip</code> file.</li>
 </ol>
@@ -1538,7 +1636,7 @@ data.all &lt;- cbind(data = data,
 <hr />
 <p><strong><em>If the page does not render in your browser, please click <a href="Answer/Recreate%20this.pdf">this link</a> </em></strong></p>
 <hr />
-<p>Upload the documents (at least the <code>.tex</code> and <code>.pdf</code>’s) to DropBox before the next lecture. I will post the solution to the exercise after the next lecture.</p>
+<p>Upload the documents (at least the <code>.tex</code> and <code>.pdf</code>’s) to Surfdrive before the next meeting. I will post the solution to the exercise after the next lecture.</p>
 <hr />
 </div>
 

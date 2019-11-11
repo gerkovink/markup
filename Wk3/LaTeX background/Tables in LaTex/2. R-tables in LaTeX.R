@@ -30,4 +30,4 @@ print(xtable(Loblolly , label = "APlongtable",
       floating = FALSE)
 
 # see for more examples
-# example(xtable)
+# example(xtable) 

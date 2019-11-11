@@ -1,6 +1,7 @@
-require(mice)
-plot(nhanes)
-imp <- mice(boys)
+set.seed(123)
+library(mice)
+plot(mice::nhanes)
+imp <- mice(mice::boys)
 
 #save a plot as a postscript file (you'll have to render it before you can display it)
 postscript("Plots/epsplot.eps")

@@ -3,12 +3,42 @@ title: "Exercise 4 - Tables and Figures"
 author: "Gerko Vink"
 date: "Markup Languages and Reproducible Programming in Statistics"
 output: 
-  html_document:
+   html_document:
     toc: true
     toc_depth: 5
     toc_float: true
-    number_sections: true
+    number_sections: false
 ---
+
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
 
 ---
 
@@ -86,7 +116,7 @@ to generate the graphs that allow you to create the following page in $\LaTeX$. 
 
 ---
 
-Upload the documents (at least the `.tex` and `.pdf`'s) to DropBox before the next lecture. I will post the solution to the exercise after the next lecture. 
+Upload the documents (at least the `.tex` and `.pdf`'s) to Surfdrive before the next meeting. I will post the solution to the exercise after the next lecture. 
 
 ---
 
