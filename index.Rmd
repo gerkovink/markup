@@ -325,8 +325,8 @@ This week's documents:
 - [Exercise 5.html](Wk4/Exercise_5.html)
 - [Exercise 5.Rmd](https://raw.githubusercontent.com/gerkovink/Markup-Programming/master/Wk4/Exercise%205.Rmd?token=AGegKG2RgrhPwm_Lxyscb7rrikKvDvpcks5cBQW0wA%3D%3D)
 - [Background.zip](Wk4/Background.zip)
-<!-- - [Solution to the exercise in `Rmd`](Wk4/Solution_to_Ex5.Rmd) -->
-<!-- - [Solution to the exercise in `html`](Wk4/Solution_to_Ex5.html) -->
+- [Solution to the exercise in `Rmd`](Wk4/Solution_to_Ex5.Rmd)
+- [Solution to the exercise in `html`](Wk4/Solution_to_Ex5.html)
 
 ### For fun
 <div> 
