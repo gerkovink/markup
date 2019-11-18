@@ -286,7 +286,10 @@ This week's excercise:
 
 - [Exercise 4](Wk3/Exercise_4.html)
 - [Latex background.zip](Wk3/LaTeX background.zip)
-<!-- - [Solution to the exercise](Wk3/Answer/2. Solution in Tex.tex) -->
+
+***
+
+- [Solution to the exercise](Wk3/Answer/2. Solution in Tex.tex)
 
 # Week 4
 ## Column 1
