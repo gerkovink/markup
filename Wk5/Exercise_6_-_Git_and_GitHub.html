@@ -68,8 +68,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -97,9 +95,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -503,13 +506,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1326,9 +1329,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1353,21 +1354,82 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -1445,8 +1507,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1455,6 +1515,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1473,12 +1543,40 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Exercise 6: Git and GitHub</h1>
-<h4 class="author"><em>Gerko Vink</em></h4>
-<h4 class="date"><em>Markup Languages and Reproducible Programming in Statistics</em></h4>
+<h4 class="author">Gerko Vink</h4>
+<h4 class="date">Markup Languages and Reproducible Programming in Statistics</h4>
 
 </div>
 
 
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
 <hr />
 <p>Dear all,</p>
 <p>Last week we’ve learned about using <code>rmarkdown</code> to create a reproducible workflow. With <code>rmarkdown</code> any independent researcher would be able to quickly reproduce, evaluate and/or add to your work. Also, your collaborators can do the same and new collaborators can be quickly brought up to speed.</p>
@@ -1502,7 +1600,7 @@ div.tocify {
 <li>a small piece of text that describe the changes made</li>
 </ul>
 <p>The difference between two commits - or the changes between them - are called <a href="https://help.github.com/articles/github-glossary/#diff"><code>diffs</code></a>.</p>
-<p>If you’d like to know much more about <code>Git</code>, <a href="https://git-scm.com/book/en/v2">this online book</a> is a very good resource. If you’d like to practice with the command line interface <a href="https://try.github.io/levels/1/challenges/1">use this webpage</a> for a quick 15 minute course.</p>
+<p>If you’d like to know much more about <code>Git</code>, <a href="https://git-scm.com/book/en/v2">this online book</a> is a very good resource. If you’d like to practice with the command line interface <a href="https://learngitbranching.js.org">use this webpage</a> for a quick course.</p>
 <hr />
 </div>
 <div id="github" class="section level1">
@@ -1533,7 +1631,7 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 </div>
 <div id="command-line-interface-vs.gui" class="section level1">
 <h1><span class="header-section-number">4</span> Command line interface vs. GUI</h1>
-<p>Ultimately, you’ll want to learn how to use <code>Git</code> through the command line. It offers better functionality. Again, <a href="https://try.github.io/levels/1/challenges/1">take this 15-minute course</a> to get a gentle introduction,</p>
+<p>Ultimately, you’ll want to learn how to use <code>Git</code> through the command line. It offers better functionality. Again, <a href="https://learngitbranching.js.org">take this 15-minute course</a> to get a gentle introduction,</p>
 <hr />
 </div>
 <div id="git-and-rstudio" class="section level1">
@@ -1577,7 +1675,15 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 </div>
 <div id="exercise" class="section level1">
 <h1><span class="header-section-number">9</span> Exercise</h1>
-<p>Add <code>Git</code> functionality to the project of last week’s exercise and publish that project on GitHub.</p>
+<ol style="list-style-type: decimal">
+<li>Add <code>Git</code> functionality to the project of last week’s exercise and publish that project on GitHub.</li>
+<li>Fork <a href="https://github.com/gerkovink/MarkupLanguages2019">this repository</a></li>
+</ol>
+<ul>
+<li>add a new branch with your name to your fork,</li>
+<li>add your name to the file <code>README.md</code></li>
+<li>send a pull request to incorporate your changes into the <code>upstream/master</code> branch.</li>
+</ul>
 <hr />
 <p>End of exercise</p>
 </div>

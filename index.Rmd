@@ -374,7 +374,7 @@ This week's documents:
 
 - [Exercise 6.html](Wk5/Exercise_6_-_Git_and_GitHub.html)
 - [Exercise 6.Rmd](Wk5/Exercise 6 - Git and GitHub.Rmd)
-<!-- - [Solution to exercise 6](Wk5/Solution Ex6.mp4) -->
+- [Solution to exercise 6](Wk5/Solution Ex6.mp4) -->
 
 ### For fun 2
 <div> 

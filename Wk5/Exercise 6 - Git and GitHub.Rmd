@@ -10,6 +10,35 @@ output:
     number_sections: true
 ---
 
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
 ---
 
 Dear all, 
@@ -42,7 +71,7 @@ You can see `Git` as a blank canvas that starts at a certain point in time. Ever
 
 The difference between two commits - or the changes between them - are called [`diffs`](https://help.github.com/articles/github-glossary/#diff). 
 
-If you'd like to know much more about `Git`, [this online book](https://git-scm.com/book/en/v2) is a very good resource. If you'd like to practice with the command line interface [use this webpage](https://try.github.io/levels/1/challenges/1) for a quick 15 minute course. 
+If you'd like to know much more about `Git`, [this online book](https://git-scm.com/book/en/v2) is a very good resource. If you'd like to practice with the command line interface [use this webpage](https://learngitbranching.js.org) for a quick course. 
 
 ---
 
@@ -82,7 +111,7 @@ After a reboot, all should be set.
 ---
 
 # Command line interface vs. GUI
-Ultimately, you'll want to learn how to use `Git` through the command line. It offers better functionality. Again, [take this 15-minute course](https://try.github.io/levels/1/challenges/1) to get a gentle introduction,
+Ultimately, you'll want to learn how to use `Git` through the command line. It offers better functionality. Again, [take this 15-minute course](https://learngitbranching.js.org) to get a gentle introduction,
 
 ---
 
@@ -131,7 +160,11 @@ In `RStudio`, paste the generated token in the password field when `RStudio` ask
 
 # Exercise
 
-Add `Git` functionality to the project of last week's exercise and publish that project on GitHub. 
+1. Add `Git` functionality to the project of last week's exercise and publish that project on GitHub. 
+2. Fork [this repository](https://github.com/gerkovink/MarkupLanguages2019)
+ - add a new branch with your name to your fork, 
+ - add your name to the file `README.md`
+ - send a pull request to incorporate your changes into the `upstream/master` branch. 
 
 ---
 
