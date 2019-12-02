@@ -19,16 +19,16 @@ Assessment: Final Assignment <br>
 
 ---
 
-| When?  |       | Where?      |
-|--------|-------|-------------|
-| 29-Oct | 10 am | Ruppert 031 |
-| 05-Nov | 10 am | Ruppert 031 |
-| 12-Nov | 10 am | Ruppert 031 |
-| 19-Nov | 10 am | Ruppert 031 |
-| 26-Nov | 10 am | Ruppert 031 |
-| 03-Dec | 10 am | Ruppert 031 |
-| 10-Dec | 10 am | Ruppert 031 |
-| 17-Dec | 10 am | Ruppert 031 |
+|  When?  |       | Where?      |
+|:--------|:------|:------------|
+|  28-Oct | 10 am | Ruppert 031 |
+|  04-Nov | 10 am | Ruppert 031 |
+|  11-Nov | 10 am | Ruppert 031 |
+|  18-Nov | 10 am | Ruppert 031 |
+|  25-Nov | 10 am | Ruppert 031 |
+|  02-Dec | 10 am | Ruppert 031 |
+|  09-Dec | 10 am | Ruppert 031 |
+|  16-Dec | 10 am | Ruppert 031 |
 
 
 ---
