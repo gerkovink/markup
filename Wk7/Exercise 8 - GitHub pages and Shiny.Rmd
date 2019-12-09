@@ -86,8 +86,8 @@ To create a `Shiny` app from `R`, you need to provide two documents: a user-inte
 
 To learn about using `Shiny` to create web-apps, I suggest you take the following steps
 
-1. `RStudio` offers `a quiz` that tests your `R` proficiency yo see whether you are ready for `Shiny`. I suggest you take it and, if you do not know all the answers, use that knowledge later on to debug problems with `Shiny`.
-2. Go through [this $2 \frac{1}{2}$ hour tutorial](http://shiny.rstudio.com/tutorial/). If you prefer a written tutorial, I suggest you take [this one](http://shiny.rstudio.com/tutorial/written-tutorial/lesson1/). However, the written tutorial is less comprehensive than the video tutorial.  
+1. `RStudio` offers `a quiz` that tests your `R` proficiency yo see whether you are ready for `Shiny`. I suggest you take it and, if you do not know all the answers, use that knowledge later on to debug problems with `Shiny`. 
+2. Go through [this $2 \frac{1}{2}$ hour tutorial](http://shiny.rstudio.com/tutorial/). If you prefer a written tutorial, I suggest you take [this one](http://shiny.rstudio.com/tutorial/written-tutorial/lesson1/). However, the written tutorial is less comprehensive than the video tutorial. For the most comprehensive overview, see [this book under development](https://mastering-shiny.org). 
 3. Create a [`shinyapps.io`](http://www.shinyapps.io) account - a free one will do
 4. Follow the steps given by `shinyapps.io` to connect your `RStudio` installation to `shinyapps` throught the `rsconnect` package in `R`
 5. Create a `Shiny` app and publish it to [`shinyapps.io`](http://www.shinyapps.io)
