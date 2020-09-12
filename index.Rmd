@@ -95,7 +95,8 @@ Students will be evaluated on the following aspects:
 2. Developing and publishing a research archive that demonstrate a reproducible workflow.
 3. Developing and publishing a personal repository page;
 
-a. Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming (Knowledge and Understanding) b. They apply their knowledge in a multi-disciplinary context to contemporary problems (Applying)
+a. Students develop fundamental knowledge and understanding in the state of the art in statistical markup languages and reproducible programming (Knowledge and Understanding) 
+b. They apply their knowledge in a multi-disciplinary context to contemporary problems (Applying)
 c. They can determine the most effective markup strategies to address a typesetting problem (Applying)
 d. They can efficiently organise a reproducible programming process (Applying)
 e. They can advise researchers in applying the current state of the art in markup and programming (Judgment)
@@ -150,6 +151,7 @@ Supplements here
 </div>
 
 [source](https://xkcd.com/184/) and [LaTeX code](images/funny.tex)
+
 
 ## Column 2
 
