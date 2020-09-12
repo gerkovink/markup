@@ -113,7 +113,7 @@ To develop the necessary skills for completing the assignment and the presentati
 The final grade is computed as follows
 
 | Graded part       | Weight      |
-|:-------|:------|        |
+|:-------|:------|
 | Markup manuscript | 50 % |
 | Research repository | 40 % |
 | Personal repository | 10 % |
