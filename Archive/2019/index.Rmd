@@ -19,16 +19,16 @@ Assessment: Final Assignment <br>
 
 ---
 
-| When?  |       | Where?      |
-|--------|-------|-------------|
-| 29-Oct | 10 am | Ruppert 031 |
-| 05-Nov | 10 am | Ruppert 031 |
-| 12-Nov | 10 am | Ruppert 031 |
-| 19-Nov | 10 am | Ruppert 031 |
-| 26-Nov | 10 am | Ruppert 031 |
-| 03-Dec | 10 am | Ruppert 031 |
-| 10-Dec | 10 am | Ruppert 031 |
-| 17-Dec | 10 am | Ruppert 031 |
+|  When?  |       | Where?      |
+|:--------|:------|:------------|
+|  28-Oct | 10 am | Ruppert 031 |
+|  04-Nov | 10 am | Ruppert 031 |
+|  11-Nov | 10 am | Ruppert 031 |
+|  18-Nov | 10 am | Ruppert 031 |
+|  25-Nov | 10 am | Ruppert 031 |
+|  02-Dec | 10 am | Ruppert 031 |
+|  09-Dec | 10 am | Ruppert 031 |
+|  16-Dec | 10 am | Ruppert 031 |
 
 
 ---
@@ -147,6 +147,7 @@ The course will run for 8 weeks on Mondays, from 10am – 12.45am, starting Octo
 #### Prerequisites
 Students will need their own laptop computer. Students should have experience in programming with R and should be familiar with the IDE RStudio.
 
+
 # Week 1
 
 ## Column 1
@@ -171,7 +172,7 @@ If your references contain long urls:
 
 ### For fun
 <div>
-<img src="https://www.gerkovink.com/Markup-Programming/images/funny.png" width="50%">
+<img src="https://www.gerkovink.com/markup/images/funny.png" width="50%">
 </div>
 
 [source](https://xkcd.com/184/) and [LaTeX code](images/funny.tex)
@@ -206,7 +207,7 @@ You can print the presentation to pdf if you prefer a paginated format.
 
 ***
 
-<!-- [Solutions to the excercises!](Wk1/Solutions.zip) -->
+- [**Solutions to the excercises!**](Wk1/Solutions.zip)
 
 # Week 2
 
@@ -227,8 +228,8 @@ The following links are very useful:
 - [`beamer` quickstart](https://userpages.umbc.edu/~rostamia/beamer/)
 - [`beamer` themes](https://hartwork.org/beamer-theme-matrix/)
 - [Short and fancy intro to `beamer`](https://math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer)
-- [Math symbols cheat sheet](Wk2/Exercise 3/LaTeX background 2/Math in LaTeX/Math Symbols.pdf)
-- [Short math guide](Wk2/Exercise 3/LaTeX background 2/Math in LaTeX/short-math-guide.pdf)
+- [Math symbols cheat sheet](Wk2/Exercise 3/LaTeX background/Math in LaTeX/Math Symbols.pdf)
+- [Short math guide](Wk2/Exercise 3/LaTeX background/Math in LaTeX/short-math-guide.pdf)
 
 
 
@@ -249,7 +250,9 @@ This week's excercise:
 
 ***
 
-<!-- - [Solution to the exercise](Wk2/Solution.zip) -->
+- [Solution to the exercise](Wk2/Solution.zip)
+
+ 
 
 # Week 3
 
@@ -270,10 +273,10 @@ The following links are very useful:
 - [The Not So Short Introduction to `LaTeX`](http://tug.ctan.org/info/lshort/english/lshort.pdf) by Tobias Oetiker, Hubert Partl, Irene Hyna and Elisabeth Schlegl
 
 ### For fun
-<!-- **Spoiler alert for [Silicon Valley](https://www.hbo.com/silicon-valley/cast-and-crew)** -->
-<!-- <center> -->
-<!-- <iframe width="500" height="315" src="https://www.youtube.com/embed/SsoOG6ZeyUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-<!-- </center> -->
+**Spoiler alert for [Silicon Valley](https://www.hbo.com/silicon-valley/cast-and-crew)**
+<center>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/SsoOG6ZeyUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 ## Column 2
 
@@ -283,7 +286,10 @@ This week's excercise:
 
 - [Exercise 4](Wk3/Exercise_4.html)
 - [Latex background.zip](Wk3/LaTeX background.zip)
-<!-- - [Solution to the exercise](Wk3/Answer/2. Solution in Tex.tex) -->
+
+***
+
+- [Solution to the exercise](Wk3/Answer/2. Solution in Tex.tex)
 
 # Week 4
 ## Column 1
@@ -297,10 +303,10 @@ All the best,
 [Gerko](www.gerkovink.com)
 
 ### For real
-<!-- <center> -->
-<!-- <iframe src="https://player.vimeo.com/video/178485416?color=428bca&title=0&byline=0&portrait=0" width="500" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-<!-- <p><a href="https://vimeo.com/178485416">What is R Markdown?</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-<!-- </center> -->
+<center>
+<iframe src="https://player.vimeo.com/video/178485416?color=428bca&title=0&byline=0&portrait=0" width="500" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/178485416">What is R Markdown?</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</center>
 
 ### Supplementary materials and links
 
@@ -319,8 +325,8 @@ This week's documents:
 - [Exercise 5.html](Wk4/Exercise_5.html)
 - [Exercise 5.Rmd](https://raw.githubusercontent.com/gerkovink/Markup-Programming/master/Wk4/Exercise%205.Rmd?token=AGegKG2RgrhPwm_Lxyscb7rrikKvDvpcks5cBQW0wA%3D%3D)
 - [Background.zip](Wk4/Background.zip)
-<!-- - [Solution to the exercise in `Rmd`](Wk4/Solution_to_Ex5.Rmd) -->
-<!-- - [Solution to the exercise in `html`](Wk4/Solution_to_Ex5.html) -->
+- [Solution to the exercise in `Rmd`](Wk4/Solution_to_Ex5.Rmd)
+- [Solution to the exercise in `html`](Wk4/Solution_to_Ex5.html)
 
 ### For fun
 <div> 
@@ -368,7 +374,7 @@ This week's documents:
 
 - [Exercise 6.html](Wk5/Exercise_6_-_Git_and_GitHub.html)
 - [Exercise 6.Rmd](Wk5/Exercise 6 - Git and GitHub.Rmd)
-<!-- - [Solution to exercise 6](Wk5/Solution Ex6.mp4) -->
+- [Solution to exercise 6](Wk5/Solution Ex6.mp4)
 
 ### For fun 2
 <div> 
@@ -448,7 +454,15 @@ This week's documents:
 
 ### Useful references
 
-Definitely look at this [Mastering Shiny](https://mastering-shiny.org) by [Hadley Wickham](http://hadley.nz). This book is currently under development. 
+Definitely look at the book [Mastering Shiny](https://mastering-shiny.org) by [Hadley Wickham](http://hadley.nz). This book is currently under development. 
 
+<!-- ### For wowz -->
+<!-- <div>  -->
+<!-- <center> -->
+<!-- <img src="https://g.redditmedia.com/wuVd9DqvSIpCpvwksHQPeyyn43dGmPxHuXhLG9uXN04.gif?fit=crop&crop=faces%2Centropy&arh=2&w=960&fm=mp4&mp4-fragmented=false&s=63d670ca5ca29e52bef6e3f97e7184d3" width="100%"> -->
+<!-- </center> -->
+<!-- </div> -->
+
+<!-- [source](https://g.redditmedia.com/wuVd9DqvSIpCpvwksHQPeyyn43dGmPxHuXhLG9uXN04.gif?fit=crop&crop=faces%2Centropy&arh=2&w=960&fm=mp4&mp4-fragmented=false&s=63d670ca5ca29e52bef6e3f97e7184d3) -->
 
 
