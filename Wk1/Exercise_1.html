@@ -1623,14 +1623,18 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <p>It may be wise to instruct <code>Git</code> to ignore changes in some files. For example, compiled files (think about <code>.com</code>, <code>.exe</code>, <code>.o</code>, <code>.so</code>, etc), archives (e.g. <code>.zip</code>, <code>.tar</code>, <code>.rar</code>), logs (<code>.log</code>) and files generated in runtime (<code>.temp</code>) do not have to be tracked by <code>Git</code>. The same holds for hidden system files (e.g. <code>.DS_Store</code> or <code>Thumbs.db</code>). Adding such filetypes to a file named <code>.gitignore</code> and placing that file in the root of your repository will take care of focusing <code>Git</code>’s energy on useful files only. For common <code>.gitignore</code> examples, see <a href="https://github.com/github/gitignore">this repository</a>. There are many examples inside, such as <a href="https://github.com/github/gitignore/blob/master/R.gitignore">this <code>.gitignore</code> example for <code>R</code></a></p>
 <hr />
 </div>
-<div id="ssh-keys" class="section level1">
-<h1><span class="header-section-number">7</span> SSH keys</h1>
-<p>Follow <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account">this tutorial</a> to add an SSH key to your GitHub account. With an SSH key you can identify yourself to an online server (in this case the <code>GitHub</code> server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link <code>RStudio</code> to your <code>GitHub</code> repository.</p>
+<div id="linking-github-and-rstudio" class="section level1">
+<h1><span class="header-section-number">7</span> Linking <code>GitHub</code> and <code>RStudio</code></h1>
+<p>I have prepared <a href="Link%20Git%20and%20RStudio.mp4">this walkthrough video</a> that details the process of linking <code>GitHub</code> to <code>RStudio</code>. Using an SSH key is vital in online security.</p>
+<hr />
+<div id="ssh-keys" class="section level2">
+<h2><span class="header-section-number">7.1</span> SSH keys</h2>
+<p>With an SSH key you can identify yourself to an online server (in this case the <code>GitHub</code> server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link <code>RStudio</code> to your <code>GitHub</code> repository.</p>
 <hr />
 </div>
-<div id="factor-authentication" class="section level1">
-<h1><span class="header-section-number">8</span> 2-Factor Authentication</h1>
-<p>If you use <code>GitHub</code>’s 2FA functionality - you should! - your username and password are not sufficient to <code>push</code> <code>commits</code> to <code>GitHub</code> through <code>RStudio</code>. To solve this follow these steps on <a href="https://github.com">github.com</a>:</p>
+<div id="personal-access-tokens" class="section level2">
+<h2><span class="header-section-number">7.2</span> Personal access tokens</h2>
+<p>If you use <code>GitHub</code>’s 2FA functionality - you should! - your username and password are not sufficient to <code>push</code> <code>commits</code> to <code>GitHub</code> through <code>RStudio</code>. To solve this follow these steps on <a href="https://github.com">github.com</a> like I detail in <a href="Link%20Git%20and%20RStudio.mp4">this walkthrough video</a>:</p>
 <ol style="list-style-type: decimal">
 <li>Log in to your account</li>
 <li>Click on your profile photo (upper right corner) and select <code>Settings</code></li>
@@ -1645,8 +1649,9 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <p>In <code>RStudio</code>, paste the generated token in the password field when <code>RStudio</code> asks for your credentials. The token will now serve as the unique authenticated link instead of your password.</p>
 <hr />
 </div>
+</div>
 <div id="git-exercise" class="section level1">
-<h1><span class="header-section-number">9</span> <code>Git</code> exercise</h1>
+<h1><span class="header-section-number">8</span> <code>Git</code> exercise</h1>
 <ol style="list-style-type: decimal">
 <li>Fork the course repository. See also <a href="Creating%20a%20branch.mp4">this walkthrough video</a> I’ve made for you that details the next couple of steps.</li>
 <li>Clone the fork to your machine</li>
@@ -1659,7 +1664,7 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <hr />
 </div>
 <div id="monte-carlo-simulation-exercise" class="section level1">
-<h1><span class="header-section-number">10</span> Monte Carlo simulation exercise</h1>
+<h1><span class="header-section-number">9</span> Monte Carlo simulation exercise</h1>
 <ol style="list-style-type: decimal">
 <li>Perform a small simulation that does the following:</li>
 </ol>
@@ -1674,7 +1679,7 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <li>upper bound of the 95% confidence interval</li>
 </ul>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>Create a plot that demonstrates the following</li>
+<li>Create a plot that demonstrates the following:</li>
 </ol>
 <p><strong><em>“A replication of the procedure that generates a 95% confidence interval that is centered around the sample mean would cover the population value at least 95 out of 100 times”</em></strong> <a href="https://www.google.nl/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0ahUKEwjk4LaD6LrXAhUGC8AKHdATBhMQFggoMAA&amp;url=http%3A%2F%2Fwww.stat.cmu.edu%2F~brian%2F905-2008%2Fpapers%2Fneyman-1934-jrss.pdf&amp;usg=AOvVaw3KRw9DSklPihrYIM0_zRrC">(Neyman, 1934)</a></p>
 <ol start="4" style="list-style-type: lower-alpha">

@@ -138,14 +138,18 @@ It may be wise to instruct `Git` to ignore changes in some files. For example, c
 
 ---
 
-# SSH keys
+# Linking `GitHub` and `RStudio`
+I have prepared [this walkthrough video](Link Git and RStudio.mp4) that details the process of linking `GitHub` to `RStudio`. Using an SSH key is vital in online security.
 
-Follow [this tutorial](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account) to add an SSH key to your GitHub account. With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link `RStudio` to your `GitHub` repository. 
+---
+
+## SSH keys
+ With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link `RStudio` to your `GitHub` repository. 
 
 --- 
 
-# 2-Factor Authentication
-If you use `GitHub`'s 2FA functionality - you should! - your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com):
+## Personal access tokens
+If you use `GitHub`'s 2FA functionality - you should! - your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com) like I detail in [this walkthrough video](Link Git and RStudio.mp4):
 
 1. Log in to your account
 2. Click on your profile photo (upper right corner) and select `Settings`
@@ -186,7 +190,7 @@ In `RStudio`, paste the generated token in the password field when `RStudio` ask
  - lower bound of the 95% confidence interval
  - upper bound of the 95% confidence interval
  
-  c. Create a plot that demonstrates the following
+  c. Create a plot that demonstrates the following:
 
 ***"A replication of the procedure that generates a 95% confidence interval 
 that is centered around the sample mean would cover the population value at 

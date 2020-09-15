@@ -147,19 +147,21 @@ Students will need their own laptop computer. Students should have experience in
 
 ### Monte Carlo simulation and replication
 
-Intro text here
+We start the hard way with `Git`, `GitHub` and Monte Carlo simulation. Just as with any new *skill* aimed at programming and/or scripting: practice makes perfect. Follow the two exercises for this week and you'll have a head start on the rest <strike> of the course </strike> of your career. 
+
+All the best, 
+
+Gerko
 
 ### Supplementary materials and links
 
-Supplements here
+- [this online book](https://git-scm.com/book/en/v2) is a very good resource
+- [This book](https://happygitwithr.com) covers pretty much everything you need to marry `git` and `R`.
 
-### For fun
-<div>
-<img src="https://www.gerkovink.com/markup/images/funny.png" width="50%">
-</div>
+I highly appreciate the clip on MC simulation by [Ben Lambert](https://ben-lambert.com/about/) (LEFT) and the quite comprehensive exploration of the origin and concepts of probability that govern Monte Carlo simulations by [John Guttag](https://people.csail.mit.edu/guttag/) (RIGHT).
 
-[source](https://xkcd.com/184/) and [LaTeX code](images/funny.tex)
-
+<iframe width="280" height="315" src="https://www.youtube.com/embed/5nM5e2_1OQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width=280 height="315" src="https://www.youtube.com/embed/OgO1gpXSUzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Column 2
 
@@ -169,7 +171,18 @@ Slides here
 
 ### Exercises
 
-Exercises here
+The exercise for this week:
+
+- [Exercise 1](Wk1/Exercise_1.html)
+
+### For fun
+<div> 
+<center>
+<img src="Wk1/forfun.png" width="50%">
+</center>
+</div>
+
+[source](https://dzone.com/articles/git-forked)
 
 # Archive
 
