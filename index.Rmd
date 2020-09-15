@@ -7,8 +7,13 @@ output:
 ---
 
 # Intro {.sidebar}
-
 This dashboard covers the course materials for the course [***Markup Languages and Reproducible Programming in Statistics***](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202000010&collegejaar=2020&taal=en)
+
+---
+
+<center>
+<a href='https://github.com/gerkovink/markup2020'><img src='markup_sticker_SMALL.png' height="139" /></a>
+</center>
 
 ---
 
@@ -29,6 +34,9 @@ Assessment: Final Assignment <br>
 |  09-Dec | 9 am | Online |
 
 ---
+
+
+
 # Quick Overview
 
 ## Column 1

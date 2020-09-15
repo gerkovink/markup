@@ -1,0 +1,208 @@
+---
+title: "Exercise 1: Git and Monte Carlo simulation with a GitHub flavor"
+author: "Gerko Vink"
+date: "Markup Languages and Reproducible Programming in Statistics"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float: true
+    number_sections: true
+---
+
+<style type="text/css">
+
+body{ /* Normal  */
+      font-size: 12px;
+  }
+td {  /* Table  */
+  font-size: 12px;
+}
+h1.title {
+  font-size: 18px;
+  color: DarkBlue;
+}
+h1 { /* Header 1 */
+  font-size: 18px;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+</style>
+
+---
+
+Dear all, 
+
+As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about two massively important tools for your toolset: **version controlling* and *simulation*.
+
+To document our activity and our changes in detail, we'll use [`Git`](https://git-scm.com). You can view `Git` as the ability to go back in time. Back to the very beginning of your project. A bonus: `Git` integrates nicely with `RStudio`. In this exercise we will learn 
+
+1. How to integrate `Git` within our projects. 
+2. How to publish our projects as `GitHub` repositories
+3. How to go about development with `Git` and `GitHub`
+
+And in the meanwhile we'll also Monte Carlo simulate one of the most important concepts in statistics:
+
+4. Confidence Validity
+
+Use the appropriate channels to ask questions and hand-in your work.
+
+All the best, 
+
+Gerko
+
+---
+
+# `Git`
+`Git` is a free and open source version control system for text files. It can handle extensive change logging for you, no matter the size of the project. `Git` is fast and efficient, but its effectiveness depends also on the frequency you instruct it to log your project's changes. 
+
+You can see `Git` as a blank canvas that starts at a certain point in time. Every time you (or others) instruct `Git` to log any changes that have been made, `Git` adds the changes that are made to this canvas. We call the changes to the canvas [`commits`](https://help.github.com/articles/github-glossary/#commit). With every `commit` an extensive log is created that includes at least the following information:
+
+- the changes made
+- who made the changes
+- metadata
+- a small piece of text that describe the changes made
+
+The difference between two commits - or the changes between them - are called [`diffs`](https://help.github.com/articles/github-glossary/#diff). 
+
+If you'd like to know much more about `Git`, [this online book](https://git-scm.com/book/en/v2) is a very good resource. If you'd like to practice with the command line interface [use this webpage](https://learngitbranching.js.org) for a quick course. [This book](https://happygitwithr.com) covers pretty much everything you need to marry `git` and `R`. 
+
+---
+
+# `GitHub`
+`GitHub` is the social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories (visible for everyone). 
+
+Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the `master`. You can also do this yourself, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create a copy of a repository that is offline, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone). 
+
+`GitHub`'s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on (the code in) a repository before any definitive changes are [`merged`](https://help.github.com/articles/github-glossary/#merge) with the `master`. If you're working in a forked repository, you can submit a [`pull request`](https://help.github.com/articles/github-glossary/#pull-request) to the repository collaborators to accept (or reject) any suggested changes. 
+
+For now, this may be confusing, but I hope you recognize the benefits `GitHub` can have on the process of development and bug-fixing. For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
+
+```{r eval=FALSE}
+install.packages("devtools")
+devtools::install_github(repo = "stefvanbuuren/mice")
+```
+
+You can see that this process requires package `devtools` that expands the `R` functionality with essential development tools. Loading packages in `R` directly from their respective `GitHub` repositories, allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on [`CRAN`](https://cran.r-project.org). 
+
+
+---
+
+# Installing `Git`
+
+## Installing on Mac
+I suggest you install `Git` by downloading and installing [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`. 
+
+When installed, you can go to `GitHub Desktop > Install Command Line Tool`
+
+After a reboot, all should be set. 
+
+## Installing on Windows
+Download and install [`Git for Windows`](https://git-for-windows.github.io), Then download and install [`GitHub Desktop`](https://desktop.github.com). `GitHub`'s desktop application is a nice GUI and, naturally, integrates well into the repository workflow on `GitHub`. 
+
+After a reboot, all should be set. 
+
+---
+
+# Command line interface vs. GUI
+Ultimately, you'll want to learn how to use `Git` through the command line interface (CLI). It offers better and more comprehensive functionality. Again, [take this 15-minute course](https://learngitbranching.js.org) to get a gentle introduction. But do not be afraid that you miss out on the CLI if you don't study this link: In week 4 we'll explore in detail how to handle `Git` when things go haywire. You'll be a CLI-wizard by then. 
+
+---
+
+# `Git` and `RStudio`
+
+To link `Git` and `RStudio`, follow [this document](https://happygitwithr.com/rstudio-git-github.html22.)
+
+To learn more about maintaining a package as `GitHub` repository within `RStudio`, have a look at [this guide](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham. 
+
+---
+
+# .gitignore
+GitHub sees every file in your repository as one of the following three
+
+- **tracked files** that have been (previously) staged and committed
+- **untracked files** that have not been staged or committed
+- **ignored files** that have been explicitly ignored
+
+It may be wise to instruct `Git` to ignore changes in some files. For example, compiled files (think about `.com`, `.exe`, `.o`, `.so`, etc), archives (e.g. `.zip`, `.tar`, `.rar`), logs (`.log`) and files generated in runtime (`.temp`) do not have to be tracked by `Git`. The same holds for hidden system files (e.g. `.DS_Store` or `Thumbs.db`). Adding such filetypes to a file named `.gitignore` and placing that file in the root of your repository will take care of focusing `Git`'s energy on useful files only. For common `.gitignore` examples, see [this repository](https://github.com/github/gitignore). There are many examples inside, such as [this `.gitignore` example for `R`](https://github.com/github/gitignore/blob/master/R.gitignore)
+
+---
+
+# SSH keys
+
+Follow [this tutorial](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account) to add an SSH key to your GitHub account. With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link `RStudio` to your `GitHub` repository. 
+
+--- 
+
+# 2-Factor Authentication
+If you use `GitHub`'s 2FA functionality - you should! - your username and password are not sufficient to `push` `commits` to `GitHub` through `RStudio`. To solve this follow these steps on [github.com](https://github.com):
+
+1. Log in to your account
+2. Click on your profile photo (upper right corner) and select `Settings`
+3. Go to `Developer settings`
+4. Select `Personal access tokens` in the left sidebar
+5. Click `Generate new token`
+6. Give the token a name
+7. Select at least the `repo` scope; you'll need these permissions to access repositories
+8. Click Generate token
+
+Copy the token. The token will not be displayed again, so make a note of it, or save it somewhere.
+
+In `RStudio`, paste the generated token in the password field when `RStudio` asks for your credentials. The token will now serve as the unique authenticated link instead of your password. 
+
+---
+
+# `Git` exercise
+
+1. Fork the course repository. See also [this walkthrough video](Creating a branch.mp4) I've made for you that details the next couple of steps. 
+2. Clone the fork to your machine
+3. Create a new branch
+4. Add two pieces of personal information to a `Yourname/Assignment 1` folder. 
+5. Commit the changes
+6. Push to your `GitHub` fork
+7. Send a pull request to incorporate your changes into the `upstream/master` branch (i.e. `gerkovink/markup2020`). I have made [another walkthrough video](Create PR.mp4) for you that details this step. 
+
+---
+
+# Monte Carlo simulation exercise
+
+1. Perform a small simulation that does the following:
+
+  a. Sample 100 samples from a standard normal distribution. 
+  b. For each of these samples, calculate the following statistics for the mean:
+
+ - absolute bias 
+ - standard error
+ - lower bound of the 95% confidence interval
+ - upper bound of the 95% confidence interval
+ 
+  c. Create a plot that demonstrates the following
+
+***"A replication of the procedure that generates a 95% confidence interval 
+that is centered around the sample mean would cover the population value at 
+least 95 out of 100 times"*** [(Neyman, 1934)](https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjk4LaD6LrXAhUGC8AKHdATBhMQFggoMAA&url=http%3A%2F%2Fwww.stat.cmu.edu%2F~brian%2F905-2008%2Fpapers%2Fneyman-1934-jrss.pdf&usg=AOvVaw3KRw9DSklPihrYIM0_zRrC)
+    
+  d. Present a table containing all simulated samples for which the resulting confidence interval does 
+not contain the population value.
+
+2. Add the simulation and its results to the `Yourname/Assignment 1` folder
+3. Commit the changes to the repository
+4. Push to your `GitHub` fork
+5. Send a pull request to incorporate your changes into the `upstream/master` branch (i.e. `gerkovink/markup2020`) 
+
+---
+
+End of exercises
+
+---
+
