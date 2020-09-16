@@ -1,0 +1,145 @@
+---
+title: "Why integrate when you can simulate?"
+author: "As long as you `Git` what you get"
+date: ""
+output: 
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+    logo: figures/gerko.png
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+```
+
+## About me
+<div class="columns-2">
+  - Psychology --> Statistics --> ADS
+  - Associate prof
+  - Developer / Teacher
+  - Missing Data / Programming
+  - Bayesian by default
+  - Frequentist through convenience
+  - Father / Married / 2 kids
+  - LCE afficionado
+  
+  ![](figures/Vink.jpg)
+</div>
+
+# About the course
+
+## Format
+- Some Wednesdays till the end of the year:
+  
+    - 9 am - noon
+    - Online
+    - The first part of every meeting will be a lecture. 
+    - Every second part will be hands-on / Q&A
+
+If you cannot make a meeting; I'd like to know beforehand. 
+
+### **I'd strongly suggest to participate in every meeting**
+
+## Schedule
+| When?   |      | Where? | What?                                   |
+|:--------|:-----|:-------|:----------------------------------------|
+|  16-Sep | 9 am | Online | Monte Carlo simulation and `Git` |
+|  30-Sep | 9 am | Online | Reproducible workflows and replication|
+|  28-Oct | 9 am | Online | Typesetting equations with `LaTeX` |
+|  04-Nov | 9 am | Online | Version control and `Github` in depth |
+|  25-Nov | 9 am | Online | Presentations with `rMarkdown` |
+|  09-Dec | 9 am | Online | `Github pages` and `Shiny` |
+
+
+## Exercises
+To develop the necessary skills for completing this course, 6 exercises must be made and submitted:
+
+- These exercises are not graded, but students must fulfill them to pass the course. 
+- Exercises have to be handed in **before** the next meeting.
+- Answers will be posted after the next meeting.
+
+## Grading {.smaller}
+The final grade is computed as follows:
+
+| Graded part       | Weight      |
+|:-------|:------|
+| Markup manuscript | 50 % |
+| Research repository | 40 % |
+| Personal repository | 10 % |
+
+### Good to know
+Grading considers concepts like visual appearance, readability, usefulness, efficiency of the code. *Grading does not consider the theoretical or quantitative properties or scientific quality of the content*!
+  
+## Contact
+If you need any help during this course, do one of the folowing
+
+1. Google seems to have a lot of answers if you present it with the right question
+2. Ask your question via a Teams chat to me (private) or in the course Team (for everyone). I'd prefer plenary discussions for problems, because your unique problem usually is less unique than you might think
+3. Open a Github Issue in the course `GitHub` page. The holy grail in discussion about collaborative development.
+4. Send an e-mail at `G.Vink@uu.nl` containing your question with a [MWE](https://en.wikipedia.org/wiki/Minimal_Working_Example) or [`reprex`](https://github.com/tidyverse/reprex).
+
+Questions that are beyond the scope of the course are also welcome!
+
+## Goal of this course {.smaller}
+
+***Learn the skills and tools to present yourself and your work.***
+
+**Useful for**: a phd, career in data science, being at the state-of-the-art in markup programming. 
+
+**What to do** (not in any definitive order)
+
+1. Perform a (monte carlo) simulation study
+2. Create a scientific manuscript 
+3. Program your simulation such that it creates a data archive
+4. Publish this archive to GitHub
+5. Tell people about yourself on GitHub
+6. Showcase your findings through a shiny web-app
+7. Make absolutely sure that others can retrace your steps
+8. Be able to replicate it all
+
+## Some useful info
+
+`GitHub` offers a GitHub Student Developer Pack, including a free `Github` PRO account for as long as you are a student
+
+[Get your pack here](https://education.github.com/students)
+
+# `Git`
+
+## Why Git
+
+At this point in the lecture I will ramble on about how awesome `Git` and `GitHub` is. 
+
+# Monte Carlo methods
+
+## Monte Carlo simulation
+
+- repeated sampling
+- use randomness
+- solve problems
+
+## Throwing a fair die
+```{r}
+set.seed(123)
+1/6
+sample(1:6, 1000000, replace = TRUE) %>% table %>% prop.table
+replicate(1000, 
+          sample(1:6, 1000, replace = TRUE)) %>% table %>% prop.table
+```
+
+## Throwing an unfair die
+```{r}
+sample(1:6, 1000000, replace = TRUE, prob = c(.1, .1, .1, .4, .2, .1)) %>% 
+  table %>% prop.table
+replicate(1000, 
+          sample(1:6, 1000, replace = TRUE, 
+                 prob = c(.1, .1, .1, .4, .2, .1))) %>% table %>% prop.table
+```
+
+## Sampling distribution
+```{r fig.height=3.5}
+replicate(1000, rnorm(10), simplify = FALSE) %>%
+  lapply(var) %>%unlist %>%
+  density %>% plot
+```
+

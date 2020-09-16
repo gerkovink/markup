@@ -119,14 +119,6 @@ Ultimately, you'll want to learn how to use `Git` through the command line inter
 
 ---
 
-# `Git` and `RStudio`
-
-To link `Git` and `RStudio`, follow [this document](https://happygitwithr.com/rstudio-git-github.html22.)
-
-To learn more about maintaining a package as `GitHub` repository within `RStudio`, have a look at [this guide](http://r-pkgs.had.co.nz/git.html) by Hadley Wickham. 
-
----
-
 # .gitignore
 GitHub sees every file in your repository as one of the following three
 
@@ -139,12 +131,16 @@ It may be wise to instruct `Git` to ignore changes in some files. For example, c
 ---
 
 # Linking `GitHub` and `RStudio`
-I have prepared [this walkthrough video](Link Git and RStudio.mp4) that details the process of linking `GitHub` to `RStudio`. Using an SSH key is vital in online security.
+Securely linking your local machine to the remote repository is vital when collaborating with other people. In short; you would not want a potential hacker to have contributor access to any of your projects. I have prepared [this walkthrough video](Link Git and RStudio.mp4) that details the process of linking `GitHub` to your machine and `RStudio`. Below I explain the rationale of using both an SSH key and a personal access token. 
+
+If you still experience problems after following my walkthrough, check [this chapter](https://happygitwithr.com/troubleshooting.html)
+
+To learn more about maintaining a package as `GitHub` repository within `RStudio`, have a look at [this guide](http://r-pkgs.had.co.nz/git.html) by [Hadley Wickham](http://hadley.nz).
 
 ---
 
 ## SSH keys
- With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link `RStudio` to your `GitHub` repository. 
+With an SSH key you can identify yourself to an online server (in this case the `GitHub` server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link `RStudio` to your `GitHub` repository. 
 
 --- 
 

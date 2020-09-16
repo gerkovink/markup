@@ -1606,14 +1606,8 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <p>Ultimately, you’ll want to learn how to use <code>Git</code> through the command line interface (CLI). It offers better and more comprehensive functionality. Again, <a href="https://learngitbranching.js.org">take this 15-minute course</a> to get a gentle introduction. But do not be afraid that you miss out on the CLI if you don’t study this link: In week 4 we’ll explore in detail how to handle <code>Git</code> when things go haywire. You’ll be a CLI-wizard by then.</p>
 <hr />
 </div>
-<div id="git-and-rstudio" class="section level1">
-<h1><span class="header-section-number">5</span> <code>Git</code> and <code>RStudio</code></h1>
-<p>To link <code>Git</code> and <code>RStudio</code>, follow <a href="https://happygitwithr.com/rstudio-git-github.html22.">this document</a></p>
-<p>To learn more about maintaining a package as <code>GitHub</code> repository within <code>RStudio</code>, have a look at <a href="http://r-pkgs.had.co.nz/git.html">this guide</a> by Hadley Wickham.</p>
-<hr />
-</div>
 <div id="gitignore" class="section level1">
-<h1><span class="header-section-number">6</span> .gitignore</h1>
+<h1><span class="header-section-number">5</span> .gitignore</h1>
 <p>GitHub sees every file in your repository as one of the following three</p>
 <ul>
 <li><strong>tracked files</strong> that have been (previously) staged and committed</li>
@@ -1624,16 +1618,18 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <hr />
 </div>
 <div id="linking-github-and-rstudio" class="section level1">
-<h1><span class="header-section-number">7</span> Linking <code>GitHub</code> and <code>RStudio</code></h1>
-<p>I have prepared <a href="Link%20Git%20and%20RStudio.mp4">this walkthrough video</a> that details the process of linking <code>GitHub</code> to <code>RStudio</code>. Using an SSH key is vital in online security.</p>
+<h1><span class="header-section-number">6</span> Linking <code>GitHub</code> and <code>RStudio</code></h1>
+<p>Securely linking your local machine to the remote repository is vital when collaborating with other people. In short; you would not want a potential hacker to have contributor access to any of your projects. I have prepared <a href="Link%20Git%20and%20RStudio.mp4">this walkthrough video</a> that details the process of linking <code>GitHub</code> to your machine and <code>RStudio</code>. Below I explain the rationale of using both an SSH key and a personal access token.</p>
+<p>If you still experience problems after following my walkthrough, check <a href="https://happygitwithr.com/troubleshooting.html">this chapter</a></p>
+<p>To learn more about maintaining a package as <code>GitHub</code> repository within <code>RStudio</code>, have a look at <a href="http://r-pkgs.had.co.nz/git.html">this guide</a> by <a href="http://hadley.nz">Hadley Wickham</a>.</p>
 <hr />
 <div id="ssh-keys" class="section level2">
-<h2><span class="header-section-number">7.1</span> SSH keys</h2>
+<h2><span class="header-section-number">6.1</span> SSH keys</h2>
 <p>With an SSH key you can identify yourself to an online server (in this case the <code>GitHub</code> server) without having to log in every time. It is like your machine having access to an online server through a unique biometric security measure, but instead of biometric data a bits-and-bytes hash code is communicated every time. You will need an SSH key to link <code>RStudio</code> to your <code>GitHub</code> repository.</p>
 <hr />
 </div>
 <div id="personal-access-tokens" class="section level2">
-<h2><span class="header-section-number">7.2</span> Personal access tokens</h2>
+<h2><span class="header-section-number">6.2</span> Personal access tokens</h2>
 <p>If you use <code>GitHub</code>’s 2FA functionality - you should! - your username and password are not sufficient to <code>push</code> <code>commits</code> to <code>GitHub</code> through <code>RStudio</code>. To solve this follow these steps on <a href="https://github.com">github.com</a> like I detail in <a href="Link%20Git%20and%20RStudio.mp4">this walkthrough video</a>:</p>
 <ol style="list-style-type: decimal">
 <li>Log in to your account</li>
@@ -1651,7 +1647,7 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 </div>
 </div>
 <div id="git-exercise" class="section level1">
-<h1><span class="header-section-number">8</span> <code>Git</code> exercise</h1>
+<h1><span class="header-section-number">7</span> <code>Git</code> exercise</h1>
 <ol style="list-style-type: decimal">
 <li>Fork the course repository. See also <a href="Creating%20a%20branch.mp4">this walkthrough video</a> I’ve made for you that details the next couple of steps.</li>
 <li>Clone the fork to your machine</li>
@@ -1664,7 +1660,7 @@ devtools::install_github(repo = &quot;stefvanbuuren/mice&quot;)</code></pre>
 <hr />
 </div>
 <div id="monte-carlo-simulation-exercise" class="section level1">
-<h1><span class="header-section-number">9</span> Monte Carlo simulation exercise</h1>
+<h1><span class="header-section-number">8</span> Monte Carlo simulation exercise</h1>
 <ol style="list-style-type: decimal">
 <li>Perform a small simulation that does the following:</li>
 </ol>
