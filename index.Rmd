@@ -62,8 +62,8 @@ In order to pass the course, the final grade must be 5.5 or higher, your contrib
 ### Schedule
 | When?   |      | Where? | What?                                   |
 |:--------|:-----|:-------|:----------------------------------------|
-|  16-Sep | 9 am | Online | Monte Carlo simulation and replication |
-|  30-Sep | 9 am | Online | Reproducible workflows |
+|  16-Sep | 9 am | Online | Monte Carlo simulation and `Git` |
+|  30-Sep | 9 am | Online | Reproducible workflows and replication|
 |  28-Oct | 9 am | Online | Typesetting equations with `LaTeX` |
 |  04-Nov | 9 am | Online | Version control and `Github` in depth |
 |  25-Nov | 9 am | Online | Presentations with `rMarkdown` |
@@ -155,25 +155,41 @@ Gerko
 
 ### Supplementary materials and links
 
-- [this online book](https://git-scm.com/book/en/v2) is a very good resource
+The following links are very useful:
+
+- [GitHub Glossary](https://help.github.com/articles/github-glossary) for all terminology
+- [become a `Git` Guru](https://www.atlassian.com/git/tutorials)
+- [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
 - [This book](https://happygitwithr.com) covers pretty much everything you need to marry `git` and `R`.
 
 I highly appreciate the clip on MC simulation by [Ben Lambert](https://ben-lambert.com/about/) (LEFT) and the quite comprehensive exploration of the origin and concepts of probability that govern Monte Carlo simulations by [John Guttag](https://people.csail.mit.edu/guttag/) (RIGHT).
 
+<center>
 <iframe width="280" height="315" src="https://www.youtube.com/embed/5nM5e2_1OQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width=280 height="315" src="https://www.youtube.com/embed/OgO1gpXSUzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 ## Column 2
 
-### Slides
+### Slides, reading and viewing
 
-Slides here
+- [Slides Week 1](Wk1/Wk1_Lecture.html)
+- Read [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/) by [Jennifer Bryan](https://jennybryan.org).
+- Watch the following clip where Linus Torvalds explains that he merely created `Git` to manage his [*other project*](https://github.com/torvalds/linux)
+
+<center>
+<div style="max-width:480px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/linus_torvalds_the_mind_behind_linux" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+</center>
+
+- Read [this blog post on MC simulation](https://www.countbayesie.com/blog/2015/3/3/6-amazing-trick-with-monte-carlo-simulations) where [Will Kurt](https://github.com/willkurt) details some quick examples of MC simulation in `R`
+- Then read [this blog post](https://www.countbayesie.com/blog/2020/8/16/why-bayesian-stats-need-monte-carlo-methods) where [Will Kurt](https://github.com/willkurt) bridges the parallel to Bayesian stats
 
 ### Exercises
 
 The exercise for this week:
 
 - [Exercise 1](Wk1/Exercise_1.html)
+- [My solution to the MC exercise](Wk1/Solution_to_Ex1.html)
 
 ### For fun
 <div> 
