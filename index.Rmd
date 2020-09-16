@@ -157,6 +157,8 @@ Gerko
 
 The following links are very useful:
 
+- An [old video walkthrough](Archive/2019/Wk5/Solution Ex6.mp4) about `Git` and `Rstudio`
+
 - [GitHub Glossary](https://help.github.com/articles/github-glossary) for all terminology
 - [become a `Git` Guru](https://www.atlassian.com/git/tutorials)
 - [this online `Git` book](https://git-scm.com/book/en/v2) is a very good resource
