@@ -202,6 +202,55 @@ The exercise for this week:
 
 [source](https://dzone.com/articles/git-forked)
 
+# Week 2
+## Column 1
+
+### Reproducible workflows
+
+This week we'll cover reproducible workflows with [`rmarkdown`](https://rmarkdown.rstudio.com) in [`RStudio`](https://www.rstudio.com)
+
+All the best, 
+
+[Gerko](www.gerkovink.com)
+
+### For real
+Please watch the below videos
+
+<center>
+<iframe width="280" height="315" src="https://player.vimeo.com/video/178485416?color=428bca&title=0&byline=0&portrait=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="280" height="315" src="https://www.youtube.com/embed/Y6hhJvIZhls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+### Supplementary materials and links
+
+The following links are very useful: 
+
+- [RStudio's 'Getting Started' with `rmarkdown`](https://rmarkdown.rstudio.com/lesson-2.html)
+- [An example archive](https://github.com/gerkovink/Pooling_MI)
+- [A comprehensive but lengthy! report](https://www.nap.edu/catalog/25303/reproducibility-and-replicability-in-science) aimed at avoiding and overcoming interpretation errors, non-replication, non-reproduction and fraud across science and science communication. 
+
+## Column 2
+
+### Exercise and lecture
+
+This week's documents:
+
+- [Lecture Wk2](Wk2/Slides.html)
+- Pipes make you code so much easier to interpret. Read [this chapter by Hadley Wickham](https://r4ds.had.co.nz/pipes.html) on pipes.
+- [Exercise.html](Wk2/Exercise.html)
+- [Exercise.Rmd](Wk2/Exercise.Rmd)
+- [My solution to the exercise in `Rmd`](Wk2/BootstrapCI_Validity.Rmd)
+- [My solution to the exercise in `html`](Wk2/BootstrapCI_Validity.html)
+
+### For fun
+<div> 
+<center>
+<img src="Wk2/forfun.jpg" width="60%">
+</center>
+</div>
+
+[source](https://geekandpoke.typepad.com/geekandpoke/2009/07/the-art-of-programming-part-2.html)
+
 # Archive
 
 ## Column 1
