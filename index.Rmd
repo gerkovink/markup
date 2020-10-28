@@ -290,6 +290,7 @@ The following links are very useful for this week's exercise:
 - [Short and fancy intro to `beamer`](https://math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer)
 - [Math symbols cheat sheet](Wk3/Exercise 3/LaTeX background/Math in LaTeX/Math Symbols.pdf)
 - [Short math guide](Wk3/Exercise 3/LaTeX background/Math in LaTeX/short-math-guide.pdf)
+- [Draw a symbol and get the `latex` code](https://detexify.kirelabs.org/classify.html)
 
 ### For fun
 
