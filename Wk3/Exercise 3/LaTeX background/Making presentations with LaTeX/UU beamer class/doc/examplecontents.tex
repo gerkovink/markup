@@ -1,0 +1,292 @@
+
+\title[uubeamer example presentation]{Example presentation for \texttt{uubeamer} beamer theme}
+\subtitle{Subtitle: logos and colors in 'Utrecht University-style'}
+
+\author[\url{http://www.math.uu.nl/people/dam/}]{Arthur van Dam}
+
+\institute[Mathematical Institute]{
+Mathematical Institute\\
+Utrecht University,\\
+The Netherlands}
+
+%\usetheme[style=fancy,sidebar=false,showpagenr=false]{uu}
+%\usetheme{Berlin}
+%\usecolortheme{uubeamer}
+\begin{document}
+
+%%%%
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+%%%%
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+%%%%%%%%
+\section{Motivation}% %%%%{2
+
+%%%%%%
+\subsection{Existing beamer-styles vs Corporate Identity}% %%%%{3
+
+%%%%
+\begin{frame}
+\frametitle{Anonymous beamer styles}
+\begin{itemize}
+\item Built-in beamer styles are clean, but anonymous
+\item Without additional effort, always end up with the 'black-blue-style'
+\end{itemize}
+\end{frame}
+
+
+%%%%
+\subsection{Existing UU-style material}% %%%%{3
+
+%%%%
+\begin{frame}
+\frametitle{Corporate style available}
+\begin{itemize}
+\item Letter templates
+\item Logo's (various formats)
+\item Powerpoint templates
+\item \texttt{uusol.sty} for Sol-logo in many sizes (Piet van Oostrum)
+\item But no true \TeX~based presentation material
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{beamerthemeuu}
+\begin{itemize}
+\item Theme file for {\LaTeX}-Beamer (http://latex-beamer.sf.net)
+\item Uses colors in UU corporate style
+\item Provides two outer themes
+\item Provides UU logo (as PDF) in appropriate place
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Usage and options for beamer theme UU}
+Basic usage: \begin{semiverbatim}\\usetheme\{uu\}\end{semiverbatim}
+\begin{itemize}
+\item Two styles, chosen with options to \begin{semiverbatim}\\usetheme\end{semiverbatim}
+    \begin{itemize}
+    \item Plain (default): like the paper \begin{semiverbatim}\\usetheme[style=plain]\{uu\}\end{semiverbatim}
+    \item Fancy: bar on top and bottom  \begin{semiverbatim}\\usetheme[style=fancy]\{uu\}\end{semiverbatim}
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Usage and options for beamer theme UU (cont'd)}
+\begin{itemize}
+\item Allows sidebar
+    \begin{itemize}
+    \item Sidebar only available in plain style
+    \item Default on, turn off with \begin{semiverbatim}\\usetheme[sidebar=false]\{uu\}\end{semiverbatim}
+    \end{itemize}
+\item Allows pagenumbering
+    \begin{itemize}
+    \item Also only in plain style
+    \item Default on, turn off with \begin{semiverbatim}\\usetheme[showpagenr=false]\{uu\}\end{semiverbatim}
+    \end{itemize}
+\end{itemize}
+Options can be combined:
+\begin{semiverbatim}\\usetheme[style=plain,showpagenr=false,sidebar=false]\{uu\}\end{semiverbatim}
+\end{frame}
+
+%%%%%%%%
+\section{Testing}% %%%%{2
+
+%%%%
+\begin{frame}
+\frametitle{Testing the sidebar(s)}
+This is to test the width and height of the body part (influenced by dimensions of headers, footers, and possible sidebars)
+\begin{itemize}
+\item a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+\item 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 29 30
+\item The quick red fox jumped over the lazy brown dog. 
+\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam fringilla consequat massa. Nam dolor mauris, vulputate ac, porta nec, adipiscing ut, metus. Mauris enim dui, nonummy quis, tempor ac, mollis ac, purus. Nulla ultrices enim. Pellentesque ornare pellentesque mi. Duis volutpat. Nulla leo. Sed felis. Praesent eu orci vel sapien pulvinar ullamcorper. Nam euismod, nisl ut blandit sagittis, quam justo faucibus tellus, vitae venenatis mi tortor ac est. Proin laoreet porttitor mauris. In hac habitasse platea dictumst. Donec eu ipsum eu elit sollicitudin lacinia. Proin fermentum elementum mi.
+\end{itemize}
+\end{frame}
+
+
+%%%%
+\begin{frame}
+\frametitle{Testing the Logo}
+\includegraphics{UU_logo_fullcolor_uncoated_sol_left.pdf}
+
+Logo drawing starts with active color,
+\color{green}like this:\\
+\includegraphics{UU_logo_fullcolor_uncoated_sol_left.pdf}
+\end{frame}
+
+%%%%%
+%\begin{frame}
+%\frametitle{Testing dimensions}
+%\vskip220pt
+%\pgfsetlinewidth{0.2pt}
+%\pgfgrid[step={\pgfpoint{1ex}{1ex}}]{\pgfxy(-.3,-.3)}{\pgfxy(3.3,2.3)}{}
+%\pgfsetlinewidth{0.1pt}
+%\pgfgrid[stepx=0.25ex,stepy=0.25ex]{\pgfxy(-.15,-.15)}{\pgfxy(3.15,2.15)}
+%\end{frame}
+%
+%%%%%%%%%%
+%% Automatic generation of table of color samples
+\def\ctnrcol{6}
+\newlength{\cthsize}
+\setlength{\cthsize}{\textwidth/\ctnrcol/2}
+\newlength{\cthskip}
+\setlength{\cthskip}{\textwidth/\ctnrcol/2}
+\newlength{\ctvsize}
+\setlength{\ctvsize}{\cthsize}
+\newlength{\ctvskip}
+\setlength{\ctvskip}{\cthskip/8}
+
+{\scriptsize\gdef\ctlabelheight{\lineheight}}
+
+\newlength{\cthpos}
+\setlength{\cthpos}{0pt}
+
+\newlength{\ctvpos}
+\setlength{\ctvpos}{\ctvsize}
+
+\newcounter{ctcolid}
+\setcounter{ctcolid}{1}
+\def\ctnc{%
+\addtocounter{ctcolid}{1}
+\ifnum\thectcolid>\ctnrcol
+\ctnr
+\else\addtolength{\cthpos}{\cthsize+\cthskip} % New column
+\fi
+}
+\def\ctnr{%
+\setcounter{ctcolid}{1}
+\setlength{\cthpos}{0pt}
+\addtolength{\ctvpos}{\ctvsize+\ctvskip+\ctlabelheight}
+} % New row
+\def\ctsample#1{%
+\pgfsetcolor{#1}
+\pgfpathrectangle{\pgfpoint{\cthpos}{-\ctvpos}}{\pgfpoint{\cthsize}{\cthsize}}
+\pgfusepath{fill}
+{\scriptsize \pgftext[at=\pgfpoint{\cthpos}{-\ctvpos-2pt},left,top]{#1}}
+\ctnc
+}
+%\pgfrect[fill]{\pgfpoint{\cthpos}{-\ctvpos}}{\pgfpoint{\cthsize}{\cthsize}}
+%{\scriptsize \pgfputat{\pgfpoint{\cthpos}{-\ctvpos-2pt}}{\pgfbox[left,top]{#1}}}
+%\ctnc
+%}
+%%%%%%%%%%
+
+%%%%
+\begin{frame}[t]
+\frametitle{Available colors}
+Apart from built-in colors, the UU Corporate style defines a
+primary, extended and secondary palette. Here's an overview:
+\begin{pgfpicture}{0cm}{-.7\lineheight}{\textwidth}{-5cm}
+\ctsample{uuyellow}
+\ctsample{uured}
+\ctsample{uuxorange}
+\ctsample{uuxred}
+\ctsample{uuxgreen}
+\ctsample{uuxblue}
+\ctsample{uuxpurple}
+\ctsample{uu2darkred}
+\ctsample{uu2terra}
+\ctsample{uu2lightyellow}
+\ctsample{uu2darkgreen}
+\ctsample{uu2olive}
+\ctsample{uu2lightgreen}
+\ctsample{uu2darkblue}
+\ctsample{uu2azure}
+\ctsample{uu2lightblue}
+\ctsample{uu2darkpurple}
+\ctsample{uu2fuchsia}
+\ctsample{uu2rhodamine}
+\end{pgfpicture}
+
+\end{frame}
+
+\end{document}
+
+\endinput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\beamertemplateshadingbackground{red!10}{blue!10}
+\usepackage{beamerthemeshadow} 
+\beamertemplateheadempty
+\beamertemplatetriangleitem
+\beamertemplateenumeratealpha
+\beamertemplatenavigationsymbolsempty
+
+
+\newcommand{\Triangle}[1]{\scriptsize\raise1.25pt\hbox{\color{#1}$\blacktriangleright$}}
+\newcommand{\baditem}{\item[\Triangle{red!75!black}] }
+\newcommand{\gooditem}{\item[\Triangle{green!60!black}] }
+
+
+\usepackage{textpos} 
+\usepackage{graphicx} 
+\usepackage{verbatim} \usepackage{alltt} 
+\usepackage{boxedminipage} 
+
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb}
+
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+
+\definecolor{litgray}{rgb}{0.35,0.35,0.35}
+\newcommand{\lit}[1]{{\color{litgray}#1}}
+\newcommand{\kw}[1]{{\color{structure!100!black}#1}}
+
+\newcommand{\hll}[1]{{\color{red}#1}}
+\newcommand{\hl}[1]{{\color{structure!100!black}#1}}
+\newcommand{\stress}[1]{\textit{\color{structure!100!black}#1}}
+
+\title{Adaptive Finite Volume Solution of MHD Systems}
+\subtitle{Challenging a 1D solver in '1.75D'}
+
+\author[\url{http://www.math.uu.nl/people/dam/}]{Arthur van Dam}
+
+\institute{
+Mathematical Institute\\
+Utrecht University,\\
+The Netherlands}
+
+\date{February 15, 2005}
+
+\begin{document}
+
+\frame{\titlepage}
+
+% \frame{
+% 
+%   \frametitle{Outline}
+%   \tableofcontents
+% }
+\input{texdefs.ltx}
+\input{intro.ltx}
+\input{mhd.ltx}
+
+\end{document}
+\endinput
+\usetitlepagetemplate{
+    \vbox{}
+    \vfill
+    \begin{centering}
+      \begin{beamerboxesrounded}[shadow=true,scheme=title]{}
+        \vskip0.5em\par
+        \begin{centering}\Huge\color{white}\inserttitle\par%
+          \normalsize\ifx\insertsubtitle\@empty\else\vskip1em\insertsubtitle\par\fi
+        \end{centering}
+      \end{beamerboxesrounded}
+      \vskip1em\par
+      \normalsize\insertauthor\vskip1em\par
+      {\scriptsize\insertinstitute\par}\par\vskip1em
+      \insertdate\par\vskip1.5em
+      \inserttitlegraphic\par
+    \end{centering}
+    \vfill
+  }
