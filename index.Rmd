@@ -251,6 +251,56 @@ This week's documents:
 
 [source](https://geekandpoke.typepad.com/geekandpoke/2009/07/the-art-of-programming-part-2.html)
 
+# Week 3
+
+## Column 1
+
+### Beamer and equations
+
+This week we'll cover equations in `LaTeX` - I'm sure you'll love it. In order to put it to the test, we will also use `LaTeX` to design slide show presentations. Later on in this course, we'll focus on creating presentation with Markdown - which is much easier, but also less flexible in obtaining perfect detailed typesetting. For now, getting to know the basics of typesetting and equations in `LaTeX` will pay off in the future. 
+
+All the best, 
+
+[Gerko](www.gerkovink.com)
+
+### For real
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Mathematicians and physicists have been using LaTeX typesetting language to craft equations in manuscripts, but now other scientists are using it too. Here’s how to get started. <a href="https://t.co/AzFaehdNXf">https://t.co/AzFaehdNXf</a></p>&mdash; Nature (@nature) <a href="https://twitter.com/nature/status/1181051282339123200?ref_src=twsrc%5Etfw">October 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Column 2
+
+### Exercise
+
+This week's excercise:
+
+- [Exercise Week 3](Wk3/Exercise 3/Exercise_3.html)
+- [beamer_exercise.pdf](Wk3/Exercise 3/beamer_exercise.pdf)
+- [Latex background](Wk3/Exercise 3/LaTeX background.zip)
+
+***
+
+- [ONLY LOOK AT THIS SOLUTION IF YOU'VE BEEN STUCK FOR HOURS](Wk3/Solution.zip)
+
+### Supplementary materials and links
+
+The following links are very useful for this week's exercise: 
+
+- [`beamer` quickstart](https://userpages.umbc.edu/~rostamia/beamer/)
+- [`beamer` themes](https://hartwork.org/beamer-theme-matrix/)
+- [Short and fancy intro to `beamer`](https://math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer)
+- [Math symbols cheat sheet](Wk3/Exercise 3/LaTeX background/Math in LaTeX/Math Symbols.pdf)
+- [Short math guide](Wk3/Exercise 3/LaTeX background/Math in LaTeX/short-math-guide.pdf)
+
+### For fun
+
+<div> 
+<center>
+<img src="images/Latex.png" width="60%">
+</center>
+</div>
+
+[source with useful thesis-writing blogpost](https://errantscience.com/blog/2019/06/26/writing-a-thesis-in-latex/)
+
 # Archive
 
 ## Column 1
