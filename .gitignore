@@ -50,4 +50,5 @@ video/Link SSH.mov
 *.mov
 Archive/.DS_Store
 Archive/2019/.DS_Store
-/video/
+/video/*
+Video/*
