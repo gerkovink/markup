@@ -273,7 +273,7 @@ All the best,
 
 This week's excercise:
 
-- [Exercise Week 3](Wk3/Exercise 3/Exercise_3.html)
+- [Exercise Week 3](Wk3/Exercise 3/Exercise-3.html)
 - [beamer_exercise.pdf](Wk3/Exercise 3/beamer_exercise.pdf)
 - [Latex background](Wk3/Exercise 3/LaTeX background.zip)
 
