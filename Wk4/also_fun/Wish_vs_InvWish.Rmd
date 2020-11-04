@@ -1,0 +1,55 @@
+---
+title: "Wishart vs inverse Wishart"
+author: "Gerko Vink"
+date: "6/13/2020"
+output: html_document
+---
+
+```{r message = FALSE}
+library(MCMCpack)
+library(magrittr)
+set.seed(123)
+```
+
+The question is whether an inverse Wishart distribution's inverse $\mathbf{X}^{-1}$ follows: 
+
+- $\mathcal{W}(\mathbf \Psi^{-1}, \nu)$, or 
+- $\mathcal{W}(\mathbf \Psi, \nu)$ (cf. Schaffer, 1997):
+
+To determine which is correct, we start with drawing a $\Sigma$
+
+```{r}
+#Make Sigma
+Sigma <- c(1, rep(c(.1, .2, .3), 10 )) %>% 
+  toeplitz 
+```
+to draw from the inverse Wishart distribution, with $\nu = 31$
+```{r}
+# Draw inverse wishart
+inv.wish <- riwish(31, Sigma)
+```
+Then, we create an estimated wishart from the generated inverse Wishart, simply by taking the inverse of the generated inverse Wishart:
+```{r}
+# Create `estimated` wishart from inverse wishart
+est.wish <- solve(inv.wish)
+```
+
+To test whether $\mathbf{X}$ follows an inverse Wishart distribution if its inverse $\mathbf{X}^{-1} \sim \mathcal{W}(\mathbf \Psi^{-1}, \nu)$ or if its inverse $\mathbf{X}^{-1} \sim \mathcal{W}(\mathbf \Psi, \nu)$ (cf. Schaffer, 1997):
+```{r}
+# Draw 2 versions of wishart - one with and one without inverse Sigma
+drawn.wish <- rwish(31, solve(Sigma))
+drawn.wish2 <- rwish(31, Sigma)
+```
+
+We can verify which distribution it follows by making a `qqplot`:
+```{r}
+# Test whether estimated wishart from inverse wishart conforms to a drawn wishart 
+qqplot(est.wish, drawn.wish); abline(coef = c(0,1)) #correct
+qqplot(est.wish, drawn.wish2);  abline(coef = c(0,1))
+```
+
+### Conclusion
+We say $\mathbf{X}$ follows an inverse Wishart distribution, 
+denoted as $\mathbf{X}\sim \mathcal{W}^{-1}(\mathbf\Psi,\nu)$, 
+if its inverse $\mathbf{X}^{-1}$ has a 
+Wishart distribution $\mathcal{W}(\mathbf \Psi^{-1}, \nu)$.
