@@ -1,0 +1,13 @@
+uubeamer -- A theme package for the LaTeX Beamer package
+
+This package contains a theme for the LaTeX Beamer package
+(http://latex-beamer.sourceforge.net/) that conforms to
+the corporate style of the Universiteit Utrecht.
+It currently comes in two variants, each of which is fairly
+customizable.
+
+Installation: See the INSTALL file in this directory.
+
+Documentation: See the example pdf files in doc/
+
+More info at http://www.math.uu.nl/people/dam/?UuBeamer
