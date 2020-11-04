@@ -318,7 +318,7 @@ All the best,
 
 <div> 
 <center>
-<img src="images/astley.png" width="70%">
+<img src="images/astley.png" width="60%">
 </center>
 </div>
 
@@ -351,6 +351,8 @@ These links cover vital information about placement, sizing, etc of figures and 
 ### Also Also
 
 - [A different approach to a mathematical problem](Wk4/also_fun/Wish_vs_InvWish.html)
+
+just FYI
 
 # Archive
 
