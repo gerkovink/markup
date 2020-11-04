@@ -318,7 +318,7 @@ All the best,
 
 <div> 
 <center>
-<img src="images/astley.png" width="70%">
+<img src="images/astley.png" width="60%">
 </center>
 </div>
 
@@ -347,6 +347,12 @@ These links cover vital information about placement, sizing, etc of figures and 
 
 - [All background](Wk4/Background.zip) You do not have to consider the $\LaTeX$ code per se --> just make sure that you identify the difference in look, placement and sizing of relevant components. 
 - [Referencing in $\LaTeX$](Archive/2019/Wk1/Exercise 2/Latex exercise/Exercise_2.html). This is useful because we can use the same techniques in `markdown`. All relevant materials can be found in the 2019 Archive for Week 1.
+
+### Also Also
+
+- [A different approach to a mathematical problem](Wk4/also_fun/Wish_vs_InvWish.html)
+
+just FYI
 
 # Archive
 
