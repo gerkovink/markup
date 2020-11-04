@@ -302,6 +302,52 @@ The following links are very useful for this week's exercise:
 
 [source with useful thesis-writing blogpost](https://errantscience.com/blog/2019/06/26/writing-a-thesis-in-latex/)
 
+# Week 4
+
+## Column 1
+
+### `git` in more detail. 
+
+This week we'll cover `git` commands and procedures for when the proverbial shit hits the fan. 
+
+All the best, 
+
+[Gerko](www.gerkovink.com)
+
+### For Nov 4
+
+<div> 
+<center>
+<img src="images/astley.png" width="70%">
+</center>
+</div>
+
+[source](https://res.cloudinary.com/teepublic/image/private/s--acLpL5-H--/c_fit,g_north_west,h_920,w_593/co_ffffff,e_outline:41/co_ffffff,e_outline:inner_fill:1/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1562715167/production/designs/5273250_1.jpg)
+
+
+## Column 2
+
+### Exercise
+
+This week's exercise is straightforward. Follow my lead and you'll learn a great deal about `git`
+
+- [Exercise Week 4](Wk4/Exercise-4.html)
+
+### Useful links 
+
+The info in these links will take you beyond the exercise
+
+- [the `pro git` book](https://git-scm.com/book/en/v2)
+- [branching](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+- [stashing changes](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
+- [pushing to git](https://devconnected.com/how-to-push-git-branch-to-remote/)
+
+### Also
+These links cover vital information about placement, sizing, etc of figures and tables and referencing. I'll dive into it in more detail next meeting, but please study these documents links to prepare yourself. 
+
+- [All background](Wk4/Background.zip) You do not have to consider the $\LaTeX$ code per se --> just make sure that you identify the difference in look, placement and sizing of relevant components. 
+- [Referencing in $\LaTeX$](Archive/2019/Wk1/Exercise 2/Latex exercise/Exercise_2.html). This is useful because we can use the same techniques in `markdown`. All relevant materials can be found in the 2019 Archive for Week 1.
+
 # Archive
 
 ## Column 1
@@ -309,3 +355,4 @@ The following links are very useful for this week's exercise:
 ### Last year
 
 Please find last year's iteration of this course [here](Archive/2019/index.html)
+
