@@ -434,7 +434,7 @@ but is now at
 493609e (HEAD -> Wk4_markup) HEAD@{0}: reset: moving to 493609e
 ```
 
-We can use this history of where the head has been to go back to the previous step. In other words, if we would like to undo a commit, we can always go back to the previous HEAD stage --> the HEAD has been moved one step forward by the commit. Likewise, if we would like to undo a a hard reset, we can also go back to the previous HEAD stage --> the HEAD has been moved one step forward by the reset. 
+We can use this history of where the head has been to go back to the previous step. In other words, if we would like to undo a commit, we can always go back to the previous HEAD stage --> the HEAD has been moved one step forward by the commit. Likewise, if we would like to undo a hard reset, we can also go back to the previous HEAD stage --> the HEAD has been moved one step forward by the reset. 
 
 To undo it all, we can use the indicator that is referenced by the `reflog`:
 
