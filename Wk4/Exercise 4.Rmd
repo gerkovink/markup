@@ -481,7 +481,7 @@ If we study the log, we find that there are now only two commits.
 # Merging branches
 Let's see if we can merge the `Wk4_markup` branch into the `Exercise_wk4` branch. 
 
-First we need to chechout the branch we would like to merge into:
+First we need to checkout the branch we would like to merge into:
 ```{console}
 % git checkout Exercise_wk4
 Updating files: 100% (174/174), done.
