@@ -1,0 +1,107 @@
+---
+title: "Capita Selecta"
+author: "Gerko Vink"
+date: "Markup Languages and Reproducible Programming in Statistics"
+output:
+  ioslides_presentation:
+    logo: logo.png
+    smaller: yes
+    widescreen: no
+---
+
+## Today
+
+- discussion and emphasis
+
+## Figures
+
+```
+![](https://apastyle.apa.org/images/sample-figure-bar-graph_tcm11-261608_w1024_n.jpg)
+```
+![](https://apastyle.apa.org/images/sample-figure-bar-graph_tcm11-261608_w1024_n.jpg)
+
+## Figures
+
+```
+<center>
+![](https://apastyle.apa.org/images/sample-figure-bar-graph_tcm11-261608_w1024_n.jpg)
+</center>
+```
+<center>
+![](https://apastyle.apa.org/images/sample-figure-bar-graph_tcm11-261608_w1024_n.jpg)
+</center>
+
+## Another figure
+
+```
+<center>
+![](https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835)
+</center>
+```
+
+<center>
+![](https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835)
+</center>
+
+## Another figure
+
+```
+<center>
+<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
+width = 40% />
+</center>
+```
+
+<center>
+<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
+width = 40% />
+</center>
+
+## Another figure
+
+```
+<center>
+<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
+width = 40% />
+</center>
+```
+
+<center>
+<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
+width = 40% >
+</center>
+
+## Another figure
+```
+{r, out.width = "30%", fig.align = 'center'}
+```
+```{r, out.width = "30%", fig.align = 'center'}
+library(knitr)
+fig <- "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835"
+include_graphics(fig)
+```
+
+## `R` figures
+```
+{r, fig.width=3, fig.height=1}
+```
+
+```{r, fig.width=15, fig.height=4}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)") 
+```
+
+## `R` figures
+```
+{r, fig.width=6, fig.height=2.5}
+```
+
+```{r, fig.width=6, fig.height=2.5}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)") 
+```
+
+## Equations
+
+## Tables
+

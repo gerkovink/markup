@@ -354,6 +354,44 @@ These links cover vital information about placement, sizing, etc of figures and 
 
 just FYI
 
+# Week 5
+
+## Column 1
+
+### Presentations with `rmarkdown`
+
+This week we’ll cover presentations with `rmarkdown` in [`RStudio`](https://www.rstudio.com)
+
+All the best, 
+
+[Gerko](www.gerkovink.com)
+
+### Supplementary materials and links
+
+The following links are very useful:
+
+- [The definitive `rmarkdown` Guide](https://bookdown.org/yihui/rmarkdown/)
+- [Figures and rmarkdown](http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
+
+### For fun
+<div> 
+<center>
+<img src="Wk5/forfun.jpg" width="60%">
+</center>
+</div>
+
+[source](https://www.reddit.com/r/ProgrammerHumor/comments/9w19dv/we_all_know_someone_whos_done_that/) and  [original](https://i.kym-cdn.com/photos/images/newsfeed/001/319/580/b9a.jpg_large)
+
+## Column 2
+
+### Exercise
+
+This week's documents:
+
+- [Exercise 7.html](Wk5/Exercise_7_presentationswithrmarkdown.html)
+- [Exercise 7.Rmd](https://raw.githubusercontent.com/gerkovink/Markup-Programming/master/Wk6/Exercise_7_presentationswithrmarkdown.Rmd?token=AGegKBdG_PcSgsOf01TE-qE32Ue-PC9xks5cDgZTwA%3D%3D)
+- [Background.zip](Wk5/Background.zip)
+
 # Archive
 
 ## Column 1
