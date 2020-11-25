@@ -388,7 +388,7 @@ The following links are very useful:
 
 ### Exercise
 
-This week's documents:
+This week's exercise and background:
 
 - [Exercise 7.html](Wk5/Exercise_7_presentationswithrmarkdown.html)
 - [Exercise 7.Rmd](https://raw.githubusercontent.com/gerkovink/markup/master/Wk5/Exercise_7_presentationswithrmarkdown.Rmd)
