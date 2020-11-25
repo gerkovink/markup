@@ -103,5 +103,60 @@ dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)")
 
 ## Equations
 
-## Tables
+- `$\mu$` is used for in-line equations
+- `$$\mu$$` is used for equations
 
+Let's assume that $Y$ follows a normal distribution. $$Y \sim  \mathcal{N}(\mu, \sigma^2)$$
+Where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $Y_i$. 
+
+
+## Equations
+
+- `$\mu$` is used for in-line equations
+- `$$\mu$$` is used for equations
+
+Let's assume that $y$ is a vector with $N$ elements such that $$y \sim  \mathcal{N}(\mu, \sigma^2),$$
+where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $Y_i$ with $i = 1, \dots, N$.
+
+
+## Tables
+```{r message = FALSE}
+library(xtable); library(mice); library(dplyr)
+dat <- nhanes %>% head
+xtable(dat)
+```
+
+## Tables
+```{r}
+library(kableExtra)
+dat %>% 
+  kbl
+```
+
+## Tables
+```{r}
+dat %>% 
+  kbl %>% 
+  kable_paper("hover", full_width = FALSE)
+```
+
+## Tables
+```{r}
+dat %>% 
+  kbl(caption = "nhanes") %>% 
+  kable_classic(full_width = FALSE, html_font = "Arial")
+```
+
+## Tables
+```{r}
+dat %>% 
+  kbl(caption = "nhanes") %>% 
+  kable_classic_2(full_width = FALSE, html_font = "Arial")
+```
+
+## Tables
+```{r}
+library(DT)
+nhanes %>% 
+  datatable(options = list(pageLength = 7))
+```
