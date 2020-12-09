@@ -425,7 +425,7 @@ I suggest that you watch this video before you make the exercise:
 This week's documents:
 
 - [Exercise 8.html](Wk6/Exercise_8_-_GitHub_pages_and_Shiny.html)
-- [Exercise 8.Rmd](https://raw.githubusercontent.com/gerkovink/Markup-Programming/master/Wk6/Exercise%208%20-%20presentations%20with%20rmarkdown.Rmd)
+- [Exercise 8.Rmd](https://raw.githubusercontent.com/gerkovink/markup/master/Wk6/Exercise_8_-_GitHub_pages_and_Shiny.Rmd)
 
 ### For fun
 <div> 
