@@ -395,6 +395,47 @@ This week's exercise and background:
 - [Background.zip](Wk5/Background.zip)
 
 
+# Week 6
+
+## Column 1
+
+### Online representation
+
+This week we’ll cover `shiny` web-apps and `GitHub` pages. `shiny` is a wonderful means to showcase your work and offer online services; Hanne Oberman will share with you her expertise. `GitHub` pages is the way for developers and professionals to introduce yourself to the world and host a personal webpage right from your `GitHub`. And all this is free!
+
+All the best, 
+
+[Gerko](www.gerkovink.com)
+
+### Useful references
+
+Definitely look at the book [Mastering Shiny](https://mastering-shiny.org) by [Hadley Wickham](http://hadley.nz). This book is currently under development. 
+
+### GitHub pages
+I suggest that you watch this video before you make the exercise:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+## Column 2
+
+### Exercise
+
+This week's documents:
+
+- [Exercise 8.html](Wk6/Exercise_8_-_GitHub_pages_and_Shiny.html)
+- [Exercise 8.Rmd](https://raw.githubusercontent.com/gerkovink/Markup-Programming/master/Wk6/Exercise%208%20-%20presentations%20with%20rmarkdown.Rmd)
+
+### For fun
+<div> 
+<center>
+<img src="Wk6/forfun.png" width="100%">
+</center>
+</div>
+
+[source](https://www.reddit.com/r/ProgrammerHumor/comments/a1j42g/merriamwebster_finally_added_a_definition_for/) 
+
 # Archive
 
 ## Column 1
