@@ -4,15 +4,16 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: scroll
+    self_contained: false
 ---
 
 # Intro {.sidebar}
-This dashboard covers the course materials for the course [***Markup Languages and Reproducible Programming in Statistics***](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202000010&collegejaar=2020&taal=en)
+This dashboard covers the course materials for the course [***Markup Languages and Reproducible Programming in Statistics***](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202000010&collegejaar=2021&taal=en)
 
 ---
 
 <center>
-<a href='https://github.com/gerkovink/markup2020'><img src='markup_sticker_SMALL.png' height="139" /></a>
+<a href='https://github.com/gerkovink/markup2020'><img src='sticker.png' height="139" /></a>
 </center>
 
 ---
@@ -20,18 +21,18 @@ This dashboard covers the course materials for the course [***Markup Languages a
 Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
 Study load: 2.5 ECTS <br>
 Assessment: Final Assignment <br>
-[Course folder](https://github.com/gerkovink/markup2020)
+[Course folder](https://github.com/gerkovink/markup2021)
 
 ---
 
 |  When?  |      | Where? |
 |:--------|:-----|:-------|
-|  16-Sep | 9 am | Online |
-|  30-Sep | 9 am | Online |
-|  28-Oct | 9 am | Online |
-|  04-Nov | 9 am | Online |
-|  25-Nov | 9 am | Online |
-|  09-Dec | 9 am | Online |
+|  15-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  29-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  27-Oct | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  03-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  24-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  08-Dec | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
 
 ---
 
@@ -62,12 +63,12 @@ In order to pass the course, the final grade must be 5.5 or higher, your contrib
 ### Schedule
 | When?   |      | Where? | What?                                   |
 |:--------|:-----|:-------|:----------------------------------------|
-|  16-Sep | 9 am | Online | Monte Carlo simulation and `Git` |
-|  30-Sep | 9 am | Online | Reproducible workflows and replication|
-|  28-Oct | 9 am | Online | Typesetting equations with `LaTeX` |
-|  04-Nov | 9 am | Online | Version control and `Github` in depth |
-|  25-Nov | 9 am | Online | Presentations with `rMarkdown` |
-|  09-Dec | 9 am | Online | `Github pages` and `Shiny` |
+|  15-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Monte Carlo simulation and `Git` |
+|  29-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Reproducible workflows and replication|
+|  27-Oct | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Typesetting equations with `LaTeX` |
+|  03-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Version control and `Github` in depth |
+|  24-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Presentations with `rMarkdown` |
+|  08-Dec | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | `Github pages` and `Shiny` |
 
 ### For fun
 
