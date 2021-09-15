@@ -13,7 +13,7 @@ This dashboard covers the course materials for the course [***Markup Languages a
 ---
 
 <center>
-<a href='https://github.com/gerkovink/markup2020'><img src='sticker.png' height="139" /></a>
+<a href='https://github.com/gerkovink/markup2021'><img src='sticker.png' height="139" /></a>
 </center>
 
 ---
@@ -89,7 +89,7 @@ $$
 
 ### Course manual
 
-[I'd rather have a pdf](docs/MLRPS2020_manual.pdf)
+[I'd rather have a pdf](docs/MLaRPiS_manual.pdf)
 
 #### Course description
 This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of 6 meetings in which students will learn about markup languages (LaTeX and Markdown), learn efficient and reproducible programming with rMarkdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analysing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career.
@@ -136,7 +136,7 @@ Relevant documents that are used in the course and/or may provide useful additio
 The research repository has to be prepared as a supplementary archive that can serve as an extensive documentation of the research (e.g. as a supplement to be submitted to a journal). The archive has to be published in a public or private GitHub repository.
 
 #### Time schedule
-This course takes place in the first semester. The course will run over 6 meetings (Wednesdays 9-12am) during the semester, with the first meeting on September 14, 2020.
+This course takes place in the first semester. The course will run over 6 meetings (Wednesdays 9-12am) during the semester, with the first meeting on September 15, 2021.
 
 #### Prerequisites
 Students will need their own laptop computer. Students should have experience in programming with R and should be familiar with the IDE RStudio.
