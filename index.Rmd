@@ -192,7 +192,8 @@ I highly appreciate the clip on MC simulation by [Ben Lambert](https://ben-lambe
 The exercise for this week:
 
 - [Exercise 1](Wk1/Exercise_1.html)
-- [My solution to the MC exercise](Wk1/Solution_to_Ex1.html)
+- [My old solution to the MC exercise](Wk1/Solution_to_Ex1.html)
+- [My solution to the MC exercise as I would do it now](Wk1/Solution_to_Ex1_future.html)
 
 ### For fun
 <div> 
