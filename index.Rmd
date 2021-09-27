@@ -211,6 +211,8 @@ The exercise for this week:
 
 This week we'll cover reproducible workflows with [`rmarkdown`](https://rmarkdown.rstudio.com) in [`RStudio`](https://www.rstudio.com)
 
+You can [find the lecture here](https://www.dropbox.com/s/n72ksj3pps1syg5/Markup_lecture2.mp4?dl=0)
+
 All the best, 
 
 [Gerko](www.gerkovink.com)
