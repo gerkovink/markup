@@ -147,7 +147,7 @@ estimates %>%
 
 ---
 
-# Approach 1: CI's with base `R`
+## Approach 1: CI's with base `R`
 
 We use the `confint()` function to extract the confidence intervals for each of the linear models in the `model` object. 
 ```{r cache=TRUE}
@@ -164,7 +164,7 @@ cov <- ci %>%
 
 ---
 
-# Approach 2: manually calculated CI's
+## Approach 2: manually calculated CI's
 For unknown $\sigma^2_\beta$, the $1-\alpha$ confidence interval for $\beta$ is defined as  
 \[\mu = \hat{\beta} \pm t_{n-1, a/2}\frac{S}{\sqrt{N}}.\]. The following code extracts the estimates and the standard error
 ```{r cache=TRUE}
@@ -177,7 +177,7 @@ manual <- model %>%
 
 ---
 
-# Approach 3: bootstrap CI's cf. bootstrap SE
+## Approach 3: bootstrap CI's cf. bootstrap SE
 Instead of drawing the standard errors from every model, we can also make use of the bootstrap estimate of the standard error - i.e. the square root of the variance of the vector of estimates. This gives us the empirical standard deviation of the realized bootstrap sampling distribution of the estimates. 
 ```{r}
 manual2 <- model %>% 
@@ -189,7 +189,7 @@ manual2 <- model %>%
 
 ---
 
-# Approach 4: bootstrap CI's cf average CI
+## Approach 4: bootstrap CI's cf average CI
 Another approach is to calculate the bootstrap CI based on the quantiles of the vectors of estimates. Simply dividing the confidence interval width would then yield an empirical equivalent to $\pm t_{n-1, a/2}\frac{S}{\sqrt{N}}$. 
 ```{r cache = TRUE}
 # confidence intervals and widths
@@ -222,7 +222,7 @@ covage <- data.frame(est = estimates[, 3],
 
 ---
 
-# Results
+## Results
 Below are the coverages for each of the investigated scenarios. Results are depicted for the coverage of the confidence intervals over the regression estimates for $10^4$ simulations.
 ```{r}
 output <- rbind(colMeans(cov), 
