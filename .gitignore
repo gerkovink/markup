@@ -54,3 +54,8 @@ Archive/2019/.DS_Store
 Video/*
 .DS_Store
 .DS_Store
+*.RData
+*.rdb
+*.rdx
+Wk2/BootstrapCI_Validity_cache/html/__packages
+Wk2/BootstrapCI_Validity_replication_cache/html/__packages
