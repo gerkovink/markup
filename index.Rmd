@@ -295,6 +295,7 @@ The following links are very useful for this week's exercise:
 - [Math symbols cheat sheet](Wk3/Exercise 3/LaTeX background/Math in LaTeX/Math Symbols.pdf)
 - [Short math guide](Wk3/Exercise 3/LaTeX background/Math in LaTeX/short-math-guide.pdf)
 - [Draw a symbol and get the `latex` code](https://detexify.kirelabs.org/classify.html)
+- [How to use `latexdiff`](https://www.overleaf.com/learn/latex/Articles/Using_Latexdiff_For_Marking_Changes_To_Tex_Documents)
 
 ### For fun
 
