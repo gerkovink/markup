@@ -536,6 +536,7 @@ After that, we can stage the changes and commit them in the `Exercise_wk4` branc
 5. Commit the changes with a custom message
 6. Publish your branch on GitHub
 7. Do a pull request that can be automatically merged. 
+8. Post an issue in this year's Repo, wherin you reference your PR to last year's repo. 
 
 ---
 
