@@ -319,15 +319,15 @@ All the best,
 
 [Gerko](www.gerkovink.com)
 
-### For Nov 4
+### For fun
 
 <div> 
 <center>
-<img src="images/astley.png" width="60%">
+<img src="images/git_munroe.png" width="60%">
 </center>
 </div>
 
-[source](https://res.cloudinary.com/teepublic/image/private/s--acLpL5-H--/c_fit,g_north_west,h_920,w_593/co_ffffff,e_outline:41/co_ffffff,e_outline:inner_fill:1/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1562715167/production/designs/5273250_1.jpg)
+[source](https://xkcd.com/1597/)
 
 
 ## Column 2

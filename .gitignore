@@ -59,3 +59,4 @@ Video/*
 *.rdx
 Wk2/BootstrapCI_Validity_cache/html/__packages
 Wk2/BootstrapCI_Validity_replication_cache/html/__packages
+.DS_Store
