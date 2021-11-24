@@ -88,7 +88,7 @@ datatable(mtcars, options = list(pageLength = 5))
 ## FlowCharts and Diagrams
 [`DiagrammeR`](http://rich-iannone.github.io/DiagrammeR/) it is straightforward to generate flow charts from within any `rmarkdown` document. An example flowchart:
 ```{r warning=FALSE, message=FALSE}
-require(DiagrammeR)
+library(DiagrammeR)
 grViz("
   digraph {
     layout = twopi
@@ -190,4 +190,4 @@ Create a presentation about any topic you like that consists of at least 7 slide
 - cached r-code (may overlap with the next requirement)
 - r-code, executed, but not displayed (e.g. a figure generation)
 
-Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to GitHub. 
+Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to this year's GitHub repo. 
