@@ -8,12 +8,12 @@ output:
 ---
 
 # Intro {.sidebar}
-This dashboard covers the course materials for the course [***Markup Languages and Reproducible Programming in Statistics***](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202000010&collegejaar=2021&taal=en)
+This dashboard covers the course materials for the course [***Markup Languages and Reproducible Programming in Statistics***](https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202000010&collegejaar=2022&taal=en)
 
 ---
 
 <center>
-<a href='https://github.com/gerkovink/markup2021'><img src='sticker.png' height="139" /></a>
+<a href='https://github.com/gerkovink/markup2022'><img src='sticker.png' height="139" /></a>
 </center>
 
 ---
@@ -21,18 +21,18 @@ This dashboard covers the course materials for the course [***Markup Languages a
 Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
 Study load: 2.5 ECTS <br>
 Assessment: Final Assignment <br>
-[Course folder](https://github.com/gerkovink/markup2021)
+[Course folder](https://github.com/gerkovink/markup2022)
 
 ---
 
 |  When?  |      | Where? |
 |:--------|:-----|:-------|
-|  15-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
-|  29-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
-|  27-Oct | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
-|  03-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
-|  24-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
-|  08-Dec | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) |
+|  14-Sep | 9 am | Ruppert 011 |
+|  28-Sep | 9 am | Ruppert 011 |
+|  26-Oct | 9 am | Ruppert 011 |
+|  02-Nov | 9 am | Ruppert 011 |
+|  23-Nov | 9 am | Ruppert 011 |
+|  07-Dec | 9 am | Ruppert 011 |
 
 ---
 
@@ -63,12 +63,12 @@ In order to pass the course, the final grade must be 5.5 or higher, your contrib
 ### Schedule
 | When?   |      | Where? | What?                                   |
 |:--------|:-----|:-------|:----------------------------------------|
-|  15-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Monte Carlo simulation and `Git` |
-|  29-Sep | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Reproducible workflows and replication|
-|  27-Oct | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Typesetting equations with `LaTeX` |
-|  03-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Version control and `Github` in depth |
-|  24-Nov | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | Presentations with `rMarkdown` |
-|  08-Dec | 9 am | [BOL 2.110](https://goo.gl/maps/T9ucptWVg51VVb6u7) | `Github pages` and `Shiny` |
+|  14-Sep | 9 am | Ruppert 011 | Monte Carlo simulation and `Git` |
+|  28-Sep | 9 am | Ruppert 011 | Reproducible workflows and replication|
+|  26-Oct | 9 am | Ruppert 011 | Typesetting equations with `LaTeX` |
+|  02-Nov | 9 am | Ruppert 011 | Version control and `Github` in depth |
+|  23-Nov | 9 am | Ruppert 011 | Presentations with `rMarkdown` |
+|  07-Dec | 9 am | Ruppert 011 | `Github pages` and `Shiny` |
 
 ### For fun
 
@@ -136,7 +136,7 @@ Relevant documents that are used in the course and/or may provide useful additio
 The research repository has to be prepared as a supplementary archive that can serve as an extensive documentation of the research (e.g. as a supplement to be submitted to a journal). The archive has to be published in a public or private GitHub repository.
 
 #### Time schedule
-This course takes place in the first semester. The course will run over 6 meetings (Wednesdays 9-12am) during the semester, with the first meeting on September 15, 2021.
+This course takes place in the first semester. The course will run over 6 meetings (Wednesdays 9-12am) during the semester, with the first meeting on September 14, 2022.
 
 #### Prerequisites
 Students will need their own laptop computer. Students should have experience in programming with R and should be familiar with the IDE RStudio.
@@ -445,7 +445,7 @@ This week's documents:
 
 ## Column 1
 
-### Last year
+### Past
 
-Please find last year's iteration of this course [here](Archive/2019/index.html)
+Please find a sufficient different past iteration of this course [here](Archive/2019/index.html)
 
