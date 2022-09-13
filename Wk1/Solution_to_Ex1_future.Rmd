@@ -71,8 +71,9 @@ SIM <- future_map(1:nsim, function(x){
            upper = M + INT, 
            cov = M - INT < 0 & 0 < M + INT))
 }, 
-.options = furrr_options(seed = as.integer(123)), 
-.progress = TRUE) %>% do.call("rbind", args = .) %>% 
+.options = furrr_options(seed = 123), 
+.progress = TRUE) %>% 
+  do.call("rbind", args = .) %>% 
   as_tibble
 ```
 
