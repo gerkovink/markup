@@ -29,8 +29,8 @@ Assessment: Final Assignment <br>
 |:--------|:-----|:-------|
 |  14-Sep | 9 am | Ruppert 011 |
 |  28-Sep | 9 am | Ruppert 011 |
-|  26-Oct | 9 am | Ruppert 011 |
 |  02-Nov | 9 am | Ruppert 011 |
+|  09-Nov | 9 am | Ruppert 011 |
 |  23-Nov | 9 am | Ruppert 011 |
 |  07-Dec | 9 am | Ruppert 011 |
 
@@ -65,8 +65,8 @@ In order to pass the course, the final grade must be 5.5 or higher, your contrib
 |:--------|:-----|:-------|:----------------------------------------|
 |  14-Sep | 9 am | Ruppert 011 | Monte Carlo simulation and `Git` |
 |  28-Sep | 9 am | Ruppert 011 | Reproducible workflows and replication|
-|  26-Oct | 9 am | Ruppert 011 | Typesetting equations with `LaTeX` |
-|  02-Nov | 9 am | Ruppert 011 | Version control and `Github` in depth |
+|  02-Nov | 9 am | Ruppert 011 | Typesetting equations with `LaTeX` |
+|  09-Nov | 9 am | Ruppert 011 | Version control and `Github` in depth |
 |  23-Nov | 9 am | Ruppert 011 | Presentations with `rMarkdown` |
 |  07-Dec | 9 am | Ruppert 011 | `Github pages` and `Shiny` |
 
