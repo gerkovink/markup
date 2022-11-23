@@ -44,7 +44,7 @@ pre { /* Code block - determines code spacing between lines */
 
 Dear all, 
 
-This week we will learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork the last year's repository [here](https://github.com/gerkovink/markup2020) and checkout the `Exercise_wk4` branch.
+This week we will learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork the last year's repository [here](https://github.com/gerkovink/markup2020), deselect! `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
 
 Let's start. 
 
