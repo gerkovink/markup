@@ -47,14 +47,13 @@ output:
 
 ```
 <center>
-<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
-width = 40% />
+![](https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835){width=40%}
+
 </center>
 ```
 
 <center>
-<img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
-width = 40% />
+![](https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835){width=40%}
 </center>
 
 ## Another figure
@@ -68,8 +67,10 @@ width = 40% />
 
 <center>
 <img src = "https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512835" 
-width = 40% >
+width = 40% />
 </center>
+
+
 
 ## Another figure
 ```
@@ -101,6 +102,26 @@ library(dygraphs)
 dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)") 
 ```
 
+## `R` figures
+```{r eval = FALSE}
+library(ggplot2, warn.conflicts = FALSE)
+library(plotly, warn.conflicts = FALSE)
+p <- ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point() +
+  geom_smooth(se = FALSE, method = lm) 
+p %>% ggplotly()
+```
+
+## `R` figures
+```{r echo = FALSE,message=FALSE}
+library(ggplot2, warn.conflicts = FALSE)
+library(plotly, warn.conflicts = FALSE)
+p <- ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point() +
+  geom_smooth(se = FALSE, method = lm) 
+p %>% ggplotly()
+```
+
 ## Equations
 
 - `$\mu$` is used for in-line equations
@@ -117,6 +138,40 @@ Where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something f
 
 Let's assume that $y$ is a vector with $N$ elements such that $$y \sim  \mathcal{N}(\mu, \sigma^2),$$
 where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $Y_i$ with $i = 1, \dots, N$.
+
+## Columns
+```
+<div style="float: left; width: 60%;">
+![](image.png){width=90%}
+</div>
+
+<div style="float: right; width: 40%;">
+YOUR TEXT
+</div>
+
+<div style="clear: both;"></div>
+REMAINDER OF THE SLIDE WITHOUT COLUMNS
+```
+
+## Columns
+<div style="float: left; width: 60%;">
+![](https://www.gerkovink.com/rabobank/files/L4/img/8.%20prediction_intervals.png){width=90%}
+</div>
+
+<div style="float: right; width: 40%;">
+Prediction intervals can also be hugely informative!
+
+Prediction intervals are generally wider than confidence intervals
+
+- This is because it covers inherent uncertainty in the data point on top of sampling uncertainty
+- Just like CIs, PIs will become more narrow (for locations) where more information is observed (less uncertainty)
+- Usually this is at the location of the mean of the predicted values.
+</div>
+<div style="clear: both;"></div>
+
+<center>
+**Narrower intervals mean less uncertainty. It does not mean less bias!**
+</center>
 
 
 ## Tables
