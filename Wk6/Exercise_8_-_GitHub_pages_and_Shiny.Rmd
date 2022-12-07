@@ -71,8 +71,13 @@ For more advanced customizibility, have a look at the following links
 
 ---
 
-# Alternative to `Jekyll`
-I personally prefer [`hugo`](https://gohugo.io) over [`Jekyll`](https://jekyllrb.com) for personal webpages. `hugo` is even more minimalistic to maintain as it is fully `markdown` and `yaml` (e.g. `rmarkdown`'s header is `yaml`) based. Best of all, `hugo` integrates seamlessly into the git workflow. Use the [`hugo quickstart`](https://gohugo.io/getting-started/quick-start) to set up your first `hugo` page locally.
+# `hugo`: an alternative to `Jekyll`
+I personally prefer [`hugo`](https://gohugo.io) over [`Jekyll`](https://jekyllrb.com) for personal webpages. `hugo` is even more minimalistic to maintain as it is fully `markdown` and `yaml` (e.g. `rmarkdown`'s header is `yaml`) based. Best of all, `hugo` integrates seamlessly into the git workflow. Use the [`hugo quickstart`](https://gohugo.io/getting-started/quick-start) to set up your first `hugo` page locally. If you want, you can have GitHub auto-deploy your site with [a relevant GitHub build and deploy action](https://github.com/peaceiris/actions-hugo). This allows you to push changes to your website repository `main` branch and have `GitHub` run `hugo` and `publish` your site. 
+
+---
+
+# `Quarto`: an alternative to `hugo`
+Live has become much simpler with [`Quarto` websites](https://quarto.org/docs/websites/). It borrows from well-implemented languages and constructs from `Jekyll`, `hugo`, `javascript`, `html`, `scss`, etc. It's so simple that anyone can now build a good-looking website with very limited knowledge, as long as they know a bit of markdown and can use RStudio. 
 
 ---
 
