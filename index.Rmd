@@ -432,6 +432,9 @@ This week's documents:
 - [Exercise 8.html](Wk6/Exercise_8_-_GitHub_pages_and_Shiny.html)
 - [Exercise 8.Rmd](https://raw.githubusercontent.com/gerkovink/markup/master/Wk6/Exercise_8_-_GitHub_pages_and_Shiny.Rmd)
 
+### Sync again
+If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5GB account on [Sync.com](https://www.sync.com/?_sync_refer=d609f9a50). If you use [this link](https://www.sync.com/?_sync_refer=d609f9a50) you'll get a free additional 1GB - so 6GB of super-secure storage. Don't lose your 2FA recovery keys, though!
+
 ### For fun
 <div> 
 <center>
@@ -447,5 +450,5 @@ This week's documents:
 
 ### Past
 
-Please find a sufficient different past iteration of this course [here](Archive/2019/index.html)
+Please find a sufficiently different past iteration of this course [here](Archive/2019/index.html)
 
