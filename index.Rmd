@@ -452,3 +452,24 @@ If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5
 
 Please find a sufficiently different past iteration of this course [here](Archive/2019/index.html)
 
+# Deliverables
+
+## Column 1
+
+### Markup Manuscript
+Your markup manuscript may be anything, but be aware that it is must be gradeable. We do not grade your manuscript on content and theoretical soundness, but will assess the visual and organizational aspects of your manuscript. Your markup manuscript must prove that you can produce a publication up to the typesetting standards of international peer-reviewed journals. So include equations, tables, figures, references, etcetera. 
+
+
+### Research Repository
+You should develop and publish a research archive that demonstrates a reproducible workflow. The archive should contain code, data and (if applicable) the typeset markup manuscript detailed above. Examples of research archives are:
+
+1. [https://github.com/gerkovink/Pooling_MI](https://github.com/gerkovink/Pooling_MI)
+2. [https://github.com/gerkovink/evaluation](https://github.com/gerkovink/evaluation)
+3. [https://github.com/gerkovink/simulate](https://github.com/gerkovink/simulate)
+
+### Personal Repository
+You should showcase yourself in a personal website, a well-covered quarto or rmarkdown document, a thoroughly designed CV. Examples are:
+
+1. [www.gerkovink.com](https://www.gerkovink.com)
+2. [hanneoberman.github.io](https://hanneoberman.github.io)
+3. [thomvolker.github.io](https://thomvolker.github.io)
