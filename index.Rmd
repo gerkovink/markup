@@ -473,3 +473,26 @@ You should showcase yourself in a personal website, a well-covered quarto or rma
 1. [www.gerkovink.com](https://www.gerkovink.com)
 2. [hanneoberman.github.io](https://hanneoberman.github.io)
 3. [thomvolker.github.io](https://thomvolker.github.io)
+
+### How to hand in your deliverables
+Send us (Hanne & Gerko) an e-mail with either
+
+- 3 links if your deliverables are online (e.g. github or some cloud service). One link for each deliverable
+- 1 zip folder with 3 subfolders that contain the respective deliverables
+- an email to set up an appointment to view your deliverables if it is all supersecret or private (e.g CBS data, Patient data, etc)
+- any combination of the above, for any reason you deem valid. As long as it details the why and how we can(not) obtain your deliverables.
+
+### How to deal with non-CRAN code
+If it is a package on GitHub, then you can easily install that with the `devtools` package. For example, the following line of code would install from my GitHub repo the `mice` package from respectively the main branch and from branch `estimice`. 
+```{r eval=FALSE}
+devtools::install_github("gerkovink/mice")
+devtools::install_github("gerkovink/mice@estimice")
+```
+
+If it is not a package, but rather a series of scripts that is needed for your research archive, you can simply `load()` [workspaces] or `source()` [scripts] the `url()` in `R`. For example, 
+
+```{r eval=FALSE}
+load(url("https://www.gerkovink.com/yourdata.RData"))
+```
+
+Alternatively, given that the author has allowed you to do so, you can also download the code and add it to your archive with e.g. a header and readme that indicate where you've obtained the source code. If you alter any code for which the source is GNU GPL v3 licences, your source needs to be open too if you intend to share it.  
