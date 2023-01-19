@@ -484,14 +484,14 @@ Send us (Hanne & Gerko) an e-mail with either
 
 ### How to deal with non-CRAN code
 If it is a package on GitHub, then you can easily install that with the `devtools` package. For example, the following line of code would install from my GitHub repo the `mice` package from respectively the main branch and from branch `estimice`. 
-```{r eval=FALSE}
+```{r eval=FALSE, echo=TRUE}
 devtools::install_github("gerkovink/mice")
 devtools::install_github("gerkovink/mice@estimice")
 ```
 
 If it is not a package, but rather a series of scripts that is needed for your research archive, you can simply `load()` [workspaces] or `source()` [scripts] the `url()` in `R`. For example, 
 
-```{r eval=FALSE}
+```{r eval=FALSE, echo=TRUE}
 load(url("https://www.gerkovink.com/yourdata.RData"))
 ```
 
