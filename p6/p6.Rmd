@@ -1,0 +1,50 @@
+---
+title: "Practical 6: Robust results"
+subtitle: "Markup Languages and Reproducible Programming in Statistics"
+author: "Gerko Vink and Hanne Oberman"
+date: "Updated: `r format(Sys.time(), '%Y-%m-%d')`"
+params:
+  answers: true
+output: 
+   bookdown::html_document2:
+    toc: true
+    toc_depth: 1
+    toc_float: true
+    number_sections: true
+    css: "../resources/style.css"
+---
+
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(dplyr)
+library(magrittr)
+
+## Define an asis engine that will evaluate inline code within an asis block:
+knit_engines$set(asis = function(options) {
+  if(options$echo && options$eval) knit_child(text = options$code)
+}
+)
+
+opts_chunk$set(include = params$answers, 
+               echo = params$answer, 
+               message = FALSE,
+               warning = FALSE)
+```
+
+---
+
+In this practical you'll learn ...
+
+---
+
+# Excercises
+
+
+
+---
+
+# Deliverables
+
+
+---

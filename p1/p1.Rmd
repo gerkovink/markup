@@ -1,0 +1,145 @@
+---
+title: "Practical 1: Introduction to markup languages"
+subtitle: "Markup Languages and Reproducible Programming in Statistics"
+author: "Gerko Vink and Hanne Oberman"
+date: "Updated: `r format(Sys.time(), '%Y-%m-%d')`"
+params:
+  answers: true
+output: 
+   bookdown::html_document2:
+    toc: true
+    toc_depth: 1
+    toc_float: true
+    number_sections: true
+    css: "../resources/style.css"
+---
+
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(dplyr)
+library(magrittr)
+
+## Define an asis engine that will evaluate inline code within an asis block:
+knit_engines$set(asis = function(options) {
+  if(options$echo && options$eval) knit_child(text = options$code)
+}
+)
+
+opts_chunk$set(include = params$answers, 
+               echo = params$answer, 
+               message = FALSE,
+               warning = FALSE)
+```
+
+---
+
+In this practical you'll learn the basics of $\LaTeX$.
+
+# Mathematical notation
+
+Anything that is presented between `$`-signs is printed as a mathematical element: the use of `$` makes $\LaTeX$ enter *math mode*. Most often, the `$` operator is used to denote in-line equations. For example, `$y_i = a + \beta x_i + \epsilon_i$` is printed as $y_i = a + \beta x_i + \epsilon_i$. To find out what the `tex` code for the mathematical notation elements is (and much more) have a look at the [`Math Symbols`](LaTeX background/Math in LaTeX/Math Symbols.pdf) document on [this week's course page](https://www.gerkovink.com/markup/#week-2)  
+
+To present mathematical equations, use
+
+    \begin{equation}
+    y_i = a + \beta x_i + \epsilon_i.
+    \end{equation}
+
+to produce
+
+$$y_i = a + \beta x_i + \epsilon_i.$$
+
+In `tex` these will be numbered. To omit equation numbering, use `\begin{equation*}` (which requires the `amsmath` package - add `\usepackage(amsmath)` to your document's preamble). 
+
+We define a set of equations as
+
+    \begin{equation}
+        a=b+c^2,
+    \end{equation}
+    \begin{equation}
+    	a-c^2=b,
+    \end{equation}
+    \begin{equation}
+    	\text{left side} = \text{right side},
+    \end{equation}
+    \begin{equation}
+    	\text{left side} + \text{something} \geq \text{right side},
+    \end{equation}
+    for all $\text{something} > 0$. 
+
+
+$$
+      a=b+c^2,\\
+    	a-c^2=b, \\
+    	\text{left side} = \text{right side}, \\
+    	\text{left side} + \text{something} \geq \text{right side}, \\
+$$
+
+for all $\text{something} > 0$.
+
+<!-- %%%%%%%%%% -->
+<!-- \subsection{Aligning the same equations} -->
+<!-- \begin{frame} -->
+<!-- \frametitle{Aligning the same equations} -->
+<!--     Aligning the equations by the equal sign gives a much better view into the placements of the separate equation components.  -->
+<!--     \begin{align} -->
+<!--     	a&=b+c^2,\\ -->
+<!--     	a-c^2&=b,\\ -->
+<!--     	\text{left side} &= \text{right side},\\ -->
+<!--     	\text{left side} + \text{something} & \geq \text{right side}, -->
+<!--     \end{align} -->
+<!-- \end{frame} -->
+
+<!-- %%%%%%%%%% -->
+<!-- \subsection{Omit equation numbering} -->
+<!-- \begin{frame} -->
+<!-- \frametitle{Omit equation numbering} -->
+<!--     Alternatively, the equation numbering can be omitted.  -->
+<!--     \begin{align*} -->
+<!--     	a&=b+c^2\\ -->
+<!--     	a-c^2&=b\\ -->
+<!--     	\text{left side} &= \text{right side}\\ -->
+<!--     	\text{left side} + \text{something} & \geq \text{right side} -->
+<!--     \end{align*} -->
+<!-- \end{frame} -->
+
+<!-- %%%%%%%%%% -->
+<!-- \subsection{Ugly alignment} -->
+<!-- \begin{frame} -->
+<!-- \frametitle{Ugly alignment} -->
+<!-- Some components do not look well, when aligned. Especially equations with different heights and spacing. For example,  -->
+<!-- \begin{align} -->
+<!-- E&=mc^2,\\ -->
+<!-- m&=\frac{E}{c^2},\\ -->
+<!-- c&=\sqrt{\frac{E}{m}}. -->
+<!-- \end{align} -->
+<!-- Take that into account.  -->
+<!-- \end{frame} -->
+
+# References
+
+Instead of manually adding citations, we can use `bibtex`.
+
+# Latexdiff
+
+
+# Latex in markdown
+
+Raw $\LaTeX$ can be used via `$X \sim \mathcal{N}(\mu,\,\sigma^{2})$` to render $X \sim \mathcal{N}(\mu,\,\sigma^{2})$ as in-line equation. However, the same can be obtained as displayed equation via `$$X \sim \mathcal{N}(\mu,\,\sigma^{2})$$` to render 
+
+$$X \sim \mathcal{N}(\mu,\,\sigma^{2})$$
+we will explore how to use $\LaTeX$ for mathematical notation. 
+
+
+
+---
+
+# Excercises
+
+2. Study the `AMS example file.pdf` and `AMS example file.tex` to get yourself acquainted with mathematical notation in `tex`. 
+
+
+# Deliverables
+
+Create a document with bib file.
