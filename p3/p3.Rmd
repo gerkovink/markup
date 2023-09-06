@@ -36,6 +36,10 @@ opts_chunk$set(include = params$answers,
 
 In this practical you'll learn ...
 
+See also: RDM support book [Best Practices for Writing Reproducible Code](https://utrechtuniversity.github.io/workshop-computational-reproducibility/) and info page [GitHub and Git for research and teaching](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/github-and-git).
+
+---
+
 Dear all, 
 
 To document our activity and our changes in detail, we'll use [`Git`](https://git-scm.com). You can view `Git` as the ability to go back in time. Back to the very beginning of your project. A bonus: `Git` integrates nicely with `RStudio`. In this exercise we will learn 

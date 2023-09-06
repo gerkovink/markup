@@ -36,6 +36,8 @@ opts_chunk$set(include = params$answers,
 
 In this practical you'll learn the basics of `markdown` with `Rmd`, `qmd`, and GitHub flavored `md`.
 
+See also: [this blog post](https://www.pipinghotdata.com/posts/2022-01-24-report-ready-pdf-tables-with-rmarkdown-knitr-kableextra-and-latex/) about prettier tables.
+
 ---
 
 # Rmarkdown

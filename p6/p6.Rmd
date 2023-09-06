@@ -36,6 +36,8 @@ opts_chunk$set(include = params$answers,
 
 In this practical you'll learn ...
 
+See also [this cheat sheet](https://github.com/UtrechtUniversity/FAIR-Cheatsheets).
+
 ---
 
 # Excercises
