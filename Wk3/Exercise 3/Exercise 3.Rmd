@@ -62,22 +62,7 @@ The [beamer theme matrix](https://www.hartwork.org/beamer-theme-matrix/) gives y
 
 ---
 
-# Mathematical notation
-Anything that is presented between `$`-signs is printed as a mathematical element: the use of `$` makes `LaTeX` enter *math mode*. Most often, the `$` operator is used to denote in-line equations. For example, `$y_i = a + \beta x_i + \epsilon_i$` is printed as $y_i = a + \beta x_i + \epsilon_i$. To find out what the `tex` code for the mathematical notation elements is (and much more) have a look at the [`Math Symbols`](LaTeX background/Math in LaTeX/Math Symbols.pdf) document on [this week's course page](https://www.gerkovink.com/markup/#week-2)  
 
-To present mathematical equations, use
-
-    \begin{equation}
-    y_i = a + \beta x_i + \epsilon_i.
-    \end{equation}
-
-to produce
-
-$$y_i = a + \beta x_i + \epsilon_i.$$
-
-In `tex` these will be numbered. To omit equation numbering, use `\begin{equation*}` (which requires the `amsmath` package - add `\usepackage(amsmath)` to your document's preamble). 
-
-So far the very brief intro. 
 
 ---
 

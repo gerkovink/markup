@@ -1,0 +1,94 @@
+---
+title: "Practical 4: Reprodicible research repositories"
+subtitle: "Markup Languages and Reproducible Programming in Statistics"
+author: "Gerko Vink and Hanne Oberman"
+date: "Updated: `r format(Sys.time(), '%Y-%m-%d')`"
+params:
+  answers: true
+output: 
+   bookdown::html_document2:
+    toc: true
+    toc_depth: 1
+    toc_float: true
+    number_sections: true
+    css: "../resources/style.css"
+---
+
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(dplyr)
+library(magrittr)
+
+## Define an asis engine that will evaluate inline code within an asis block:
+knit_engines$set(asis = function(options) {
+  if(options$echo && options$eval) knit_child(text = options$code)
+}
+)
+
+opts_chunk$set(include = params$answers, 
+               echo = params$answer, 
+               message = FALSE,
+               warning = FALSE)
+```
+
+---
+
+In this practical you'll learn ...
+
+As a statistician / data scientist / developer you'll need to master many skills. Some of these skills are made simple with tools. This week we'll bite the bullet by learning about two massively important tools for your toolset: **version controlling* and *simulation*.
+
+And in the meanwhile we'll also Monte Carlo simulate one of the most important concepts in statistics:
+
+4. Confidence Validity
+
+Design a study that:
+
+  a. Does something that requires RNG
+  b. Fixes the RNG seed
+  c. Replicates the results
+  d. Generates an reproducible archive/reprex/markdown
+  e. Will run on my machine without trouble (package installs may be excused)
+  f. Communicates the info of your session
+  
+When finished, push to your GitHub fork of [`markup2020`](https://github.com/gerkovink/markup2020) and create a `pull request`. 
+
+Monte Carlo simulation exercise
+
+1. Perform a small simulation that does the following:
+
+  a. Sample 100 samples from a standard normal distribution.
+  b. For each of these samples, calculate the following statistics for the mean:
+
+ - absolute bias
+ - standard error
+ - lower bound of the 95% confidence interval
+ - upper bound of the 95% confidence interval
+
+  c. Create a plot that demonstrates the following:
+
+***"A replication of the procedure that generates a 95% confidence interval
+that is centered around the sample mean would cover the population value at
+least 95 out of 100 times"*** [(Neyman, 1934)](https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjk4LaD6LrXAhUGC8AKHdATBhMQFggoMAA&url=http%3A%2F%2Fwww.stat.cmu.edu%2F~brian%2F905-2008%2Fpapers%2Fneyman-1934-jrss.pdf&usg=AOvVaw3KRw9DSklPihrYIM0_zRrC)
+
+  d. Present a table containing all simulated samples for which the resulting confidence interval does
+not contain the population value.
+
+2. Add the simulation and its results to the `Yourname/Assignment 1` folder
+3. Commit the changes to the repository
+4. Push to your `GitHub` fork
+5. Send a pull request to incorporate your changes into the `upstream/master` branch (i.e. `gerkovink/markup2020`)
+
+
+---
+
+# Excercises
+
+
+
+---
+
+# Deliverables
+
+
+---
