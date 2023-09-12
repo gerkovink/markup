@@ -1,0 +1,7 @@
+---
+title: "Week 2: Markdown in (most) flavors"
+subtitle: "Markdown, rMarkdown, GitHub flavored Markdown and Quarto"
+editor: source
+---
+
+![](https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg)
