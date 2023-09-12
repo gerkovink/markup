@@ -80,17 +80,26 @@ Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
 :::
 
 ## Deliverables
+You must submit a portfolio that proves
 
-You must submit as a portfolio the following
+1. That you can use markup languages for scientific manuscript writing
+2. That you can produce a reproducible repository that conforms to rigorous open science and computing standards
+3. That you can present this portfolio using markup languages
+4. That you are able to develop, test, maintain and host this portfolio
+
+## This means
+that you should cover at least
 
 - Markup manuscript in either $\LaTeX$ or `Quarto`
-- Research repository detailing a reproducible simulation with proper licencing and a DOI
+- Research repository detailing a reproducible simulation with proper licencing
 - Personal repository (website that showcases your work) hosted with GitHub pages.
 
-You also must submit one of
+and one of
 
 - An error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI
 - A Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free  [Shinyapps.io](https://www.shinyapps.io)
+
+A more comprehensive portfolio can result in extra credit in the form of a higher grade.
 
 # Understanding Markup
 

@@ -95,7 +95,7 @@
     "href": "slides/lec-1.html#deliverables",
     "title": "Welcome to MLaRPiS",
     "section": "Deliverables",
-    "text": "Deliverables\nYou must submit as a portfolio the following\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing and a DOI\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nYou also must submit one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io"
+    "text": "Deliverables\nYou must submit a portfolio that proves\n\nThat you can use markup languages for scientific manuscript writing\nThat you can produce a reproducible repository that conforms to rigorous open science and computing standards\nThat you can present this portfolio using markup languages\nThat you are able to develop, test, maintain and host this portfolio"
   },
   {
     "objectID": "slides/lec-1.html#what-is-markup",
@@ -299,5 +299,19 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "slides/lec-1.html#this-could-mean",
+    "href": "slides/lec-1.html#this-could-mean",
+    "title": "Welcome to MLaRPiS",
+    "section": "This could mean",
+    "text": "This could mean\nYou must submit as a portfolio the following\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing and a DOI\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nYou also must submit one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io"
+  },
+  {
+    "objectID": "slides/lec-1.html#this-means",
+    "href": "slides/lec-1.html#this-means",
+    "title": "Welcome to MLaRPiS",
+    "section": "This means",
+    "text": "This means\nthat you should cover at least\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nand one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io\n\nA more comprehensive portfolio can result in extra credit in the form of a higher grade."
   }
 ]
