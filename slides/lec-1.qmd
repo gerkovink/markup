@@ -11,8 +11,8 @@ author:
     email: h.i.oberman@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU
-date: today
-date-format: full
+date: 13 Sep 2023
+date-format: "D MMM YYYY"
 execute: 
   echo: true
 editor: source
@@ -139,7 +139,7 @@ A markup language is a system for annotating a document that provides **structur
     -   Web Services: Many web services and APIs return data in XML format, which is then processed and displayed by the application.
     -   RSS Feeds: Used by news websites and blogs to syndicate content, RSS feeds are XML documents that can be read by various applications.
 
-## ...
+## $E=MC^2$
 
 ::: callout-important
 Be careful with your online carbon footprint
@@ -174,35 +174,101 @@ Everything that you do online is either energy or costs energy. And cloud storag
 
 ## Why are we teaching you Markup?
 
+If you prefere lists: 
+
 -   Reproducibility (Wk2)
 -   Version controlling and Collaboration (Wk3)
 -   Consistent presentation
--   Time-saving
+-   Time-saving (After this course)
 -   Modular nature
--   Bibliography management
+-   Bibliography management (Wk1)
+-   Oh, Behave (Wk 1-6)
 
-Het is de standaard in wetenschap en we bereiden je voor op een wetenschappelijke carriere. 
-+ journal styles
+If you prefer arguments:
 
-# $\LaTeX$
+1. It is the standard in scientific publishing and research
+2. We prepare you for a career built on scientific principles
+3. Journal styles
 
-## Brief history of $\LaTeX$
+# About $\LaTeX$
+
+## The evolution of `TeX` and $\LaTeX$
+
+- TeX: Birth of a Typesetting Revolution
+
+  - 1978: Donald Knuth, a computer scientist, develops `TeX`, a typesetting
+  system.
+  - Motivation: Dissatisfaction with the quality of typesetting in his book,
+  ["The Art of Computer Programming"](https://www-cs-faculty.stanford.edu/~knuth/taocp.html).
+  - Key Features: Precise control over typography, mathematical typesetting,
+  and cross-referencing.
+
+- LaTeX: Building on TeX's Foundation
+
+  - Early 1980s: Leslie Lamport creates $\LaTeX$, a document preparation system based on `TeX`.
+  - Goal: Simplify the complex `TeX` formatting commands, making it more
+  accessible to a broader audience.
+  - Advantages: Provides document structure through commands like `\section` and
+  `\tableofcontents`.
+- TeX and $\LaTeX$: A Symbiotic Relationship
+
+  - $\LaTeX$ builds on the `TeX` typesetting engine, allowing users to create
+  professional documents and presentations.
+  - $\LaTeX$ packages extend functionality, catering to various types of
+  documents (e.g., articles, theses, presentations).
+
+## Precision 
+1. Unmatched Typography Precision: `TeX` and `LaTeX` excel at typesetting with precise control over fonts, layout, and mathematical notation.
+
+- Ideal for academic papers, theses, and publications with complex formatting requirements.
+
+2. Superior Mathematical Typesetting: `LaTeX`'s native support for mathematical notation makes it the go-to choice for scientists, engineers, and mathematicians.
+
+- No more MS equation editor
+
+3. Cross-Referencing and Bibliography Management: Effortlessly manage references and citations with BibTeX in `LaTeX`.
+
+- Automatic numbering, referencing, and bibliography generation.
+
+4. Collaboration and Version Control: `LaTeX` documents can be easily managed using version control systems like `Git` (Wk 3).
+
+- This makes it straightforward to collaborate simultaneously on the same text and documents. 
+
+## And...
+5. Professional Look and Feel: LaTeX produces documents with a professional and consistent appearance.
+
+ - This explains the popularity in academia, research, and publishing.
+
+6. LaTeX Ecosystem: A vast collection of packages and templates [is available on CTAN]() to cater to diverse document types.
+
+7. Long-Term Stability: Documents created with TeX and LaTeX have a long shelf life.
+
+  - Because `TeX` is software, it ensures compatibility across different platforms and software versions.
+
 
 ## Hands on
 
-- Introduction to $\LaTeX$:
-- Basics of $\LaTeX$ for scientific writing.
-- Incorporating equations and other elements.
+- Introduction to `LaTeX`:
+- Basics of `LaTeX` for scientific writing.
+- Incorporating equations.
+- Incorporating figures
 
 ## Compiling $\LaTeX$ with Overleaf
 
+A
+
 ## What is Overleaf
 
+B
+
 ## The Good and Bad
+C
 
 ## Latexdiff
+D
 
 ### How to `latexdiff` in theory and practice
+E
 
 ## Bibliography management
 
@@ -212,5 +278,7 @@ Het is de standaard in wetenschap en we bereiden je voor op een wetenschappelijk
 # Exit
 
 ## Topics covered so far
+F
 
 ## Next week
+G

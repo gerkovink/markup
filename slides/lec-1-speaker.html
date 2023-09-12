@@ -12,6 +12,7 @@
 
   <meta name="author" content="Gerko Vink">
   <meta name="author" content="Hanne Oberman">
+  <meta name="dcterms.date" content="2023-09-13">
   <title>Markup Languages and Reproducible Programming in Statistics - Welcome to MLaRPiS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -355,7 +356,7 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
     </div>
 </div>
 
-  <p class="date">Tuesday, September 12, 2023</p>
+  <p class="date">13 Sep 2023</p>
 </section>
 <section id="disclaimer" class="slide level2">
 <h2>Disclaimer</h2>
@@ -519,8 +520,8 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 </ul></li>
 </ul>
 </section>
-<section id="section" class="slide level2">
-<h2>…</h2>
+<section id="emc2" class="slide level2">
+<h2><span class="math inline">\(E=MC^2\)</span></h2>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -562,44 +563,119 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 </section>
 <section id="why-are-we-teaching-you-markup" class="slide level2">
 <h2>Why are we teaching you Markup?</h2>
+<p>If you prefere lists:</p>
 <ul>
 <li>Reproducibility (Wk2)</li>
 <li>Version controlling and Collaboration (Wk3)</li>
 <li>Consistent presentation</li>
-<li>Time-saving</li>
+<li>Time-saving (After this course)</li>
 <li>Modular nature</li>
-<li>Bibliography management</li>
+<li>Bibliography management (Wk1)</li>
+<li>Oh, Behave (Wk 1-6)</li>
 </ul>
-<p>Het is de standaard in wetenschap en we bereiden je voor op een wetenschappelijke carriere. + journal styles</p>
+<p>If you prefer arguments:</p>
+<ol type="1">
+<li>It is the standard in scientific publishing and research</li>
+<li>We prepare you for a career built on scientific principles</li>
+<li>Journal styles</li>
+</ol>
 </section></section>
 <section>
-<section id="latex" class="title-slide slide level1 center">
-<h1><span class="math inline">\(\LaTeX\)</span></h1>
+<section id="about-latex" class="title-slide slide level1 center">
+<h1>About <span class="math inline">\(\LaTeX\)</span></h1>
 
 </section>
-<section id="brief-history-of-latex" class="slide level2">
-<h2>Brief history of <span class="math inline">\(\LaTeX\)</span></h2>
+<section id="the-evolution-of-tex-and-latex" class="slide level2">
+<h2>The evolution of <code>TeX</code> and <span class="math inline">\(\LaTeX\)</span></h2>
+<ul>
+<li><p>TeX: Birth of a Typesetting Revolution</p>
+<ul>
+<li>1978: Donald Knuth, a computer scientist, develops <code>TeX</code>, a typesetting system.</li>
+<li>Motivation: Dissatisfaction with the quality of typesetting in his book, <a href="https://www-cs-faculty.stanford.edu/~knuth/taocp.html">“The Art of Computer Programming”</a>.</li>
+<li>Key Features: Precise control over typography, mathematical typesetting, and cross-referencing.</li>
+</ul></li>
+<li><p>LaTeX: Building on TeX’s Foundation</p>
+<ul>
+<li>Early 1980s: Leslie Lamport creates <span class="math inline">\(\LaTeX\)</span>, a document preparation system based on <code>TeX</code>.</li>
+<li>Goal: Simplify the complex <code>TeX</code> formatting commands, making it more accessible to a broader audience.</li>
+<li>Advantages: Provides document structure through commands like <code>\section</code> and <code>\tableofcontents</code>.</li>
+</ul></li>
+<li><p>TeX and <span class="math inline">\(\LaTeX\)</span>: A Symbiotic Relationship</p>
+<ul>
+<li><span class="math inline">\(\LaTeX\)</span> builds on the <code>TeX</code> typesetting engine, allowing users to create professional documents and presentations.</li>
+<li><span class="math inline">\(\LaTeX\)</span> packages extend functionality, catering to various types of documents (e.g., articles, theses, presentations).</li>
+</ul></li>
+</ul>
+</section>
+<section id="precision" class="slide level2">
+<h2>Precision</h2>
+<ol type="1">
+<li>Unmatched Typography Precision: <code>TeX</code> and <code>LaTeX</code> excel at typesetting with precise control over fonts, layout, and mathematical notation.</li>
+</ol>
+<ul>
+<li>Ideal for academic papers, theses, and publications with complex formatting requirements.</li>
+</ul>
+<ol start="2" type="1">
+<li>Superior Mathematical Typesetting: <code>LaTeX</code>’s native support for mathematical notation makes it the go-to choice for scientists, engineers, and mathematicians.</li>
+</ol>
+<ul>
+<li>No more MS equation editor</li>
+</ul>
+<ol start="3" type="1">
+<li>Cross-Referencing and Bibliography Management: Effortlessly manage references and citations with BibTeX in <code>LaTeX</code>.</li>
+</ol>
+<ul>
+<li>Automatic numbering, referencing, and bibliography generation.</li>
+</ul>
+<ol start="4" type="1">
+<li>Collaboration and Version Control: <code>LaTeX</code> documents can be easily managed using version control systems like <code>Git</code> (Wk 3).</li>
+</ol>
+<ul>
+<li>This makes it straightforward to collaborate simultaneously on the same text and documents.</li>
+</ul>
+</section>
+<section id="and" class="slide level2">
+<h2>And…</h2>
+<ol start="5" type="1">
+<li>Professional Look and Feel: LaTeX produces documents with a professional and consistent appearance.</li>
+</ol>
+<ul>
+<li>This explains the popularity in academia, research, and publishing.</li>
+</ul>
+<ol start="6" type="1">
+<li><p>LaTeX Ecosystem: A vast collection of packages and templates <a href="">is available on CTAN</a> to cater to diverse document types.</p></li>
+<li><p>Long-Term Stability: Documents created with TeX and LaTeX have a long shelf life.</p></li>
+</ol>
+<ul>
+<li>Because <code>TeX</code> is software, it ensures compatibility across different platforms and software versions.</li>
+</ul>
 </section>
 <section id="hands-on" class="slide level2">
 <h2>Hands on</h2>
 <ul>
-<li>Introduction to <span class="math inline">\(\LaTeX\)</span>:</li>
-<li>Basics of <span class="math inline">\(\LaTeX\)</span> for scientific writing.</li>
-<li>Incorporating equations and other elements.</li>
+<li>Introduction to <code>LaTeX</code>:</li>
+<li>Basics of <code>LaTeX</code> for scientific writing.</li>
+<li>Incorporating equations.</li>
+<li>Incorporating figures</li>
 </ul>
 </section>
 <section id="compiling-latex-with-overleaf" class="slide level2">
 <h2>Compiling <span class="math inline">\(\LaTeX\)</span> with Overleaf</h2>
+<p>A</p>
 </section>
 <section id="what-is-overleaf" class="slide level2">
 <h2>What is Overleaf</h2>
+<p>B</p>
 </section>
 <section id="the-good-and-bad" class="slide level2">
 <h2>The Good and Bad</h2>
+<p>C</p>
 </section>
 <section id="latexdiff" class="slide level2">
 <h2>Latexdiff</h2>
+<p>D</p>
 <h3 id="how-to-latexdiff-in-theory-and-practice">How to <code>latexdiff</code> in theory and practice</h3>
+<p>E</p>
 </section>
 <section id="bibliography-management" class="slide level2">
 <h2>Bibliography management</h2>
@@ -615,9 +691,11 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 </section>
 <section id="topics-covered-so-far" class="slide level2">
 <h2>Topics covered so far</h2>
+<p>F</p>
 </section>
 <section id="next-week" class="slide level2">
 <h2>Next week</h2>
+<p>G</p>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
