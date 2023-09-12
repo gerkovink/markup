@@ -31,7 +31,7 @@ website:
         text: "Gerko"
         menu:
           - text: Discussion and questions
-            url: https://github.com/gerkovink/markup/issues
+            url: https://github.com/gerkovink/markup2023/issues
           - text: Email
             url: mailto:g.vink@uu.nl
     style: "docked"
