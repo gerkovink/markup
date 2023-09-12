@@ -151,7 +151,14 @@
     "href": "course-support.html",
     "title": "Course support",
     "section": "",
-    "text": "placeholder"
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
+  },
+  {
+    "objectID": "course-support.html#support",
+    "href": "course-support.html#support",
+    "title": "Course support",
+    "section": "",
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
   },
   {
     "objectID": "course-syllabus.html",
@@ -305,6 +312,20 @@
     "href": "course-overview.html",
     "title": "Markup Languages and Reproducible Programming in Statistics",
     "section": "",
-    "text": "placeholder"
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#general-information",
+    "href": "course-overview.html#general-information",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "",
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "Course description",
+    "text": "Course description\nThis course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages (\\(\\LaTeX\\) and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career."
   }
 ]
