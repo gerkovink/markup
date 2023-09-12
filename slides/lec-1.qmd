@@ -248,37 +248,88 @@ If you prefer arguments:
 
 ## Hands on
 
-- Introduction to `LaTeX`:
-- Basics of `LaTeX` for scientific writing.
-- Incorporating equations.
-- Incorporating figures
+- Introduction to `LaTeX` and the basics of `LaTeX` for scientific writing. [see this week's lab](../weeks/week-1.qmd)
+- Incorporating equations. [background](https://www.gerkovink.com/oldmarkup/Wk3/Exercise%203/LaTeX%20background.zip)
+- Incorporating figures and tables. [background](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/LaTeX%20background.zip)
+<br><br>
 
-## Compiling $\LaTeX$ with Overleaf
+<center>
+![[source](https://xkcd.com/184/) and [LaTeX](../documents/Wk1/funny.tex)](images/lec-1/cos.png)
+</center>
 
-A
 
-## What is Overleaf
+## Collaborative LaTeX Editing with Overleaf
+Overleaf is an online `LaTeX` editor that allows users to create, edit, and collaborate on `LaTeX` documents in real time.
 
-B
+<center>
+![](images/lec-1/overleaf.png)
+</center>
 
-## The Good and Bad
-C
+It's a cloud-based platform that eliminates the need for local `LaTeX` installations and simplifies the collaborative writing process.
 
-## Latexdiff
-D
+## Benefits of Using Overleaf
 
-### How to `latexdiff` in theory and practice
-E
+- Collaborate with colleagues and teammates in real time, regardless of their physical location.
+- Multiple users can edit the same document simultaneously, making group projects efficient.
+- Device agnostic and therefore worry-free.
+- Overleaf integrates with Git, allowing users to track changes, revert to previous versions, and manage document history.
+- Overleaf offers a vast library of templates for various document types, including research papers, theses, presentations, and more.
+- Overleaf compiles `LaTeX` documents in the cloud, so you don't need to configure or run `LaTeX` locally.
+- It just works!
+
+---
+
+## Potential Challenges of Using Overleaf
+
+- Internet Dependency: Overleaf requires a stable internet connection. 
+
+- Limited Offline Access: Overleaf operates online, which means **no internet, no access*.
+
+- Privacy Concerns: Sensitive or confidential documents may not be uploaded to Overleaf. You should always consider data privacy.
+
+- Subscription Costs: basic Overleaf is free, but more advanced features and collaboration options are costly.
+
+---
+
+## `LaTeXdiff`
+**LaTeXdiff** is a tool (`PERL` script) used to highlight and track changes between two versions of a `LaTeX` document.
+
+It's particularly useful for collaborative writing and when reviewing or revising documents.
+
+### How `LaTeXdiff` Works
+
+`LaTeXdiff` operates by comparing two LaTeX files:
+
+  - The original version (e.g., `document-v1.tex`)
+  - The revised version (e.g., `document-v2.tex`)
+
+`LaTeXdiff` identifies differences in the text, equations, figures, and more. `LaTeXdiff` then generates a new `LaTeX` file highlighting these differences, using color coding, strikethrough and other visual cues.
+
+---
+
+### How to `LaTeXdiff` in theory and practice
+
+![](https://media.giphy.com/media/kHU8W94VS329y/giphy.gif?cid=ecf05e47kj68ftluib01mrjnkkxec7upge37eiizan3uurk2&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
 
 ## Bibliography management
 
-- Zotero --> Introduce Zotero as a tool for collecting, organizing, and citing research materials.
-- BibTeX --> Explain how BibTeX works in conjunction with LaTeX for citation management.
+- Zotero --> Hanne will introduce Zotero as a tool for collecting, organizing, and citing research materials.
+- BibTeX --> Gerko will say something about BibTeX in conjunction with LaTeX for citation management.
 
 # Exit
 
 ## Topics covered so far
-F
+- This course
+- Markup languages
+- `LaTeX`
+- Overleaf
+- `LaTeXdiff`
+- Zotero
 
-## Next week
-G
+## Next meeting
+**Markdown** + hand in the exercise in [this week's lab](../weeks/week-1.qmd)
+
+<center>
+![](https://media.giphy.com/media/3orif0Pxk3I4WQj46k/giphy.gif?cid=ecf05e47pt25knfnoi0lccqh5rmr1ssjcee3rq82d0sn3mxr&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+</center>

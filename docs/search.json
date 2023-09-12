@@ -4,7 +4,7 @@
     "href": "course-syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "placeholder"
+    "text": "The course website serves as syllabus. Background information, e.g. about course aims, can be found on Osiris."
   },
   {
     "objectID": "course-support.html",
@@ -46,7 +46,7 @@
     "href": "weeks/week-1.html",
     "title": "Week 1: Markup Languages",
     "section": "",
-    "text": "Important\n\n\n\nSome important message"
+    "text": "Important\n\n\n\nThis week’s slides can be found here"
   },
   {
     "objectID": "weeks/week-1.html#slides",
@@ -200,7 +200,7 @@
     "href": "slides/lec-1.html#hands-on",
     "title": "Welcome to MLaRPiS",
     "section": "Hands on",
-    "text": "Hands on\n\nIntroduction to LaTeX:\nBasics of LaTeX for scientific writing.\nIncorporating equations.\nIncorporating figures"
+    "text": "Hands on\n\nIntroduction to LaTeX and the basics of LaTeX for scientific writing. see this week’s lab\nIncorporating equations. background\nIncorporating figures and tables. background \n\n\n\n\n\nsource and LaTeX"
   },
   {
     "objectID": "slides/lec-1.html#compiling-latex-with-overleaf",
@@ -227,22 +227,22 @@
     "objectID": "slides/lec-1.html#latexdiff",
     "href": "slides/lec-1.html#latexdiff",
     "title": "Welcome to MLaRPiS",
-    "section": "Latexdiff",
-    "text": "Latexdiff\nD\nHow to latexdiff in theory and practice\nE"
+    "section": "LaTeXdiff",
+    "text": "LaTeXdiff\nLaTeXdiff is a tool (PERL script) used to highlight and track changes between two versions of a LaTeX document.\nIt’s particularly useful for collaborative writing and when reviewing or revising documents.\nHow LaTeXdiff Works\nLaTeXdiff operates by comparing two LaTeX files:\n\nThe original version (e.g., document-v1.tex)\nThe revised version (e.g., document-v2.tex)\n\nLaTeXdiff identifies differences in the text, equations, figures, and more. LaTeXdiff then generates a new LaTeX file highlighting these differences, using color coding, strikethrough and other visual cues."
   },
   {
     "objectID": "slides/lec-1.html#bibliography-management",
     "href": "slides/lec-1.html#bibliography-management",
     "title": "Welcome to MLaRPiS",
     "section": "Bibliography management",
-    "text": "Bibliography management\n\nZotero –&gt; Introduce Zotero as a tool for collecting, organizing, and citing research materials.\nBibTeX –&gt; Explain how BibTeX works in conjunction with LaTeX for citation management."
+    "text": "Bibliography management\n\nZotero –&gt; Hanne will introduce Zotero as a tool for collecting, organizing, and citing research materials.\nBibTeX –&gt; Gerko will say something about BibTeX in conjunction with LaTeX for citation management."
   },
   {
     "objectID": "slides/lec-1.html#topics-covered-so-far",
     "href": "slides/lec-1.html#topics-covered-so-far",
     "title": "Welcome to MLaRPiS",
     "section": "Topics covered so far",
-    "text": "Topics covered so far\nF"
+    "text": "Topics covered so far\n\nThis course\nMarkup languages\nLaTeX\nOverleaf\nLaTeXdiff\nZotero"
   },
   {
     "objectID": "slides/lec-1.html#next-week",
@@ -256,7 +256,7 @@
     "href": "portfolio.html",
     "title": "Project description",
     "section": "",
-    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nVideo presentation + slides and final GitHub repo due Thu, Apr 28\nPresentation comments due Sat, Apr 30"
+    "text": "This course is graded by means of a portfolio. Students collect evidence of their ability to:\n\nUse markup languages for scientific manuscript writing\nProduce a reproducible repository that conforms to rigorous open science and computing standards\nPresent this portfolio using markup languages\nDevelop, test, maintain and host this portfolio."
   },
   {
     "objectID": "portfolio.html#timeline",
@@ -341,5 +341,89 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "weeks/week-1.html#installing-a-tex-framework",
+    "href": "weeks/week-1.html#installing-a-tex-framework",
+    "title": "Week 1: Markup Languages",
+    "section": "Installing a TeX framework",
+    "text": "Installing a TeX framework\nIf you are on Windows or Linux, I suggest you install the easy to install ProTeXt distribution or the TexLive distribution. If you are on a Mac, the MacTex distribution will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent (but basic) editor (Texworks in Texlive and TexShop in MacTex), but if you want to go the fancy way: there are very good alternatives. See this page for a comprehensive overview of all TeX editors and code editors with TeX capabilities.\nAlternatively, you can use the online TeX editor Overleaf. Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors."
+  },
+  {
+    "objectID": "weeks/week-1.html#the-mlrps-latex-template",
+    "href": "weeks/week-1.html#the-mlrps-latex-template",
+    "title": "Week 1: Markup Languages",
+    "section": "The MLRPS \\(\\LaTeX\\) template",
+    "text": "The MLRPS \\(\\LaTeX\\) template\nOpen the file LaTeX_template.tex from the course page. This file is a template that you may use for your documents in this course. The file LaTeX_template.pdf is the typeset version of this document (the output result). We will go through the document line-by-line:\n\n\\documentclass[10pt, fullpage, a4paper, titlepage]{article}\n\nThis is the line that tells Tex what the class of the document is and how it should be interpreted dimension-wise. In this situation, we use a 10 point font size (options are 10, 11 and 12 point), use the full page, use A4 paper size (as opposed to e.g. US letter format) and require a titlepage. The class of the document is set to be article. There are many deviations from the defaults. A simple online search usually gets you the option you desire.\n\\usepackage{graphicx, latexsym}\n\\usepackage{setspace}\n\\usepackage{apalike}\n\\usepackage{amssymb, amsmath, amsthm}\n\\usepackage{bm}\n\\usepackage{epstopdf}\n\\usepackage[]{hyperref}\nWe load these packages by default, because they sum up pretty much everything needed to begin working with LaTeX as a statistician. They govern devices such as graphics, mathematical notation (normal and bold face), and so on. Package hyperref is particularly interesting, because it allows you to set the meta-info for your document and it allows you to specify the way links and references in your document are treated. Meta-info is needed to make your documents indexable and, hence, more visible to you and everyone on the internet (if your document is on the internet).\n\\hypersetup{\npdftitle={title of the pdf},\npdfauthor={your name},\npdfsubject={cool stuff},\npdfkeywords={koala, chuck norris},\nbookmarksnumbered=true,     \nbookmarksopen=true,         \nbookmarksopenlevel=1,       \ncolorlinks=true,            \npdfstartview=Fit,           \npdfpagemode=UseOutlines,      \npdfpagelayout=TwoPageRight\n}\nThese are the options set for package hyperref. You can specify the document and author information and add keywords. The other options are also relevant, but we will not discuss them now.\n%\\singlespacing\n%\\onehalfspacing\n\\doublespacing\nIf you like to have a single-spaced document (commented out by %, so not executed), a one-and-a-half-spaced document (commented out by %, so also not executed) or a double-spaced document (not commented out by %, so executed), these options from package setspace are very handy.\n\\title{title of your paper\\\\ \\small subtitle of your paper}\n\\author{name}\n%\\date{\\today}\n\\date{}\nGive titlepage information. We have set a title and a smaller subtitle. A line-break in tex is denoted by \\\\, although most of the times you won’t need to use this as tex takes care of this for you in most situations. The \\small command tells tex that the remainder of this textbox is to be printed in a smaller font. All functions in tex are preceded by \\. So, \\author{} is the function for author, \\date{} the function for the date and \\today the function that prints todays date.\nUp until now, we have not done anything. No code is executed. We have just been considering the preample of a tex document. To start a document, we use \\begin{document}.\n\\begin{document}\nWe can then tell tex to print the titlepage information that we assigned (title, author, date)\n\\maketitle\nand continue the document on a new page:\n\\newpage\nWe start the first section, labelled abstract:\n\\section*{Abstract}\ntext of abstract\nThen a section called Introduction:\n\\section{Introduction}\ntext introduction\nWith a subsection called sub introduction:\n\\subsection{sub introduction}\ntext text text\nAnd we end the document by the \\end{} command.\n\\end{document}\n\n\n\n\n\n\n\nExercise on TeX classes - click to expand\n\n\n\n\n\nIn this optional exercise you can make yourself familiar with some of the TeX classes. A class is a clear definition of the type of document. There are classes for books, articles, letters, resumes, and so on. There are even classes for journals and bookseries by publishers, such as Springer, Elsevier, CRC and Sage.\nClasses are usually linked to style files, the files that define the looks of a document. Have a look at the LaTeX background archive if you’d like to know more about how classes and styles make documents look different. It is important to realize that not every document by default accommodates for the type of content. Some classes make some content look ridiculous. Imagine printing an A5 document on an A1 canvas, or submitting a job application as a statistical journal manuscript. Choosing a proper class is therefore essential. The good thing with LaTeX is that different classes can easily be applied to the same content.\n\nExercise\nUse the text in the Virgil - Aeneid.rtf file as the content for the following five documents:\n\nAn article with 12 point font size on US letter paper.\nA book with 10 point font size on A4 paper.\nA book with 10 point font size on A5 paper.\nA minimal document with 12 point font size on A5 paper.\nA letter with 12 point font size on A5 paper.\n\nYou just need to specify the paragraphs correctly. The solution to this exercise can be found here"
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
+  },
+  {
+    "objectID": "course-team.html#instructors",
+    "href": "course-team.html#instructors",
+    "title": "Teaching team",
+    "section": "",
+    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
+  },
+  {
+    "objectID": "weeks/week-1.html#the-structure-of-a-latex-document",
+    "href": "weeks/week-1.html#the-structure-of-a-latex-document",
+    "title": "Week 1: Markup Languages",
+    "section": "The structure of a LaTeX document",
+    "text": "The structure of a LaTeX document\nOpen the file LaTeX_template.tex from the course page. This file is a template that you may use for your documents in this course. The file LaTeX_template.pdf is the typeset version of this document (the output result). We will go through the document line-by-line:\n\n\\documentclass[10pt, fullpage, a4paper, titlepage]{article}\n\nThis is the line that tells Tex what the class of the document is and how it should be interpreted dimension-wise. In this situation, we use a 10 point font size (options are 10, 11 and 12 point), use the full page, use A4 paper size (as opposed to e.g. US letter format) and require a titlepage. The class of the document is set to be article. There are many deviations from the defaults. A simple online search usually gets you the option you desire.\n\n    \\usepackage{graphicx, latexsym}\n    \\usepackage{setspace}\n    \\usepackage{apalike}\n    \\usepackage{amssymb, amsmath, amsthm}\n    \\usepackage{bm}\n    \\usepackage{epstopdf}\n    \\usepackage[]{hyperref}\n\nWe load these packages by default, because they sum up pretty much everything needed to begin working with LaTeX as a statistician. They govern devices such as graphics, mathematical notation (normal and bold face), and so on. Package hyperref is particularly interesting, because it allows you to set the meta-info for your document and it allows you to specify the way links and references in your document are treated. Meta-info is needed to make your documents indexable and, hence, more visible to you and everyone on the internet (if your document is on the internet).\n\n    \\hypersetup{\n    pdftitle={title of the pdf},\n    pdfauthor={your name},\n    pdfsubject={cool stuff},\n    pdfkeywords={koala, chuck norris},\n    bookmarksnumbered=true,     \n    bookmarksopen=true,         \n    bookmarksopenlevel=1,       \n    colorlinks=true,            \n    pdfstartview=Fit,           \n    pdfpagemode=UseOutlines,      \n    pdfpagelayout=TwoPageRight\n    }\n\nThese are the options set for package hyperref. You can specify the document and author information and add keywords. The other options are also relevant, but we will not discuss them now.\n\n    %\\singlespacing\n    %\\onehalfspacing\n    \\doublespacing\n\nIf you like to have a single-spaced document (commented out by %, so not executed), a one-and-a-half-spaced document (commented out by %, so also not executed) or a double-spaced document (not commented out by %, so executed), these options from package setspace are very handy.\n\n    \\title{title of your paper\\\\ \\small subtitle of your paper}\n    \\author{name}\n    %\\date{\\today}\n    \\date{}\n\nGive titlepage information. We have set a title and a smaller subtitle. A line-break in tex is denoted by \\\\, although most of the times you won’t need to use this as tex takes care of this for you in most situations. The \\small command tells tex that the remainder of this textbox is to be printed in a smaller font. All functions in tex are preceded by \\. So, \\author{} is the function for author, \\date{} the function for the date and \\today the function that prints todays date.\nUp until now, we have not done anything. No code is executed. We have just been considering the preample of a tex document. To start a document, we use \\begin{document}.\n\n    \\begin{document}\n\nWe can then tell tex to print the titlepage information that we assigned (title, author, date)\n\n    \\maketitle\n\nand continue the document on a new page:\n\n    \\newpage\n\nWe start the first section, labelled abstract:\n\n    \\section*{Abstract}\n    text of abstract\n\nThen a section called Introduction:\n\n    \\section{Introduction}\n    text introduction\n\nWith a subsection called sub introduction:\n\n    \\subsection{sub introduction}\n    text text text\n\nAnd we end the document by the \\end{} command.\n\n    \\end{document}\n\n\n\n\n\n\n\n\nExercise on TeX classes - click to expand\n\n\n\n\n\nIn this optional exercise you can make yourself familiar with some of the TeX classes. A class is a clear definition of the type of document. There are classes for books, articles, letters, resumes, and so on. There are even classes for journals and bookseries by publishers, such as Springer, Elsevier, CRC and Sage.\nClasses are usually linked to style files, the files that define the looks of a document. Have a look at the LaTeX background archive if you’d like to know more about how classes and styles make documents look different. It is important to realize that not every document by default accommodates for the type of content. Some classes make some content look ridiculous. Imagine printing an A5 document on an A1 canvas, or submitting a job application as a statistical journal manuscript. Choosing a proper class is therefore essential. The good thing with LaTeX is that different classes can easily be applied to the same content.\n\nExercise\nUse the text in the Virgil - Aeneid.rtf file as the content for the following five documents:\n\nAn article with 12 point font size on US letter paper.\nA book with 10 point font size on A4 paper.\nA book with 10 point font size on A5 paper.\nA minimal document with 12 point font size on A5 paper.\nA letter with 12 point font size on A5 paper.\n\nYou just need to specify the paragraphs correctly. The solution to this exercise can be found here"
+  },
+  {
+    "objectID": "weeks/week-1.html#re-running-tex-after-bibtex",
+    "href": "weeks/week-1.html#re-running-tex-after-bibtex",
+    "title": "Week 1: Markup Languages",
+    "section": "Re-running tex after bibtex",
+    "text": "Re-running tex after bibtex\nThis is important. In fact, it is so important (and a common error by students and experts) that I devote a seperate paragraph to it! bibtex and tex are NOT the same and their code has not by default run simultaneously –&gt; you need the following order:\n\ncompile (or set) your tex code\ncompile your bibtex environment\nre-compile your tex code to include the stuff bibtex produced\nre-compile your tex code to process and print the tex vs bibtex implementation\n\nDepending on the software you use to write in tex, you can automate this procedure to always include bibtex when compiling your tex code. I choose not too, but that is my personal preference (running redundant commands every time is just a waste of time and resources, even when it is fast). But ‘whatever floats your boat’."
+  },
+  {
+    "objectID": "weeks/week-1.html#handing-in-the-exercise",
+    "href": "weeks/week-1.html#handing-in-the-exercise",
+    "title": "Week 1: Markup Languages",
+    "section": "Handing in the exercise",
+    "text": "Handing in the exercise\nCreate a zipped archive of your all necessary (e.g. .bib .tex and .pdf files and upload it to the correct folder (Wk1) via Add File &gt; Upload Files in the course collaboration repository. Name the file yourname.zip.\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "slides/lec-1.html#collaborative-latex-editing-with-overleaf",
+    "href": "slides/lec-1.html#collaborative-latex-editing-with-overleaf",
+    "title": "Welcome to MLaRPiS",
+    "section": "Collaborative LaTeX Editing with Overleaf",
+    "text": "Collaborative LaTeX Editing with Overleaf\nOverleaf is an online LaTeX editor that allows users to create, edit, and collaborate on LaTeX documents in real time.\n\n\n\nIt’s a cloud-based platform that eliminates the need for local LaTeX installations and simplifies the collaborative writing process."
+  },
+  {
+    "objectID": "slides/lec-1.html#benefits-of-using-overleaf",
+    "href": "slides/lec-1.html#benefits-of-using-overleaf",
+    "title": "Welcome to MLaRPiS",
+    "section": "Benefits of Using Overleaf",
+    "text": "Benefits of Using Overleaf\n\nCollaborate with colleagues and teammates in real time, regardless of their physical location.\nMultiple users can edit the same document simultaneously, making group projects efficient.\nDevice agnostic and therefore worry-free.\nOverleaf integrates with Git, allowing users to track changes, revert to previous versions, and manage document history.\nOverleaf offers a vast library of templates for various document types, including research papers, theses, presentations, and more.\nOverleaf compiles LaTeX documents in the cloud, so you don’t need to configure or run LaTeX locally.\nIt just works!"
+  },
+  {
+    "objectID": "slides/lec-1.html#potential-challenges-of-using-overleaf",
+    "href": "slides/lec-1.html#potential-challenges-of-using-overleaf",
+    "title": "Welcome to MLaRPiS",
+    "section": "Potential Challenges of Using Overleaf",
+    "text": "Potential Challenges of Using Overleaf\n\nInternet Dependency: Overleaf requires a stable internet connection.\nLimited Offline Access: Overleaf operates online, which means **no internet, no access*.\nPrivacy Concerns: Sensitive or confidential documents may not be uploaded to Overleaf. You should always consider data privacy.\nSubscription Costs: basic Overleaf is free, but more advanced features and collaboration options are costly."
+  },
+  {
+    "objectID": "slides/lec-1.html#how-latexdiff-works",
+    "href": "slides/lec-1.html#how-latexdiff-works",
+    "title": "Welcome to MLaRPiS",
+    "section": "How LaTeXdiff Works",
+    "text": "How LaTeXdiff Works\n\nLaTeXdiff operates by comparing two LaTeX files:\n\nThe original version (e.g., document-v1.tex)\nThe revised version (e.g., document-v2.tex)\n\nIt identifies differences in the text, equations, figures, and more.\nLaTeXdiff then generates a new LaTeX file highlighting these differences, often using color coding or other visual cues."
+  },
+  {
+    "objectID": "slides/lec-1.html#next-meeting",
+    "href": "slides/lec-1.html#next-meeting",
+    "title": "Welcome to MLaRPiS",
+    "section": "Next meeting",
+    "text": "Next meeting\nMarkdown + hand in the exercise in this week’s lab\n\n\n\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
   }
 ]
