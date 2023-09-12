@@ -214,7 +214,7 @@
     "href": "slides/lec-1.html#deliverables",
     "title": "Welcome to MLaRPiS",
     "section": "Deliverables",
-    "text": "Deliverables"
+    "text": "Deliverables\nYou must submit as a portfolio the following\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing and a DOI\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nYou also must submit one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io"
   },
   {
     "objectID": "slides/lec-1.html#technically-speaking",
@@ -341,5 +341,12 @@
     "title": "Welcome to MLaRPiS",
     "section": "Course materials",
     "text": "Course materials\n\n\n\n\n\n\nImportant\n\n\nWe won’t use Blackboard. All materials can be found at\nwww.gerkovink.com/markup\nHand in\nAll contributions to this course are to be delivered to this repository\ngithub.com/gerkovink/markup2023\nPlease post your content-related questions as an issue in the same repository\nFinalization\nDeadline for all is Jan 8 2024. Grades will be available Jan 12 2024"
+  },
+  {
+    "objectID": "slides/lec-1.html",
+    "href": "slides/lec-1.html",
+    "title": "Welcome to MLaRPiS",
+    "section": "",
+    "text": "I owe a debt of gratitude to many people as the thoughts and code in these slides are the process of years-long development cycles and discussions with my team, friends, colleagues and peers. When someone has contributed to the content of the slides, I have credited their authorship.\nScientific references are in the footer. Opinions and figures are my own."
   }
 ]
