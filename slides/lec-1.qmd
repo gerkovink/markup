@@ -81,6 +81,17 @@ Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
 
 ## Deliverables
 
+You must submit as a portfolio the following
+
+- Markup manuscript in either $\LaTeX$ or `Quarto`
+- Research repository detailing a reproducible simulation with proper licencing and a DOI
+- Personal repository (website that showcases your work) hosted with GitHub pages.
+
+You also must submit one of
+
+- An error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI
+- A Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free  [Shinyapps.io](https://www.shinyapps.io)
+
 # Understanding Markup
 
 ## What is Markup?
