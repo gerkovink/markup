@@ -2,4 +2,13 @@
 title: "Markup Languages and Reproducible Programming in Statistics"
 ---
 
-placeholder
+## General information
+
+- Course: Markup languages and reproducible programming in statistics (202000010)
+- Course coordinator: Gerko Vink ([g.vink@uu.nl](mailto:g.vink@uu.nl))
+- Teachers: Gerko Vink ([g.vink@uu.nl](mailto:g.vink@uu.nl)) & Hanne Oberman ([h.i.oberman@uu.nl](mailto:h.i.oberman@uu.nl))
+- Schedule: [MyTimetable](https://mytimetable.uu.nl/link?timetable.type=timeedit_course&timetable.key=202000010&view=list&ignoreNotFound=true&ignoreEmpty=true)
+
+## Course description
+
+This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages ($\LaTeX$ and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career.
