@@ -4,4 +4,6 @@ title: "Teaching team"
 
 ## Instructors
 
-![](images/team/gerko.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Gerko" width="200"}
+Gerko Vink ([g.vink\@uu.nl](mailto:g.vink@uu.nl)) ![](images/team/gerko.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Gerko" width="200"}
+
+Hanne Oberman ([h.i.oberman\@uu.nl](mailto:h.i.oberman@uu.nl)) ![](images/team/hanne.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Gerko" width="200"}
