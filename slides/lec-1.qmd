@@ -1,0 +1,196 @@
+---
+title: "Welcome to MLaRPiS"
+author: 
+  - name: Gerko Vink
+    orcid: 0000-0001-9767-1924
+    email: g.vink@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU University
+  - name: Hanne Oberman
+    orcid: 0000-0003-3276-2141
+    email: h.i.oberman@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+date: today
+date-format: full
+execute: 
+  echo: true
+editor: source
+format: 
+  revealjs:
+    theme: [solarized, gerko.scss]
+    progress: true
+    multiplex: true
+    transition: fade
+    slide-number: true
+    margin: 0.075
+    logo: "images/logo.png" 
+    toc: false
+    toc-depth: 1
+    toc-title: Outline
+    scrollable: false
+    width: 1200
+    reference-location: margin
+    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU
+---
+
+## Disclaimer
+
+I owe a debt of gratitude to many people as the thoughts and code in these slides are the process of years-long development cycles and discussions with my team, friends, colleagues and peers. When someone has contributed to the content of the slides, I have credited their authorship.
+
+Scientific references are in the footer. Opinions and figures are my own.
+
+```{r}
+#| include: false
+library(mice)
+```
+
+# Introduction to the course
+
+## Course Aims & Outline
+
+**Official**: This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation.
+
+**Realistic**: Hanne and Gerko will give you peek into our lives as opinionated developers. We will cover: <br><br>
+
+| Week | Date   | Focus                                       | Location |
+|------|--------|---------------------------------------------|----------|
+| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
+| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
+| [4](weeks/week-4.qmd)    | 08 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+
+## Course materials
+::: callout-important
+We won't use Blackboard. All materials can be found at
+
+[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
+
+### Hand in
+All contributions to this course are to be delivered to this repository 
+
+[github.com/gerkovink/markup2023](https://github.com/gerkovink/markup2023)
+
+Please post your content-related questions as [an issue in the same repository](https://github.com/gerkovink/markup2023/issues)
+
+### Finalization
+Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
+:::
+
+## Deliverables
+
+# Understanding Markup
+
+## What is Markup?
+
+A markup language is a system for annotating a document that provides **structure** and **meaning** to the content, allowing it to be **processed** and **displayed** in a **consistent** manner across *different platforms and devices*.
+
+### Extremely brief history
+
+-   **GML** (Generalized Markup Language): Developed in the 1960s by IBM, GML was one of the first markup languages. It was designed to help with the publishing process by defining the structure and content of documents.
+-   **SGML** (Standard Generalized Markup Language): Evolved from GML in the 1980s, SGML became an ISO standard and was used as the basis for several other markup languages, including HTML.
+-   **HTML** (HyperText Markup Language): Developed in the early 1990s by Tim Berners-Lee, HTML became the standard markup language for creating web pages. It's a subset of SGML.
+-   **XML** (eXtensible Markup Language): Introduced in the late 1990s, XML was designed to store and transport data. Unlike HTML, which is about displaying information, XML is about carrying information.
+
+## Technically speaking
+
+-   **Tex** (aka $\LaTeX$) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.
+-   **Markdown** is an extremely simplified alternative to document preparation software systems. `markdown` is a lightweigt markup language that can be edited using any text editor, while being quick and easy to compile. It is nowadays widely considered as the language of the internet as it bridges most great attributes of other markup languages.
+-   **Quarto** is even more comprehensive as it is an open-source scientific and technical publishing system. `quarto` is aimed at delivering reproducible, consistent [Pandoc](https://pandoc.org) markdown documents that unify the best of all other markup languages.
+
+## Importance in digital representation
+
+-   Consistency: Markup languages ensure that content is displayed consistently across different platforms and devices.
+-   Separation of Content and Presentation: Markup languages allow for a clear distinction between content and how it's presented. This separation makes it easier to repurpose content for different mediums or platforms.
+-   Interoperability: Markup languages enable different systems and applications to communicate with each other by providing a standardized way to represent data.
+-   ease of mind: Styles in *modern* markup languages allow you to focus on the content and not
+
+## Everyday interactions with markup
+
+-   HTML in Everyday Life:
+    -   Web Browsing: Every time students visit a website, they're interacting with content structured by HTML. From paragraphs to images to links, all are defined using HTML tags.
+    -   Emails: Many emails, especially those with formatting, images, or links, are compose using HTML.
+    -   Online Platforms: Social media posts, blogs, and even some word processors use HTML behind the scenes to structure and display content.
+-   XML in Everyday Applications:
+    -   Data Storage: Many applications use XML to store configuration data, user settings, or other information.
+    -   Office Documents: Formats like Microsoft's .docx (Word) or .xlsx (Excel) are essentially zipped XML files. When you save a Word document, you're saving XML data.
+    -   Web Services: Many web services and APIs return data in XML format, which is then processed and displayed by the application.
+    -   RSS Feeds: Used by news websites and blogs to syndicate content, RSS feeds are XML documents that can be read by various applications.
+
+## ...
+
+::: callout-important
+Be careful with your online carbon footprint
+:::
+
+In the grand scheme of things, trivial activities like emailing, chatting and video conferencing may seem insignificant. Collectively it adds up to a much larger carbon footprint than needed.
+
+Everything that you do online is either energy or costs energy. And cloud storage means burning carbon for eternity.
+
+## Traditional Word Processors vs Scientific Writing
+
+::: columns
+::: {.column width="50%"}
+**Graphical (Word) Processors**
+
+-   While Word and similar word processors have built-in equation editors, they often lack the flexibility and customization options that markup languages offer.
+-   Formatting equations consistently across a large document or multiple documents can be challenging in Word.
+-   Collaborating on complex scientific documents with multiple authors can lead to formatting inconsistencies, especially when different versions of the software are used.
+-   Integration with other Tools is not always straightforward or impossible.
+-   Word documents, especially those with complex equations, might not always display consistently across different devices or software versions.
+:::
+
+::: {.column width="45%"}
+**Markup languages**
+
+-   Markup languages (especially $\LaTeX$) provide precise control over the layout and appearance of elemants and equations.
+-   The same code will produce the same output regardless of the platform or software version, ensuring consistency.
+-   Simple integration with version control systems, reference managers, and other tools essential for scientific writing.
+-   Many scientific journals provide $\LaTeX$ or markdown templates, making it easier for researchers to prepare manuscripts that meet specific formatting requirements.
+:::
+:::
+
+## Why are we teaching you Markup?
+
+-   Reproducibility (Wk2)
+-   Version controlling and Collaboration (Wk3)
+-   Consistent presentation
+-   Time-saving
+-   Modular nature
+-   Bibliography management
+
+Het is de standaard in wetenschap en we bereiden je voor op een wetenschappelijke carriere. 
++ journal styles
+
+# $\LaTeX$
+
+## Brief history of $\LaTeX$
+
+## Hands on
+
+- Introduction to $\LaTeX$:
+- Basics of $\LaTeX$ for scientific writing.
+- Incorporating equations and other elements.
+
+## Compiling $\LaTeX$ with Overleaf
+
+## What is Overleaf
+
+## The Good and Bad
+
+## Latexdiff
+
+### How to `latexdiff` in theory and practice
+
+## Bibliography management
+
+- Zotero --> Introduce Zotero as a tool for collecting, organizing, and citing research materials.
+- BibTeX --> Explain how BibTeX works in conjunction with LaTeX for citation management.
+
+# Exit
+
+## Topics covered so far
+
+## Next week

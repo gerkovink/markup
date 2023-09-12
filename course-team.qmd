@@ -1,0 +1,7 @@
+---
+title: "Teaching team"
+---
+
+## Instructors
+
+![](images/team/gerko.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Gerko" width="200"}

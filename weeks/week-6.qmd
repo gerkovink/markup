@@ -1,0 +1,7 @@
+---
+title: "Week 6: Code robustness"
+subtitle: "How to develop, test and publish software packages"
+editor: source
+---
+
+![](https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg)
