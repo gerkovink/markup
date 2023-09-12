@@ -1,7 +1,0 @@
----
-title: "Week 4: Reproducible Research Archives"
-subtitle: "Setting up simulation studies that everyone can replicate and reproduce"
-editor: source
----
-
-![](https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg)
