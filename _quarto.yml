@@ -15,10 +15,10 @@ website:
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)."
     left: "&copy; made by Gerko Vink - use as you please"
-    background: "#5287C6"
+    background: "#5287C6" #5287C6 #F3965E
 
   sidebar:
-    background: "#5287C6"
+    background: "#5287C6" #5287C6
     logo: "images/logo.png"
     pinned: true
     align: center
