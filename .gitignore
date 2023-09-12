@@ -36,32 +36,6 @@ vignettes/*.pdf
 rsconnect/
 .Rproj.user
 .DS_Store
-docs/~$RPS2020_manual.doc
-.DS_Store
-video/Create PR.mov
-video/Create PR.mp4
-video/Creating a branch.mov
-video/Creating a branch.mp4
-.DS_Store
-Archive/.DS_Store
-Archive/2019/.DS_Store
-.DS_Store
-video/Link SSH.mov
-*.mov
-Archive/.DS_Store
-Archive/2019/.DS_Store
-/video/*
-Video/*
-.DS_Store
-.DS_Store
-*.RData
-*.rdb
-*.rdx
-Wk2/BootstrapCI_Validity_cache/html/__packages
-Wk2/BootstrapCI_Validity_replication_cache/html/__packages
-.DS_Store
-.DS_Store
-Archive/.DS_Store
-.DS_Store
 
 /.quarto/
+/_site/
