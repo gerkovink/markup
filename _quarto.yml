@@ -78,6 +78,7 @@ format:
     code-overflow: wrap
     toc: true
 
-freeze: auto
+execute:
+  freeze: auto
 
 editor: visual

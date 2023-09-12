@@ -11,14 +11,35 @@
     "href": "course-support.html",
     "title": "Course support",
     "section": "",
-    "text": "placeholder"
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
+  },
+  {
+    "objectID": "course-support.html#support",
+    "href": "course-support.html#support",
+    "title": "Course support",
+    "section": "",
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
   },
   {
     "objectID": "course-overview.html",
     "href": "course-overview.html",
     "title": "Markup Languages and Reproducible Programming in Statistics",
     "section": "",
-    "text": "placeholder"
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#general-information",
+    "href": "course-overview.html#general-information",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "",
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "Course description",
+    "text": "Course description\nThis course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages (\\(\\LaTeX\\) and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career."
   },
   {
     "objectID": "weeks/week-1.html",
@@ -98,6 +119,13 @@
     "text": "Deliverables\nYou must submit a portfolio that proves\n\nThat you can use markup languages for scientific manuscript writing\nThat you can produce a reproducible repository that conforms to rigorous open science and computing standards\nThat you can present this portfolio using markup languages\nThat you are able to develop, test, maintain and host this portfolio"
   },
   {
+    "objectID": "slides/lec-1.html#this-means",
+    "href": "slides/lec-1.html#this-means",
+    "title": "Welcome to MLaRPiS",
+    "section": "This means",
+    "text": "This means\nthat you should cover at least\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nand one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io\n\nA more comprehensive portfolio can result in extra credit in the form of a higher grade."
+  },
+  {
     "objectID": "slides/lec-1.html#what-is-markup",
     "href": "slides/lec-1.html#what-is-markup",
     "title": "Welcome to MLaRPiS",
@@ -126,11 +154,11 @@
     "text": "Everyday interactions with markup\n\nHTML in Everyday Life:\n\nWeb Browsing: Every time students visit a website, they’re interacting with content structured by HTML. From paragraphs to images to links, all are defined using HTML tags.\nEmails: Many emails, especially those with formatting, images, or links, are compose using HTML.\nOnline Platforms: Social media posts, blogs, and even some word processors use HTML behind the scenes to structure and display content.\n\nXML in Everyday Applications:\n\nData Storage: Many applications use XML to store configuration data, user settings, or other information.\nOffice Documents: Formats like Microsoft’s .docx (Word) or .xlsx (Excel) are essentially zipped XML files. When you save a Word document, you’re saving XML data.\nWeb Services: Many web services and APIs return data in XML format, which is then processed and displayed by the application.\nRSS Feeds: Used by news websites and blogs to syndicate content, RSS feeds are XML documents that can be read by various applications."
   },
   {
-    "objectID": "slides/lec-1.html#section",
-    "href": "slides/lec-1.html#section",
+    "objectID": "slides/lec-1.html#emc2",
+    "href": "slides/lec-1.html#emc2",
     "title": "Welcome to MLaRPiS",
-    "section": "…",
-    "text": "…\n\n\n\n\n\n\nImportant\n\n\nBe careful with your online carbon footprint\n\n\n\nIn the grand scheme of things, trivial activities like emailing, chatting and video conferencing may seem insignificant. Collectively it adds up to a much larger carbon footprint than needed.\nEverything that you do online is either energy or costs energy. And cloud storage means burning carbon for eternity."
+    "section": "\\(E=MC^2\\)",
+    "text": "\\(E=MC^2\\)\n\n\n\n\n\n\nImportant\n\n\nBe careful with your online carbon footprint\n\n\n\nIn the grand scheme of things, trivial activities like emailing, chatting and video conferencing may seem insignificant. Collectively it adds up to a much larger carbon footprint than needed.\nEverything that you do online is either energy or costs energy. And cloud storage means burning carbon for eternity."
   },
   {
     "objectID": "slides/lec-1.html#traditional-word-processors-vs-scientific-writing",
@@ -144,49 +172,63 @@
     "href": "slides/lec-1.html#why-are-we-teaching-you-markup",
     "title": "Welcome to MLaRPiS",
     "section": "Why are we teaching you Markup?",
-    "text": "Why are we teaching you Markup?\n\nReproducibility (Wk2)\nVersion controlling and Collaboration (Wk3)\nConsistent presentation\nTime-saving\nModular nature\nBibliography management\n\nHet is de standaard in wetenschap en we bereiden je voor op een wetenschappelijke carriere. + journal styles"
+    "text": "Why are we teaching you Markup?\nIf you prefere lists:\n\nReproducibility (Wk2)\nVersion controlling and Collaboration (Wk3)\nConsistent presentation\nTime-saving (After this course)\nModular nature\nBibliography management (Wk1)\nOh, Behave (Wk 1-6)\n\nIf you prefer arguments:\n\nIt is the standard in scientific publishing and research\nWe prepare you for a career built on scientific principles\nJournal styles"
   },
   {
-    "objectID": "slides/lec-1.html#brief-history-of-latex",
-    "href": "slides/lec-1.html#brief-history-of-latex",
+    "objectID": "slides/lec-1.html#the-evolution-of-tex-and-latex",
+    "href": "slides/lec-1.html#the-evolution-of-tex-and-latex",
     "title": "Welcome to MLaRPiS",
-    "section": "Brief history of \\(\\LaTeX\\)",
-    "text": "Brief history of \\(\\LaTeX\\)"
+    "section": "The evolution of TeX and \\(\\LaTeX\\)",
+    "text": "The evolution of TeX and \\(\\LaTeX\\)\n\nTeX: Birth of a Typesetting Revolution\n\n1978: Donald Knuth, a computer scientist, develops TeX, a typesetting system.\nMotivation: Dissatisfaction with the quality of typesetting in his book, “The Art of Computer Programming”.\nKey Features: Precise control over typography, mathematical typesetting, and cross-referencing.\n\nLaTeX: Building on TeX’s Foundation\n\nEarly 1980s: Leslie Lamport creates \\(\\LaTeX\\), a document preparation system based on TeX.\nGoal: Simplify the complex TeX formatting commands, making it more accessible to a broader audience.\nAdvantages: Provides document structure through commands like \\section and \\tableofcontents.\n\nTeX and \\(\\LaTeX\\): A Symbiotic Relationship\n\n\\(\\LaTeX\\) builds on the TeX typesetting engine, allowing users to create professional documents and presentations.\n\\(\\LaTeX\\) packages extend functionality, catering to various types of documents (e.g., articles, theses, presentations)."
+  },
+  {
+    "objectID": "slides/lec-1.html#precision",
+    "href": "slides/lec-1.html#precision",
+    "title": "Welcome to MLaRPiS",
+    "section": "Precision",
+    "text": "Precision\n\nUnmatched Typography Precision: TeX and LaTeX excel at typesetting with precise control over fonts, layout, and mathematical notation.\n\n\nIdeal for academic papers, theses, and publications with complex formatting requirements.\n\n\nSuperior Mathematical Typesetting: LaTeX’s native support for mathematical notation makes it the go-to choice for scientists, engineers, and mathematicians.\n\n\nNo more MS equation editor\n\n\nCross-Referencing and Bibliography Management: Effortlessly manage references and citations with BibTeX in LaTeX.\n\n\nAutomatic numbering, referencing, and bibliography generation.\n\n\nCollaboration and Version Control: LaTeX documents can be easily managed using version control systems like Git (Wk 3).\n\n\nThis makes it straightforward to collaborate simultaneously on the same text and documents."
+  },
+  {
+    "objectID": "slides/lec-1.html#and",
+    "href": "slides/lec-1.html#and",
+    "title": "Welcome to MLaRPiS",
+    "section": "And…",
+    "text": "And…\n\nProfessional Look and Feel: LaTeX produces documents with a professional and consistent appearance.\n\n\nThis explains the popularity in academia, research, and publishing.\n\n\nLaTeX Ecosystem: A vast collection of packages and templates is available on CTAN to cater to diverse document types.\nLong-Term Stability: Documents created with TeX and LaTeX have a long shelf life.\n\n\nBecause TeX is software, it ensures compatibility across different platforms and software versions."
   },
   {
     "objectID": "slides/lec-1.html#hands-on",
     "href": "slides/lec-1.html#hands-on",
     "title": "Welcome to MLaRPiS",
     "section": "Hands on",
-    "text": "Hands on\n\nIntroduction to \\(\\LaTeX\\):\nBasics of \\(\\LaTeX\\) for scientific writing.\nIncorporating equations and other elements."
+    "text": "Hands on\n\nIntroduction to LaTeX:\nBasics of LaTeX for scientific writing.\nIncorporating equations.\nIncorporating figures"
   },
   {
     "objectID": "slides/lec-1.html#compiling-latex-with-overleaf",
     "href": "slides/lec-1.html#compiling-latex-with-overleaf",
     "title": "Welcome to MLaRPiS",
     "section": "Compiling \\(\\LaTeX\\) with Overleaf",
-    "text": "Compiling \\(\\LaTeX\\) with Overleaf"
+    "text": "Compiling \\(\\LaTeX\\) with Overleaf\nA"
   },
   {
     "objectID": "slides/lec-1.html#what-is-overleaf",
     "href": "slides/lec-1.html#what-is-overleaf",
     "title": "Welcome to MLaRPiS",
     "section": "What is Overleaf",
-    "text": "What is Overleaf"
+    "text": "What is Overleaf\nB"
   },
   {
     "objectID": "slides/lec-1.html#the-good-and-bad",
     "href": "slides/lec-1.html#the-good-and-bad",
     "title": "Welcome to MLaRPiS",
     "section": "The Good and Bad",
-    "text": "The Good and Bad"
+    "text": "The Good and Bad\nC"
   },
   {
     "objectID": "slides/lec-1.html#latexdiff",
     "href": "slides/lec-1.html#latexdiff",
     "title": "Welcome to MLaRPiS",
     "section": "Latexdiff",
-    "text": "Latexdiff\nHow to latexdiff in theory and practice"
+    "text": "Latexdiff\nD\nHow to latexdiff in theory and practice\nE"
   },
   {
     "objectID": "slides/lec-1.html#bibliography-management",
@@ -200,14 +242,14 @@
     "href": "slides/lec-1.html#topics-covered-so-far",
     "title": "Welcome to MLaRPiS",
     "section": "Topics covered so far",
-    "text": "Topics covered so far"
+    "text": "Topics covered so far\nF"
   },
   {
     "objectID": "slides/lec-1.html#next-week",
     "href": "slides/lec-1.html#next-week",
     "title": "Welcome to MLaRPiS",
     "section": "Next week",
-    "text": "Next week\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+    "text": "Next week\nG\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
   },
   {
     "objectID": "portfolio.html",
@@ -299,19 +341,5 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
-  },
-  {
-    "objectID": "slides/lec-1.html#this-could-mean",
-    "href": "slides/lec-1.html#this-could-mean",
-    "title": "Welcome to MLaRPiS",
-    "section": "This could mean",
-    "text": "This could mean\nYou must submit as a portfolio the following\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing and a DOI\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nYou also must submit one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io"
-  },
-  {
-    "objectID": "slides/lec-1.html#this-means",
-    "href": "slides/lec-1.html#this-means",
-    "title": "Welcome to MLaRPiS",
-    "section": "This means",
-    "text": "This means\nthat you should cover at least\n\nMarkup manuscript in either \\(\\LaTeX\\) or Quarto\nResearch repository detailing a reproducible simulation with proper licencing\nPersonal repository (website that showcases your work) hosted with GitHub pages.\n\nand one of\n\nAn error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI\nA Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free Shinyapps.io\n\nA more comprehensive portfolio can result in extra credit in the form of a higher grade."
   }
 ]
