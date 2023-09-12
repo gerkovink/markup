@@ -2,11 +2,11 @@
 title: "Markup Languages and Reproducible Programming in Statistics"
 ---
 
-| Week | Date   | Focus                                       | Location |
-|------|--------|---------------------------------------------|----------|
-| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
-| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
-| [4](weeks/week-4.qmd)    | 08 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| Week                  | Date   | Focus                                       | Location                                                |
+|-----------------------|--------|---------------------------------------------|---------------------------------------------------------|
+| [1](weeks/week-1.qmd) | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101)      |
+| [2](weeks/week-2.qmd) | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| [3](weeks/week-3.qmd) | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
+| [4](weeks/week-4.qmd) | 08 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| [5](weeks/week-5.qmd) | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| [6](weeks/week-6.qmd) | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
