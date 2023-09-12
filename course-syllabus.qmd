@@ -2,4 +2,4 @@
 title: "Syllabus"
 ---
 
-placeholder
+The course website serves as syllabus. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig).
