@@ -1,0 +1,47 @@
+{
+  "LICENSE.md": {
+    "LICENSE.html": "fae0595a"
+  },
+  "weeks/week-6.qmd": {
+    "week-6.html": "f420ba96"
+  },
+  "weeks/week-5.qmd": {
+    "week-5.html": "14974c36"
+  },
+  "weeks/week-4.qmd": {
+    "week-4.html": "04d06a11"
+  },
+  "weeks/week-1.qmd": {
+    "week-1.html": "d330eb2d"
+  },
+  "weeks/week-3.qmd": {
+    "week-3.html": "2590b626"
+  },
+  "weeks/week-2.qmd": {
+    "week-2.html": "c521d642"
+  },
+  "404.qmd": {
+    "404.html": "18768447"
+  },
+  "course-overview.qmd": {
+    "course-overview.html": "ff6aaec8"
+  },
+  "index.qmd": {
+    "index.html": "befc4fb0"
+  },
+  "course-team.qmd": {
+    "course-team.html": "eb9113bc"
+  },
+  "slides/lec-1.qmd": {
+    "lec-1.html": "a782787e"
+  },
+  "course-support.qmd": {
+    "course-support.html": "e2fb786f"
+  },
+  "portfolio.qmd": {
+    "portfolio.html": "440c8316"
+  },
+  "course-syllabus.qmd": {
+    "course-syllabus.html": "704f2701"
+  }
+}
