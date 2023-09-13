@@ -130,7 +130,7 @@ A markup language is a system for annotating a document that provides **structur
 ## Everyday interactions with markup
 
 -   HTML in Everyday Life:
-    -   Web Browsing: Every time students visit a website, they're interacting with content structured by HTML. From paragraphs to images to links, all are defined using HTML tags.
+    -   Web Browsing: Every time you visit a website, you're interacting with content structured by HTML. From paragraphs to images to links, all are defined using HTML tags.
     -   Emails: Many emails, especially those with formatting, images, or links, are compose using HTML.
     -   Online Platforms: Social media posts, blogs, and even some word processors use HTML behind the scenes to structure and display content.
 -   XML in Everyday Applications:
