@@ -116,9 +116,9 @@ A markup language is a system for annotating a document that provides **structur
 
 ## Technically speaking
 
--   **Tex** (aka $\LaTeX$) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.
+-   **TeX** (aka $\LaTeX$) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.
 -   **Markdown** is an extremely simplified alternative to document preparation software systems. `markdown` is a lightweigt markup language that can be edited using any text editor, while being quick and easy to compile. It is nowadays widely considered as the language of the internet as it bridges most great attributes of other markup languages.
--   **Quarto** is even more comprehensive as it is an open-source scientific and technical publishing system. `quarto` is aimed at delivering reproducible, consistent [Pandoc](https://pandoc.org) markdown documents that unify the best of all other markup languages.
+-   [**Quarto**]() is even more comprehensive as it is an open-source scientific and technical publishing system. `quarto` is aimed at delivering reproducible, consistent [Pandoc](https://pandoc.org) markdown documents that unify the best of all other markup languages.
 
 ## Importance in digital representation
 
@@ -283,11 +283,11 @@ It's a cloud-based platform that eliminates the need for local `LaTeX` installat
 
 - Internet Dependency: Overleaf requires a stable internet connection. 
 
-- Limited Offline Access: Overleaf operates online, which means **no internet, no access*.
+- Limited Offline Access: Overleaf operates online, which means **no internet, no access to the convenience of Overleaf**.
 
-- Privacy Concerns: Sensitive or confidential documents may not be uploaded to Overleaf. You should always consider data privacy.
+- Privacy Concerns: Sensitive or confidential documents may not be suitable for upload to Overleaf. You should always consider data privacy!.
 
-- Subscription Costs: basic Overleaf is free, but more advanced features and collaboration options are costly.
+- Subscription Costs: basic Overleaf is free, but more advanced features and collaboration options are *costly*.
 
 ---
 

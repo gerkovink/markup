@@ -137,7 +137,7 @@
     "href": "slides/lec-1.html#technically-speaking",
     "title": "Welcome to MLaRPiS",
     "section": "Technically speaking",
-    "text": "Technically speaking\n\nTex (aka \\(\\LaTeX\\)) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.\nMarkdown is an extremely simplified alternative to document preparation software systems. markdown is a lightweigt markup language that can be edited using any text editor, while being quick and easy to compile. It is nowadays widely considered as the language of the internet as it bridges most great attributes of other markup languages.\nQuarto is even more comprehensive as it is an open-source scientific and technical publishing system. quarto is aimed at delivering reproducible, consistent Pandoc markdown documents that unify the best of all other markup languages."
+    "text": "Technically speaking\n\nTeX (aka \\(\\LaTeX\\)) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.\nMarkdown is an extremely simplified alternative to document preparation software systems. markdown is a lightweigt markup language that can be edited using any text editor, while being quick and easy to compile. It is nowadays widely considered as the language of the internet as it bridges most great attributes of other markup languages.\nQuarto is even more comprehensive as it is an open-source scientific and technical publishing system. quarto is aimed at delivering reproducible, consistent Pandoc markdown documents that unify the best of all other markup languages."
   },
   {
     "objectID": "slides/lec-1.html#importance-in-digital-representation",
@@ -410,7 +410,7 @@
     "href": "slides/lec-1.html#potential-challenges-of-using-overleaf",
     "title": "Welcome to MLaRPiS",
     "section": "Potential Challenges of Using Overleaf",
-    "text": "Potential Challenges of Using Overleaf\n\nInternet Dependency: Overleaf requires a stable internet connection.\nLimited Offline Access: Overleaf operates online, which means **no internet, no access*.\nPrivacy Concerns: Sensitive or confidential documents may not be uploaded to Overleaf. You should always consider data privacy.\nSubscription Costs: basic Overleaf is free, but more advanced features and collaboration options are costly."
+    "text": "Potential Challenges of Using Overleaf\n\nInternet Dependency: Overleaf requires a stable internet connection.\nLimited Offline Access: Overleaf operates online, which means no internet, no access to the convenience of Overleaf.\nPrivacy Concerns: Sensitive or confidential documents may not be suitable for upload to Overleaf. You should always consider data privacy!.\nSubscription Costs: basic Overleaf is free, but more advanced features and collaboration options are costly."
   },
   {
     "objectID": "slides/lec-1.html#how-latexdiff-works",
