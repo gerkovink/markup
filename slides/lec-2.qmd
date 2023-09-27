@@ -13,6 +13,7 @@ author:
       - name: Methodology & Statistics @ UU
 date: 13 Sep 2023
 date-format: "D MMM YYYY"
+bibliography: data/lec-2/publications.bib
 execute: 
   echo: true
 editor: source
@@ -136,6 +137,7 @@ author:
       - name: Methodology & Statistics @ UU
 date: 13 Sep 2023
 date-format: "D MMM YYYY"
+bibliography: data/lec-2/publications.bib
 execute: 
   echo: true
 editor: source
@@ -152,7 +154,6 @@ format:
     toc-depth: 1
     toc-title: Outline
     scrollable: true
-    width: 1200
     reference-location: margin
     footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU
 ---
@@ -817,3 +818,29 @@ quarto use template quarto-journals/elsevier
 quarto use template quarto-journals/acs
 quarto use template quarto-journals/jss
 ```
+
+## Citations
+
+@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].
+
+::: footer
+But you can also refer to @eval here
+:::
+
+::: {#refs}
+:::
+
+<br>
+
+````
+## Citations
+
+@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].
+
+::: footer
+But you can also refer to @eval here
+:::
+
+::: {#refs}
+:::
+````
