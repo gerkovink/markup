@@ -4,7 +4,7 @@
     "href": "course-syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "The course website serves as syllabus. Background information, e.g. about course aims, can be found on Osiris."
+    "text": "The course website serves as syllabus. Background information, e.g. about course aims, can be found on Osiris. If you really want to have a PDF version, you can download it here."
   },
   {
     "objectID": "course-support.html",
@@ -613,7 +613,7 @@
     "href": "slides/lec-2.html#quarto-the-yaml-header",
     "title": "All flavors markdown",
     "section": "Quarto: the YAML header",
-    "text": "Quarto: the YAML header\nYAML (YAML Ain’t Markup Language) is a human-readable data serialization format commonly used for configuration files and metadata in various programming and markup contexts.\n\nYAML is very simple and readable\nIn Quarto and many other applications, YAML is used to specify:\n\nDocument Metadata: Information about the document itself, such as the title, author, date, and document type.\nDocument Configuration: Settings related to the document’s behavior, appearance, and rendering, such as the output format (e.g., HTML, PDF), document template, and style options.\nCustom Variables: Definitions of custom variables or parameters that can be used throughout the document to control behavior or content.\n\n\nHere’s an example of a simple YAML header in a Quarto document:\n---\ntitle: \"All flavors markdown\"\nauthor: \n  - name: Gerko Vink\n    orcid: 0000-0001-9767-1924\n    email: g.vink@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU University\n  - name: Hanne Oberman\n    orcid: 0000-0003-3276-2141\n    email: h.i.oberman@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU\ndate: 13 Sep 2023\ndate-format: \"D MMM YYYY\"\nexecute: \n  echo: true\neditor: source\nformat: \n  revealjs:\n    theme: [solarized, gerko.scss]\n    progress: true\n    multiplex: true\n    transition: fade\n    slide-number: true\n    margin: 0.075\n    logo: \"images/logo.png\" \n    toc: false\n    toc-depth: 1\n    toc-title: Outline\n    scrollable: true\n    width: 1200\n    reference-location: margin\n    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU\n---\nIn this example:\n\ntitle, author, and date provide metadata about the document.\noutput specifies settings related to the document’s output format and theme.\n\nThe YAML header is a powerful tool for customizing and configuring Quarto documents, allowing you to control how the document is rendered and presented. It ensures that important document information and settings are stored in a human-readable and structured format at the beginning of the document."
+    "text": "Quarto: the YAML header\nYAML (YAML Ain’t Markup Language) is a human-readable data serialization format commonly used for configuration files and metadata in various programming and markup contexts.\n\nYAML is very simple and readable\nIn Quarto and many other applications, YAML is used to specify:\n\nDocument Metadata: Information about the document itself, such as the title, author, date, and document type.\nDocument Configuration: Settings related to the document’s behavior, appearance, and rendering, such as the output format (e.g., HTML, PDF), document template, and style options.\nCustom Variables: Definitions of custom variables or parameters that can be used throughout the document to control behavior or content.\n\n\nHere’s an example of a simple YAML header in a Quarto document:\n---\ntitle: \"All flavors markdown\"\nauthor: \n  - name: Gerko Vink\n    orcid: 0000-0001-9767-1924\n    email: g.vink@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU University\n  - name: Hanne Oberman\n    orcid: 0000-0003-3276-2141\n    email: h.i.oberman@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU\ndate: 13 Sep 2023\ndate-format: \"D MMM YYYY\"\nbibliography: data/lec-2/publications.bib\nexecute: \n  echo: true\neditor: source\nformat: \n  revealjs:\n    theme: [solarized, gerko.scss]\n    progress: true\n    multiplex: true\n    transition: fade\n    slide-number: true\n    margin: 0.075\n    logo: \"images/logo.png\" \n    toc: false\n    toc-depth: 1\n    toc-title: Outline\n    scrollable: true\n    reference-location: margin\n    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU\n---\nIn this example:\n\ntitle, author, and date provide metadata about the document.\noutput specifies settings related to the document’s output format and theme.\n\nThe YAML header is a powerful tool for customizing and configuring Quarto documents, allowing you to control how the document is rendered and presented. It ensures that important document information and settings are stored in a human-readable and structured format at the beginning of the document."
   },
   {
     "objectID": "slides/lec-2.html#text-in-quarto",
@@ -795,7 +795,7 @@
     "href": "slides/lec-2.html#scientific-publishing-with-rticles-and-quarto",
     "title": "All flavors markdown",
     "section": "Scientific publishing with rticles and Quarto",
-    "text": "Scientific publishing with rticles and Quarto\nTo use rticles from RStudio, you can access the templates through File -&gt; New File -&gt; R Markdown. This will open the dialog box where you can select from one of the available templates:\n\nQuarto\nThe quarto use template command can be used to create an article from one the below formats.\n\n\nTerminal\n\nquarto use template quarto-journals/acm\nquarto use template quarto-journals/plos\nquarto use template quarto-journals/elsevier\nquarto use template quarto-journals/acs\nquarto use template quarto-journals/jss\n\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+    "text": "Scientific publishing with rticles and Quarto\nTo use rticles from RStudio, you can access the templates through File -&gt; New File -&gt; R Markdown. This will open the dialog box where you can select from one of the available templates:\n\nQuarto\nThe quarto use template command can be used to create an article from one the below formats.\n\n\nTerminal\n\nquarto use template quarto-journals/acm\nquarto use template quarto-journals/plos\nquarto use template quarto-journals/elsevier\nquarto use template quarto-journals/acs\nquarto use template quarto-journals/jss"
   },
   {
     "objectID": "weeks/week-2.html#watch-this-video",
@@ -803,5 +803,19 @@
     "title": "Week 2: Markdown in (most) flavors",
     "section": "Watch this video",
     "text": "Watch this video\nMine Çetinkaya-Rundel has a great video that highlights many of Quarto’s relevant features in our field."
+  },
+  {
+    "objectID": "weeks/week-2.html#browse-the-quarto-website",
+    "href": "weeks/week-2.html#browse-the-quarto-website",
+    "title": "Week 2: Markdown in (most) flavors",
+    "section": "Browse the Quarto website",
+    "text": "Browse the Quarto website\nThe people at Posit have designed this awesome companion website that details pretty much everything Quarto. Have a look around and remember this source when you’re in need of some additional functionality. Much of what you can do with Quarto is detailed here."
+  },
+  {
+    "objectID": "slides/lec-2.html#citations",
+    "href": "slides/lec-2.html#citations",
+    "title": "All flavors markdown",
+    "section": "Citations",
+    "text": "Citations\nOberman and Vink (2023) and Cai, Van Buuren and Vink (2023) are some of our team’s most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older (2010) or contain simple and contemporary solutions by Volker and Vink (2022, 2–4) or cool but potentially confusing images (Schouten and Vink 2021, 1255).\n\nBut you can also refer to Oberman and Vink (2023) here\n\n\n\nBanning, Reinder, and Gerko Vink. 2010. “Methoden En Indicatoren Voor Het Evalueren En Beschrijven van Controle- En Correctieprocessen.” CBS nota DMV-2010- 06-08-RBNG-GVNK. Centraal Bureau voor de Statistiek.\n\n\nCai, Mingyang, Stef van Buuren, and Gerko Vink. 2023. “Graphical and Numerical Diagnostic Tools to Assess Multiple Imputation Models by Posterior Predictive Checking.” Heliyon.\n\n\nOberman, Hanne I., and Gerko Vink. 2023. “Toward a Standardized Evaluation of Imputation Methodology.” Biometrical Journal, 2200107. https://doi.org/https://doi.org/10.1002/bimj.202200107.\n\n\nSchouten, Rianne Margaretha, and Gerko Vink. 2021. “The Dance of the Mechanisms: How Observed Information Influences the Validity of Missingness Assumptions.” Sociological Methods & Research 50 (3): 1243–58.\n\n\nVolker, Thom, and Gerko Vink. 2022. “Synthetic Data in r: Generating Synthetic Data with High Utility Using Mice.” Https://Www.gerkovink.com/miceVignettes/Synthetic/Synthetic.html.\n\n\n\n## Citations\n\n@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].\n\n::: footer\nBut you can also refer to @eval here\n:::\n\n::: {#refs}\n:::\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
   }
 ]
