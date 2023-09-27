@@ -87,7 +87,7 @@ It plays a crucial role in promoting reproducibility and collaboration in data s
 -   **Visual Studio Code (VS Code)**: A versatile code editor with a vast ecosystem of extensions for various languages.
 -   **Eclipse (with StatET)**: Eclipse StatET is an integrated development environment (IDE) for R, offering features for R programming and data analysis.
 
-### Popular Notebook Environments\*\*
+### Popular Notebook Environments
 
 -   **Jupyter Notebooks**: Widely used interactive kernel-based computing environment for data science and machine learning, supporting multiple (i.e. almost all) programming and scripting languages.
 
