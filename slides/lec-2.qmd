@@ -198,17 +198,14 @@ But in the above I used
 ::: {.column width="50%"}
 ![A surfing elephant](images/lec-2/elephantastic.png){fig-align="left"}
 
-The above figure is left-aligned <br>
-The caption is also left-aligned
+The above figure is left-aligned <br> The caption is also left-aligned
 :::
 
 ::: {.column width="50%"}
 ![A surfing elephant](images/lec-2/elephantastic.png){fig-align="center"}
 
-The above figure is centered <br>
-The caption is still left-aligned
+The above figure is centered <br> The caption is still left-aligned
 :::
-
 :::
 
 The code for the figures is
@@ -226,28 +223,25 @@ The code for the figures is
 
 $e^{i\pi} + 1 = 0$
 
-The above figure is left-aligned <br>
-The caption is also left-aligned <br>
-The equation is left-aligned too
+The above figure is left-aligned <br> The caption is also left-aligned <br> The equation is left-aligned too
 :::
 
 ::: {.column width="50%"}
 <center>
+
 ![A surfing elephant](images/lec-2/elephantastic.png){fig-align="center" width="80%"}
+
 </center>
 
 $$e^{i\pi} + 1 = 0$$
 
-The above figure is centered <br>
-The caption is also centered <br>
-The equation is centered
+The above figure is centered <br> The caption is also centered <br> The equation is centered
 :::
-
 :::
 
 The code for the slide is
 
-```markdown
+``` markdown
 ## Columns, Sizing, Equations and proper centering
 
 ::: columns
@@ -304,9 +298,7 @@ The equation is centered
 :::
 
 :::
-
 ```
-
 
 ## F-ing it all up
 
@@ -316,26 +308,23 @@ The equation is centered
 
 $e^{i\pi} + 1 = 0$
 
-The above figure is left-aligned <br>
-The caption is also left-aligned <br>
-The equation is left-aligned too
+The above figure is left-aligned <br> The caption is also left-aligned <br> The equation is left-aligned too
 :::
 
 ::: {.column width="30%"}
 <center>
+
 ![Rick taking a bad](images/lec-2/bathrick.png){fig-align="center" width="30%"}
+
 </center>
 
 $$e^{i\pi} + 1 = 0$$
 
-The above figure is centered <br>
-The caption is also centered <br>
-The equation is centered
+The above figure is centered <br> The caption is also centered <br> The equation is centered
+:::
 :::
 
-:::
-
-```markup
+``` markup
 ::: columns
 ::: {.column width="70%"}
 ![Rick taking a bad](images/lec-2/bathrick.png){fig-align="left" width="70%"}
@@ -366,15 +355,16 @@ $e^{i\pi} + 1 = 0$
 
 ::: {.column width="30%"}
 <center>
+
 ![Rick taking a bath](images/lec-2/goodrick.png){fig-align="center" width="70%"}
+
 </center>
 
 $$e^{i\pi} + 1 = 0$$
 :::
-
 :::
 
-```markup
+``` markup
 ## Math-ing it all up
 ::: columns
 ::: {.column width="70%"}
@@ -393,16 +383,17 @@ $$e^{i\pi} + 1 = 0$$
 
 :::
 ```
-```
+
+```         
 
 ```markdown
 END OF EXAMPLE
 ```
 
 ## `R` figures
-````
-{r, fig.width=3, fig.height=1}
-````
+
+```{r, fig.width=3, fig.height=1}
+```
 
 ```{r, fig.width=15, fig.height=4}
 library(dygraphs)
@@ -410,9 +401,9 @@ dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)")
 ```
 
 ## `R` figures
-````
-{r, fig.width=6, fig.height=2.5}
-````
+
+```{r, fig.width=6, fig.height=2.5}
+```
 
 ```{r, fig.width=6, fig.height=2.5}
 library(dygraphs)
@@ -420,6 +411,7 @@ dygraph(nhtemp, main = "New Haven Temperatures", ylab = "Temp (F)")
 ```
 
 ## `R` figures
+
 ```{r}
 library(ggplot2, warn.conflicts = FALSE)
 library(plotly, warn.conflicts = FALSE)
@@ -429,6 +421,7 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 ```
 
 ## `R` figures
+
 ```{r message=FALSE}
 library(ggplot2, warn.conflicts = FALSE)
 library(plotly, warn.conflicts = FALSE)
@@ -440,22 +433,20 @@ p %>% ggplotly()
 
 ## Equations
 
-- `$\mu$` is used for in-line equations
-- `$$\mu$$` is used for equations
+-   `$\mu$` is used for in-line equations
+-   `$$\mu$$` is used for equations
 
-Let's assume that $Y$ follows a normal distribution. $$Y \sim  \mathcal{N}(\mu, \sigma^2)$$
-Where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $Y_i$. 
-
+Let's assume that $Y$ follows a normal distribution. $$Y \sim  \mathcal{N}(\mu, \sigma^2)$$ Where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $Y_i$.
 
 ## Equations
 
-- `$\mu$` is used for in-line equations
-- `$$\mu$$` is used for equations
+-   `$\mu$` is used for in-line equations
+-   `$$\mu$$` is used for equations
 
-Let's assume that $y$ is a vector with $N$ elements such that $$y \sim  \mathcal{N}(\mu, \sigma^2),$$
-where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $y_i$ with $i = 1, \dots, N$.
+Let's assume that $y$ is a vector with $N$ elements such that $$y \sim  \mathcal{N}(\mu, \sigma^2),$$ where we set in our simulations $\mu = 10$ and $\sigma^2 = 5$. We do something for every $y_i$ with $i = 1, \dots, N$.
 
 ## Code chunks
+
 ```{r}
 #| echo: false
 
@@ -463,6 +454,7 @@ answer <- 12 * 234
 ```
 
 We already saw some `markdown` code chunks. We can run inline code to calculate that `12 * 234` is `r answer` by using `` `r ` `` and code chunks to evaluate larger blocks of code, such as:
+
 ```{r}
 #| label: fig-mpg2
 #| fig-cap: "City and highway mileage for 38 popular models of cars."
@@ -487,7 +479,7 @@ ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +
 
 ## The previous slide
 
-````
+````         
 ## Code chunks and explicit caching
 
 ```{{r}}
@@ -496,11 +488,11 @@ ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +
 answer <- 12 * 234
 ``` 
 ````
+
 ```{=html}
 <div class="sourceCode">
 <pre class="sourceCode markdown">
 <code class="sourceCode markdown">
-There are &#96;r nrow(mpg)&#96; observations in our data. 
 We already saw some `markdown` code chunks. We can run inline code to calculate 
 that `12 * 234` is &#96; r answer &#96; by using &#96;r  &#96; and code chunks to evaluate 
 larger blocks of code, such as:
@@ -508,8 +500,7 @@ larger blocks of code, such as:
 </pre>
 </div>
 ```
-````
-```{{r}}
+```{{{r}}}
 #| output: asis
 #| label: fig-mpg
 #| fig-cap: "City and highway mileage for 38 popular models of cars."
@@ -531,31 +522,29 @@ ggplot(mpg, aes(x = hwy, y = cty, color = displ)) +
   scale_color_viridis_c(option = "E") +
   theme_minimal()
 ```
-````
 
 ## Explicit Caching
 
-- **Explicit caching** is a technique used in RMarkdown and Quarto documents to store and reuse the results of expensive computations or data processing steps.
-- It helps improve the efficiency of document generation and ensures reproducibility by avoiding redundant calculations.
-<br>
+-   **Explicit caching** is a technique used in RMarkdown and Quarto documents to store and reuse the results of expensive computations or data processing steps.
+-   It helps improve the efficiency of document generation and ensures reproducibility by avoiding redundant calculations. <br>
 
 ### Why Use Explicit Caching?
 
-- **Efficiency**: Caching saves time and resources by avoiding the repeated execution of time-consuming code chunks.
+-   **Efficiency**: Caching saves time and resources by avoiding the repeated execution of time-consuming code chunks.
 
-- **Reproducibility**: Explicit caching ensures that the same results are used when rendering the document, even if the code is modified or re-executed.
+-   **Reproducibility**: Explicit caching ensures that the same results are used when rendering the document, even if the code is modified or re-executed.
 
-- **Version Control**: Caching reduces the size of version-controlled documents by storing intermediate results separately.
+-   **Version Control**: Caching reduces the size of version-controlled documents by storing intermediate results separately.
 
 ## How Does Explicit Caching Work?
 
 In `RMarkdown` and `Quarto`, you can use cache directives to specify which code chunks should be cached and which should not.
 
-- Cached chunks are identified by a unique hash based on their code content, ensuring consistency.
+-   Cached chunks are identified by a unique hash based on their code content, ensuring consistency.
 
 The following code block
-````
-```{{r}}
+
+```{{{r}}}
 #| cache: true
 #| code-line-numbers: true
 #| label: imputation
@@ -568,9 +557,9 @@ imp |>
   map(~.x %$% lm(bmi ~ chl + hyp)) |>
   pool()
 ```
-````
 
 would result in this output
+
 ```{r}
 #| cache: true
 #| code-line-numbers: true
@@ -585,27 +574,29 @@ imp |>
   pool()
 ```
 
-with corresponding cache structure relative to the root and format of the output file:
-![](images/lec-2/cache.png)
+with corresponding cache structure relative to the root and format of the output file: ![](images/lec-2/cache.png)
 
 ## Tables
-Use [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables) if you need to make a table from scratch. 
+
+Use <https://www.tablesgenerator.com/markdown_tables> if you need to make a table from scratch.
 
 Otherwise, use tibbles:
+
 ```{r}
 mice::boys |> 
   tibble::as_tibble()
 ```
 
 or use e.g. `library(DT)` for customization:
+
 ```{r}
 library(DT)
 mtcars %>% 
   datatable(options = list(pageLength = 25))
 ```
 
-
 ## `reprex` and `renv`
+
 ``` r
 library(renv)
 #> 
@@ -765,24 +756,23 @@ sessionInfo()
 
 ## Benefits of Using `renv`
 
-- **1. Dependency Isolation**: `renv` creates a dedicated environment for each project, preventing conflicts between package versions.
+-   **1. Dependency Isolation**: `renv` creates a dedicated environment for each project, preventing conflicts between package versions.
 
-- **2. Reproducibility**: With `renv`, you can capture and record the specific package versions used in your project, ensuring reproducibility over time.
+-   **2. Reproducibility**: With `renv`, you can capture and record the specific package versions used in your project, ensuring reproducibility over time.
 
-- **3. Collaboration**: Share your project with others, and they can easily recreate the same environment using `renv.lock`.
+-   **3. Collaboration**: Share your project with others, and they can easily recreate the same environment using `renv.lock`.
 
-- **4. Easier Package Installation**: `renv` simplifies package installation. Just run `renv::restore()` to set up the project environment.
+-   **4. Easier Package Installation**: `renv` simplifies package installation. Just run `renv::restore()` to set up the project environment.
 
-- **5. Automatic Snapshot**: `renv` automatically generates a `renv.lock` file, listing all package versions used, making it easy to recreate the environment.
+-   **5. Automatic Snapshot**: `renv` automatically generates a `renv.lock` file, listing all package versions used, making it easy to recreate the environment.
 
-- **6. Compatibility**: `renv` is compatible with popular version control systems like Git, facilitating collaboration and sharing.
+-   **6. Compatibility**: `renv` is compatible with popular version control systems like Git, facilitating collaboration and sharing.
 
 Use `renv::snapshot()` to update the `renv.lock` file when you add or update packages. You can use `renv::activate()` and `renv::deactivate()` to activate or deactivate `renv` for your project.
 
-
 ## Diagrams
-````
-```{{mermaid}}
+
+```{{{mermaid}}}
 %%| echo: false
 flowchart LR
   A[Hard edge] --> B(Round edge)
@@ -790,8 +780,9 @@ flowchart LR
   C <--> D[Result one]
   C --> E[Result two]
 ```
-````
+
 <br>
+
 ```{mermaid}
 %%| echo: false
 flowchart LR
@@ -804,14 +795,16 @@ flowchart LR
 See [Quarto Diagrams](https://quarto.org/docs/authoring/diagrams.html) for a more comprehensive overview of all graphing engines. This [Live online Mermaid editor](https://mermaid.live/) is awesome!
 
 ## Scientific publishing with `rticles` and `Quarto`
+
 To use `rticles` from `RStudio`, you can access the templates through `File -> New File -> R Markdown`. This will open the dialog box where you can select from one of the available templates:
 
 ![](https://bookdown.org/yihui/rmarkdown/images/rticles-templates.png)
 
 ### Quarto
+
 The `quarto use template` command can be used to create an article from one the below formats.
 
-```{.bash filename="Terminal"}
+``` {.bash filename="Terminal"}
 quarto use template quarto-journals/acm
 quarto use template quarto-journals/plos
 quarto use template quarto-journals/elsevier
@@ -832,7 +825,7 @@ But you can also refer to @eval here
 
 <br>
 
-````
+```         
 ## Citations
 
 @eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].
@@ -843,4 +836,4 @@ But you can also refer to @eval here
 
 ::: {#refs}
 :::
-````
+```
