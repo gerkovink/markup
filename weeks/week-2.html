@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Week 2: Markdown in (most) flavors">
 <meta property="og:description" content="Markdown, rMarkdown, GitHub flavored Markdown and Quarto">
-<meta property="og:image" content="https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg">
 <meta property="og:site-name" content="Markup Languages and Reproducible Programming in Statistics">
 </head>
 
@@ -234,7 +233,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#watch-this-video" id="toc-watch-this-video" class="nav-link" data-scroll-target="#watch-this-video">Watch this video</a></li>
+  <li><a href="#browse-the-quarto-website" id="toc-browse-the-quarto-website" class="nav-link" data-scroll-target="#browse-the-quarto-website">Browse the <code>Quarto</code> website</a></li>
+  </ul></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gerkovink/markup/edit/main/weeks/week-2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -257,9 +269,74 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><img src="https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lecture Week 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week’s slides can be found <a href="../slides/lec-2.html">here</a></p>
+</div>
+</div>
+<hr>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Dear all,</p>
+<p>Welcome to <code>Quarto</code> - If you already know <code>rMarkdown</code>, it will be a breeze. If you don’t know <code>rMarkdown</code> yet or if you feel that you need a refresher, please follow <a href="https://quarto.org/docs/get-started/">this <code>Get Started</code></a> guide. For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with <code>Quarto</code>.</p>
+<p>All the best,</p>
+<p>Gerko and Hanne</p>
+<hr>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="watch-this-video" class="level2">
+<h2 class="anchored" data-anchor-id="watch-this-video">Watch this video</h2>
+<p>Mine Çetinkaya-Rundel has a great video that highlights many of Quarto’s relevant features in our field.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+</section>
+<section id="browse-the-quarto-website" class="level2">
+<h2 class="anchored" data-anchor-id="browse-the-quarto-website">Browse the <code>Quarto</code> website</h2>
+<p>The people at <code>Posit</code> have designed <a href="https://quarto.org/docs/guide/">this awesome companion website</a> that details pretty much everything <code>Quarto</code>. Have a look around and remember this source when you’re in need of some additional functionality. Much of what you can do with <code>Quarto</code> is detailed here.</p>
+<hr>
+</section>
+</section>
+<section id="exercise-1" class="level1">
+<h1>Exercise 1</h1>
+<p>Create a quarto presentation with 3 slides and a logo</p>
+<ul>
+<li>a title slide with at least your name and ORCID</li>
+<li>a slide with your favourite equation</li>
+<li>a slide with some source of information about you that (most of) your classmates do not know</li>
+</ul>
+<p>Bring this presentation to the next class</p>
+<hr>
+</section>
+<section id="exercise-2" class="level1">
+<h1>Exercise 2</h1>
+<p>Create a presentation about any topic you like that consists of at least 7 slides and includes all of the following:</p>
+<ul>
+<li>a logo</li>
+<li>a centered still figure</li>
+<li>an interactive table</li>
+<li>a moving figure, interactive figure or movie</li>
+<li>a 2-column slide</li>
+<li>an aligned multi-row equation</li>
+<li>a citation and reference list</li>
+<li>a bibliographic reference</li>
+<li>r-code, displayed but not executed</li>
+<li>cached and labeled r-code (may overlap with the next requirement)</li>
+<li>r-code, executed, but not displayed (e.g.&nbsp;a figure generation)</li>
+<li>an <code>renv</code> reproducible enviroment</li>
+</ul>
+<p>Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to this year’s GitHub repo.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -628,7 +705,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© made by Gerko Vink - use as you please</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gerkovink/markup/edit/main/weeks/week-2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
