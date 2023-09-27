@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.gerkovink.com/markup/slides/lec-1.html</loc>
-    <lastmod>2023-09-13T07:39:27.610Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/course-support.html</loc>
-    <lastmod>2023-09-13T07:39:26.242Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-3.html</loc>
-    <lastmod>2023-09-13T07:39:25.586Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-5.html</loc>
-    <lastmod>2023-09-13T07:39:24.926Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-6.html</loc>
-    <lastmod>2023-09-13T07:39:23.570Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/course-team.html</loc>
-    <lastmod>2023-09-13T07:39:22.794Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.gerkovink.com/markup/course-syllabus.html</loc>
-    <lastmod>2023-09-13T07:39:19.206Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/index.html</loc>
-    <lastmod>2023-09-13T07:39:21.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/LICENSE.html</loc>
-    <lastmod>2023-09-13T07:39:22.406Z</lastmod>
+    <lastmod>2023-09-27T05:23:29.564Z</lastmod>
   </url>
   <url>
     <loc>https://www.gerkovink.com/markup/portfolio.html</loc>
-    <lastmod>2023-09-13T07:39:23.238Z</lastmod>
+    <lastmod>2023-09-27T05:23:28.836Z</lastmod>
   </url>
   <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-1.html</loc>
-    <lastmod>2023-09-13T07:39:24.578Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-2.html</loc>
-    <lastmod>2023-09-13T07:39:25.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.gerkovink.com/markup/weeks/week-4.html</loc>
-    <lastmod>2023-09-13T07:39:25.914Z</lastmod>
+    <loc>https://www.gerkovink.com/markup/slides/lec-1.html</loc>
+    <lastmod>2023-09-27T05:23:26.392Z</lastmod>
   </url>
   <url>
     <loc>https://www.gerkovink.com/markup/course-overview.html</loc>
-    <lastmod>2023-09-13T07:39:26.594Z</lastmod>
+    <lastmod>2023-09-27T05:23:25.012Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-3.html</loc>
+    <lastmod>2023-09-27T05:23:24.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-4.html</loc>
+    <lastmod>2023-09-27T05:23:23.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-5.html</loc>
+    <lastmod>2023-09-27T05:23:22.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/LICENSE.html</loc>
+    <lastmod>2023-09-27T05:23:21.352Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/index.html</loc>
+    <lastmod>2023-09-27T05:23:18.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-1.html</loc>
+    <lastmod>2023-09-27T05:23:22.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-6.html</loc>
+    <lastmod>2023-09-27T05:23:23.172Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/weeks/week-2.html</loc>
+    <lastmod>2023-09-27T05:23:23.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/course-team.html</loc>
+    <lastmod>2023-09-27T05:23:24.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/slides/lec-2.html</loc>
+    <lastmod>2023-09-27T05:23:27.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.gerkovink.com/markup/course-support.html</loc>
+    <lastmod>2023-09-27T05:23:29.200Z</lastmod>
   </url>
 </urlset>
