@@ -298,7 +298,7 @@
     "href": "slides/lec-2.html#popular-code-editors-for-r",
     "title": "All flavors markdown",
     "section": "Popular Code Editors (for R)",
-    "text": "Popular Code Editors (for R)\n\nRStudio: Ideal for R programming with features tailored for data analysis and visualization.\nVisual Studio Code (VS Code): A versatile code editor with a vast ecosystem of extensions for various languages.\nEclipse (with StatET): Eclipse StatET is an integrated development environment (IDE) for R, offering features for R programming and data analysis.\n\nPopular Notebook Environments**\n\nJupyter Notebooks: Widely used interactive kernel-based computing environment for data science and machine learning, supporting multiple (i.e. almost all) programming and scripting languages.\nRMarkdown: An R-based notebook environment that combines code, output, and narrative text in a single document."
+    "text": "Popular Code Editors (for R)\n\nRStudio: Ideal for R programming with features tailored for data analysis and visualization.\nVisual Studio Code (VS Code): A versatile code editor with a vast ecosystem of extensions for various languages.\nEclipse (with StatET): Eclipse StatET is an integrated development environment (IDE) for R, offering features for R programming and data analysis.\n\nPopular Notebook Environments\n\nJupyter Notebooks: Widely used interactive kernel-based computing environment for data science and machine learning, supporting multiple (i.e. almost all) programming and scripting languages.\nRMarkdown: An R-based notebook environment that combines code, output, and narrative text in a single document."
   },
   {
     "objectID": "slides/lec-2.html#structure-of-a-quarto-document",
