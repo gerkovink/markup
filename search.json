@@ -354,14 +354,14 @@
     "href": "slides/lec-2.html#r-figures",
     "title": "All flavors markdown",
     "section": "R figures",
-    "text": "R figures\n{r, fig.width=3, fig.height=1}\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
+    "text": "R figures\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
   },
   {
     "objectID": "slides/lec-2.html#r-figures-1",
     "href": "slides/lec-2.html#r-figures-1",
     "title": "All flavors markdown",
     "section": "R figures",
-    "text": "R figures\n{r, fig.width=6, fig.height=2.5}\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
+    "text": "R figures\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
   },
   {
     "objectID": "slides/lec-2.html#r-figures-2",
@@ -403,7 +403,7 @@
     "href": "slides/lec-2.html#the-previous-slide",
     "title": "All flavors markdown",
     "section": "The previous slide",
-    "text": "The previous slide\n## Code chunks and explicit caching\n\n```{r}\n#| output: asis\n\nanswer &lt;- 12 * 234\n``` \n\n\nThere are `r nrow(mpg)` observations in our data. \nWe already saw some `markdown` code chunks. We can run inline code to calculate \nthat `12 * 234` is ` r answer ` by using `r  ` and code chunks to evaluate \nlarger blocks of code, such as:\n\n\n\n```{r}\n#| output: asis\n#| label: fig-mpg\n#| fig-cap: \"City and highway mileage for 38 popular models of cars.\"\n#| fig-subcap:\n#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n#| layout-ncol: 2\n#| column: page\n#| code-fold: true\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()\n```"
+    "text": "The previous slide\n## Code chunks and explicit caching\n\n```{r}\n#| output: asis\n\nanswer &lt;- 12 * 234\n``` \n\n\nWe already saw some `markdown` code chunks. We can run inline code to calculate \nthat `12 * 234` is ` r answer ` by using `r  ` and code chunks to evaluate \nlarger blocks of code, such as:\n\n\n\n#| output: asis\n#| label: fig-mpg\n#| fig-cap: \"City and highway mileage for 38 popular models of cars.\"\n#| fig-subcap:\n#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n#| layout-ncol: 2\n#| column: page\n#| code-fold: true\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()"
   },
   {
     "objectID": "slides/lec-2.html#explicit-caching",
@@ -417,7 +417,7 @@
     "href": "slides/lec-2.html#how-does-explicit-caching-work",
     "title": "All flavors markdown",
     "section": "How Does Explicit Caching Work?",
-    "text": "How Does Explicit Caching Work?\nIn RMarkdown and Quarto, you can use cache directives to specify which code chunks should be cached and which should not.\n\nCached chunks are identified by a unique hash based on their code content, ensuring consistency.\n\nThe following code block\n```{r}\n#| cache: true\n#| code-line-numbers: true\n#| label: imputation\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n```\nwould result in this output\n\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n\nClass: mipo    m = 5 \n         term m    estimate         ubar            b            t dfcom\n1 (Intercept) 5 22.74349586 1.466782e+01 5.5748962726 2.135770e+01    22\n2         chl 5  0.02798109 4.276476e-04 0.0001721876 6.342727e-04    22\n3         hyp 5 -1.13102073 4.505032e+00 0.3052774523 4.871365e+00    22\n        df        riv     lambda       fmi\n1 10.36596 0.45609201 0.31323021 0.4159942\n2 10.01903 0.48316686 0.32576703 0.4293435\n3 18.23535 0.08131639 0.07520129 0.1623012\n\n\nwith corresponding cache structure relative to the root and format of the output file:"
+    "text": "How Does Explicit Caching Work?\nIn RMarkdown and Quarto, you can use cache directives to specify which code chunks should be cached and which should not.\n\nCached chunks are identified by a unique hash based on their code content, ensuring consistency.\n\nThe following code block\n#| cache: true\n#| code-line-numbers: true\n#| label: imputation\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\nwould result in this output\n\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n\nClass: mipo    m = 5 \n         term m    estimate         ubar            b            t dfcom\n1 (Intercept) 5 22.74349586 1.466782e+01 5.5748962726 2.135770e+01    22\n2         chl 5  0.02798109 4.276476e-04 0.0001721876 6.342727e-04    22\n3         hyp 5 -1.13102073 4.505032e+00 0.3052774523 4.871365e+00    22\n        df        riv     lambda       fmi\n1 10.36596 0.45609201 0.31323021 0.4159942\n2 10.01903 0.48316686 0.32576703 0.4293435\n3 18.23535 0.08131639 0.07520129 0.1623012\n\n\nwith corresponding cache structure relative to the root and format of the output file:"
   },
   {
     "objectID": "slides/lec-2.html#tables",
@@ -445,7 +445,7 @@
     "href": "slides/lec-2.html#diagrams",
     "title": "All flavors markdown",
     "section": "Diagrams",
-    "text": "Diagrams\n```{mermaid}\n%%| echo: false\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n```\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\nSee Quarto Diagrams for a more comprehensive overview of all graphing engines. This Live online Mermaid editor is awesome!"
+    "text": "Diagrams\n%%| echo: false\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\nSee Quarto Diagrams for a more comprehensive overview of all graphing engines. This Live online Mermaid editor is awesome!"
   },
   {
     "objectID": "slides/lec-2.html#scientific-publishing-with-rticles-and-quarto",
