@@ -544,7 +544,7 @@ In `RMarkdown` and `Quarto`, you can use cache directives to specify which code 
 
 The following code block
 
-```{{{r}}}
+```{{r}}
 #| cache: true
 #| code-line-numbers: true
 #| label: imputation
