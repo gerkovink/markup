@@ -425,5 +425,383 @@
     "title": "Welcome to MLaRPiS",
     "section": "Next meeting",
     "text": "Next meeting\nMarkdown + hand in the exercise in this week’s lab\n\n\n\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "slides/lec-2.html#disclaimer",
+    "href": "slides/lec-2.html#disclaimer",
+    "title": "All flavors markdown",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nI owe a debt of gratitude to many people as the thoughts and code in these slides are the process of years-long development cycles and discussions with my team, friends, colleagues and peers. When someone has contributed to the content of the slides, I have credited their authorship.\nScientific references are in the footer. Opinions and figures are my own, AI generated or linked to source."
+  },
+  {
+    "objectID": "slides/lec-2.html#rmdghmdqmd",
+    "href": "slides/lec-2.html#rmdghmdqmd",
+    "title": "Welcome to MLaRPiS",
+    "section": "Rmd/GHmd/qmd",
+    "text": "Rmd/GHmd/qmd\n## code editors and notebooks ## Code editors and environments (RStudio, VS Code, Jupyter notebooks, Quarto, R Markdown, Github web editor, Github Co-pilot) = repro ## Copilot + VS code + jupyter notebooks = repro + markup ## markdown file (with equation, figure, table and references) = markup ## explicit caching with RMarkdown cookbook (wk 2) = repro ## path models with tikz/mermaid (wk 3) = markup ## including plots in latex vs rmd (wk 3) = markup ## R Markdown (basics will move to another course, advanced markdown stays, see e.g. this repo) = markup ## LaTeX vs markdown + latexdiff/markdowndiff (shiny app???) + rticles package = markup ## markdown (see e.g. https://biostats-r.github.io/biostats/quarto/, https://datavizf23.classes.andrewheiss.com/resource/markdown.html and https://daringfireball.net/projects/markdown/basics) = markup ## yaml (see e.g. https://learn.getgrav.org/16/advanced/yaml) = rerpo/markup ## quarto (see e.g. https://fediscience.org/@ct_bergstrom/110267907188002904 and https://quarto.org/docs/manuscripts/) ## python for R users with reticulate: https://rstudio.github.io/reticulate/articles/python_primer.html ## Presentations (highlight plotly!) = markup ## chunk options, caching\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "weeks/week-2.html",
+    "href": "weeks/week-2.html",
+    "title": "Week 2: Markdown in (most) flavors",
+    "section": "",
+    "text": "Lecture Week 2\n\n\n\nThis week’s slides can be found here"
+  },
+  {
+    "objectID": "slides/lec-2.html#rstudio",
+    "href": "slides/lec-2.html#rstudio",
+    "title": "All flavors markdown",
+    "section": "RStudio",
+    "text": "RStudio"
+  },
+  {
+    "objectID": "slides/lec-2.html#rstudio---integrated-development-environment-ide-for-r",
+    "href": "slides/lec-2.html#rstudio---integrated-development-environment-ide-for-r",
+    "title": "All flavors markdown",
+    "section": "RStudio - Integrated Development Environment (IDE) for R",
+    "text": "RStudio - Integrated Development Environment (IDE) for R\n\nRStudio is a powerful integrated development environment (IDE) designed specifically for the R programming language.\nIt offers a user-friendly interface and a suite of tools to enhance your R coding experience.\n\nKey Features of RStudio\n\n1. Code Editing: RStudio provides a code editor with syntax highlighting, autocompletion, and error checking, making your coding process more efficient.\n2. Console: An interactive R console allows you to execute R code line by line and view results in real time.\n3. Environment Pane: Keep track of your variables, data frames, and functions with the environment pane.\n4. Plots and Visualizations: Create and view plots, charts, and visualizations within RStudio.\n5. Integrated Help: Access R documentation, packages, and online resources directly from the IDE.\n6. Version Control: Easily integrate R projects with version control systems like Git.\n7. Markdown Support: RStudio seamlessly integrates with Markdown, making it an ideal choice for creating reproducible reports and documents.\n\nIt plays a crucial role in promoting reproducibility and collaboration in data science and statistical analysis."
+  },
+  {
+    "objectID": "slides/lec-2.html#rmarkdown-github-flavored-markdown-and-quarto",
+    "href": "slides/lec-2.html#rmarkdown-github-flavored-markdown-and-quarto",
+    "title": "All flavors markdown",
+    "section": "RMarkdown, GitHub-Flavored Markdown, and Quarto",
+    "text": "RMarkdown, GitHub-Flavored Markdown, and Quarto\n\nMarkdown is a lightweight markup language for creating formatted text using plain text. It’s easy to learn and widely used in various applications.\nGitHub-Flavored Markdown (GFM) is a variant of Markdown used on GitHub (next week), enhancing its capabilities for documentation and collaboration.\nRMarkdown is an extension of Markdown that allows you to embed R code and its output directly within a document.\n\nPerfect for creating reproducible reports, research papers, and presentations.\n\nQuarto is a comprehensive tool for creating reproducible and collaborative data science documents.\n\nCombines the power of Markdown, \\(\\LaTeX\\), and code execution to streamline document preparation."
+  },
+  {
+    "objectID": "slides/lec-2.html#code-editors-and-notebooks",
+    "href": "slides/lec-2.html#code-editors-and-notebooks",
+    "title": "All flavors markdown",
+    "section": "code editors and notebooks",
+    "text": "code editors and notebooks"
+  },
+  {
+    "objectID": "slides/lec-2.html#code-editors-and-environments-rstudio-vs-code-jupyter-notebooks-quarto-r-markdown-github-web-editor-github-co-pilot-repro",
+    "href": "slides/lec-2.html#code-editors-and-environments-rstudio-vs-code-jupyter-notebooks-quarto-r-markdown-github-web-editor-github-co-pilot-repro",
+    "title": "All flavors markdown",
+    "section": "Code editors and environments (RStudio, VS Code, Jupyter notebooks, Quarto, R Markdown, Github web editor, Github Co-pilot) = repro",
+    "text": "Code editors and environments (RStudio, VS Code, Jupyter notebooks, Quarto, R Markdown, Github web editor, Github Co-pilot) = repro"
+  },
+  {
+    "objectID": "slides/lec-2.html#copilot-vs-code-jupyter-notebooks-repro-markup",
+    "href": "slides/lec-2.html#copilot-vs-code-jupyter-notebooks-repro-markup",
+    "title": "All flavors markdown",
+    "section": "Copilot + VS code + jupyter notebooks = repro + markup",
+    "text": "Copilot + VS code + jupyter notebooks = repro + markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#markdown-file-with-equation-figure-table-and-references-markup",
+    "href": "slides/lec-2.html#markdown-file-with-equation-figure-table-and-references-markup",
+    "title": "All flavors markdown",
+    "section": "markdown file (with equation, figure, table and references) = markup",
+    "text": "markdown file (with equation, figure, table and references) = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#explicit-caching-with-rmarkdown-cookbook-wk-2-repro",
+    "href": "slides/lec-2.html#explicit-caching-with-rmarkdown-cookbook-wk-2-repro",
+    "title": "All flavors markdown",
+    "section": "explicit caching with RMarkdown cookbook (wk 2) = repro",
+    "text": "explicit caching with RMarkdown cookbook (wk 2) = repro"
+  },
+  {
+    "objectID": "slides/lec-2.html#path-models-with-tikzmermaid-wk-3-markup",
+    "href": "slides/lec-2.html#path-models-with-tikzmermaid-wk-3-markup",
+    "title": "All flavors markdown",
+    "section": "path models with tikz/mermaid (wk 3) = markup",
+    "text": "path models with tikz/mermaid (wk 3) = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#including-plots-in-latex-vs-rmd-wk-3-markup",
+    "href": "slides/lec-2.html#including-plots-in-latex-vs-rmd-wk-3-markup",
+    "title": "All flavors markdown",
+    "section": "including plots in latex vs rmd (wk 3) = markup",
+    "text": "including plots in latex vs rmd (wk 3) = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#r-markdown-basics-will-move-to-another-course-advanced-markdown-stays-see-e.g.-this-repo-markup",
+    "href": "slides/lec-2.html#r-markdown-basics-will-move-to-another-course-advanced-markdown-stays-see-e.g.-this-repo-markup",
+    "title": "All flavors markdown",
+    "section": "R Markdown (basics will move to another course, advanced markdown stays, see e.g. this repo) = markup",
+    "text": "R Markdown (basics will move to another course, advanced markdown stays, see e.g. this repo) = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#latex-vs-markdown-latexdiffmarkdowndiff-shiny-app-rticles-package-markup",
+    "href": "slides/lec-2.html#latex-vs-markdown-latexdiffmarkdowndiff-shiny-app-rticles-package-markup",
+    "title": "All flavors markdown",
+    "section": "LaTeX vs markdown + latexdiff/markdowndiff (shiny app???) + rticles package = markup",
+    "text": "LaTeX vs markdown + latexdiff/markdowndiff (shiny app???) + rticles package = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#markdown-see-e.g.-httpsbiostats-r.github.iobiostatsquarto-httpsdatavizf23.classes.andrewheiss.comresourcemarkdown.html-and-httpsdaringfireball.netprojectsmarkdownbasics-markup",
+    "href": "slides/lec-2.html#markdown-see-e.g.-httpsbiostats-r.github.iobiostatsquarto-httpsdatavizf23.classes.andrewheiss.comresourcemarkdown.html-and-httpsdaringfireball.netprojectsmarkdownbasics-markup",
+    "title": "All flavors markdown",
+    "section": "markdown (see e.g. https://biostats-r.github.io/biostats/quarto/, https://datavizf23.classes.andrewheiss.com/resource/markdown.html and https://daringfireball.net/projects/markdown/basics) = markup",
+    "text": "markdown (see e.g. https://biostats-r.github.io/biostats/quarto/, https://datavizf23.classes.andrewheiss.com/resource/markdown.html and https://daringfireball.net/projects/markdown/basics) = markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#yaml-see-e.g.-httpslearn.getgrav.org16advancedyaml-rerpomarkup",
+    "href": "slides/lec-2.html#yaml-see-e.g.-httpslearn.getgrav.org16advancedyaml-rerpomarkup",
+    "title": "All flavors markdown",
+    "section": "yaml (see e.g. https://learn.getgrav.org/16/advanced/yaml) = rerpo/markup",
+    "text": "yaml (see e.g. https://learn.getgrav.org/16/advanced/yaml) = rerpo/markup"
+  },
+  {
+    "objectID": "slides/lec-2.html#quarto-see-e.g.-httpsfediscience.orgct_bergstrom110267907188002904-and-httpsquarto.orgdocsmanuscripts",
+    "href": "slides/lec-2.html#quarto-see-e.g.-httpsfediscience.orgct_bergstrom110267907188002904-and-httpsquarto.orgdocsmanuscripts",
+    "title": "All flavors markdown",
+    "section": "quarto (see e.g. https://fediscience.org/@ct_bergstrom/110267907188002904 and https://quarto.org/docs/manuscripts/)",
+    "text": "quarto (see e.g. https://fediscience.org/@ct_bergstrom/110267907188002904 and https://quarto.org/docs/manuscripts/)"
+  },
+  {
+    "objectID": "slides/lec-2.html#python-for-r-users-with-reticulate-httpsrstudio.github.ioreticulatearticlespython_primer.html",
+    "href": "slides/lec-2.html#python-for-r-users-with-reticulate-httpsrstudio.github.ioreticulatearticlespython_primer.html",
+    "title": "All flavors markdown",
+    "section": "python for R users with reticulate: https://rstudio.github.io/reticulate/articles/python_primer.html",
+    "text": "python for R users with reticulate: https://rstudio.github.io/reticulate/articles/python_primer.html"
+  },
+  {
+    "objectID": "slides/lec-2.html#presentations",
+    "href": "slides/lec-2.html#presentations",
+    "title": "All flavors markdown",
+    "section": "Presentations",
+    "text": "Presentations"
+  },
+  {
+    "objectID": "slides/lec-2.html#plotly-and-interactive-plots",
+    "href": "slides/lec-2.html#plotly-and-interactive-plots",
+    "title": "All flavors markdown",
+    "section": "Plotly and interactive plots",
+    "text": "Plotly and interactive plots"
+  },
+  {
+    "objectID": "slides/lec-2.html#code-chunk-options-in-quarto-and-rmarkdown",
+    "href": "slides/lec-2.html#code-chunk-options-in-quarto-and-rmarkdown",
+    "title": "All flavors markdown",
+    "section": "Code chunk options in quarto and rmarkdown,",
+    "text": "Code chunk options in quarto and rmarkdown,"
+  },
+  {
+    "objectID": "slides/lec-2.html#chunk-caching",
+    "href": "slides/lec-2.html#chunk-caching",
+    "title": "All flavors markdown",
+    "section": "Chunk caching",
+    "text": "Chunk caching"
+  },
+  {
+    "objectID": "slides/lec-2.html#reprex-with-r",
+    "href": "slides/lec-2.html#reprex-with-r",
+    "title": "All flavors markdown",
+    "section": "Reprex with R",
+    "text": "Reprex with R\nlibrary(renv)\n#&gt; \n#&gt; Attaching package: 'renv'\n#&gt; The following objects are masked from 'package:stats':\n#&gt; \n#&gt;     embed, update\n#&gt; The following objects are masked from 'package:utils':\n#&gt; \n#&gt;     history, upgrade\n#&gt; The following objects are masked from 'package:base':\n#&gt; \n#&gt;     autoload, load, remove\nrenv::init()\n#&gt; - Linking packages into the project library ... Done!\n#&gt; The following package(s) will be updated in the lockfile:\n#&gt; \n#&gt; # CRAN -----------------------------------------------------------------------\n#&gt; - backports       [* -&gt; 1.4.1]\n#&gt; - base64enc       [* -&gt; 0.1-3]\n#&gt; - broom           [* -&gt; 1.0.4]\n#&gt; - bslib           [* -&gt; 0.4.2]\n#&gt; - cachem          [* -&gt; 1.0.8]\n#&gt; - cli             [* -&gt; 3.6.1]\n#&gt; - cpp11           [* -&gt; 0.4.3]\n#&gt; - digest          [* -&gt; 0.6.31]\n#&gt; - dplyr           [* -&gt; 1.1.2]\n#&gt; - ellipsis        [* -&gt; 0.3.2]\n#&gt; - evaluate        [* -&gt; 0.21]\n#&gt; - fansi           [* -&gt; 1.0.4]\n#&gt; - fastmap         [* -&gt; 1.1.1]\n#&gt; - fontawesome     [* -&gt; 0.5.1]\n#&gt; - fs              [* -&gt; 1.6.2]\n#&gt; - generics        [* -&gt; 0.1.3]\n#&gt; - glue            [* -&gt; 1.6.2]\n#&gt; - highr           [* -&gt; 0.10]\n#&gt; - htmltools       [* -&gt; 0.5.5]\n#&gt; - jquerylib       [* -&gt; 0.1.4]\n#&gt; - jsonlite        [* -&gt; 1.8.4]\n#&gt; - knitr           [* -&gt; 1.43]\n#&gt; - lattice         [* -&gt; 0.21-8]\n#&gt; - lifecycle       [* -&gt; 1.0.3]\n#&gt; - magrittr        [* -&gt; 2.0.3]\n#&gt; - memoise         [* -&gt; 2.0.1]\n#&gt; - mime            [* -&gt; 0.12]\n#&gt; - pillar          [* -&gt; 1.9.0]\n#&gt; - pkgconfig       [* -&gt; 2.0.3]\n#&gt; - purrr           [* -&gt; 1.0.1]\n#&gt; - R6              [* -&gt; 2.5.1]\n#&gt; - rappdirs        [* -&gt; 0.3.3]\n#&gt; - Rcpp            [* -&gt; 1.0.11]\n#&gt; - RcppArmadillo   [* -&gt; 0.12.4.0.0]\n#&gt; - renv            [* -&gt; 1.0.2]\n#&gt; - rlang           [* -&gt; 1.1.1]\n#&gt; - rmarkdown       [* -&gt; 2.22]\n#&gt; - sass            [* -&gt; 0.4.6]\n#&gt; - stringi         [* -&gt; 1.7.12]\n#&gt; - stringr         [* -&gt; 1.5.0]\n#&gt; - tibble          [* -&gt; 3.2.1]\n#&gt; - tidyr           [* -&gt; 1.3.0]\n#&gt; - tidyselect      [* -&gt; 1.2.0]\n#&gt; - tinytex         [* -&gt; 0.45]\n#&gt; - utf8            [* -&gt; 1.2.3]\n#&gt; - vctrs           [* -&gt; 0.6.2]\n#&gt; - withr           [* -&gt; 2.5.0]\n#&gt; - xfun            [* -&gt; 0.39]\n#&gt; - yaml            [* -&gt; 2.3.7]\n#&gt; \n#&gt; # GitHub ---------------------------------------------------------------------\n#&gt; - mice            [* -&gt; gerkovink/mice@match_conditional]\n#&gt; \n#&gt; The version of R recorded in the lockfile will be updated:\n#&gt; - R               [* -&gt; 4.3.0]\n#&gt; \n#&gt; - Lockfile written to \"/private/var/folders/yx/6rn4qpl13wsgk4c7s3jc9d1r0000gp/T/RtmpMqetyA/reprex-1233f6d959b19-drear-kitty/renv.lock\".\nlibrary(mice)\n#&gt; \n#&gt; Attaching package: 'mice'\n#&gt; The following object is masked from 'package:stats':\n#&gt; \n#&gt;     filter\n#&gt; The following objects are masked from 'package:base':\n#&gt; \n#&gt;     cbind, rbind\nlibrary(magrittr)\nlibrary(purrr)\n#&gt; \n#&gt; Attaching package: 'purrr'\n#&gt; The following object is masked from 'package:magrittr':\n#&gt; \n#&gt;     set_names\n#&gt; The following object is masked from 'package:renv':\n#&gt; \n#&gt;     modify\nrenv::snapshot()\n#&gt; - The lockfile is already up to date.\nrenv::remove(\"mice\")\n#&gt; - Removing package(s) from project library ...\n#&gt; Removing package 'mice' ... Done!\nrenv::restore()\n#&gt; The following package(s) will be updated:\n#&gt; \n#&gt; # GitHub ---------------------------------------------------------------------\n#&gt; - mice   [* -&gt; gerkovink/mice@match_conditional]\n#&gt; \n#&gt; # Installing packages --------------------------------------------------------\n#&gt; - Installing mice ...                           OK [linked from cache]\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n#&gt; Class: mipo    m = 5 \n#&gt;          term m   estimate         ubar            b            t dfcom\n#&gt; 1 (Intercept) 5 20.6687887 2.020809e+01 8.8963873222 3.088375e+01    22\n#&gt; 2         chl 5  0.0354435 5.409979e-04 0.0001081414 6.707676e-04    22\n#&gt; 3         hyp 5 -0.8447582 4.353337e+00 0.9275040571 5.466342e+00    22\n#&gt;          df       riv    lambda       fmi\n#&gt; 1  9.489411 0.5282868 0.3456725 0.4504537\n#&gt; 2 14.161181 0.2398710 0.1934645 0.2874598\n#&gt; 3 13.811544 0.2556671 0.2036105 0.2983537\n\nsessionInfo()\n#&gt; R version 4.3.0 (2023-04-21)\n#&gt; Platform: aarch64-apple-darwin20 (64-bit)\n#&gt; Running under: macOS Ventura 13.6\n#&gt; \n#&gt; Matrix products: default\n#&gt; BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \n#&gt; LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n#&gt; \n#&gt; locale:\n#&gt; [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n#&gt; \n#&gt; time zone: Europe/Amsterdam\n#&gt; tzcode source: internal\n#&gt; \n#&gt; attached base packages:\n#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     \n#&gt; \n#&gt; other attached packages:\n#&gt; [1] purrr_1.0.1    magrittr_2.0.3 mice_3.15.3    renv_1.0.2    \n#&gt; \n#&gt; loaded via a namespace (and not attached):\n#&gt;  [1] vctrs_0.6.2      cli_3.6.1        knitr_1.43       rlang_1.1.1     \n#&gt;  [5] xfun_0.39        generics_0.1.3   glue_1.6.2       backports_1.4.1 \n#&gt;  [9] htmltools_0.5.5  fansi_1.0.4      rmarkdown_2.22   grid_4.3.0      \n#&gt; [13] evaluate_0.21    tibble_3.2.1     fastmap_1.1.1    yaml_2.3.7      \n#&gt; [17] lifecycle_1.0.3  compiler_4.3.0   dplyr_1.1.2      fs_1.6.2        \n#&gt; [21] pkgconfig_2.0.3  Rcpp_1.0.11      tidyr_1.3.0      rstudioapi_0.14 \n#&gt; [25] lattice_0.21-8   digest_0.6.31    R6_2.5.1         tidyselect_1.2.0\n#&gt; [29] reprex_2.0.2     utf8_1.2.3       pillar_1.9.0     tools_4.3.0     \n#&gt; [33] withr_2.5.0      broom_1.0.4\nCreated on 2023-09-27 with reprex v2.0.2\nlibrary(mice)\n#&gt; \n#&gt; Attaching package: 'mice'\n#&gt; The following object is masked from 'package:stats':\n#&gt; \n#&gt;     filter\n#&gt; The following objects are masked from 'package:base':\n#&gt; \n#&gt;     cbind, rbind\nlibrary(magrittr)\nlibrary(purrr)\n#&gt; \n#&gt; Attaching package: 'purrr'\n#&gt; The following object is masked from 'package:magrittr':\n#&gt; \n#&gt;     set_names\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n#&gt; Class: mipo    m = 5 \n#&gt;          term m    estimate         ubar            b            t dfcom\n#&gt; 1 (Intercept) 5 22.27167798 1.701935e+01 3.7245146024 2.148877e+01    22\n#&gt; 2         chl 5  0.03001161 4.661658e-04 0.0003045462 8.316213e-04    22\n#&gt; 3         hyp 5 -1.28987099 4.343020e+00 1.7427875942 6.434365e+00    22\n#&gt;          df       riv    lambda       fmi\n#&gt; 1 13.661833 0.2626080 0.2079885 0.3030575\n#&gt; 2  7.330342 0.7839603 0.4394494 0.5479745\n#&gt; 3 10.039212 0.4815417 0.3250274 0.4285571\n\nsessionInfo()\n#&gt; R version 4.3.0 (2023-04-21)\n#&gt; Platform: aarch64-apple-darwin20 (64-bit)\n#&gt; Running under: macOS Ventura 13.6\n#&gt; \n#&gt; Matrix products: default\n#&gt; BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \n#&gt; LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n#&gt; \n#&gt; locale:\n#&gt; [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n#&gt; \n#&gt; time zone: Europe/Amsterdam\n#&gt; tzcode source: internal\n#&gt; \n#&gt; attached base packages:\n#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     \n#&gt; \n#&gt; other attached packages:\n#&gt; [1] purrr_1.0.1    magrittr_2.0.3 mice_3.15.3   \n#&gt; \n#&gt; loaded via a namespace (and not attached):\n#&gt;  [1] dplyr_1.1.2       compiler_4.3.0    reprex_2.0.2      tidyselect_1.2.0 \n#&gt;  [5] Rcpp_1.0.11       tidyr_1.3.0       yaml_2.3.7        fastmap_1.1.1    \n#&gt;  [9] lattice_0.21-8    R6_2.5.1          generics_0.1.3    knitr_1.43       \n#&gt; [13] backports_1.4.1   tibble_3.2.1      R.cache_0.16.0    pillar_1.9.0     \n#&gt; [17] R.utils_2.12.2    rlang_1.1.1       utf8_1.2.3        broom_1.0.4      \n#&gt; [21] xfun_0.39         fs_1.6.2          cli_3.6.1         withr_2.5.0      \n#&gt; [25] grid_4.3.0        digest_0.6.31     rstudioapi_0.14   lifecycle_1.0.3  \n#&gt; [29] R.methodsS3_1.8.2 R.oo_1.25.0       vctrs_0.6.2       evaluate_0.21    \n#&gt; [33] glue_1.6.2        styler_1.10.2     fansi_1.0.4       rmarkdown_2.22   \n#&gt; [37] tools_4.3.0       pkgconfig_2.0.3   htmltools_0.5.5\nCreated on 2023-09-27 with reprex v2.0.2\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "slides/lec-2.html#popular-code-editors-for-r",
+    "href": "slides/lec-2.html#popular-code-editors-for-r",
+    "title": "All flavors markdown",
+    "section": "Popular Code Editors (for R)",
+    "text": "Popular Code Editors (for R)\n\nRStudio: Ideal for R programming with features tailored for data analysis and visualization.\nVisual Studio Code (VS Code): A versatile code editor with a vast ecosystem of extensions for various languages.\nEclipse (with StatET): Eclipse StatET is an integrated development environment (IDE) for R, offering features for R programming and data analysis.\n\nPopular Notebook Environments**\n\nJupyter Notebooks: Widely used interactive kernel-based computing environment for data science and machine learning, supporting multiple (i.e. almost all) programming and scripting languages.\nRMarkdown: An R-based notebook environment that combines code, output, and narrative text in a single document."
+  },
+  {
+    "objectID": "slides/lec-2.html#structure-of-a-quarto-document",
+    "href": "slides/lec-2.html#structure-of-a-quarto-document",
+    "title": "All flavors markdown",
+    "section": "Structure of a Quarto Document",
+    "text": "Structure of a Quarto Document\n\nA Quarto document is organized into blocks, which serve as the fundamental building blocks of the document’s content.\nEach block can contain a combination of the following elements:\n\nText: Narrative content and explanations.\nCode: R code chunks for computations and data analysis.\nEquations: Mathematical equations and notation.\nFigures: Visualizations, charts, and images.\nTables: Data tables for presenting results.\nYAML Headers: Metadata and document configuration.\nSections and Subsections: Structuring the document into hierarchical sections for organization."
+  },
+  {
+    "objectID": "slides/lec-2.html#quarto-the-yaml-header",
+    "href": "slides/lec-2.html#quarto-the-yaml-header",
+    "title": "All flavors markdown",
+    "section": "Quarto: the YAML header",
+    "text": "Quarto: the YAML header\nYAML (YAML Ain’t Markup Language) is a human-readable data serialization format commonly used for configuration files and metadata in various programming and markup contexts.\n\nYAML is very simple and readable\nIn Quarto and many other applications, YAML is used to specify:\n\nDocument Metadata: Information about the document itself, such as the title, author, date, and document type.\nDocument Configuration: Settings related to the document’s behavior, appearance, and rendering, such as the output format (e.g., HTML, PDF), document template, and style options.\nCustom Variables: Definitions of custom variables or parameters that can be used throughout the document to control behavior or content.\n\n\nHere’s an example of a simple YAML header in a Quarto document:\n---\ntitle: \"All flavors markdown\"\nauthor: \n  - name: Gerko Vink\n    orcid: 0000-0001-9767-1924\n    email: g.vink@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU University\n  - name: Hanne Oberman\n    orcid: 0000-0003-3276-2141\n    email: h.i.oberman@uu.nl\n    affiliations:\n      - name: Methodology & Statistics @ UU\ndate: 13 Sep 2023\ndate-format: \"D MMM YYYY\"\nexecute: \n  echo: true\neditor: source\nformat: \n  revealjs:\n    theme: [solarized, gerko.scss]\n    progress: true\n    multiplex: true\n    transition: fade\n    slide-number: true\n    margin: 0.075\n    logo: \"images/logo.png\" \n    toc: false\n    toc-depth: 1\n    toc-title: Outline\n    scrollable: true\n    width: 1200\n    reference-location: margin\n    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU\n---\nIn this example:\n\ntitle, author, and date provide metadata about the document.\noutput specifies settings related to the document’s output format and theme.\n\nThe YAML header is a powerful tool for customizing and configuring Quarto documents, allowing you to control how the document is rendered and presented. It ensures that important document information and settings are stored in a human-readable and structured format at the beginning of the document."
+  },
+  {
+    "objectID": "slides/lec-2.html#text-in-quarto",
+    "href": "slides/lec-2.html#text-in-quarto",
+    "title": "All flavors markdown",
+    "section": "Text in Quarto",
+    "text": "Text in Quarto\nText is text. Nothing more, nothing less\nHeader\nSubheader\nSubsubheader\n# This is a heading indicating a section\n## This is a heading indicating a subsection\n### This is a heading indicating a subsubsection\nBut in the above I used\n### Header\n#### Subheader\n##### Subsubheader"
+  },
+  {
+    "objectID": "slides/lec-2.html#figures",
+    "href": "slides/lec-2.html#figures",
+    "title": "All flavors markdown",
+    "section": "Figures",
+    "text": "Figures\n\n\n\n\n\nA surfing elephant\n\n\nThe above figure is left-aligned  The caption is also left-aligned\n\n\n\n\nA surfing elephant\n\n\nThe above figure is centered  The caption is still left-aligned\n\n\nThe code for the figures is\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"left\"}\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\"}"
+  },
+  {
+    "objectID": "slides/lec-2.html#next",
+    "href": "slides/lec-2.html#next",
+    "title": "All flavors markdown",
+    "section": "Next",
+    "text": "Next\n\nEquations: Mathematical equations and notation.\nFigures: Visualizations, charts, and images.\nTables: Data tables for presenting results.\nYAML Headers: Metadata and document configuration.\nSections and Subsections: Structuring the document into hierarchical sections for organization."
+  },
+  {
+    "objectID": "slides/lec-2.html#slide-columns-and-proper-centering",
+    "href": "slides/lec-2.html#slide-columns-and-proper-centering",
+    "title": "All flavors markdown",
+    "section": "Slide columns and proper centering",
+    "text": "Slide columns and proper centering\n\n\n\n\n\nA surfing elephant\n\n\nThe above figure is left-aligned  The caption is also left-aligned\n\n\n\n\n\nA surfing elephant\n\n\n\nThe above figure is centered  The caption is also centered\n\n\nThe code for the slide is\n## Slide columns and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered\n:::\n\n:::\n\nThe code for the slide is\n\n``` markdown\n## Columns, Sizing and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing $elephant$](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered\n:::\n\n:::\n```"
+  },
+  {
+    "objectID": "slides/lec-2.html#code-chunks",
+    "href": "slides/lec-2.html#code-chunks",
+    "title": "All flavors markdown",
+    "section": "Code chunks",
+    "text": "Code chunks\nWe already saw some markdown code chunks. We can run inline code to calculate that 12 * 234 is 2808 by using `r ` and code chunks to evaluate larger blocks of code, such as:\n\n\nCode\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n(a) Color by number of cylinders\n\n\n\n\n\n\n\n(b) Color by engine displacement, in liters\n\n\n\n\nFigure 1: City and highway mileage for 38 popular models of cars."
+  },
+  {
+    "objectID": "slides/lec-2.html#columns-sizing-and-proper-centering",
+    "href": "slides/lec-2.html#columns-sizing-and-proper-centering",
+    "title": "All flavors markdown",
+    "section": "Columns, Sizing and proper centering",
+    "text": "Columns, Sizing and proper centering\n\n\n\n\n\nA surfing \\(\\epsilon\\lambda\\epsilon\\phi h\\alpha\\nu\\tau\\)\n\n\n\\(e^{i\\pi} + 1 = 0\\)\nThe above figure is left-aligned  The caption is also left-aligned  The equation is left-aligned too\n\n\n\n\n\nA surfing elephant\n\n\n\n\\[e^{i\\pi} + 1 = 0\\]\nThe above figure is centered  The caption is also centered  The equation is centered\n\n\nThe code for the slide is\n## Columns, Sizing and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered\n:::\n\n:::\n\nThe code for the slide is\n\n``` markdown\n## Columns, Sizing and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered\n:::\n\n:::\n```"
+  },
+  {
+    "objectID": "slides/lec-2.html#columns-sizing-equations-and-proper-centering",
+    "href": "slides/lec-2.html#columns-sizing-equations-and-proper-centering",
+    "title": "All flavors markdown",
+    "section": "Columns, Sizing, Equations and proper centering",
+    "text": "Columns, Sizing, Equations and proper centering\n\n\n\n\n\nA surfing \\(\\epsilon\\lambda\\epsilon\\phi h\\alpha\\nu\\tau\\)\n\n\n\\(e^{i\\pi} + 1 = 0\\)\nThe above figure is left-aligned  The caption is also left-aligned  The equation is left-aligned too\n\n\n\n\n\nA surfing elephant\n\n\n\n\\[e^{i\\pi} + 1 = 0\\]\nThe above figure is centered  The caption is also centered  The equation is centered\n\n\nThe code for the slide is\n## Columns, Sizing, Equations and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing $\\epsilon\\lambda\\epsilon\\phi h\\alpha\\nu\\tau$](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\n$e^{i\\pi} + 1 = 0$\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned &lt;br&gt;\nThe equation is left-aligned too\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\n$$e^{i\\pi} + 1 = 0$$\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered &lt;br&gt;\nThe equation is centered\n:::\n\n:::\n\nThe code for the slide is\n\n``` markdown\n## Columns, Sizing, Equations and proper centering\n\n::: columns\n::: {.column width=\"50%\"}\n![A surfing $\\epsilon\\lambda\\epsilon\\phi h\\alpha\\nu\\tau$](images/lec-2/elephantastic.png){fig-align=\"left\" width=\"80%\"}\n\n$e^{i\\pi} + 1 = 0$\n\nThe above figure is left-aligned &lt;br&gt;\nThe caption is also left-aligned &lt;br&gt;\nThe equation is left-aligned too\n:::\n\n::: {.column width=\"50%\"}\n&lt;center&gt;\n![A surfing elephant](images/lec-2/elephantastic.png){fig-align=\"center\" width=\"80%\"}\n&lt;/center&gt;\n\n$$e^{i\\pi} + 1 = 0$$\n\nThe above figure is centered &lt;br&gt;\nThe caption is also centered &lt;br&gt;\nThe equation is centered\n:::\n\n:::"
+  },
+  {
+    "objectID": "slides/lec-2.html#code-chunks-and-explicit-caching",
+    "href": "slides/lec-2.html#code-chunks-and-explicit-caching",
+    "title": "All flavors markdown",
+    "section": "Code chunks and explicit caching",
+    "text": "Code chunks and explicit caching\nWe already saw some markdown code chunks. We can run inline code to calculate that 12 * 234 is 2808 by using  and code chunks to evaluate larger blocks of code, such as:\n\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()\n\n\n\n\n\n\n\n(a) Color by number of cylinders\n\n\n\n\n\n\n\n(b) Color by engine displacement, in liters\n\n\n\n\nFigure 1: City and highway mileage for 38 popular models of cars."
+  },
+  {
+    "objectID": "slides/lec-2.html#tables",
+    "href": "slides/lec-2.html#tables",
+    "title": "All flavors markdown",
+    "section": "Tables",
+    "text": "Tables\nUse https://www.tablesgenerator.com/markdown_tables if you need to make a table from scratch.\nOtherwise, use tibbles:\n\nmice::boys |&gt; \n  tibble::as_tibble()\n\n# A tibble: 748 × 9\n     age   hgt   wgt   bmi    hc gen   phb      tv reg  \n   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;ord&gt; &lt;int&gt; &lt;fct&gt;\n 1 0.035  50.1  3.65  14.5  33.7 &lt;NA&gt;  &lt;NA&gt;     NA south\n 2 0.038  53.5  3.37  11.8  35   &lt;NA&gt;  &lt;NA&gt;     NA south\n 3 0.057  50    3.14  12.6  35.2 &lt;NA&gt;  &lt;NA&gt;     NA south\n 4 0.06   54.5  4.27  14.4  36.7 &lt;NA&gt;  &lt;NA&gt;     NA south\n 5 0.062  57.5  5.03  15.2  37.3 &lt;NA&gt;  &lt;NA&gt;     NA south\n 6 0.068  55.5  4.66  15.1  37   &lt;NA&gt;  &lt;NA&gt;     NA south\n 7 0.068  52.5  3.81  13.8  34.9 &lt;NA&gt;  &lt;NA&gt;     NA south\n 8 0.071  53    3.89  13.8  35.8 &lt;NA&gt;  &lt;NA&gt;     NA west \n 9 0.071  55.1  3.88  12.8  36.8 &lt;NA&gt;  &lt;NA&gt;     NA west \n10 0.073  54.5  4.2   14.1  38   &lt;NA&gt;  &lt;NA&gt;     NA east \n# ℹ 738 more rows\n\n\nor use e.g. library(DT) for customization:\n\nlibrary(DT)\nmtcars %&gt;% \n  datatable(options = list(pageLength = 25))"
+  },
+  {
+    "objectID": "slides/lec-2.html#f-ing-it-all-up",
+    "href": "slides/lec-2.html#f-ing-it-all-up",
+    "title": "All flavors markdown",
+    "section": "F-ing it all up",
+    "text": "F-ing it all up\n\n\n\n\n\nRick taking a bad\n\n\n\\(e^{i\\pi} + 1 = 0\\)\nThe above figure is left-aligned  The caption is also left-aligned  The equation is left-aligned too\n\n\n\n\n\nRick taking a bad\n\n\n\n\\[e^{i\\pi} + 1 = 0\\]\nThe above figure is centered  The caption is also centered  The equation is centered\n\n\n::: columns\n::: {.column width=\"70%\"}\n![Rick taking a bad](images/lec-2/bathrick.png){fig-align=\"left\" width=\"70%\"}\n\n$e^{i\\pi} + 1 = 0$\n\n:::\n\n::: {.column width=\"30%\"}\n&lt;center&gt;\n![Rick taking a bad](images/lec-2/bathrick.png){fig-align=\"center\" width=\"30%\"}\n&lt;/center&gt;\n\n$$e^{i\\pi} + 1 = 0$$\n:::\n\n:::"
+  },
+  {
+    "objectID": "slides/lec-2.html#math-ing-it-all-up",
+    "href": "slides/lec-2.html#math-ing-it-all-up",
+    "title": "All flavors markdown",
+    "section": "Math-ing it all up",
+    "text": "Math-ing it all up\n\n\n\n\n\nRick taking a bath\n\n\n\\(e^{i\\pi} + 1 = 0\\)\n\n\n\n\n\nRick taking a bath\n\n\n\n\\[e^{i\\pi} + 1 = 0\\]\n\n\n## Math-ing it all up\n::: columns\n::: {.column width=\"70%\"}\n![Rick taking a bath](images/lec-2/goodrick.png){fig-align=\"left\" width=\"30%\"}\n\n$e^{i\\pi} + 1 = 0$\n:::\n\n::: {.column width=\"30%\"}\n&lt;center&gt;\n![Rick taking a bath](images/lec-2/goodrick.png){fig-align=\"center\" width=\"70%\"}\n&lt;/center&gt;\n\n$$e^{i\\pi} + 1 = 0$$\n:::\n\n:::\n\n```markdown\nEND OF EXAMPLE"
+  },
+  {
+    "objectID": "slides/lec-2.html#the-previous-slide",
+    "href": "slides/lec-2.html#the-previous-slide",
+    "title": "All flavors markdown",
+    "section": "The previous slide",
+    "text": "The previous slide\n## Code chunks and explicit caching\n\n```{r}\n#| output: asis\n\nanswer &lt;- 12 * 234\n``` \n\n\nThere are `r nrow(mpg)` observations in our data. \nWe already saw some `markdown` code chunks. We can run inline code to calculate \nthat `12 * 234` is ` r answer ` by using `r  ` and code chunks to evaluate \nlarger blocks of code, such as:\n\n\n\n```{r}\n#| output: asis\n#| label: fig-mpg\n#| fig-cap: \"City and highway mileage for 38 popular models of cars.\"\n#| fig-subcap:\n#|   - \"Color by number of cylinders\"\n#|   - \"Color by engine displacement, in liters\"\n#| layout-ncol: 2\n#| column: page\n#| code-fold: true\nlibrary(ggplot2)\n\nggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c() +\n  theme_minimal()\n\nggplot(mpg, aes(x = hwy, y = cty, color = displ)) +\n  geom_point(alpha = 0.5, size = 2) +\n  scale_color_viridis_c(option = \"E\") +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "slides/lec-2.html#r-figures",
+    "href": "slides/lec-2.html#r-figures",
+    "title": "All flavors markdown",
+    "section": "R figures",
+    "text": "R figures\n{r, fig.width=3, fig.height=1}\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
+  },
+  {
+    "objectID": "slides/lec-2.html#r-figures-1",
+    "href": "slides/lec-2.html#r-figures-1",
+    "title": "All flavors markdown",
+    "section": "R figures",
+    "text": "R figures\n{r, fig.width=6, fig.height=2.5}\n\nlibrary(dygraphs)\ndygraph(nhtemp, main = \"New Haven Temperatures\", ylab = \"Temp (F)\")"
+  },
+  {
+    "objectID": "slides/lec-2.html#r-figures-2",
+    "href": "slides/lec-2.html#r-figures-2",
+    "title": "All flavors markdown",
+    "section": "R figures",
+    "text": "R figures\n\nlibrary(ggplot2, warn.conflicts = FALSE)\nlibrary(plotly, warn.conflicts = FALSE)\nggplot(mpg, aes(displ, hwy, colour = class)) +\n  geom_point() +\n  geom_smooth(se = FALSE, method = lm)"
+  },
+  {
+    "objectID": "slides/lec-2.html#r-figures-3",
+    "href": "slides/lec-2.html#r-figures-3",
+    "title": "All flavors markdown",
+    "section": "R figures",
+    "text": "R figures\n\nlibrary(ggplot2, warn.conflicts = FALSE)\nlibrary(plotly, warn.conflicts = FALSE)\np &lt;- ggplot(mpg, aes(displ, hwy, colour = class)) +\n  geom_point() +\n  geom_smooth(se = FALSE, method = lm) \np %&gt;% ggplotly()"
+  },
+  {
+    "objectID": "slides/lec-2.html#equations",
+    "href": "slides/lec-2.html#equations",
+    "title": "All flavors markdown",
+    "section": "Equations",
+    "text": "Equations\n\n$\\mu$ is used for in-line equations\n$$\\mu$$ is used for equations\n\nLet’s assume that \\(Y\\) follows a normal distribution. \\[Y \\sim  \\mathcal{N}(\\mu, \\sigma^2)\\] Where we set in our simulations \\(\\mu = 10\\) and \\(\\sigma^2 = 5\\). We do something for every \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec-2.html#equations-1",
+    "href": "slides/lec-2.html#equations-1",
+    "title": "All flavors markdown",
+    "section": "Equations",
+    "text": "Equations\n\n$\\mu$ is used for in-line equations\n$$\\mu$$ is used for equations\n\nLet’s assume that \\(y\\) is a vector with \\(N\\) elements such that \\[y \\sim  \\mathcal{N}(\\mu, \\sigma^2),\\] where we set in our simulations \\(\\mu = 10\\) and \\(\\sigma^2 = 5\\). We do something for every \\(y_i\\) with \\(i = 1, \\dots, N\\)."
+  },
+  {
+    "objectID": "slides/lec-2.html#explicit-chunk-caching",
+    "href": "slides/lec-2.html#explicit-chunk-caching",
+    "title": "All flavors markdown",
+    "section": "Explicit chunk caching",
+    "text": "Explicit chunk caching\nd"
+  },
+  {
+    "objectID": "slides/lec-2.html#explicit-caching",
+    "href": "slides/lec-2.html#explicit-caching",
+    "title": "All flavors markdown",
+    "section": "Explicit Caching",
+    "text": "Explicit Caching\n\nExplicit caching is a technique used in RMarkdown and Quarto documents to store and reuse the results of expensive computations or data processing steps.\nIt helps improve the efficiency of document generation and ensures reproducibility by avoiding redundant calculations. \n\nWhy Use Explicit Caching?\n\nEfficiency: Caching saves time and resources by avoiding the repeated execution of time-consuming code chunks.\nReproducibility: Explicit caching ensures that the same results are used when rendering the document, even if the code is modified or re-executed.\nVersion Control: Caching reduces the size of version-controlled documents by storing intermediate results separately."
+  },
+  {
+    "objectID": "slides/lec-2.html#how-does-explicit-caching-work",
+    "href": "slides/lec-2.html#how-does-explicit-caching-work",
+    "title": "All flavors markdown",
+    "section": "How Does Explicit Caching Work?",
+    "text": "How Does Explicit Caching Work?\nIn RMarkdown and Quarto, you can use cache directives to specify which code chunks should be cached and which should not.\n\nCached chunks are identified by a unique hash based on their code content, ensuring consistency.\n\nThe following code block\n```{r}\n#| cache: true\n#| code-line-numbers: true\n#| label: imputation\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n```\nwould result in this output\n\nlibrary(mice)\nlibrary(magrittr)\nlibrary(purrr)\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n\nClass: mipo    m = 5 \n         term m    estimate         ubar            b            t dfcom\n1 (Intercept) 5 22.74349586 1.466782e+01 5.5748962726 2.135770e+01    22\n2         chl 5  0.02798109 4.276476e-04 0.0001721876 6.342727e-04    22\n3         hyp 5 -1.13102073 4.505032e+00 0.3052774523 4.871365e+00    22\n        df        riv     lambda       fmi\n1 10.36596 0.45609201 0.31323021 0.4159942\n2 10.01903 0.48316686 0.32576703 0.4293435\n3 18.23535 0.08131639 0.07520129 0.1623012\n\n\nwith corresponding cache structure relative to the root and format of the output file:"
+  },
+  {
+    "objectID": "slides/lec-2.html#reprex-and-renv",
+    "href": "slides/lec-2.html#reprex-and-renv",
+    "title": "All flavors markdown",
+    "section": "reprex and renv",
+    "text": "reprex and renv\nlibrary(renv)\n#&gt; \n#&gt; Attaching package: 'renv'\n#&gt; The following objects are masked from 'package:stats':\n#&gt; \n#&gt;     embed, update\n#&gt; The following objects are masked from 'package:utils':\n#&gt; \n#&gt;     history, upgrade\n#&gt; The following objects are masked from 'package:base':\n#&gt; \n#&gt;     autoload, load, remove\nrenv::init()\n#&gt; - Linking packages into the project library ... Done!\n#&gt; The following package(s) will be updated in the lockfile:\n#&gt; \n#&gt; # CRAN -----------------------------------------------------------------------\n#&gt; - backports       [* -&gt; 1.4.1]\n#&gt; - base64enc       [* -&gt; 0.1-3]\n#&gt; - broom           [* -&gt; 1.0.4]\n#&gt; - bslib           [* -&gt; 0.4.2]\n#&gt; - cachem          [* -&gt; 1.0.8]\n#&gt; - cli             [* -&gt; 3.6.1]\n#&gt; - cpp11           [* -&gt; 0.4.3]\n#&gt; - digest          [* -&gt; 0.6.31]\n#&gt; - dplyr           [* -&gt; 1.1.2]\n#&gt; - ellipsis        [* -&gt; 0.3.2]\n#&gt; - evaluate        [* -&gt; 0.21]\n#&gt; - fansi           [* -&gt; 1.0.4]\n#&gt; - fastmap         [* -&gt; 1.1.1]\n#&gt; - fontawesome     [* -&gt; 0.5.1]\n#&gt; - fs              [* -&gt; 1.6.2]\n#&gt; - generics        [* -&gt; 0.1.3]\n#&gt; - glue            [* -&gt; 1.6.2]\n#&gt; - highr           [* -&gt; 0.10]\n#&gt; - htmltools       [* -&gt; 0.5.5]\n#&gt; - jquerylib       [* -&gt; 0.1.4]\n#&gt; - jsonlite        [* -&gt; 1.8.4]\n#&gt; - knitr           [* -&gt; 1.43]\n#&gt; - lattice         [* -&gt; 0.21-8]\n#&gt; - lifecycle       [* -&gt; 1.0.3]\n#&gt; - magrittr        [* -&gt; 2.0.3]\n#&gt; - memoise         [* -&gt; 2.0.1]\n#&gt; - mime            [* -&gt; 0.12]\n#&gt; - pillar          [* -&gt; 1.9.0]\n#&gt; - pkgconfig       [* -&gt; 2.0.3]\n#&gt; - purrr           [* -&gt; 1.0.1]\n#&gt; - R6              [* -&gt; 2.5.1]\n#&gt; - rappdirs        [* -&gt; 0.3.3]\n#&gt; - Rcpp            [* -&gt; 1.0.11]\n#&gt; - RcppArmadillo   [* -&gt; 0.12.4.0.0]\n#&gt; - renv            [* -&gt; 1.0.2]\n#&gt; - rlang           [* -&gt; 1.1.1]\n#&gt; - rmarkdown       [* -&gt; 2.22]\n#&gt; - sass            [* -&gt; 0.4.6]\n#&gt; - stringi         [* -&gt; 1.7.12]\n#&gt; - stringr         [* -&gt; 1.5.0]\n#&gt; - tibble          [* -&gt; 3.2.1]\n#&gt; - tidyr           [* -&gt; 1.3.0]\n#&gt; - tidyselect      [* -&gt; 1.2.0]\n#&gt; - tinytex         [* -&gt; 0.45]\n#&gt; - utf8            [* -&gt; 1.2.3]\n#&gt; - vctrs           [* -&gt; 0.6.2]\n#&gt; - withr           [* -&gt; 2.5.0]\n#&gt; - xfun            [* -&gt; 0.39]\n#&gt; - yaml            [* -&gt; 2.3.7]\n#&gt; \n#&gt; # GitHub ---------------------------------------------------------------------\n#&gt; - mice            [* -&gt; gerkovink/mice@match_conditional]\n#&gt; \n#&gt; The version of R recorded in the lockfile will be updated:\n#&gt; - R               [* -&gt; 4.3.0]\n#&gt; \n#&gt; - Lockfile written to \"/private/var/folders/yx/6rn4qpl13wsgk4c7s3jc9d1r0000gp/T/RtmpMqetyA/reprex-1233f6d959b19-drear-kitty/renv.lock\".\nlibrary(mice)\n#&gt; \n#&gt; Attaching package: 'mice'\n#&gt; The following object is masked from 'package:stats':\n#&gt; \n#&gt;     filter\n#&gt; The following objects are masked from 'package:base':\n#&gt; \n#&gt;     cbind, rbind\nlibrary(magrittr)\nlibrary(purrr)\n#&gt; \n#&gt; Attaching package: 'purrr'\n#&gt; The following object is masked from 'package:magrittr':\n#&gt; \n#&gt;     set_names\n#&gt; The following object is masked from 'package:renv':\n#&gt; \n#&gt;     modify\nrenv::snapshot()\n#&gt; - The lockfile is already up to date.\nrenv::remove(\"mice\")\n#&gt; - Removing package(s) from project library ...\n#&gt; Removing package 'mice' ... Done!\nrenv::restore()\n#&gt; The following package(s) will be updated:\n#&gt; \n#&gt; # GitHub ---------------------------------------------------------------------\n#&gt; - mice   [* -&gt; gerkovink/mice@match_conditional]\n#&gt; \n#&gt; # Installing packages --------------------------------------------------------\n#&gt; - Installing mice ...                           OK [linked from cache]\nimp &lt;- nhanes %&gt;% mice(print = FALSE)\nimp |&gt;\n  complete(\"all\") %&gt;% \n  map(~.x %$% lm(bmi ~ chl + hyp)) |&gt;\n  pool()\n#&gt; Class: mipo    m = 5 \n#&gt;          term m   estimate         ubar            b            t dfcom\n#&gt; 1 (Intercept) 5 20.6687887 2.020809e+01 8.8963873222 3.088375e+01    22\n#&gt; 2         chl 5  0.0354435 5.409979e-04 0.0001081414 6.707676e-04    22\n#&gt; 3         hyp 5 -0.8447582 4.353337e+00 0.9275040571 5.466342e+00    22\n#&gt;          df       riv    lambda       fmi\n#&gt; 1  9.489411 0.5282868 0.3456725 0.4504537\n#&gt; 2 14.161181 0.2398710 0.1934645 0.2874598\n#&gt; 3 13.811544 0.2556671 0.2036105 0.2983537\n\nsessionInfo()\n#&gt; R version 4.3.0 (2023-04-21)\n#&gt; Platform: aarch64-apple-darwin20 (64-bit)\n#&gt; Running under: macOS Ventura 13.6\n#&gt; \n#&gt; Matrix products: default\n#&gt; BLAS:   /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRblas.0.dylib \n#&gt; LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0\n#&gt; \n#&gt; locale:\n#&gt; [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n#&gt; \n#&gt; time zone: Europe/Amsterdam\n#&gt; tzcode source: internal\n#&gt; \n#&gt; attached base packages:\n#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     \n#&gt; \n#&gt; other attached packages:\n#&gt; [1] purrr_1.0.1    magrittr_2.0.3 mice_3.15.3    renv_1.0.2    \n#&gt; \n#&gt; loaded via a namespace (and not attached):\n#&gt;  [1] vctrs_0.6.2      cli_3.6.1        knitr_1.43       rlang_1.1.1     \n#&gt;  [5] xfun_0.39        generics_0.1.3   glue_1.6.2       backports_1.4.1 \n#&gt;  [9] htmltools_0.5.5  fansi_1.0.4      rmarkdown_2.22   grid_4.3.0      \n#&gt; [13] evaluate_0.21    tibble_3.2.1     fastmap_1.1.1    yaml_2.3.7      \n#&gt; [17] lifecycle_1.0.3  compiler_4.3.0   dplyr_1.1.2      fs_1.6.2        \n#&gt; [21] pkgconfig_2.0.3  Rcpp_1.0.11      tidyr_1.3.0      rstudioapi_0.14 \n#&gt; [25] lattice_0.21-8   digest_0.6.31    R6_2.5.1         tidyselect_1.2.0\n#&gt; [29] reprex_2.0.2     utf8_1.2.3       pillar_1.9.0     tools_4.3.0     \n#&gt; [33] withr_2.5.0      broom_1.0.4\nCreated on 2023-09-27 with reprex v2.0.2"
+  },
+  {
+    "objectID": "slides/lec-2.html#diagrams",
+    "href": "slides/lec-2.html#diagrams",
+    "title": "All flavors markdown",
+    "section": "Diagrams",
+    "text": "Diagrams\n```{mermaid}\n%%| echo: false\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n```\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C &lt;--&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\nSee Quarto Diagrams for a more comprehensive overview of all graphing engines. This Live online Mermaid editor is awesome!"
+  },
+  {
+    "objectID": "slides/lec-2.html#benefits-of-using-renv",
+    "href": "slides/lec-2.html#benefits-of-using-renv",
+    "title": "All flavors markdown",
+    "section": "Benefits of Using renv",
+    "text": "Benefits of Using renv\n\n1. Dependency Isolation: renv creates a dedicated environment for each project, preventing conflicts between package versions.\n2. Reproducibility: With renv, you can capture and record the specific package versions used in your project, ensuring reproducibility over time.\n3. Collaboration: Share your project with others, and they can easily recreate the same environment using renv.lock.\n4. Easier Package Installation: renv simplifies package installation. Just run renv::restore() to set up the project environment.\n5. Automatic Snapshot: renv automatically generates a renv.lock file, listing all package versions used, making it easy to recreate the environment.\n6. Compatibility: renv is compatible with popular version control systems like Git, facilitating collaboration and sharing.\n\nUse renv::snapshot() to update the renv.lock file when you add or update packages. You can use renv::activate() and renv::deactivate() to activate or deactivate renv for your project."
+  },
+  {
+    "objectID": "slides/lec-2.html#rticles",
+    "href": "slides/lec-2.html#rticles",
+    "title": "All flavors markdown",
+    "section": "Rticles",
+    "text": "Rticles\nQuarto\nThe quarto use template command can be used to create an article from one the below formats.\n\n\nTerminal\n\nquarto use template quarto-journals/acm\nquarto use template quarto-journals/plos\nquarto use template quarto-journals/elsevier\nquarto use template quarto-journals/acs\nquarto use template quarto-journals/jss\n\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "slides/lec-2.html#scientific-publishing-with-rticles-and-quarto",
+    "href": "slides/lec-2.html#scientific-publishing-with-rticles-and-quarto",
+    "title": "All flavors markdown",
+    "section": "Scientific publishing with rticles and Quarto",
+    "text": "Scientific publishing with rticles and Quarto\nTo use rticles from RStudio, you can access the templates through File -&gt; New File -&gt; R Markdown. This will open the dialog box where you can select from one of the available templates:\n\nQuarto\nThe quarto use template command can be used to create an article from one the below formats.\n\n\nTerminal\n\nquarto use template quarto-journals/acm\nquarto use template quarto-journals/plos\nquarto use template quarto-journals/elsevier\nquarto use template quarto-journals/acs\nquarto use template quarto-journals/jss\n\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "weeks/week-2.html#watch-this-video",
+    "href": "weeks/week-2.html#watch-this-video",
+    "title": "Week 2: Markdown in (most) flavors",
+    "section": "Watch this video",
+    "text": "Watch this video\nMine Çetinkaya-Rundel has a great video that highlights many of Quarto’s relevant features in our field."
   }
 ]
