@@ -2,4 +2,4 @@
 title: "Syllabus"
 ---
 
-The course website serves as syllabus. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig).
+The course website serves as syllabus. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig). If you really want to have a PDF version, you can download it [here](./documents/syllabus.pdf).
