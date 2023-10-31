@@ -1,0 +1,259 @@
+---
+title: "Reproducible Research"
+author: 
+  - name: Gerko Vink
+    orcid: 0000-0001-9767-1924
+    email: g.vink@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+  - name: Hanne Oberman
+    orcid: 0000-0003-3276-2141
+    email: h.i.oberman@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+date: "November 8th, 2023"
+execute: 
+  echo: true
+editor: source
+format: 
+  revealjs:
+    theme: [solarized, gerko.scss]
+    incremental: true  
+    progress: true
+    multiplex: true
+    transition: fade
+    slide-number: true
+    margin: 0.075
+    logo: "images/logo.png" 
+    toc: false
+    toc-depth: 1
+    toc-title: Outline
+    scrollable: false
+    width: 1200
+    reference-location: margin
+    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU
+---
+
+# Overview
+
+## Course Aims & Outline
+
+| Week | Date   | Focus                                       | Location |
+|------|--------|---------------------------------------------|----------|
+| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
+| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
+| [4](weeks/week-4.qmd)    | 08 Nov | **Reproducible Research Repositories**          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+
+## Course materials
+All materials can be found at
+
+[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
+
+### Hand in
+All contributions to this course are to be delivered to this repository 
+
+[github.com/gerkovink/markup2023](https://github.com/gerkovink/markup2023)
+
+Please post your content-related questions as [an issue in the same repository](https://github.com/gerkovink/markup2023/issues)
+
+### Finalization
+Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
+
+## Today
+
+- Reproducibility
+- Research compendiums
+
+---
+
+# Reproducibility
+
+## Research process
+
+![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+
+## Definition
+
+![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+
+"A result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer".^[[The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)]
+
+## Reproducibility rate
+
+Reproducible research is not the norm: "74% of `R` files failed to complete without error" ([Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6)) 
+
+<!-- 9000 unique R files published from 2010 to 2020 -->
+
+![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
+
+<!-- ## Reproducible code -->
+
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
+<!-- </center> -->
+
+## Facilitating reproducibility
+
+<center>
+![](https://imgs.xkcd.com/comics/will_it_work.png)
+</center>
+
+## Case study
+
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+
+![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+
+
+## Making research reproducible
+
+- reproducible documents
+- research compendiums
+
+---
+
+# Research Compendiums
+
+## Research compendium
+::: columns
+::: {.column width="50%"}
+<!-- <center> -->
+![](https://the-turing-way.netlify.app/_images/research-compendium.svg){width=90%}
+<!-- </center> -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg)](https://doi.org/10.5281/zenodo.8169292)
+:::
+
+::: {.column width="45%"}
+- "A research compendium is a collection of all digital parts of a research project including 
+  - data, 
+  - code, 
+  - texts
+  - ...
+- The collection is created in such a way that reproducing all results is straightforward"[^1]
+- "The compendium serves as a means for distributing, managing, and updating the collection"[^2]
+
+[^1]: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia)
+[^2]: [Gentleman & Temple Lang (2007)](https://doi.org/10.1198/106186007X178663)
+
+:::
+:::
+
+## Basic compendium{.build}
+A basic research compendium is just a folder...
+
+::: columns
+::: {.column width="50%"}
+```
+compendium/
+├── data
+│   └── my_data.csv
+├── analysis
+│   └── my_script.R
+├── requirements.txt
+└── README.md
+```
+:::
+
+::: {.column width="45%"}
+<!-- Where would you add these? -->
+<!-- ``` -->
+<!-- └── manuscript.qmd -->
+<!-- ``` -->
+<!-- ``` -->
+<!-- └── figures -->
+<!-- ``` -->
+:::
+:::
+
+## Basic compendium{.build}
+... but it can become extensive...
+
+```
+|
+├── paper/
+│   ├── paper.qmd       
+│   └── references.bib  
+| 
+├── figures/            
+|
+├── data/
+│   ├── raw_data/       
+│   └── clean_data/   
+|
+└── templates
+    └── journal_template.csl     
+```
+
+## Basic compendium{.build}
+...or even executable!
+
+```
+|
+├── _targets.R
+├── R/
+│   ├── functions_data.R
+│   ├── functions_analysis.R
+│   ├── functions_visualization.R
+└── data/
+    └── input_data.csv
+```
+![](https://books.ropensci.org/targets/man/figures/drake-graph.png){width=30%}
+
+## In practice
+
+![](https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg)
+Research Data Management Support workshop: 
+
+**Writing Reproducible Manuscripts in R and Python**
+
+## Things
+
+- "Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.
+- Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.
+- Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.
+- Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.
+- Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium".[^3]
+
+[^3]: [![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+
+## Things
+
+- "Access: It is clear who can use what, how, and under what conditions, with open access preferred.
+- Provenance: The origin of the components of the research compendium and how each has changed over time is evident.
+- Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.
+- Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.
+- Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary".[^3]
+
+[^3]: [![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+
+## Steps
+
+- Think about a good folder structure 
+  - Split up 'read-only', 'human-generated', and 'project-generated' files
+- Create folder structure (main directory and sub directories)
+  - Add a landing page in the form of a README document
+  - Make the compendium executable (to automatically generate the results; optional)
+  - Make the compendium into a git repository (optional)
+- Add all files needed for reproducing the results of the project
+  - Avoid 'hard coded' parameters or human intervention in the execution
+- Make the compendium as clean and easy to use as possible
+  - Include a citation file and a LICENSE file with info on how it can be used
+- Publish your compendium[^4]
+
+[^4]: Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+
+---
+
+# Exit
+
+## Take aways
+- reproducibility
+- research compendiums
+- building a compendium
+
+## Next meeting
+**Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+

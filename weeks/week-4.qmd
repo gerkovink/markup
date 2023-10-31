@@ -1,7 +1,55 @@
 ---
-title: "Week 4: Reproducible Research Archives"
+title: "Week 4: Reproducible Research"
 subtitle: "Setting up simulation studies that everyone can replicate and reproduce"
 editor: source
 ---
 
-![](https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg)
+::: callout-tip
+## Lecture 4
+This week's slides can be found [here](../slides/lec-4.qmd)
+:::
+
+---
+
+# Introduction 
+
+Dear all, 
+
+This week, it's all coming together: you will apply your newly acquired markup language skills and build a reproducible research archive from scratch. We will assume that, by now, you're familiar with Git and GitHub. If that's not the case, please refer to last weeks' course materials.
+
+All the best, 
+
+Gerko and Hanne
+
+---
+
+<!-- # Preparation -->
+
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+<!-- ## Browse the `Quarto` website -->
+<!-- The people at `Posit` have designed [this awesome companion website](https://quarto.org/docs/guide/) that details pretty much everything `Quarto`. Have a look around and remember this source when you're in need of some additional functionality. Much of what you can do with `Quarto` is detailed here.  -->
+
+---
+
+# Exercise 1
+
+Follow this tutorial to create a research compendium: https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html 
+
+The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next excercise for more information.
+<!-- Bring this presentation to the next class -->
+
+---
+
+# Exercise 2
+
+Substitute the contents of the empty research compendium you've just created by improving the supplement from Boulesteix et al. (2020).
+
+Create a reproducible document that includes the following statistics:
+
+ - absolute bias
+ - standard error
+ - lower bound of the 95% confidence interval
+ - upper bound of the 95% confidence interval
+
+Submit the research compendium to this year's GitHub repo. 
