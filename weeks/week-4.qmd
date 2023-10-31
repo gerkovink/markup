@@ -23,7 +23,13 @@ Gerko and Hanne
 
 ---
 
-<!-- # Preparation -->
+# Preparation
+
+## Read [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921) 
+
+Most of the paper may be skimmed through, but make sure to closely read the penultimate section named "An example of a statistical simulation". This will be this week's case study.
+
+The interested reader may also consider reading the original [Morris, White, & Crowther (2019)](https://doi.org/10.1002/sim.8086) paper, that Boulesteix et al. (2020) is based on, since the target audience of 'Using simulation studies to evaluate statistical methods' overlaps significantly with graduate students in statistics.
 
 <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
@@ -45,11 +51,13 @@ The contents of the compendium will consist of the simulation study performed by
 
 Substitute the contents of the empty research compendium you've just created by improving the supplement from Boulesteix et al. (2020).
 
-Create a reproducible document that includes the following statistics:
+Create a reproducible document that describes the simulation study and presents results.
 
- - absolute bias
- - standard error
- - lower bound of the 95% confidence interval
- - upper bound of the 95% confidence interval
+<!-- The document should include the following statistics: -->
+
+<!--  - absolute bias -->
+<!--  - standard error -->
+<!--  - lower bound of the 95% confidence interval -->
+<!--  - upper bound of the 95% confidence interval -->
 
 Submit the research compendium to this year's GitHub repo. 
