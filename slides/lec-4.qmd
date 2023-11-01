@@ -11,7 +11,8 @@ author:
     email: h.i.oberman@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU
-date: "November 8th, 2023"
+date: "8 Nov 2023"
+date-format: "D MMM YYYY"
 execute: 
   echo: true
 editor: source
@@ -67,13 +68,15 @@ Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
 - Reproducibility
 - Research compendiums
 
+![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+
 ---
 
 # Reproducibility
 
-## Research process
+## Crisis?
 
-![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg)
 
 ## Definition
 
@@ -89,11 +92,22 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 
 ![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
 
+::: footer
+  
+:::
 <!-- ## Reproducible code -->
 
 <!-- <center> -->
 <!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
 <!-- </center> -->
+
+## Reproducibility spectrum
+
+![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+
+::: footer
+[Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
 
 ## Facilitating reproducibility
 
@@ -101,17 +115,44 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 ![](https://imgs.xkcd.com/comics/will_it_work.png)
 </center>
 
+
 ## Case study
 
 [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
 
 ![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
 
+## Case study
+
+"Our study is completely reproducible using the R code provided in [online supplemental file 1](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf), which uses freely available data".^[[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)] 
+
+```
+
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)
+```
+
 
 ## Making research reproducible
 
 - reproducible documents
 - research compendiums
+
+<!-- ![](https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png)  -->
+
+![](https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png)
 
 ---
 
@@ -127,6 +168,12 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 :::
 
 ::: {.column width="45%"}
+
+:::
+:::
+
+## Definition
+
 - "A research compendium is a collection of all digital parts of a research project including 
   - data, 
   - code, 
@@ -138,8 +185,6 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 [^1]: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia)
 [^2]: [Gentleman & Temple Lang (2007)](https://doi.org/10.1198/106186007X178663)
 
-:::
-:::
 
 ## Basic compendium{.build}
 A basic research compendium is just a folder...
@@ -207,27 +252,7 @@ compendium/
 ![](https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg)
 Research Data Management Support workshop: 
 
-**Writing Reproducible Manuscripts in R and Python**
-
-## Things
-
-- "Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.
-- Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.
-- Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.
-- Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.
-- Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium".[^3]
-
-[^3]: [![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
-
-## Things
-
-- "Access: It is clear who can use what, how, and under what conditions, with open access preferred.
-- Provenance: The origin of the components of the research compendium and how each has changed over time is evident.
-- Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.
-- Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.
-- Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary".[^3]
-
-[^3]: [![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+[**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
 
 ## Steps
 
@@ -244,6 +269,31 @@ Research Data Management Support workshop:
 - Publish your compendium[^4]
 
 [^4]: Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+
+## Checklist
+
+- Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.
+- Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.
+- Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.
+- Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.
+- Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium.
+
+::: footer
+![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+:::
+
+## Checklist
+
+- Access: It is clear who can use what, how, and under what conditions, with open access preferred.
+- Provenance: The origin of the components of the research compendium and how each has changed over time is evident.
+- Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.
+- Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.
+- Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary.
+
+
+::: footer
+![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+:::
 
 ---
 
