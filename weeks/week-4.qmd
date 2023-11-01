@@ -51,7 +51,9 @@ The contents of the compendium will consist of the simulation study performed by
 
 Substitute the contents of the empty research compendium you've just created by improving the supplement from Boulesteix et al. (2020).
 
-Create a reproducible document that describes the simulation study and presents results.
+The data linked in the original script can be downloaded from [GitHub](https://github.com/gerkovink/markup/tree/103a043c575ad6600bd40ffbda923db776d94611/documents/week-4/raw_data).
+
+Create a reproducible document that contains the simulation study and results.
 
 <!-- The document should include the following statistics: -->
 
@@ -60,4 +62,4 @@ Create a reproducible document that describes the simulation study and presents 
 <!--  - lower bound of the 95% confidence interval -->
 <!--  - upper bound of the 95% confidence interval -->
 
-Submit the research compendium to this year's GitHub repo. 
+Submit the research compendium to this year's GitHub repo with a pull request. 

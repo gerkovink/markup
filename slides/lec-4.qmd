@@ -70,6 +70,26 @@ Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
 
 ![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
 
+## Why bother?
+
+<!-- ***Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures.  -->
+<!-- [(Gary King, 1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)*** -->
+
+We would like our results to be as fully reproducible as possible:
+
+A. **Reproducibility is one of the pillars of science**
+
+  - It is the standard by which to judge scientific claims
+  - It helps the cumulative growth of knowledge - no duplication of effort
+
+B. **Reproducibility may greatly benefit you**
+
+  - You'll develop better work habits
+  - Better teamwork - especially with new team members
+  - Changing or amending your work is much easier
+  - Higher research impact - more likely to be picked up and cited
+
+
 ---
 
 # Reproducibility
@@ -82,9 +102,115 @@ Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
 
 ![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
 
-"A result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer".^[[The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)]
+"A result is reproducible when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer".^[[The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)]
 
-## Reproducibility rate
+
+## True or false?
+
+In computational sciences - such as ours - 
+
+simply having the data and code means that 
+
+the results are not only replicable, 
+
+but fully reproducible. 
+
+## Randomness 
+
+```{r, echo=TRUE}
+set.seed(1) 
+rnorm(3) 
+```
+
+<br>
+
+```{r, echo=TRUE}
+rnorm(3) 
+```
+
+<br>
+
+```{r, echo=TRUE}
+set.seed(1)
+rnorm(6)
+```
+
+<!-- seed setting to make sure you're not seed-dependent, e.g. morris simulation which was not replicable, but it was reproducible -->
+
+
+<!-- ## We can reproduce individual samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- ``` -->
+
+<!-- ## We can reproduce a chain of samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- ``` -->
+
+## The random seed 
+
+The random seed is a number used to initialize the pseudo-random number generator
+
+<!-- If replication is needed, pseudorandom number generators must be used -->
+
+- Pseudo-random number generators generate a sequence of numbers
+- The properties of generated number sequences approximates the properties of random number sequences
+- Pseudo-random number generators are not truly random, because the process is determined by an initial value.
+- The initial value (the seed) itself does not need to be random.
+- The resulting process is random because the seed value is not used to generate randomness
+- It merely forms the starting point of the algorithm for which the results are random.
+  
+
+## Why fix the random seed
+
+If we fix the random seed we can exactly reproduce the random process
+
+- But beware: the process depends on the seed
+- The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed
+- Run another seed before publishing your results
+
+If you don't set the seed yourself, it is done for you
+
+- When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID.
+- Hence, different sessions will give different results when random numbers are involved.
+- When you store a workspace and reopen it, you will continue from the seed specified within the workspace.
+
+
+<!-- If the method has not changed: the results of the process will be identical when using the same seed. -->
+<!-- - Replications allows for verification -->
+
+<!-- ## Random seeds -->
+<!-- <center> -->
+<!-- <img src="fig/random_seed.pdf" alt="HTML5 Icon" width = 60%> -->
+<!-- </center> -->
+
+<!-- ## Random processes -->
+<!-- <center> -->
+<!-- <img src="fig/random_process.pdf" alt="HTML5 Icon" width = 80%> -->
+<!-- </center> -->
+
+## `RStudio` projects
+
+- Every project has its own history
+- Every research project has its own project
+- Every project can have its own folder, which also serves as a research archive
+- Every project can have its own version control system
+- RStudio projects can relate to Git (or other online) repositories
+
+## Reproducible but not replicable
+
+![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
+
+## Reproducibility of `R` scripts
 
 Reproducible research is not the norm: "74% of `R` files failed to complete without error" ([Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6)) 
 
@@ -266,9 +392,13 @@ Research Data Management Support workshop:
   - Avoid 'hard coded' parameters or human intervention in the execution
 - Make the compendium as clean and easy to use as possible
   - Include a citation file and a LICENSE file with info on how it can be used
-- Publish your compendium[^4]
+- Publish your compendium
+  - E.g. on Zenodo (optional, more on this in the last course week)
 
-[^4]: Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+::: footer
+Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+::: 
+
 
 ## Checklist
 
