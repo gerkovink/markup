@@ -7,7 +7,7 @@ editor: source
 ::: callout-tip
 ## Lecture Week 3
 
-This week has no lecture. We discussed the flow of development with `Git` in class.
+This week has no lecture. We discussed the flow of development with `Git` in class. You can find my (Gerko) 3-slide presentation exercise from week 2 [here](../slides/lec-3.qmd)
 :::
 
 ------------------------------------------------------------------------
