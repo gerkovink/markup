@@ -435,8 +435,6 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch"></section>
 <section id="why-bother" class="slide level2">
 <h2>Why bother?</h2>
-<!-- ***Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures.  -->
-<!-- [(Gary King, 1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)*** -->
 <p>We would like our results to be as fully reproducible as possible:</p>
 <p>A. <strong>Reproducibility is one of the pillars of science</strong></p>
 <ul>
@@ -450,8 +448,14 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <li class="fragment">Changing or amending your work is much easier</li>
 <li class="fragment">Higher research impact - more likely to be picked up and cited</li>
 </ul>
-<!-- ## What you'll learn -->
-<!-- -  -->
+</section>
+<section id="by-the-end-of-this-class" class="slide level2">
+<h2>By the end of this class…</h2>
+<ul>
+<li class="fragment">… you will have heard <em>what</em> reproducible research is and <em>why</em> it is important</li>
+<li class="fragment">… you have <em>applied</em> this knowledge by <em>critiquing</em> the reproducibility of case study</li>
+<li class="fragment">… you will be able to <em>produce</em> a reproducible research archive from scratch</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -464,28 +468,35 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <section id="crisis" class="slide level2">
 <h2>Crisis?</h2>
 
-<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg" class="r-stretch"></section>
+<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg" class="r-stretch"><div class="footer">
+<p><a href="https://www.nature.com/articles/533452a">Baker (2016)</a></p>
+</div>
+</section>
 <section id="definition" class="slide level2">
 <h2>Definition</h2>
-<p><img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg"></p>
-<p>“A result is reproducible when the <em>same</em> analysis steps performed on the <em>same</em> dataset consistently produces the <em>same</em> answer”.<sup>1</sup></p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions">The Turing way</a></p></li></ol></aside></section>
+
+<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch"><blockquote>
+<p>A result is reproducible when the <em>same</em> analysis steps performed on the <em>same</em> dataset consistently produces the <em>same</em> answer.</p>
+</blockquote>
+<div class="footer">
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions">The Turing way</a></p>
+</div>
+</section>
 <section id="true-or-false" class="slide level2">
 <h2>True or false?</h2>
-<center>
-<p>In computational sciences - such as ours -</p>
-<p>simply having the data and code means that</p>
-<p>the results are not only replicable,</p>
-<p>but fully reproducible.</p>
-</center>
+
+<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch"><p>In computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible.</p>
 </section>
 <section id="reproducibility-of-r-scripts" class="slide level2">
 <h2>Reproducibility of <code>R</code> scripts</h2>
-<p>Reproducible research is not the norm: “74% of <code>R</code> files failed to complete without error” (<a href="https://doi.org/10.1038/s41597-022-01143-6">Trisovic, Lau, Pasquier, et al., 2022</a>)</p>
+<p>Reproducible research is not the norm:</p>
+<blockquote>
+<p>74% of <code>R</code> files failed to complete without error</p>
+</blockquote>
 <!-- 9000 unique R files published from 2010 to 2020 -->
 <p><img data-src="https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png">{fig-align: right}</p>
 <div class="footer">
-
+<p><a href="https://doi.org/10.1038/s41597-022-01143-6">Trisovic, Lau, Pasquier, et al., 2022</a></p>
 </div>
 </section>
 <section id="reproducibility-spectrum" class="slide level2">
@@ -494,87 +505,19 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <img data-src="https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg" class="r-stretch"><div class="footer">
 <p><a href="https://doi.org/10.1126/science.1213847">Peng (2011)</a></p>
 </div>
-<!-- ## Reproducible but not replicable -->
-<!-- ![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031) -->
-<!-- ## Reproducible code -->
-<!-- <center> -->
-<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
-<!-- </center> -->
-<!-- ## Randomness{.build}  -->
-<!-- ```{r, echo=TRUE} -->
-<!-- set.seed(1)  -->
-<!-- rnorm(3)  -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- ```{r, echo=TRUE} -->
-<!-- rnorm(3)  -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- ```{r, echo=TRUE} -->
-<!-- set.seed(1) -->
-<!-- rnorm(6) -->
-<!-- ``` -->
-<!-- seed setting to make sure you're not seed-dependent, e.g. morris simulation which was not replicable, but it was reproducible -->
-<!-- ## We can reproduce individual samples -->
-<!-- ```{r} -->
-<!-- set.seed(123) -->
-<!-- sample(1:18, size = 50, replace = TRUE) -->
-<!-- set.seed(123) -->
-<!-- sample(1:18, size = 50, replace = TRUE) -->
-<!-- ``` -->
-<!-- ## We can reproduce a chain of samples -->
-<!-- ```{r} -->
-<!-- set.seed(123) -->
-<!-- sample(1:18, size = 5, replace = TRUE) -->
-<!-- sample(1:18, size = 7, replace = TRUE) -->
-<!-- set.seed(123) -->
-<!-- sample(1:18, size = 5, replace = TRUE) -->
-<!-- sample(1:18, size = 7, replace = TRUE) -->
-<!-- ``` -->
-<!-- ## The random seed  -->
-<!-- The random seed is a number used to initialize the pseudo-random number generator -->
-<!-- <!-- If replication is needed, pseudorandom number generators must be used -->
-<p>–&gt;</p>
-<!-- - Pseudo-random number generators generate a sequence of numbers -->
-<!-- - The properties of generated number sequences approximates the properties of random number sequences -->
-<!-- - Pseudo-random number generators are not truly random, because the process is determined by an initial value. -->
-<!-- - The initial value (the seed) itself does not need to be random. -->
-<!-- - The resulting process is random because the seed value is not used to generate randomness -->
-<!-- - It merely forms the starting point of the algorithm for which the results are random. -->
-<!-- ## Why fix the random seed -->
-<!-- If we fix the random seed we can exactly reproduce the random process -->
-<!-- - But beware: the process depends on the seed -->
-<!-- - The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed -->
-<!-- - Run another seed before publishing your results -->
-<!-- If you don't set the seed yourself, it is done for you -->
-<!-- - When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID. -->
-<!-- - Hence, different sessions will give different results when random numbers are involved. -->
-<!-- - When you store a workspace and reopen it, you will continue from the seed specified within the workspace. -->
-<!-- If the method has not changed: the results of the process will be identical when using the same seed. -->
-<!-- - Replications allows for verification -->
-<!-- ## Random seeds -->
-<!-- <center> -->
-<!-- <img src="fig/random_seed.pdf" alt="HTML5 Icon" width = 60%> -->
-<!-- </center> -->
-<!-- ## Random processes -->
-<!-- <center> -->
-<!-- <img src="fig/random_process.pdf" alt="HTML5 Icon" width = 80%> -->
-<!-- </center> -->
-<!-- ## `RStudio` projects -->
-<!-- - Every project has its own history -->
-<!-- - Every research project has its own project -->
-<!-- - Every project can have its own folder, which also serves as a research archive -->
-<!-- - Every project can have its own version control system -->
-<!-- - RStudio projects can relate to Git (or other online) repositories -->
 </section>
 <section id="case-study" class="slide level2">
 <h2>Case study</h2>
-<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
 
-<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"></section>
+<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
+</div>
+</section>
 <section id="case-study-1" class="slide level2">
 <h2>Case study</h2>
-<p>“Our study is completely reproducible using the R code provided in <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf">online supplemental file 1</a>, which uses freely available data”.<sup>1</sup></p>
+<blockquote>
+<p>Our study is completely reproducible using the R code provided in <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf">online supplemental file 1</a>, which uses freely available data.</p>
+</blockquote>
 <pre><code>
 
 
@@ -590,14 +533,16 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 library(Hmisc)
 library(mice)
 library(tidyverse)</code></pre>
-<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p></li></ol></aside></section>
+<div class="footer">
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
+</div>
+</section>
 <section id="making-research-reproducible" class="slide level2">
 <h2>Making research reproducible</h2>
 <ul>
 <li class="fragment">reproducible documents</li>
 <li class="fragment">research compendiums</li>
 </ul>
-<!-- ![](https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png)  -->
 
 <img data-src="https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png" class="r-stretch"></section>
 <section class="slide level2">
@@ -612,8 +557,7 @@ library(tidyverse)</code></pre>
 <h2>Research compendium</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<!-- <center> -->
-<p><img data-src="https://the-turing-way.netlify.app/_images/research-compendium.svg" style="width:90.0%"> <!-- </center> --> <a href="https://doi.org/10.5281/zenodo.8169292"><img data-src="https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg" alt="DOI"></a></p>
+<p><img data-src="https://the-turing-way.netlify.app/_images/research-compendium.svg" style="width:90.0%"> <a href="https://doi.org/10.5281/zenodo.8169292"><img data-src="https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg" alt="DOI"></a></p>
 </div><div class="column" style="width:45%;">
 
 </div>
@@ -632,7 +576,7 @@ library(tidyverse)</code></pre>
 <li class="fragment">The collection is created in such a way that reproducing all results is straightforward”<sup>1</sup></li>
 <li class="fragment">“The compendium serves as a means for distributing, managing, and updating the collection”<sup>2</sup></li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://the-turing-way.netlify.app/reproducible-research/compendia">The Turing Way</a></p></li><li id="fn4"><p><a href="https://doi.org/10.1198/106186007X178663">Gentleman &amp; Temple Lang (2007)</a></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://the-turing-way.netlify.app/reproducible-research/compendia">The Turing Way</a></p></li><li id="fn2"><p><a href="https://doi.org/10.1198/106186007X178663">Gentleman &amp; Temple Lang (2007)</a></p></li></ol></aside></section>
 <section id="basic-compendium" class="slide level2 build">
 <h2>Basic compendium</h2>
 <p>A basic research compendium is just a folder…</p>
@@ -656,8 +600,8 @@ library(tidyverse)</code></pre>
 </div>
 </div>
 </section>
-<section id="basic-compendium-1" class="slide level2 build">
-<h2>Basic compendium</h2>
+<section id="not-so-basic-compendium" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
 <p>… but it can become extensive…</p>
 <pre><code>|
 ├── paper/
@@ -673,8 +617,8 @@ library(tidyverse)</code></pre>
 └── templates
     └── journal_template.csl     </code></pre>
 </section>
-<section id="basic-compendium-2" class="slide level2 build">
-<h2>Basic compendium</h2>
+<section id="not-so-basic-compendium-1" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
 <p>…or even executable!</p>
 <pre><code>|
 ├── _targets.R
@@ -686,13 +630,52 @@ library(tidyverse)</code></pre>
     └── input_data.csv</code></pre>
 
 <img data-src="https://books.ropensci.org/targets/man/figures/drake-graph.png" style="width:30.0%" class="r-stretch"></section>
+<section id="not-so-basic-compendium-2" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
+
+<img data-src="https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1126/science.1213847">Peng (2011)</a></p>
+</div>
+</section>
+<section id="guidelines" class="slide level2">
+<h2>Guidelines</h2>
+<ul>
+<li class="fragment">Completeness</li>
+<li class="fragment">Organization</li>
+<li class="fragment">Economy</li>
+<li class="fragment">Transparency</li>
+<li class="fragment">Documentation</li>
+<li class="fragment">Access</li>
+<li class="fragment">Provenance</li>
+<li class="fragment">Metadata</li>
+<li class="fragment">Automation</li>
+<li class="fragment">Review</li>
+</ul>
+<div class="footer">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
+</figure>
+</div>
+</div>
+<!-- - Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome. -->
+<!-- - Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time. -->
+<!-- - Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time. -->
+<!-- - Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim. -->
+<!-- - Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium. -->
+<!-- - Access: It is clear who can use what, how, and under what conditions, with open access preferred. -->
+<!-- - Provenance: The origin of the components of the research compendium and how each has changed over time is evident. -->
+<!-- - Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code. -->
+<!-- - Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions. -->
+<!-- - Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary. -->
+</section>
 <section id="in-practice" class="slide level2">
 <h2>In practice</h2>
 <p><img data-src="https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg"> Research Data Management Support workshop:</p>
 <p><a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html"><strong>Writing Reproducible Manuscripts in R and Python</strong></a></p>
 </section>
-<section id="steps" class="slide level2">
-<h2>Steps</h2>
+<section id="how-to" class="slide level2">
+<h2>How to</h2>
 <ul>
 <li class="fragment">Think about a good folder structure
 <ul>
@@ -721,60 +704,28 @@ library(tidyverse)</code></pre>
 <p>Adapted from <a href="https://the-turing-way.netlify.app/reproducible-research/compendia#checklist">The Turing Way</a></p>
 </div>
 </section>
-<section id="checklist" class="slide level2">
-<h2>Checklist</h2>
-<ul>
-<li class="fragment">Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.</li>
-<li class="fragment">Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.</li>
-<li class="fragment">Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.</li>
-<li class="fragment">Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.</li>
-<li class="fragment">Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium.</li>
-</ul>
-<div class="footer">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="checklist-1" class="slide level2">
-<h2>Checklist</h2>
-<ul>
-<li class="fragment">Access: It is clear who can use what, how, and under what conditions, with open access preferred.</li>
-<li class="fragment">Provenance: The origin of the components of the research compendium and how each has changed over time is evident.</li>
-<li class="fragment">Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.</li>
-<li class="fragment">Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.</li>
-<li class="fragment">Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary.</li>
-</ul>
-<div class="footer">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
-</figure>
-</div>
-</div>
-</section>
 <section class="slide level2">
 
 </section></section>
 <section>
-<section id="case-study-2" class="title-slide slide level1 center">
-<h1>Case study</h1>
+<section id="wrap-up" class="title-slide slide level1 center">
+<h1>Wrap-up</h1>
 
 </section>
-<section id="simulation-study" class="slide level2">
-<h2>Simulation study</h2>
-<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a> with [supplement] (https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)</p>
+<section id="reproducible-research" class="slide level2">
+<h2>‘Reproducible’ research</h2>
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a> with the <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf"><code>pdf</code> supplement</a></p>
 
 <img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"></section>
-<section class="slide level2">
+<section id="reproducible-but-not-replicable" class="slide level2">
+<h2>Reproducible but not replicable</h2>
+<blockquote>
+<p>Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures</p>
+</blockquote>
 
-</section></section>
-<section>
-<section id="exit" class="title-slide slide level1 center">
-<h1>Exit</h1>
-
+<img data-src="https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031" class="r-stretch"><div class="footer">
+<p><a href="https://gking.harvard.edu/files/gking/files/replication.pdf">King (1995)</a></p>
+</div>
 </section>
 <section id="take-aways" class="slide level2">
 <h2>Take aways</h2>
@@ -785,7 +736,7 @@ library(tidyverse)</code></pre>
 <ul>
 <li class="fragment">reproducibility</li>
 <li class="fragment">research compendiums</li>
-<li class="fragment">building a compendium <!-- <center> --> <!-- </center> --></li>
+<li class="fragment">building a compendium</li>
 </ul>
 </div>
 </div>
@@ -793,6 +744,47 @@ library(tidyverse)</code></pre>
 <section id="next-meeting" class="slide level2">
 <h2>Next meeting</h2>
 <p>November 22nd: <strong>Developer Portfolio</strong> + hand in the exercise in <a href="../weeks/week-4.qmd">this week’s lab</a></p>
+<center>
+<img data-src="https://www.adamhammond.com/wp-content/uploads/2016/02/uglywebsitemontage.jpg">
+</center>
+</section>
+<section id="references-and-further-reading" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. <a href="https://www.nature.com/articles/533452a">https://www.nature.com/articles/533452a</a></p>
+<p>Boulesteix, A.-L., Groenwold, R. H., Abrahamowicz, M., Binder, H., Briel, M., Hornung, R., Morris, T. P., Rahnenführer, J., &amp; Sauerbrei, W. (2020). Introduction to statistical simulations in health research. BMJ Open, 10(12), e039921. <a href="https://doi.org/10.1136/bmjopen-2020-039921">https://doi.org/10.1136/bmjopen-2020-039921</a></p>
+<p>Bryan, J., &amp; TAs, T. S. 545. (n.d.-a). Chapter 33 Why and how we automate data analyses + examples | STAT 545. Retrieved October 30, 2023, from <a href="https://stat545.com/">https://stat545.com/</a></p>
+<p>Checklist. (n.d.). Retrieved October 31, 2023, from <a href="https://guide.esciencecenter.nl/#/best_practices/checklist">https://guide.esciencecenter.nl/#/best_practices/checklist</a></p>
+<p>Checklist for a Software Management Plan. (n.d.). <a href="https://doi.org/10.5281/zenodo.2159713">https://doi.org/10.5281/zenodo.2159713</a></p>
+<p>Comment on Oberman &amp; Vink: Should we fix or simulate the complete data in simulation studies evaluating missing data methods? - Morris—Biometrical Journal—Wiley Online Library. (n.d.). Retrieved October 30, 2023, from <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085">https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085</a></p>
+<p>Drost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos, P., Kuzak, M., Werkhoven, B., Attema, J., Hidding, J., Hees, V., Martinez-Ortiz, C., Spreeuw, H., Borgdorff, J., Leinweber, K., Diblen, F., Oord, G., Goncalves, R., … Bakker, T. (2020). Netherlands eScience Center—Software Development Guide (v0.9.1). Zenodo. <a href="https://doi.org/10.5281/ZENODO.4020564">https://doi.org/10.5281/ZENODO.4020564</a></p>
+</section>
+<section id="references-and-further-reading-1" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Gentleman, R., &amp; Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. <a href="https://doi.org/10.1198/106186007X178663">https://doi.org/10.1198/106186007X178663</a></p>
+<p>Jiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. <a href="https://doi.org/10.12688/f1000research.11407.1">https://doi.org/10.12688/f1000research.11407.1</a></p>
+<p>Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a></p>
+<p>Marwick, B., Boettiger, C., &amp; Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. <a href="https://doi.org/10.1080/00031305.2017.1375986">https://doi.org/10.1080/00031305.2017.1375986</a></p>
+<p>Morris, T. P., White, I. R., &amp; Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. <a href="https://doi.org/10.1002/sim.8086">https://doi.org/10.1002/sim.8086</a></p>
+<p>NHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015">https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015</a></p>
+</section>
+<section id="references-and-further-reading-2" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Nüst, D., Ostermann, F., Sileryte, R., Hofer, B., Granell, C., Teperek, M., Graser, A., Broman, K., Hettne, K., &amp; Clare, C. (2019). AGILE Reproducible Paper Guidelines. <a href="https://doi.org/10.17605/OSF.IO/CB7Z8">https://doi.org/10.17605/OSF.IO/CB7Z8</a></p>
+<p>Peng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226–1227. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a></p>
+<p>Reliability and reproducibility checklist for molecular dynamics simulations. (2023). Communications Biology, 6(1), Article 1. <a href="https://doi.org/10.1038/s42003-023-04653-0">https://doi.org/10.1038/s42003-023-04653-0</a></p>
+<p>Sandve, G. K., Nekrutenko, A., Taylor, J., &amp; Hovig, E. (2013). Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 9(10), e1003285. <a href="https://doi.org/10.1371/journal.pcbi.1003285">https://doi.org/10.1371/journal.pcbi.1003285</a></p>
+<p>Sayre, F., &amp; Riegelman, A. (2019). Replicable Services for Reproducible Research: A Model for Academic Libraries | Sayre | College &amp; Research Libraries. <a href="https://doi.org/10.5860/crl.80.2.260">https://doi.org/10.5860/crl.80.2.260</a></p>
+<p>Table 1 Reliability and reproducibility checklist for molecular dynamics simulations. (n.d.). Retrieved October 30, 2023, from <a href="https://www.nature.com/articles/s42003-023-04653-0/tables/1">https://www.nature.com/articles/s42003-023-04653-0/tables/1</a></p>
+<p>Telford, R. J. (2023, September 6). Enough Markdown to Write a Thesis. <a href="https://biostats-r.github.io/biostats/quarto/">https://biostats-r.github.io/biostats/quarto/</a></p>
+</section>
+<section id="references-and-further-reading-3" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>The Turing Way Community (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/ZENODO.3233853">https://doi.org/10.5281/ZENODO.3233853</a></p>
+<p>The Turing Way Community &amp; Scriberia. (2023). Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse. Zenodo. <a href="https://doi.org/10.5281/ZENODO.3332807">https://doi.org/10.5281/ZENODO.3332807</a></p>
+<p>TIER Protocol 4.0 | Project TIER | Teaching Integrity in Empirical Research. (n.d.). Retrieved October 30, 2023, from <a href="https://www.projecttier.org/tier-protocol/protocol-4-0/">https://www.projecttier.org/tier-protocol/protocol-4-0/</a></p>
+<p>Trisovic, A., Lau, M. K., Pasquier, T., &amp; Crosas, M. (2022). A large-scale study on research code quality and execution. Scientific Data, 9(1), Article 1. <a href="https://doi.org/10.1038/s41597-022-01143-6">https://doi.org/10.1038/s41597-022-01143-6</a></p>
+<p>Utrecht University (2023a, September 26). Best Practices for Writing Reproducible Code. <a href="https://utrechtuniversity.github.io/workshop-computational-reproducibility/">https://utrechtuniversity.github.io/workshop-computational-reproducibility/</a></p>
+<p>Utrecht University (2023b, October 24). Writing Reproducible Manuscripts in R &amp; Python. <a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/">https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/</a></p>
 
 
 <img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
@@ -834,7 +826,7 @@ library(tidyverse)</code></pre>
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"23182d408bde4ac5","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"320f3740fec0bad6","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

@@ -228,56 +228,63 @@
     "href": "slides/lec-4.html#why-bother",
     "title": "Reproducible Research",
     "section": "Why bother?",
-    "text": "Why bother?\n\n\nWe would like our results to be as fully reproducible as possible:\nA. Reproducibility is one of the pillars of science\n\nIt is the standard by which to judge scientific claims\nIt helps the cumulative growth of knowledge - no duplication of effort\n\nB. Reproducibility may greatly benefit you\n\nYou’ll develop better work habits\nBetter teamwork - especially with new team members\nChanging or amending your work is much easier\nHigher research impact - more likely to be picked up and cited"
+    "text": "Why bother?\nWe would like our results to be as fully reproducible as possible:\nA. Reproducibility is one of the pillars of science\n\nIt is the standard by which to judge scientific claims\nIt helps the cumulative growth of knowledge - no duplication of effort\n\nB. Reproducibility may greatly benefit you\n\nYou’ll develop better work habits\nBetter teamwork - especially with new team members\nChanging or amending your work is much easier\nHigher research impact - more likely to be picked up and cited"
+  },
+  {
+    "objectID": "slides/lec-4.html#by-the-end-of-this-class",
+    "href": "slides/lec-4.html#by-the-end-of-this-class",
+    "title": "Reproducible Research",
+    "section": "By the end of this class…",
+    "text": "By the end of this class…\n\n… you will have heard what reproducible research is and why it is important\n… you have applied this knowledge by critiquing the reproducibility of case study\n… you will be able to produce a reproducible research archive from scratch"
   },
   {
     "objectID": "slides/lec-4.html#crisis",
     "href": "slides/lec-4.html#crisis",
     "title": "Reproducible Research",
     "section": "Crisis?",
-    "text": "Crisis?"
+    "text": "Crisis?\n\n\nBaker (2016)"
   },
   {
     "objectID": "slides/lec-4.html#definition",
     "href": "slides/lec-4.html#definition",
     "title": "Reproducible Research",
     "section": "Definition",
-    "text": "Definition\n\n“A result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer”.1\nThe Turing way"
+    "text": "Definition\n\n\nA result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer.\n\n\nThe Turing way"
   },
   {
     "objectID": "slides/lec-4.html#true-or-false",
     "href": "slides/lec-4.html#true-or-false",
     "title": "Reproducible Research",
     "section": "True or false?",
-    "text": "True or false?\n\nIn computational sciences - such as ours -\nsimply having the data and code means that\nthe results are not only replicable,\nbut fully reproducible."
+    "text": "True or false?\n\nIn computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible."
   },
   {
     "objectID": "slides/lec-4.html#reproducibility-of-r-scripts",
     "href": "slides/lec-4.html#reproducibility-of-r-scripts",
     "title": "Reproducible Research",
     "section": "Reproducibility of R scripts",
-    "text": "Reproducibility of R scripts\nReproducible research is not the norm: “74% of R files failed to complete without error” (Trisovic, Lau, Pasquier, et al., 2022)\n\n{fig-align: right}"
+    "text": "Reproducibility of R scripts\nReproducible research is not the norm:\n\n74% of R files failed to complete without error\n\n\n{fig-align: right}\n\nTrisovic, Lau, Pasquier, et al., 2022"
   },
   {
     "objectID": "slides/lec-4.html#reproducibility-spectrum",
     "href": "slides/lec-4.html#reproducibility-spectrum",
     "title": "Reproducible Research",
     "section": "Reproducibility spectrum",
-    "text": "Reproducibility spectrum\n\n\nPeng (2011)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n–&gt;"
+    "text": "Reproducibility spectrum\n\n\nPeng (2011)"
   },
   {
     "objectID": "slides/lec-4.html#case-study",
     "href": "slides/lec-4.html#case-study",
     "title": "Reproducible Research",
     "section": "Case study",
-    "text": "Case study\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+    "text": "Case study\n\n\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
   },
   {
     "objectID": "slides/lec-4.html#case-study-1",
     "href": "slides/lec-4.html#case-study-1",
     "title": "Reproducible Research",
     "section": "Case study",
-    "text": "Case study\n“Our study is completely reproducible using the R code provided in online supplemental file 1, which uses freely available data”.1\n\n\n\n\n\n# ====================================================================\n# R CODE\n# small scale simulation study to investigate impact of measurement error\n# measurement error on (continuous) exposure and/or (continuous) confounding variable\n# ====================================================================\n# ====================================================================\n# libraries:\nlibrary(Hmisc)\nlibrary(mice)\nlibrary(tidyverse)\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+    "text": "Case study\n\nOur study is completely reproducible using the R code provided in online supplemental file 1, which uses freely available data.\n\n\n\n\n\n\n# ====================================================================\n# R CODE\n# small scale simulation study to investigate impact of measurement error\n# measurement error on (continuous) exposure and/or (continuous) confounding variable\n# ====================================================================\n# ====================================================================\n# libraries:\nlibrary(Hmisc)\nlibrary(mice)\nlibrary(tidyverse)\n\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
   },
   {
     "objectID": "slides/lec-4.html#making-research-reproducible",
@@ -308,18 +315,32 @@
     "text": "Basic compendium\nA basic research compendium is just a folder…\n\n\ncompendium/\n├── data\n│   └── my_data.csv\n├── analysis\n│   └── my_script.R\n├── requirements.txt\n└── README.md"
   },
   {
-    "objectID": "slides/lec-4.html#basic-compendium-1",
-    "href": "slides/lec-4.html#basic-compendium-1",
+    "objectID": "slides/lec-4.html#not-so-basic-compendium",
+    "href": "slides/lec-4.html#not-so-basic-compendium",
     "title": "Reproducible Research",
-    "section": "Basic compendium",
-    "text": "Basic compendium\n… but it can become extensive…\n|\n├── paper/\n│   ├── paper.qmd       \n│   └── references.bib  \n| \n├── figures/            \n|\n├── data/\n│   ├── raw_data/       \n│   └── clean_data/   \n|\n└── templates\n    └── journal_template.csl"
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n… but it can become extensive…\n|\n├── paper/\n│   ├── paper.qmd       \n│   └── references.bib  \n| \n├── figures/            \n|\n├── data/\n│   ├── raw_data/       \n│   └── clean_data/   \n|\n└── templates\n    └── journal_template.csl"
   },
   {
-    "objectID": "slides/lec-4.html#basic-compendium-2",
-    "href": "slides/lec-4.html#basic-compendium-2",
+    "objectID": "slides/lec-4.html#not-so-basic-compendium-1",
+    "href": "slides/lec-4.html#not-so-basic-compendium-1",
     "title": "Reproducible Research",
-    "section": "Basic compendium",
-    "text": "Basic compendium\n…or even executable!\n|\n├── _targets.R\n├── R/\n│   ├── functions_data.R\n│   ├── functions_analysis.R\n│   ├── functions_visualization.R\n└── data/\n    └── input_data.csv"
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n…or even executable!\n|\n├── _targets.R\n├── R/\n│   ├── functions_data.R\n│   ├── functions_analysis.R\n│   ├── functions_visualization.R\n└── data/\n    └── input_data.csv"
+  },
+  {
+    "objectID": "slides/lec-4.html#not-so-basic-compendium-2",
+    "href": "slides/lec-4.html#not-so-basic-compendium-2",
+    "title": "Reproducible Research",
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n\n\nPeng (2011)"
+  },
+  {
+    "objectID": "slides/lec-4.html#guidelines",
+    "href": "slides/lec-4.html#guidelines",
+    "title": "Reproducible Research",
+    "section": "Guidelines",
+    "text": "Guidelines\n\nCompleteness\nOrganization\nEconomy\nTransparency\nDocumentation\nAccess\nProvenance\nMetadata\nAutomation\nReview"
   },
   {
     "objectID": "slides/lec-4.html#in-practice",
@@ -329,32 +350,25 @@
     "text": "In practice\n Research Data Management Support workshop:\nWriting Reproducible Manuscripts in R and Python"
   },
   {
-    "objectID": "slides/lec-4.html#steps",
-    "href": "slides/lec-4.html#steps",
+    "objectID": "slides/lec-4.html#how-to",
+    "href": "slides/lec-4.html#how-to",
     "title": "Reproducible Research",
-    "section": "Steps",
-    "text": "Steps\n\nThink about a good folder structure\n\nSplit up ‘read-only’, ‘human-generated’, and ‘project-generated’ files\n\nCreate folder structure (main directory and sub directories)\n\nAdd a landing page in the form of a README document\nMake the compendium executable (to automatically generate the results; optional)\nMake the compendium into a git repository (optional)\n\nAdd all files needed for reproducing the results of the project\n\nAvoid ‘hard coded’ parameters or human intervention in the execution\n\nMake the compendium as clean and easy to use as possible\n\nInclude a citation file and a LICENSE file with info on how it can be used\n\nPublish your compendium\n\nE.g. on Zenodo (optional, more on this in the last course week)\n\n\n\nAdapted from The Turing Way"
+    "section": "How to",
+    "text": "How to\n\nThink about a good folder structure\n\nSplit up ‘read-only’, ‘human-generated’, and ‘project-generated’ files\n\nCreate folder structure (main directory and sub directories)\n\nAdd a landing page in the form of a README document\nMake the compendium executable (to automatically generate the results; optional)\nMake the compendium into a git repository (optional)\n\nAdd all files needed for reproducing the results of the project\n\nAvoid ‘hard coded’ parameters or human intervention in the execution\n\nMake the compendium as clean and easy to use as possible\n\nInclude a citation file and a LICENSE file with info on how it can be used\n\nPublish your compendium\n\nE.g. on Zenodo (optional, more on this in the last course week)\n\n\n\nAdapted from The Turing Way"
   },
   {
-    "objectID": "slides/lec-4.html#checklist",
-    "href": "slides/lec-4.html#checklist",
+    "objectID": "slides/lec-4.html#reproducible-research",
+    "href": "slides/lec-4.html#reproducible-research",
     "title": "Reproducible Research",
-    "section": "Checklist",
-    "text": "Checklist\n\nCompleteness: The research compendium contains all of the objects needed to reproduce a predefined outcome.\nOrganization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.\nEconomy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.\nTransparency: The research compendium provides full disclosure of the research process that produced the scientific claim.\nDocumentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium."
+    "section": "‘Reproducible’ research",
+    "text": "‘Reproducible’ research\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020) with the pdf supplement"
   },
   {
-    "objectID": "slides/lec-4.html#checklist-1",
-    "href": "slides/lec-4.html#checklist-1",
+    "objectID": "slides/lec-4.html#reproducible-but-not-replicable",
+    "href": "slides/lec-4.html#reproducible-but-not-replicable",
     "title": "Reproducible Research",
-    "section": "Checklist",
-    "text": "Checklist\n\nAccess: It is clear who can use what, how, and under what conditions, with open access preferred.\nProvenance: The origin of the components of the research compendium and how each has changed over time is evident.\nMetadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.\nAutomation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.\nReview: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary."
-  },
-  {
-    "objectID": "slides/lec-4.html#simulation-study",
-    "href": "slides/lec-4.html#simulation-study",
-    "title": "Reproducible Research",
-    "section": "Simulation study",
-    "text": "Simulation study\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020) with [supplement] (https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)"
+    "section": "Reproducible but not replicable",
+    "text": "Reproducible but not replicable\n\nResearch results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures\n\n\n\nKing (1995)"
   },
   {
     "objectID": "slides/lec-4.html#take-aways",
@@ -368,7 +382,35 @@
     "href": "slides/lec-4.html#next-meeting",
     "title": "Reproducible Research",
     "section": "Next meeting",
-    "text": "Next meeting\nNovember 22nd: Developer Portfolio + hand in the exercise in this week’s lab\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+    "text": "Next meeting\nNovember 22nd: Developer Portfolio + hand in the exercise in this week’s lab"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading",
+    "href": "slides/lec-4.html#references-and-further-reading",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nBaker, M. (2016). 1,500 scientists lift the lid on reproducibility. https://www.nature.com/articles/533452a\nBoulesteix, A.-L., Groenwold, R. H., Abrahamowicz, M., Binder, H., Briel, M., Hornung, R., Morris, T. P., Rahnenführer, J., & Sauerbrei, W. (2020). Introduction to statistical simulations in health research. BMJ Open, 10(12), e039921. https://doi.org/10.1136/bmjopen-2020-039921\nBryan, J., & TAs, T. S. 545. (n.d.-a). Chapter 33 Why and how we automate data analyses + examples | STAT 545. Retrieved October 30, 2023, from https://stat545.com/\nChecklist. (n.d.). Retrieved October 31, 2023, from https://guide.esciencecenter.nl/#/best_practices/checklist\nChecklist for a Software Management Plan. (n.d.). https://doi.org/10.5281/zenodo.2159713\nComment on Oberman & Vink: Should we fix or simulate the complete data in simulation studies evaluating missing data methods? - Morris—Biometrical Journal—Wiley Online Library. (n.d.). Retrieved October 30, 2023, from https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085\nDrost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos, P., Kuzak, M., Werkhoven, B., Attema, J., Hidding, J., Hees, V., Martinez-Ortiz, C., Spreeuw, H., Borgdorff, J., Leinweber, K., Diblen, F., Oord, G., Goncalves, R., … Bakker, T. (2020). Netherlands eScience Center—Software Development Guide (v0.9.1). Zenodo. https://doi.org/10.5281/ZENODO.4020564"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-1",
+    "href": "slides/lec-4.html#references-and-further-reading-1",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nGentleman, R., & Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. https://doi.org/10.1198/106186007X178663\nJiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. https://doi.org/10.12688/f1000research.11407.1\nKnuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\nMarwick, B., Boettiger, C., & Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. https://doi.org/10.1080/00031305.2017.1375986\nMorris, T. P., White, I. R., & Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. https://doi.org/10.1002/sim.8086\nNHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-2",
+    "href": "slides/lec-4.html#references-and-further-reading-2",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nNüst, D., Ostermann, F., Sileryte, R., Hofer, B., Granell, C., Teperek, M., Graser, A., Broman, K., Hettne, K., & Clare, C. (2019). AGILE Reproducible Paper Guidelines. https://doi.org/10.17605/OSF.IO/CB7Z8\nPeng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226–1227. https://doi.org/10.1126/science.1213847\nReliability and reproducibility checklist for molecular dynamics simulations. (2023). Communications Biology, 6(1), Article 1. https://doi.org/10.1038/s42003-023-04653-0\nSandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285\nSayre, F., & Riegelman, A. (2019). Replicable Services for Reproducible Research: A Model for Academic Libraries | Sayre | College & Research Libraries. https://doi.org/10.5860/crl.80.2.260\nTable 1 Reliability and reproducibility checklist for molecular dynamics simulations. (n.d.). Retrieved October 30, 2023, from https://www.nature.com/articles/s42003-023-04653-0/tables/1\nTelford, R. J. (2023, September 6). Enough Markdown to Write a Thesis. https://biostats-r.github.io/biostats/quarto/"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-3",
+    "href": "slides/lec-4.html#references-and-further-reading-3",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nThe Turing Way Community (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/ZENODO.3233853\nThe Turing Way Community & Scriberia. (2023). Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse. Zenodo. https://doi.org/10.5281/ZENODO.3332807\nTIER Protocol 4.0 | Project TIER | Teaching Integrity in Empirical Research. (n.d.). Retrieved October 30, 2023, from https://www.projecttier.org/tier-protocol/protocol-4-0/\nTrisovic, A., Lau, M. K., Pasquier, T., & Crosas, M. (2022). A large-scale study on research code quality and execution. Scientific Data, 9(1), Article 1. https://doi.org/10.1038/s41597-022-01143-6\nUtrecht University (2023a, September 26). Best Practices for Writing Reproducible Code. https://utrechtuniversity.github.io/workshop-computational-reproducibility/\nUtrecht University (2023b, October 24). Writing Reproducible Manuscripts in R & Python. https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
   },
   {
     "objectID": "index.html",
@@ -418,6 +460,13 @@
     "title": "Week 4: Reproducible Research",
     "section": "Hint",
     "text": "Hint\nAfter this exercise, the YAML header for your Quarto document might look something like the code in the footnote1."
+  },
+  {
+    "objectID": "weeks/week-4.html#hint-1",
+    "href": "weeks/week-4.html#hint-1",
+    "title": "Week 4: Reproducible Research",
+    "section": "Hint",
+    "text": "Hint\nExchange research compendiums with a classmate to make sure that your work is indeed completely reproducible."
   },
   {
     "objectID": "weeks/week-4.html#footnotes",
