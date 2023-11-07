@@ -110,6 +110,8 @@ B. **Reproducibility may greatly benefit you**
 
 ## True or false?
 
+<center>
+
 In computational sciences - such as ours - 
 
 simply having the data and code means that 
@@ -118,6 +120,7 @@ the results are not only replicable,
 
 but fully reproducible. 
 
+</center>
 
 ## Reproducibility of `R` scripts
 
@@ -141,9 +144,9 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 :::
 
 
-## Reproducible but not replicable
+<!-- ## Reproducible but not replicable -->
 
-![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
+<!-- ![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031) -->
 
 <!-- ## Reproducible code -->
 
@@ -152,25 +155,25 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 <!-- </center> -->
 
 
-## Randomness{.build} 
+<!-- ## Randomness{.build}  -->
 
-```{r, echo=TRUE}
-set.seed(1) 
-rnorm(3) 
-```
+<!-- ```{r, echo=TRUE} -->
+<!-- set.seed(1)  -->
+<!-- rnorm(3)  -->
+<!-- ``` -->
 
-<br>
+<!-- <br> -->
 
-```{r, echo=TRUE}
-rnorm(3) 
-```
+<!-- ```{r, echo=TRUE} -->
+<!-- rnorm(3)  -->
+<!-- ``` -->
 
-<br>
+<!-- <br> -->
 
-```{r, echo=TRUE}
-set.seed(1)
-rnorm(6)
-```
+<!-- ```{r, echo=TRUE} -->
+<!-- set.seed(1) -->
+<!-- rnorm(6) -->
+<!-- ``` -->
 
 <!-- seed setting to make sure you're not seed-dependent, e.g. morris simulation which was not replicable, but it was reproducible -->
 
@@ -193,33 +196,33 @@ rnorm(6)
 <!-- sample(1:18, size = 7, replace = TRUE) -->
 <!-- ``` -->
 
-## The random seed 
+<!-- ## The random seed  -->
 
-The random seed is a number used to initialize the pseudo-random number generator
+<!-- The random seed is a number used to initialize the pseudo-random number generator -->
 
-<!-- If replication is needed, pseudorandom number generators must be used -->
+<!-- <!-- If replication is needed, pseudorandom number generators must be used --> -->
 
-- Pseudo-random number generators generate a sequence of numbers
-- The properties of generated number sequences approximates the properties of random number sequences
-- Pseudo-random number generators are not truly random, because the process is determined by an initial value.
-- The initial value (the seed) itself does not need to be random.
-- The resulting process is random because the seed value is not used to generate randomness
-- It merely forms the starting point of the algorithm for which the results are random.
-  
+<!-- - Pseudo-random number generators generate a sequence of numbers -->
+<!-- - The properties of generated number sequences approximates the properties of random number sequences -->
+<!-- - Pseudo-random number generators are not truly random, because the process is determined by an initial value. -->
+<!-- - The initial value (the seed) itself does not need to be random. -->
+<!-- - The resulting process is random because the seed value is not used to generate randomness -->
+<!-- - It merely forms the starting point of the algorithm for which the results are random. -->
 
-## Why fix the random seed
 
-If we fix the random seed we can exactly reproduce the random process
+<!-- ## Why fix the random seed -->
 
-- But beware: the process depends on the seed
-- The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed
-- Run another seed before publishing your results
+<!-- If we fix the random seed we can exactly reproduce the random process -->
 
-If you don't set the seed yourself, it is done for you
+<!-- - But beware: the process depends on the seed -->
+<!-- - The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed -->
+<!-- - Run another seed before publishing your results -->
 
-- When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID.
-- Hence, different sessions will give different results when random numbers are involved.
-- When you store a workspace and reopen it, you will continue from the seed specified within the workspace.
+<!-- If you don't set the seed yourself, it is done for you -->
+
+<!-- - When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID. -->
+<!-- - Hence, different sessions will give different results when random numbers are involved. -->
+<!-- - When you store a workspace and reopen it, you will continue from the seed specified within the workspace. -->
 
 
 <!-- If the method has not changed: the results of the process will be identical when using the same seed. -->
@@ -235,13 +238,13 @@ If you don't set the seed yourself, it is done for you
 <!-- <img src="fig/random_process.pdf" alt="HTML5 Icon" width = 80%> -->
 <!-- </center> -->
 
-## `RStudio` projects
+<!-- ## `RStudio` projects -->
 
-- Every project has its own history
-- Every research project has its own project
-- Every project can have its own folder, which also serves as a research archive
-- Every project can have its own version control system
-- RStudio projects can relate to Git (or other online) repositories
+<!-- - Every project has its own history -->
+<!-- - Every research project has its own project -->
+<!-- - Every project can have its own folder, which also serves as a research archive -->
+<!-- - Every project can have its own version control system -->
+<!-- - RStudio projects can relate to Git (or other online) repositories -->
 
 
 ## Case study
@@ -426,6 +429,18 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 ::: footer
 [![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
 :::
+
+---
+
+# Case study
+
+## Simulation study
+
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921) with [supplement] (https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)
+
+
+![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+
 
 ---
 
