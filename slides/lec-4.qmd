@@ -152,7 +152,7 @@ Reproducible research is not the norm: "74% of `R` files failed to complete with
 <!-- </center> -->
 
 
-## Randomness 
+## Randomness{.build} 
 
 ```{r, echo=TRUE}
 set.seed(1) 
@@ -411,7 +411,7 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 - Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium.
 
 ::: footer
-![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+[![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
 :::
 
 ## Checklist
@@ -424,7 +424,7 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 
 
 ::: footer
-![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+[![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
 :::
 
 ---
@@ -432,13 +432,18 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 # Exit
 
 ## Take aways
+::: columns
+::: {.column width="50%"}
+![](https://imgs.xkcd.com/comics/will_it_work.png)
+:::
+::: {.column width="45%"}
 - reproducibility
 - research compendiums
 - building a compendium
-
-<center>
-![](https://imgs.xkcd.com/comics/will_it_work.png)
-</center>
+<!-- <center> -->
+<!-- </center> -->
+:::
+:::
 
 ## Next meeting
 
