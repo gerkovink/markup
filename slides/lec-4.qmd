@@ -89,6 +89,9 @@ B. **Reproducibility may greatly benefit you**
   - Changing or amending your work is much easier
   - Higher research impact - more likely to be picked up and cited
 
+<!-- ## What you'll learn -->
+
+<!-- -  -->
 
 ---
 
@@ -114,6 +117,40 @@ simply having the data and code means that
 the results are not only replicable, 
 
 but fully reproducible. 
+
+
+## Reproducibility of `R` scripts
+
+Reproducible research is not the norm: "74% of `R` files failed to complete without error" ([Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6)) 
+
+<!-- 9000 unique R files published from 2010 to 2020 -->
+
+![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
+
+::: footer
+  
+:::
+
+
+## Reproducibility spectrum
+
+![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+
+::: footer
+[Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
+
+
+## Reproducible but not replicable
+
+![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
+
+<!-- ## Reproducible code -->
+
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
+<!-- </center> -->
+
 
 ## Randomness 
 
@@ -205,41 +242,6 @@ If you don't set the seed yourself, it is done for you
 - Every project can have its own folder, which also serves as a research archive
 - Every project can have its own version control system
 - RStudio projects can relate to Git (or other online) repositories
-
-## Reproducible but not replicable
-
-![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
-
-## Reproducibility of `R` scripts
-
-Reproducible research is not the norm: "74% of `R` files failed to complete without error" ([Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6)) 
-
-<!-- 9000 unique R files published from 2010 to 2020 -->
-
-![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
-
-::: footer
-  
-:::
-<!-- ## Reproducible code -->
-
-<!-- <center> -->
-<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
-<!-- </center> -->
-
-## Reproducibility spectrum
-
-![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
-
-::: footer
-[Peng (2011)](https://doi.org/10.1126/science.1213847)
-:::
-
-## Facilitating reproducibility
-
-<center>
-![](https://imgs.xkcd.com/comics/will_it_work.png)
-</center>
 
 
 ## Case study
@@ -434,6 +436,13 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 - research compendiums
 - building a compendium
 
+<center>
+![](https://imgs.xkcd.com/comics/will_it_work.png)
+</center>
+
 ## Next meeting
-**Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+
+November 22nd: **Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+
+
 
