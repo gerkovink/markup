@@ -7,6 +7,7 @@ website:
   title: "Markup Languages and Reproducible Programming in Statistics"
   description: "Homepage for MLaRPiS @ Utrecht University"
   site-url: "https://www.gerkovink.com/markup/"
+  favicon: images/logo.png
 
   repo-url: https://github.com/gerkovink/markup
   repo-actions: [edit, issue]

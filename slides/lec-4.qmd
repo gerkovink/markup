@@ -1,0 +1,453 @@
+---
+title: "Reproducible Research"
+author: 
+  - name: Gerko Vink
+    orcid: 0000-0001-9767-1924
+    email: g.vink@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+  - name: Hanne Oberman
+    orcid: 0000-0003-3276-2141
+    email: h.i.oberman@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+date: "8 Nov 2023"
+date-format: "D MMM YYYY"
+execute: 
+  echo: true
+editor: source
+format: 
+  revealjs:
+    theme: [solarized, gerko.scss]
+    incremental: true  
+    progress: true
+    multiplex: true
+    transition: fade
+    slide-number: true
+    margin: 0.075
+    logo: "images/logo.png" 
+    toc: false
+    toc-depth: 1
+    toc-title: Outline
+    scrollable: false
+    width: 1200
+    reference-location: margin
+    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU
+---
+
+# Overview
+
+## Course Aims & Outline
+
+| Week | Date   | Focus                                       | Location |
+|------|--------|---------------------------------------------|----------|
+| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
+| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
+| [4](weeks/week-4.qmd)    | 08 Nov | **Reproducible Research Repositories**          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+
+## Course materials
+All materials can be found at
+
+[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
+
+### Hand in
+All contributions to this course are to be delivered to this repository 
+
+[github.com/gerkovink/markup2023](https://github.com/gerkovink/markup2023)
+
+Please post your content-related questions as [an issue in the same repository](https://github.com/gerkovink/markup2023/issues)
+
+### Finalization
+Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
+
+## Today
+
+- Reproducibility
+- Research compendiums
+
+![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+
+## Why bother?
+
+<!-- ***Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures.  -->
+<!-- [(Gary King, 1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)*** -->
+
+We would like our results to be as fully reproducible as possible:
+
+A. **Reproducibility is one of the pillars of science**
+
+  - It is the standard by which to judge scientific claims
+  - It helps the cumulative growth of knowledge - no duplication of effort
+
+B. **Reproducibility may greatly benefit you**
+
+  - You'll develop better work habits
+  - Better teamwork - especially with new team members
+  - Changing or amending your work is much easier
+  - Higher research impact - more likely to be picked up and cited
+
+<!-- ## What you'll learn -->
+
+<!-- -  -->
+
+---
+
+# Reproducibility
+
+## Crisis?
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg)
+
+## Definition
+
+![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+
+"A result is reproducible when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer".^[[The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)]
+
+
+## True or false?
+
+In computational sciences - such as ours - 
+
+simply having the data and code means that 
+
+the results are not only replicable, 
+
+but fully reproducible. 
+
+
+## Reproducibility of `R` scripts
+
+Reproducible research is not the norm: "74% of `R` files failed to complete without error" ([Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6)) 
+
+<!-- 9000 unique R files published from 2010 to 2020 -->
+
+![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
+
+::: footer
+  
+:::
+
+
+## Reproducibility spectrum
+
+![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+
+::: footer
+[Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
+
+
+## Reproducible but not replicable
+
+![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
+
+<!-- ## Reproducible code -->
+
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
+<!-- </center> -->
+
+
+## Randomness{.build} 
+
+```{r, echo=TRUE}
+set.seed(1) 
+rnorm(3) 
+```
+
+<br>
+
+```{r, echo=TRUE}
+rnorm(3) 
+```
+
+<br>
+
+```{r, echo=TRUE}
+set.seed(1)
+rnorm(6)
+```
+
+<!-- seed setting to make sure you're not seed-dependent, e.g. morris simulation which was not replicable, but it was reproducible -->
+
+
+<!-- ## We can reproduce individual samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- ``` -->
+
+<!-- ## We can reproduce a chain of samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- ``` -->
+
+## The random seed 
+
+The random seed is a number used to initialize the pseudo-random number generator
+
+<!-- If replication is needed, pseudorandom number generators must be used -->
+
+- Pseudo-random number generators generate a sequence of numbers
+- The properties of generated number sequences approximates the properties of random number sequences
+- Pseudo-random number generators are not truly random, because the process is determined by an initial value.
+- The initial value (the seed) itself does not need to be random.
+- The resulting process is random because the seed value is not used to generate randomness
+- It merely forms the starting point of the algorithm for which the results are random.
+  
+
+## Why fix the random seed
+
+If we fix the random seed we can exactly reproduce the random process
+
+- But beware: the process depends on the seed
+- The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed
+- Run another seed before publishing your results
+
+If you don't set the seed yourself, it is done for you
+
+- When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID.
+- Hence, different sessions will give different results when random numbers are involved.
+- When you store a workspace and reopen it, you will continue from the seed specified within the workspace.
+
+
+<!-- If the method has not changed: the results of the process will be identical when using the same seed. -->
+<!-- - Replications allows for verification -->
+
+<!-- ## Random seeds -->
+<!-- <center> -->
+<!-- <img src="fig/random_seed.pdf" alt="HTML5 Icon" width = 60%> -->
+<!-- </center> -->
+
+<!-- ## Random processes -->
+<!-- <center> -->
+<!-- <img src="fig/random_process.pdf" alt="HTML5 Icon" width = 80%> -->
+<!-- </center> -->
+
+## `RStudio` projects
+
+- Every project has its own history
+- Every research project has its own project
+- Every project can have its own folder, which also serves as a research archive
+- Every project can have its own version control system
+- RStudio projects can relate to Git (or other online) repositories
+
+
+## Case study
+
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+
+![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+
+## Case study
+
+"Our study is completely reproducible using the R code provided in [online supplemental file 1](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf), which uses freely available data".^[[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)] 
+
+```
+
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)
+```
+
+
+## Making research reproducible
+
+- reproducible documents
+- research compendiums
+
+<!-- ![](https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png)  -->
+
+![](https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png)
+
+---
+
+# Research Compendiums
+
+## Research compendium
+::: columns
+::: {.column width="50%"}
+<!-- <center> -->
+![](https://the-turing-way.netlify.app/_images/research-compendium.svg){width=90%}
+<!-- </center> -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg)](https://doi.org/10.5281/zenodo.8169292)
+:::
+
+::: {.column width="45%"}
+
+:::
+:::
+
+## Definition
+
+- "A research compendium is a collection of all digital parts of a research project including 
+  - data, 
+  - code, 
+  - texts
+  - ...
+- The collection is created in such a way that reproducing all results is straightforward"[^1]
+- "The compendium serves as a means for distributing, managing, and updating the collection"[^2]
+
+[^1]: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia)
+[^2]: [Gentleman & Temple Lang (2007)](https://doi.org/10.1198/106186007X178663)
+
+
+## Basic compendium{.build}
+A basic research compendium is just a folder...
+
+::: columns
+::: {.column width="50%"}
+```
+compendium/
+├── data
+│   └── my_data.csv
+├── analysis
+│   └── my_script.R
+├── requirements.txt
+└── README.md
+```
+:::
+
+::: {.column width="45%"}
+<!-- Where would you add these? -->
+<!-- ``` -->
+<!-- └── manuscript.qmd -->
+<!-- ``` -->
+<!-- ``` -->
+<!-- └── figures -->
+<!-- ``` -->
+:::
+:::
+
+## Basic compendium{.build}
+... but it can become extensive...
+
+```
+|
+├── paper/
+│   ├── paper.qmd       
+│   └── references.bib  
+| 
+├── figures/            
+|
+├── data/
+│   ├── raw_data/       
+│   └── clean_data/   
+|
+└── templates
+    └── journal_template.csl     
+```
+
+## Basic compendium{.build}
+...or even executable!
+
+```
+|
+├── _targets.R
+├── R/
+│   ├── functions_data.R
+│   ├── functions_analysis.R
+│   ├── functions_visualization.R
+└── data/
+    └── input_data.csv
+```
+![](https://books.ropensci.org/targets/man/figures/drake-graph.png){width=30%}
+
+## In practice
+
+![](https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg)
+Research Data Management Support workshop: 
+
+[**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
+
+## Steps
+
+- Think about a good folder structure 
+  - Split up 'read-only', 'human-generated', and 'project-generated' files
+- Create folder structure (main directory and sub directories)
+  - Add a landing page in the form of a README document
+  - Make the compendium executable (to automatically generate the results; optional)
+  - Make the compendium into a git repository (optional)
+- Add all files needed for reproducing the results of the project
+  - Avoid 'hard coded' parameters or human intervention in the execution
+- Make the compendium as clean and easy to use as possible
+  - Include a citation file and a LICENSE file with info on how it can be used
+- Publish your compendium
+  - E.g. on Zenodo (optional, more on this in the last course week)
+
+::: footer
+Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+::: 
+
+
+## Checklist
+
+- Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.
+- Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.
+- Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.
+- Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.
+- Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium.
+
+::: footer
+[![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+:::
+
+## Checklist
+
+- Access: It is clear who can use what, how, and under what conditions, with open access preferred.
+- Provenance: The origin of the components of the research compendium and how each has changed over time is evident.
+- Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.
+- Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.
+- Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary.
+
+
+::: footer
+[![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+:::
+
+---
+
+# Exit
+
+## Take aways
+::: columns
+::: {.column width="50%"}
+![](https://imgs.xkcd.com/comics/will_it_work.png)
+:::
+::: {.column width="45%"}
+- reproducibility
+- research compendiums
+- building a compendium
+<!-- <center> -->
+<!-- </center> -->
+:::
+:::
+
+## Next meeting
+
+November 22nd: **Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+
+
+
