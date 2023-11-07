@@ -56,18 +56,17 @@ In the section 'Rendering', you may skip the instructions for creating `docx` do
 
 ## Hint
 
-After this exercise, the YAML header for your Quarto document might look something like: 
+After this exercise, the YAML header for your Quarto document might look something like the code in the footnote[^1]. 
 
-```{r}
-#| eval: false
----
-title: "My Reproducible Manuscript"
-format: 
-  pdf: default
-bibliography: references.bib
----
-
-```
+[^1]: 
+  ```
+  ---
+  title: "My Reproducible Manuscript"
+  format: 
+    pdf: default
+  bibliography: references.bib
+  ---
+  ```
 
 <!-- The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next exercise for more information. -->
 <!-- Bring this presentation to the next class -->
