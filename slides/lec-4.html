@@ -13,8 +13,7 @@
 
   <meta name="author" content="Gerko Vink">
   <meta name="author" content="Hanne Oberman">
-  <meta name="dcterms.date" content="2023-09-13">
-  <title>Markup Languages and Reproducible Programming in Statistics - Welcome to MLaRPiS</title>
+  <title>Markup Languages and Reproducible Programming in Statistics - Reproducible Research</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -322,7 +321,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Welcome to MLaRPiS">
+<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Reproducible Research">
 <meta property="og:site-name" content="Markup Languages and Reproducible Programming in Statistics">
 </head>
 <body class="quarto-light">
@@ -330,7 +329,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Welcome to MLaRPiS</h1>
+  <h1 class="title">Reproducible Research</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -341,7 +340,7 @@ Gerko Vink <a href="https://orcid.org/0000-0001-9767-1924" class="quarto-title-a
 <a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>
 </div>
         <p class="quarto-title-affiliation">
-            Methodology &amp; Statistics @ UU University
+            Methodology &amp; Statistics @ UU
           </p>
     </div>
 <div class="quarto-title-author">
@@ -357,22 +356,15 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
     </div>
 </div>
 
-  <p class="date">13 Sep 2023</p>
-</section>
-<section id="disclaimer" class="slide level2">
-<h2>Disclaimer</h2>
-<p>I owe a debt of gratitude to many people as the thoughts and code in these slides are the process of years-long development cycles and discussions with my team, friends, colleagues and peers. When someone has contributed to the content of the slides, I have credited their authorship.</p>
-<p>Scientific references are in the footer. Opinions and figures are my own.</p>
+  <p class="date">8 Nov 2023</p>
 </section>
 <section>
-<section id="introduction-to-the-course" class="title-slide slide level1 center">
-<h1>Introduction to the course</h1>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
 
 </section>
 <section id="course-aims-outline" class="slide level2">
 <h2>Course Aims &amp; Outline</h2>
-<p><strong>Official</strong>: This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation.</p>
-<p><strong>Realistic</strong>: Hanne and Gerko will give you peek into our lives as opinionated developers. We will cover: <br><br></p>
 <table>
 <thead>
 <tr class="header">
@@ -404,7 +396,7 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <tr class="even">
 <td><a href="weeks/week-4.qmd">4</a></td>
 <td>08 Nov</td>
-<td>Reproducible Research Repositories</td>
+<td><strong>Reproducible Research Repositories</strong></td>
 <td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
 </tr>
 <tr class="odd">
@@ -424,16 +416,7 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 </section>
 <section id="course-materials" class="slide level2">
 <h2>Course materials</h2>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>We won’t use Blackboard. All materials can be found at</p>
+<p>All materials can be found at</p>
 <p><a href="https://www.gerkovink.com/markup">www.gerkovink.com/markup</a></p>
 <h3 id="hand-in">Hand in</h3>
 <p>All contributions to this course are to be delivered to this repository</p>
@@ -441,313 +424,382 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 <p>Please post your content-related questions as <a href="https://github.com/gerkovink/markup2023/issues">an issue in the same repository</a></p>
 <h3 id="finalization">Finalization</h3>
 <p>Deadline for all is <strong>Jan 8 2024</strong>. Grades will be available <strong>Jan 12 2024</strong></p>
-</div>
-</div>
-</div>
 </section>
-<section id="deliverables" class="slide level2">
-<h2>Deliverables</h2>
-<p>You must submit a portfolio that proves</p>
-<ol type="1">
-<li>That you can use markup languages for scientific manuscript writing</li>
-<li>That you can produce a reproducible repository that conforms to rigorous open science and computing standards</li>
-<li>That you can present this portfolio using markup languages</li>
-<li>That you are able to develop, test, maintain and host this portfolio</li>
-</ol>
-</section>
-<section id="this-means" class="slide level2">
-<h2>This means</h2>
-<p>that you should cover at least</p>
+<section id="today" class="slide level2">
+<h2>Today</h2>
 <ul>
-<li>Markup manuscript in either <span class="math inline">\(\LaTeX\)</span> or <code>Quarto</code></li>
-<li>Research repository detailing a reproducible simulation with proper licencing</li>
-<li>Personal repository (website that showcases your work) hosted with GitHub pages.</li>
+<li class="fragment">Reproducibility</li>
+<li class="fragment">Research compendiums</li>
 </ul>
-<p>and one of</p>
-<ul>
-<li>An error-free compilable source R-package on a GitHub with proper licencing, tests, version sequence and a referable DOI</li>
-<li>A Shiny app hosted on GitHub with proper licensing, version sequence and a referable DOI and with an error free <a href="https://www.shinyapps.io">Shinyapps.io</a></li>
-</ul>
-<p>A more comprehensive portfolio can result in extra credit in the form of a higher grade.</p>
-</section></section>
-<section>
-<section id="understanding-markup" class="title-slide slide level1 center">
-<h1>Understanding Markup</h1>
 
-</section>
-<section id="what-is-markup" class="slide level2">
-<h2>What is Markup?</h2>
-<p>A markup language is a system for annotating a document that provides <strong>structure</strong> and <strong>meaning</strong> to the content, allowing it to be <strong>processed</strong> and <strong>displayed</strong> in a <strong>consistent</strong> manner across <em>different platforms and devices</em>.</p>
-<h3 id="extremely-brief-history">Extremely brief history</h3>
+<img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch"></section>
+<section id="why-bother" class="slide level2">
+<h2>Why bother?</h2>
+<!-- ***Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures.  -->
+<!-- [(Gary King, 1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)*** -->
+<p>We would like our results to be as fully reproducible as possible:</p>
+<p>A. <strong>Reproducibility is one of the pillars of science</strong></p>
 <ul>
-<li><strong>GML</strong> (Generalized Markup Language): Developed in the 1960s by IBM, GML was one of the first markup languages. It was designed to help with the publishing process by defining the structure and content of documents.</li>
-<li><strong>SGML</strong> (Standard Generalized Markup Language): Evolved from GML in the 1980s, SGML became an ISO standard and was used as the basis for several other markup languages, including HTML.</li>
-<li><strong>HTML</strong> (HyperText Markup Language): Developed in the early 1990s by Tim Berners-Lee, HTML became the standard markup language for creating web pages. It’s a subset of SGML.</li>
-<li><strong>XML</strong> (eXtensible Markup Language): Introduced in the late 1990s, XML was designed to store and transport data. Unlike HTML, which is about displaying information, XML is about carrying information.</li>
+<li class="fragment">It is the standard by which to judge scientific claims</li>
+<li class="fragment">It helps the cumulative growth of knowledge - no duplication of effort</li>
 </ul>
-</section>
-<section id="technically-speaking" class="slide level2">
-<h2>Technically speaking</h2>
+<p>B. <strong>Reproducibility may greatly benefit you</strong></p>
 <ul>
-<li><strong>TeX</strong> (aka <span class="math inline">\(\LaTeX\)</span>) is not a markup language, but a software system for document preparation. This is because plain text is used as opposed to other markup languages. However, markup tagging conventions are used to define and stylize document stucture, graphical elements, citations and text.</li>
-<li><strong>Markdown</strong> is an extremely simplified alternative to document preparation software systems. <code>markdown</code> is a lightweigt markup language that can be edited using any text editor, while being quick and easy to compile. It is nowadays widely considered as the language of the internet as it bridges most great attributes of other markup languages.</li>
-<li><a href=""><strong>Quarto</strong></a> is even more comprehensive as it is an open-source scientific and technical publishing system. <code>quarto</code> is aimed at delivering reproducible, consistent <a href="https://pandoc.org">Pandoc</a> markdown documents that unify the best of all other markup languages.</li>
+<li class="fragment">You’ll develop better work habits</li>
+<li class="fragment">Better teamwork - especially with new team members</li>
+<li class="fragment">Changing or amending your work is much easier</li>
+<li class="fragment">Higher research impact - more likely to be picked up and cited</li>
 </ul>
-</section>
-<section id="importance-in-digital-representation" class="slide level2">
-<h2>Importance in digital representation</h2>
-<ul>
-<li>Consistency: Markup languages ensure that content is displayed consistently across different platforms and devices.</li>
-<li>Separation of Content and Presentation: Markup languages allow for a clear distinction between content and how it’s presented. This separation makes it easier to repurpose content for different mediums or platforms.</li>
-<li>Interoperability: Markup languages enable different systems and applications to communicate with each other by providing a standardized way to represent data.</li>
-<li>ease of mind: Styles in <em>modern</em> markup languages allow you to focus on the content and not</li>
-</ul>
-</section>
-<section id="everyday-interactions-with-markup" class="slide level2">
-<h2>Everyday interactions with markup</h2>
-<ul>
-<li>HTML in Everyday Life:
-<ul>
-<li>Web Browsing: Every time you visit a website, you’re interacting with content structured by HTML. From paragraphs to images to links, all are defined using HTML tags.</li>
-<li>Emails: Many emails, especially those with formatting, images, or links, are compose using HTML.</li>
-<li>Online Platforms: Social media posts, blogs, and even some word processors use HTML behind the scenes to structure and display content.</li>
-</ul></li>
-<li>XML in Everyday Applications:
-<ul>
-<li>Data Storage: Many applications use XML to store configuration data, user settings, or other information.</li>
-<li>Office Documents: Formats like Microsoft’s .docx (Word) or .xlsx (Excel) are essentially zipped XML files. When you save a Word document, you’re saving XML data.</li>
-<li>Web Services: Many web services and APIs return data in XML format, which is then processed and displayed by the application.</li>
-<li>RSS Feeds: Used by news websites and blogs to syndicate content, RSS feeds are XML documents that can be read by various applications.</li>
-</ul></li>
-</ul>
-</section>
-<section id="emc2" class="slide level2">
-<h2><span class="math inline">\(E=MC^2\)</span></h2>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p>Be careful with your online carbon footprint</p>
-</div>
-</div>
-</div>
-<p>In the grand scheme of things, trivial activities like emailing, chatting and video conferencing may seem insignificant. Collectively it adds up to a much larger carbon footprint than needed.</p>
-<p>Everything that you do online is either energy or costs energy. And cloud storage means burning carbon for eternity.</p>
-</section>
-<section id="traditional-word-processors-vs-scientific-writing" class="slide level2">
-<h2>Traditional Word Processors vs Scientific Writing</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Graphical (Word) Processors</strong></p>
-<ul>
-<li>While Word and similar word processors have built-in equation editors, they often lack the flexibility and customization options that markup languages offer.</li>
-<li>Formatting equations consistently across a large document or multiple documents can be challenging in Word.</li>
-<li>Collaborating on complex scientific documents with multiple authors can lead to formatting inconsistencies, especially when different versions of the software are used.</li>
-<li>Integration with other Tools is not always straightforward or impossible.</li>
-<li>Word documents, especially those with complex equations, might not always display consistently across different devices or software versions.</li>
-</ul>
-</div><div class="column" style="width:45%;">
-<p><strong>Markup languages</strong></p>
-<ul>
-<li>Markup languages (especially <span class="math inline">\(\LaTeX\)</span>) provide precise control over the layout and appearance of elemants and equations.</li>
-<li>The same code will produce the same output regardless of the platform or software version, ensuring consistency.</li>
-<li>Simple integration with version control systems, reference managers, and other tools essential for scientific writing.</li>
-<li>Many scientific journals provide <span class="math inline">\(\LaTeX\)</span> or markdown templates, making it easier for researchers to prepare manuscripts that meet specific formatting requirements.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="why-are-we-teaching-you-markup" class="slide level2">
-<h2>Why are we teaching you Markup?</h2>
-<p>If you prefere lists:</p>
-<ul>
-<li>Reproducibility (Wk2)</li>
-<li>Version controlling and Collaboration (Wk3)</li>
-<li>Consistent presentation</li>
-<li>Time-saving (After this course)</li>
-<li>Modular nature</li>
-<li>Bibliography management (Wk1)</li>
-<li>Oh, Behave (Wk 1-6)</li>
-</ul>
-<p>If you prefer arguments:</p>
-<ol type="1">
-<li>It is the standard in scientific publishing and research</li>
-<li>We prepare you for a career built on scientific principles</li>
-<li>Journal styles</li>
-</ol>
-</section></section>
-<section>
-<section id="about-latex" class="title-slide slide level1 center">
-<h1>About <span class="math inline">\(\LaTeX\)</span></h1>
-
-</section>
-<section id="the-evolution-of-tex-and-latex" class="slide level2">
-<h2>The evolution of <code>TeX</code> and <span class="math inline">\(\LaTeX\)</span></h2>
-<ul>
-<li><p>TeX: Birth of a Typesetting Revolution</p>
-<ul>
-<li>1978: Donald Knuth, a computer scientist, develops <code>TeX</code>, a typesetting system.</li>
-<li>Motivation: Dissatisfaction with the quality of typesetting in his book, <a href="https://www-cs-faculty.stanford.edu/~knuth/taocp.html">“The Art of Computer Programming”</a>.</li>
-<li>Key Features: Precise control over typography, mathematical typesetting, and cross-referencing.</li>
-</ul></li>
-<li><p>LaTeX: Building on TeX’s Foundation</p>
-<ul>
-<li>Early 1980s: Leslie Lamport creates <span class="math inline">\(\LaTeX\)</span>, a document preparation system based on <code>TeX</code>.</li>
-<li>Goal: Simplify the complex <code>TeX</code> formatting commands, making it more accessible to a broader audience.</li>
-<li>Advantages: Provides document structure through commands like <code>\section</code> and <code>\tableofcontents</code>.</li>
-</ul></li>
-<li><p>TeX and <span class="math inline">\(\LaTeX\)</span>: A Symbiotic Relationship</p>
-<ul>
-<li><span class="math inline">\(\LaTeX\)</span> builds on the <code>TeX</code> typesetting engine, allowing users to create professional documents and presentations.</li>
-<li><span class="math inline">\(\LaTeX\)</span> packages extend functionality, catering to various types of documents (e.g., articles, theses, presentations).</li>
-</ul></li>
-</ul>
-</section>
-<section id="precision" class="slide level2">
-<h2>Precision</h2>
-<ol type="1">
-<li>Unmatched Typography Precision: <code>TeX</code> and <code>LaTeX</code> excel at typesetting with precise control over fonts, layout, and mathematical notation.</li>
-</ol>
-<ul>
-<li>Ideal for academic papers, theses, and publications with complex formatting requirements.</li>
-</ul>
-<ol start="2" type="1">
-<li>Superior Mathematical Typesetting: <code>LaTeX</code>’s native support for mathematical notation makes it the go-to choice for scientists, engineers, and mathematicians.</li>
-</ol>
-<ul>
-<li>No more MS equation editor</li>
-</ul>
-<ol start="3" type="1">
-<li>Cross-Referencing and Bibliography Management: Effortlessly manage references and citations with BibTeX in <code>LaTeX</code>.</li>
-</ol>
-<ul>
-<li>Automatic numbering, referencing, and bibliography generation.</li>
-</ul>
-<ol start="4" type="1">
-<li>Collaboration and Version Control: <code>LaTeX</code> documents can be easily managed using version control systems like <code>Git</code> (Wk 3).</li>
-</ol>
-<ul>
-<li>This makes it straightforward to collaborate simultaneously on the same text and documents.</li>
-</ul>
-</section>
-<section id="and" class="slide level2">
-<h2>And…</h2>
-<ol start="5" type="1">
-<li>Professional Look and Feel: LaTeX produces documents with a professional and consistent appearance.</li>
-</ol>
-<ul>
-<li>This explains the popularity in academia, research, and publishing.</li>
-</ul>
-<ol start="6" type="1">
-<li><p>LaTeX Ecosystem: A vast collection of packages and templates <a href="">is available on CTAN</a> to cater to diverse document types.</p></li>
-<li><p>Long-Term Stability: Documents created with TeX and LaTeX have a long shelf life.</p></li>
-</ol>
-<ul>
-<li>Because <code>TeX</code> is software, it ensures compatibility across different platforms and software versions.</li>
-</ul>
-</section>
-<section id="hands-on" class="slide level2">
-<h2>Hands on</h2>
-<ul>
-<li>Introduction to <code>LaTeX</code> and the basics of <code>LaTeX</code> for scientific writing. <a href="../weeks/week-1.qmd">see this week’s lab</a></li>
-<li>Incorporating equations. <a href="https://www.gerkovink.com/oldmarkup/Wk3/Exercise%203/LaTeX%20background.zip">background</a></li>
-<li>Incorporating figures and tables. <a href="https://www.gerkovink.com/oldmarkup/Archive/2019/Wk3/LaTeX%20background.zip">background</a> <br><br></li>
-</ul>
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lec-1/cos.png"></p>
-<figcaption><a href="https://xkcd.com/184/">source</a> and <a href="../documents/Wk1/funny.tex">LaTeX</a></figcaption>
-</figure>
-</div>
-</center>
-</section>
-<section id="collaborative-latex-editing-with-overleaf" class="slide level2">
-<h2>Collaborative LaTeX Editing with Overleaf</h2>
-<p>Overleaf is an online <code>LaTeX</code> editor that allows users to create, edit, and collaborate on <code>LaTeX</code> documents in real time.</p>
-<center>
-<img data-src="images/lec-1/overleaf.png">
-</center>
-<p>It’s a cloud-based platform that eliminates the need for local <code>LaTeX</code> installations and simplifies the collaborative writing process.</p>
-</section>
-<section id="benefits-of-using-overleaf" class="slide level2">
-<h2>Benefits of Using Overleaf</h2>
-<ul>
-<li>Collaborate with colleagues and teammates in real time, regardless of their physical location.</li>
-<li>Multiple users can edit the same document simultaneously, making group projects efficient.</li>
-<li>Device agnostic and therefore worry-free.</li>
-<li>Overleaf integrates with Git, allowing users to track changes, revert to previous versions, and manage document history.</li>
-<li>Overleaf offers a vast library of templates for various document types, including research papers, theses, presentations, and more.</li>
-<li>Overleaf compiles <code>LaTeX</code> documents in the cloud, so you don’t need to configure or run <code>LaTeX</code> locally.</li>
-<li>It just works!</li>
-</ul>
-</section>
-<section id="potential-challenges-of-using-overleaf" class="slide level2">
-<h2>Potential Challenges of Using Overleaf</h2>
-<ul>
-<li><p>Internet Dependency: Overleaf requires a stable internet connection.</p></li>
-<li><p>Limited Offline Access: Overleaf operates online, which means <strong>no internet, no access to the convenience of Overleaf</strong>.</p></li>
-<li><p>Privacy Concerns: Sensitive or confidential documents may not be suitable for upload to Overleaf. You should always consider data privacy!.</p></li>
-<li><p>Subscription Costs: basic Overleaf is free, but more advanced features and collaboration options are <em>costly</em>.</p></li>
-</ul>
-</section>
-<section id="latexdiff" class="slide level2">
-<h2><code>LaTeXdiff</code></h2>
-<p><strong>LaTeXdiff</strong> is a tool (<code>PERL</code> script) used to highlight and track changes between two versions of a <code>LaTeX</code> document.</p>
-<p>It’s particularly useful for collaborative writing and when reviewing or revising documents.</p>
-<h3 id="how-latexdiff-works">How <code>LaTeXdiff</code> Works</h3>
-<p><code>LaTeXdiff</code> operates by comparing two LaTeX files:</p>
-<ul>
-<li>The original version (e.g., <code>document-v1.tex</code>)</li>
-<li>The revised version (e.g., <code>document-v2.tex</code>)</li>
-</ul>
-<p><code>LaTeXdiff</code> identifies differences in the text, equations, figures, and more. <code>LaTeXdiff</code> then generates a new <code>LaTeX</code> file highlighting these differences, using color coding, strikethrough and other visual cues.</p>
+<!-- ## What you'll learn -->
+<!-- -  -->
 </section>
 <section class="slide level2">
 
-<h3 id="how-to-latexdiff-in-theory-and-practice">How to <code>LaTeXdiff</code> in theory and practice</h3>
+</section></section>
+<section>
+<section id="reproducibility" class="title-slide slide level1 center">
+<h1>Reproducibility</h1>
 
-<img data-src="https://media.giphy.com/media/kHU8W94VS329y/giphy.gif?cid=ecf05e47kj68ftluib01mrjnkkxec7upge37eiizan3uurk2&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" class="r-stretch"></section>
-<section id="bibliography-management" class="slide level2">
-<h2>Bibliography management</h2>
+</section>
+<section id="crisis" class="slide level2">
+<h2>Crisis?</h2>
+
+<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg" class="r-stretch"></section>
+<section id="definition" class="slide level2">
+<h2>Definition</h2>
+<p><img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg"></p>
+<p>“A result is reproducible when the <em>same</em> analysis steps performed on the <em>same</em> dataset consistently produces the <em>same</em> answer”.<sup>1</sup></p>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions">The Turing way</a></p></li></ol></aside></section>
+<section id="true-or-false" class="slide level2">
+<h2>True or false?</h2>
+<center>
+<p>In computational sciences - such as ours -</p>
+<p>simply having the data and code means that</p>
+<p>the results are not only replicable,</p>
+<p>but fully reproducible.</p>
+</center>
+</section>
+<section id="reproducibility-of-r-scripts" class="slide level2">
+<h2>Reproducibility of <code>R</code> scripts</h2>
+<p>Reproducible research is not the norm: “74% of <code>R</code> files failed to complete without error” (<a href="https://doi.org/10.1038/s41597-022-01143-6">Trisovic, Lau, Pasquier, et al., 2022</a>)</p>
+<!-- 9000 unique R files published from 2010 to 2020 -->
+<p><img data-src="https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png">{fig-align: right}</p>
+<div class="footer">
+
+</div>
+</section>
+<section id="reproducibility-spectrum" class="slide level2">
+<h2>Reproducibility spectrum</h2>
+
+<img data-src="https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1126/science.1213847">Peng (2011)</a></p>
+</div>
+<!-- ## Reproducible but not replicable -->
+<!-- ![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031) -->
+<!-- ## Reproducible code -->
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/future_self.png) -->
+<!-- </center> -->
+<!-- ## Randomness{.build}  -->
+<!-- ```{r, echo=TRUE} -->
+<!-- set.seed(1)  -->
+<!-- rnorm(3)  -->
+<!-- ``` -->
+<!-- <br> -->
+<!-- ```{r, echo=TRUE} -->
+<!-- rnorm(3)  -->
+<!-- ``` -->
+<!-- <br> -->
+<!-- ```{r, echo=TRUE} -->
+<!-- set.seed(1) -->
+<!-- rnorm(6) -->
+<!-- ``` -->
+<!-- seed setting to make sure you're not seed-dependent, e.g. morris simulation which was not replicable, but it was reproducible -->
+<!-- ## We can reproduce individual samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 50, replace = TRUE) -->
+<!-- ``` -->
+<!-- ## We can reproduce a chain of samples -->
+<!-- ```{r} -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- set.seed(123) -->
+<!-- sample(1:18, size = 5, replace = TRUE) -->
+<!-- sample(1:18, size = 7, replace = TRUE) -->
+<!-- ``` -->
+<!-- ## The random seed  -->
+<!-- The random seed is a number used to initialize the pseudo-random number generator -->
+<!-- <!-- If replication is needed, pseudorandom number generators must be used -->
+<p>–&gt;</p>
+<!-- - Pseudo-random number generators generate a sequence of numbers -->
+<!-- - The properties of generated number sequences approximates the properties of random number sequences -->
+<!-- - Pseudo-random number generators are not truly random, because the process is determined by an initial value. -->
+<!-- - The initial value (the seed) itself does not need to be random. -->
+<!-- - The resulting process is random because the seed value is not used to generate randomness -->
+<!-- - It merely forms the starting point of the algorithm for which the results are random. -->
+<!-- ## Why fix the random seed -->
+<!-- If we fix the random seed we can exactly reproduce the random process -->
+<!-- - But beware: the process depends on the seed -->
+<!-- - The results obtained could theoretically be extremely rare and would not have occurred with every other potential seed -->
+<!-- - Run another seed before publishing your results -->
+<!-- If you don't set the seed yourself, it is done for you -->
+<!-- - When an `R` instance is started, there is initially no seed. In that case, `R` will create one from the current time and process ID. -->
+<!-- - Hence, different sessions will give different results when random numbers are involved. -->
+<!-- - When you store a workspace and reopen it, you will continue from the seed specified within the workspace. -->
+<!-- If the method has not changed: the results of the process will be identical when using the same seed. -->
+<!-- - Replications allows for verification -->
+<!-- ## Random seeds -->
+<!-- <center> -->
+<!-- <img src="fig/random_seed.pdf" alt="HTML5 Icon" width = 60%> -->
+<!-- </center> -->
+<!-- ## Random processes -->
+<!-- <center> -->
+<!-- <img src="fig/random_process.pdf" alt="HTML5 Icon" width = 80%> -->
+<!-- </center> -->
+<!-- ## `RStudio` projects -->
+<!-- - Every project has its own history -->
+<!-- - Every research project has its own project -->
+<!-- - Every project can have its own folder, which also serves as a research archive -->
+<!-- - Every project can have its own version control system -->
+<!-- - RStudio projects can relate to Git (or other online) repositories -->
+</section>
+<section id="case-study" class="slide level2">
+<h2>Case study</h2>
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
+
+<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"></section>
+<section id="case-study-1" class="slide level2">
+<h2>Case study</h2>
+<p>“Our study is completely reproducible using the R code provided in <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf">online supplemental file 1</a>, which uses freely available data”.<sup>1</sup></p>
+<pre><code>
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)</code></pre>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p></li></ol></aside></section>
+<section id="making-research-reproducible" class="slide level2">
+<h2>Making research reproducible</h2>
 <ul>
-<li>Zotero –&gt; Hanne will introduce Zotero as a tool for collecting, organizing, and citing research materials.</li>
-<li>BibTeX –&gt; Gerko will say something about BibTeX in conjunction with LaTeX for citation management.</li>
+<li class="fragment">reproducible documents</li>
+<li class="fragment">research compendiums</li>
 </ul>
+<!-- ![](https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png)  -->
+
+<img data-src="https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png" class="r-stretch"></section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="research-compendiums" class="title-slide slide level1 center">
+<h1>Research Compendiums</h1>
+
+</section>
+<section id="research-compendium" class="slide level2">
+<h2>Research compendium</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<!-- <center> -->
+<p><img data-src="https://the-turing-way.netlify.app/_images/research-compendium.svg" style="width:90.0%"> <!-- </center> --> <a href="https://doi.org/10.5281/zenodo.8169292"><img data-src="https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg" alt="DOI"></a></p>
+</div><div class="column" style="width:45%;">
+
+</div>
+</div>
+</section>
+<section id="definition-1" class="slide level2">
+<h2>Definition</h2>
+<ul>
+<li class="fragment">“A research compendium is a collection of all digital parts of a research project including
+<ul>
+<li class="fragment">data,</li>
+<li class="fragment">code,</li>
+<li class="fragment">texts</li>
+<li class="fragment">…</li>
+</ul></li>
+<li class="fragment">The collection is created in such a way that reproducing all results is straightforward”<sup>1</sup></li>
+<li class="fragment">“The compendium serves as a means for distributing, managing, and updating the collection”<sup>2</sup></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn3"><p><a href="https://the-turing-way.netlify.app/reproducible-research/compendia">The Turing Way</a></p></li><li id="fn4"><p><a href="https://doi.org/10.1198/106186007X178663">Gentleman &amp; Temple Lang (2007)</a></p></li></ol></aside></section>
+<section id="basic-compendium" class="slide level2 build">
+<h2>Basic compendium</h2>
+<p>A basic research compendium is just a folder…</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<pre><code>compendium/
+├── data
+│   └── my_data.csv
+├── analysis
+│   └── my_script.R
+├── requirements.txt
+└── README.md</code></pre>
+</div><div class="column" style="width:45%;">
+<!-- Where would you add these? -->
+<!-- ``` -->
+<!-- └── manuscript.qmd -->
+<!-- ``` -->
+<!-- ``` -->
+<!-- └── figures -->
+<!-- ``` -->
+</div>
+</div>
+</section>
+<section id="basic-compendium-1" class="slide level2 build">
+<h2>Basic compendium</h2>
+<p>… but it can become extensive…</p>
+<pre><code>|
+├── paper/
+│   ├── paper.qmd       
+│   └── references.bib  
+| 
+├── figures/            
+|
+├── data/
+│   ├── raw_data/       
+│   └── clean_data/   
+|
+└── templates
+    └── journal_template.csl     </code></pre>
+</section>
+<section id="basic-compendium-2" class="slide level2 build">
+<h2>Basic compendium</h2>
+<p>…or even executable!</p>
+<pre><code>|
+├── _targets.R
+├── R/
+│   ├── functions_data.R
+│   ├── functions_analysis.R
+│   ├── functions_visualization.R
+└── data/
+    └── input_data.csv</code></pre>
+
+<img data-src="https://books.ropensci.org/targets/man/figures/drake-graph.png" style="width:30.0%" class="r-stretch"></section>
+<section id="in-practice" class="slide level2">
+<h2>In practice</h2>
+<p><img data-src="https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg"> Research Data Management Support workshop:</p>
+<p><a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html"><strong>Writing Reproducible Manuscripts in R and Python</strong></a></p>
+</section>
+<section id="steps" class="slide level2">
+<h2>Steps</h2>
+<ul>
+<li class="fragment">Think about a good folder structure
+<ul>
+<li class="fragment">Split up ‘read-only’, ‘human-generated’, and ‘project-generated’ files</li>
+</ul></li>
+<li class="fragment">Create folder structure (main directory and sub directories)
+<ul>
+<li class="fragment">Add a landing page in the form of a README document</li>
+<li class="fragment">Make the compendium executable (to automatically generate the results; optional)</li>
+<li class="fragment">Make the compendium into a git repository (optional)</li>
+</ul></li>
+<li class="fragment">Add all files needed for reproducing the results of the project
+<ul>
+<li class="fragment">Avoid ‘hard coded’ parameters or human intervention in the execution</li>
+</ul></li>
+<li class="fragment">Make the compendium as clean and easy to use as possible
+<ul>
+<li class="fragment">Include a citation file and a LICENSE file with info on how it can be used</li>
+</ul></li>
+<li class="fragment">Publish your compendium
+<ul>
+<li class="fragment">E.g. on Zenodo (optional, more on this in the last course week)</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Adapted from <a href="https://the-turing-way.netlify.app/reproducible-research/compendia#checklist">The Turing Way</a></p>
+</div>
+</section>
+<section id="checklist" class="slide level2">
+<h2>Checklist</h2>
+<ul>
+<li class="fragment">Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome.</li>
+<li class="fragment">Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.</li>
+<li class="fragment">Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.</li>
+<li class="fragment">Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim.</li>
+<li class="fragment">Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium.</li>
+</ul>
+<div class="footer">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="checklist-1" class="slide level2">
+<h2>Checklist</h2>
+<ul>
+<li class="fragment">Access: It is clear who can use what, how, and under what conditions, with open access preferred.</li>
+<li class="fragment">Provenance: The origin of the components of the research compendium and how each has changed over time is evident.</li>
+<li class="fragment">Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.</li>
+<li class="fragment">Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.</li>
+<li class="fragment">Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary.</li>
+</ul>
+<div class="footer">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
+</figure>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="case-study-2" class="title-slide slide level1 center">
+<h1>Case study</h1>
+
+</section>
+<section id="simulation-study" class="slide level2">
+<h2>Simulation study</h2>
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a> with [supplement] (https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)</p>
+
+<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"></section>
+<section class="slide level2">
+
 </section></section>
 <section>
 <section id="exit" class="title-slide slide level1 center">
 <h1>Exit</h1>
 
 </section>
-<section id="topics-covered-so-far" class="slide level2">
-<h2>Topics covered so far</h2>
+<section id="take-aways" class="slide level2">
+<h2>Take aways</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://imgs.xkcd.com/comics/will_it_work.png"></p>
+</div><div class="column" style="width:45%;">
 <ul>
-<li>This course</li>
-<li>Markup languages</li>
-<li><code>LaTeX</code></li>
-<li>Overleaf</li>
-<li><code>LaTeXdiff</code></li>
-<li>Zotero</li>
+<li class="fragment">reproducibility</li>
+<li class="fragment">research compendiums</li>
+<li class="fragment">building a compendium <!-- <center> --> <!-- </center> --></li>
 </ul>
+</div>
+</div>
 </section>
 <section id="next-meeting" class="slide level2">
 <h2>Next meeting</h2>
-<p><strong>Markdown</strong> + hand in the exercise in <a href="../weeks/week-1.qmd">this week’s lab</a></p>
-<center>
-<img data-src="https://media.giphy.com/media/3orif0Pxk3I4WQj46k/giphy.gif?cid=ecf05e47pt25knfnoi0lccqh5rmr1ssjcee3rq82d0sn3mxr&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g">
-</center>
+<p>November 22nd: <strong>Developer Portfolio</strong> + hand in the exercise in <a href="../weeks/week-4.qmd">this week’s lab</a></p>
 
-<p><img src="images/logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
+
+<img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>Gerko Vink and Hanne Oberman - Markup Languages @ UU</p>
 </div>
 </section></section>
+
     </div>
   </div>
 
@@ -782,7 +834,7 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"d1a6d1e35fa956b4","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"23182d408bde4ac5","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -962,44 +1014,6 @@ Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-titl
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

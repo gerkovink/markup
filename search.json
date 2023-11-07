@@ -203,46 +203,270 @@
     "text": "Citations\nOberman and Vink (2023) and Cai, Van Buuren and Vink (2023) are some of our team’s most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older (2010) or contain simple and contemporary solutions by Volker and Vink (2022, 2–4) or cool but potentially confusing images (Schouten and Vink 2021, 1255).\n\nBut you can also refer to Oberman and Vink (2023) here\n\n\n\nBanning, Reinder, and Gerko Vink. 2010. “Methoden En Indicatoren Voor Het Evalueren En Beschrijven van Controle- En Correctieprocessen.” CBS nota DMV-2010- 06-08-RBNG-GVNK. Centraal Bureau voor de Statistiek.\n\n\nCai, Mingyang, Stef van Buuren, and Gerko Vink. 2023. “Graphical and Numerical Diagnostic Tools to Assess Multiple Imputation Models by Posterior Predictive Checking.” Heliyon.\n\n\nOberman, Hanne I., and Gerko Vink. 2023. “Toward a Standardized Evaluation of Imputation Methodology.” Biometrical Journal, 2200107. https://doi.org/https://doi.org/10.1002/bimj.202200107.\n\n\nSchouten, Rianne Margaretha, and Gerko Vink. 2021. “The Dance of the Mechanisms: How Observed Information Influences the Validity of Missingness Assumptions.” Sociological Methods & Research 50 (3): 1243–58.\n\n\nVolker, Thom, and Gerko Vink. 2022. “Synthetic Data in r: Generating Synthetic Data with High Utility Using Mice.” Https://Www.gerkovink.com/miceVignettes/Synthetic/Synthetic.html.\n\n\n\n## Citations\n\n@eval and Cai, Van Buuren and Vink [-@cai2023graphical] are some of our team's most recent publications. Some references - such as some work by Reinder Banning and Gerko Vink are much older [-@banningvink] or contain simple and contemporary solutions by @vigntg [p. 2-4] or cool but potentially confusing images [@schouten2021dance, 1255].\n\n::: footer\nBut you can also refer to @eval here\n:::\n\n::: {#refs}\n:::\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
   },
   {
-    "objectID": "course-support.html",
-    "href": "course-support.html",
-    "title": "Course support",
+    "objectID": "slides/lec-4.html#course-aims-outline",
+    "href": "slides/lec-4.html#course-aims-outline",
+    "title": "Reproducible Research",
+    "section": "Course Aims & Outline",
+    "text": "Course Aims & Outline\n\n\n\nWeek\nDate\nFocus\nLocation\n\n\n\n\n1\n13 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1062\n\n\n2\n27 Sep\nMarkdown in (most) Flavors\nBOL 1025\n\n\n3\n01 Nov\nVersion Control and Development Flow\nSGG 128\n\n\n4\n08 Nov\nReproducible Research Repositories\nBOL 1025\n\n\n5\n22 Nov\nDeveloper Portfolio\nBOL 1025\n\n\n6\n06 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1025"
+  },
+  {
+    "objectID": "slides/lec-4.html#course-materials",
+    "href": "slides/lec-4.html#course-materials",
+    "title": "Reproducible Research",
+    "section": "Course materials",
+    "text": "Course materials\nAll materials can be found at\nwww.gerkovink.com/markup\nHand in\nAll contributions to this course are to be delivered to this repository\ngithub.com/gerkovink/markup2023\nPlease post your content-related questions as an issue in the same repository\nFinalization\nDeadline for all is Jan 8 2024. Grades will be available Jan 12 2024"
+  },
+  {
+    "objectID": "slides/lec-4.html#today",
+    "href": "slides/lec-4.html#today",
+    "title": "Reproducible Research",
+    "section": "Today",
+    "text": "Today\n\nReproducibility\nResearch compendiums"
+  },
+  {
+    "objectID": "slides/lec-4.html#why-bother",
+    "href": "slides/lec-4.html#why-bother",
+    "title": "Reproducible Research",
+    "section": "Why bother?",
+    "text": "Why bother?\n\n\nWe would like our results to be as fully reproducible as possible:\nA. Reproducibility is one of the pillars of science\n\nIt is the standard by which to judge scientific claims\nIt helps the cumulative growth of knowledge - no duplication of effort\n\nB. Reproducibility may greatly benefit you\n\nYou’ll develop better work habits\nBetter teamwork - especially with new team members\nChanging or amending your work is much easier\nHigher research impact - more likely to be picked up and cited"
+  },
+  {
+    "objectID": "slides/lec-4.html#crisis",
+    "href": "slides/lec-4.html#crisis",
+    "title": "Reproducible Research",
+    "section": "Crisis?",
+    "text": "Crisis?"
+  },
+  {
+    "objectID": "slides/lec-4.html#definition",
+    "href": "slides/lec-4.html#definition",
+    "title": "Reproducible Research",
+    "section": "Definition",
+    "text": "Definition\n\n“A result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer”.1\nThe Turing way"
+  },
+  {
+    "objectID": "slides/lec-4.html#true-or-false",
+    "href": "slides/lec-4.html#true-or-false",
+    "title": "Reproducible Research",
+    "section": "True or false?",
+    "text": "True or false?\n\nIn computational sciences - such as ours -\nsimply having the data and code means that\nthe results are not only replicable,\nbut fully reproducible."
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducibility-of-r-scripts",
+    "href": "slides/lec-4.html#reproducibility-of-r-scripts",
+    "title": "Reproducible Research",
+    "section": "Reproducibility of R scripts",
+    "text": "Reproducibility of R scripts\nReproducible research is not the norm: “74% of R files failed to complete without error” (Trisovic, Lau, Pasquier, et al., 2022)\n\n{fig-align: right}"
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducibility-spectrum",
+    "href": "slides/lec-4.html#reproducibility-spectrum",
+    "title": "Reproducible Research",
+    "section": "Reproducibility spectrum",
+    "text": "Reproducibility spectrum\n\n\nPeng (2011)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n–&gt;"
+  },
+  {
+    "objectID": "slides/lec-4.html#case-study",
+    "href": "slides/lec-4.html#case-study",
+    "title": "Reproducible Research",
+    "section": "Case study",
+    "text": "Case study\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+  },
+  {
+    "objectID": "slides/lec-4.html#case-study-1",
+    "href": "slides/lec-4.html#case-study-1",
+    "title": "Reproducible Research",
+    "section": "Case study",
+    "text": "Case study\n“Our study is completely reproducible using the R code provided in online supplemental file 1, which uses freely available data”.1\n\n\n\n\n\n# ====================================================================\n# R CODE\n# small scale simulation study to investigate impact of measurement error\n# measurement error on (continuous) exposure and/or (continuous) confounding variable\n# ====================================================================\n# ====================================================================\n# libraries:\nlibrary(Hmisc)\nlibrary(mice)\nlibrary(tidyverse)\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+  },
+  {
+    "objectID": "slides/lec-4.html#making-research-reproducible",
+    "href": "slides/lec-4.html#making-research-reproducible",
+    "title": "Reproducible Research",
+    "section": "Making research reproducible",
+    "text": "Making research reproducible\n\nreproducible documents\nresearch compendiums"
+  },
+  {
+    "objectID": "slides/lec-4.html#research-compendium",
+    "href": "slides/lec-4.html#research-compendium",
+    "title": "Reproducible Research",
+    "section": "Research compendium",
+    "text": "Research compendium"
+  },
+  {
+    "objectID": "slides/lec-4.html#definition-1",
+    "href": "slides/lec-4.html#definition-1",
+    "title": "Reproducible Research",
+    "section": "Definition",
+    "text": "Definition\n\n“A research compendium is a collection of all digital parts of a research project including\n\ndata,\ncode,\ntexts\n…\n\nThe collection is created in such a way that reproducing all results is straightforward”1\n“The compendium serves as a means for distributing, managing, and updating the collection”2\n\nThe Turing WayGentleman & Temple Lang (2007)"
+  },
+  {
+    "objectID": "slides/lec-4.html#basic-compendium",
+    "href": "slides/lec-4.html#basic-compendium",
+    "title": "Reproducible Research",
+    "section": "Basic compendium",
+    "text": "Basic compendium\nA basic research compendium is just a folder…\n\n\ncompendium/\n├── data\n│   └── my_data.csv\n├── analysis\n│   └── my_script.R\n├── requirements.txt\n└── README.md"
+  },
+  {
+    "objectID": "slides/lec-4.html#basic-compendium-1",
+    "href": "slides/lec-4.html#basic-compendium-1",
+    "title": "Reproducible Research",
+    "section": "Basic compendium",
+    "text": "Basic compendium\n… but it can become extensive…\n|\n├── paper/\n│   ├── paper.qmd       \n│   └── references.bib  \n| \n├── figures/            \n|\n├── data/\n│   ├── raw_data/       \n│   └── clean_data/   \n|\n└── templates\n    └── journal_template.csl"
+  },
+  {
+    "objectID": "slides/lec-4.html#basic-compendium-2",
+    "href": "slides/lec-4.html#basic-compendium-2",
+    "title": "Reproducible Research",
+    "section": "Basic compendium",
+    "text": "Basic compendium\n…or even executable!\n|\n├── _targets.R\n├── R/\n│   ├── functions_data.R\n│   ├── functions_analysis.R\n│   ├── functions_visualization.R\n└── data/\n    └── input_data.csv"
+  },
+  {
+    "objectID": "slides/lec-4.html#in-practice",
+    "href": "slides/lec-4.html#in-practice",
+    "title": "Reproducible Research",
+    "section": "In practice",
+    "text": "In practice\n Research Data Management Support workshop:\nWriting Reproducible Manuscripts in R and Python"
+  },
+  {
+    "objectID": "slides/lec-4.html#steps",
+    "href": "slides/lec-4.html#steps",
+    "title": "Reproducible Research",
+    "section": "Steps",
+    "text": "Steps\n\nThink about a good folder structure\n\nSplit up ‘read-only’, ‘human-generated’, and ‘project-generated’ files\n\nCreate folder structure (main directory and sub directories)\n\nAdd a landing page in the form of a README document\nMake the compendium executable (to automatically generate the results; optional)\nMake the compendium into a git repository (optional)\n\nAdd all files needed for reproducing the results of the project\n\nAvoid ‘hard coded’ parameters or human intervention in the execution\n\nMake the compendium as clean and easy to use as possible\n\nInclude a citation file and a LICENSE file with info on how it can be used\n\nPublish your compendium\n\nE.g. on Zenodo (optional, more on this in the last course week)\n\n\n\nAdapted from The Turing Way"
+  },
+  {
+    "objectID": "slides/lec-4.html#checklist",
+    "href": "slides/lec-4.html#checklist",
+    "title": "Reproducible Research",
+    "section": "Checklist",
+    "text": "Checklist\n\nCompleteness: The research compendium contains all of the objects needed to reproduce a predefined outcome.\nOrganization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time.\nEconomy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time.\nTransparency: The research compendium provides full disclosure of the research process that produced the scientific claim.\nDocumentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium."
+  },
+  {
+    "objectID": "slides/lec-4.html#checklist-1",
+    "href": "slides/lec-4.html#checklist-1",
+    "title": "Reproducible Research",
+    "section": "Checklist",
+    "text": "Checklist\n\nAccess: It is clear who can use what, how, and under what conditions, with open access preferred.\nProvenance: The origin of the components of the research compendium and how each has changed over time is evident.\nMetadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code.\nAutomation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions.\nReview: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary."
+  },
+  {
+    "objectID": "slides/lec-4.html#simulation-study",
+    "href": "slides/lec-4.html#simulation-study",
+    "title": "Reproducible Research",
+    "section": "Simulation study",
+    "text": "Simulation study\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020) with [supplement] (https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)"
+  },
+  {
+    "objectID": "slides/lec-4.html#take-aways",
+    "href": "slides/lec-4.html#take-aways",
+    "title": "Reproducible Research",
+    "section": "Take aways",
+    "text": "Take aways\n\n\n\n\n\nreproducibility\nresearch compendiums\nbuilding a compendium"
+  },
+  {
+    "objectID": "slides/lec-4.html#next-meeting",
+    "href": "slides/lec-4.html#next-meeting",
+    "title": "Reproducible Research",
+    "section": "Next meeting",
+    "text": "Next meeting\nNovember 22nd: Developer Portfolio + hand in the exercise in this week’s lab\n\n\n\nGerko Vink and Hanne Oberman - Markup Languages @ UU"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
     "section": "",
-    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
+    "text": "Week\nDate\nFocus\nLocation\n\n\n\n\n1\n13 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1062\n\n\n2\n27 Sep\nMarkdown in (most) Flavors\nBOL 1025\n\n\n3\n01 Nov\nVersion Control and Development Flow\nSGG 128\n\n\n4\n08 Nov\nReproducible Research Repositories\nBOL 1025\n\n\n5\n22 Nov\nDeveloper Portfolio\nBOL 1025\n\n\n6\n06 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1025"
   },
   {
-    "objectID": "course-support.html#support",
-    "href": "course-support.html#support",
-    "title": "Course support",
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
     "section": "",
-    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
+    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
   },
   {
-    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "title": "Attribution-ShareAlike 4.0 International",
-    "section": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
-    "text": "Creative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
-  },
-  {
-    "objectID": "weeks/week-2.html",
-    "href": "weeks/week-2.html",
-    "title": "Week 2: Markdown in (most) flavors",
+    "objectID": "course-team.html#instructors",
+    "href": "course-team.html#instructors",
+    "title": "Teaching team",
     "section": "",
-    "text": "Lecture Week 2\n\n\n\nThis week’s slides can be found here"
+    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
   },
   {
-    "objectID": "weeks/week-2.html#watch-this-video",
-    "href": "weeks/week-2.html#watch-this-video",
-    "title": "Week 2: Markdown in (most) flavors",
-    "section": "Watch this video",
-    "text": "Watch this video\nMine Çetinkaya-Rundel has a great video that highlights many of Quarto’s relevant features in our field."
+    "objectID": "weeks/week-4.html",
+    "href": "weeks/week-4.html",
+    "title": "Week 4: Reproducible Research",
+    "section": "",
+    "text": "Lecture 4\n\n\n\nThis week’s slides can be found here"
   },
   {
-    "objectID": "weeks/week-2.html#browse-the-quarto-website",
-    "href": "weeks/week-2.html#browse-the-quarto-website",
-    "title": "Week 2: Markdown in (most) flavors",
-    "section": "Browse the Quarto website",
-    "text": "Browse the Quarto website\nThe people at Posit have designed this awesome companion website that details pretty much everything Quarto. Have a look around and remember this source when you’re in need of some additional functionality. Much of what you can do with Quarto is detailed here."
+    "objectID": "weeks/week-4.html#required-reading",
+    "href": "weeks/week-4.html#required-reading",
+    "title": "Week 4: Reproducible Research",
+    "section": "Required reading",
+    "text": "Required reading\nRead Boulesteix, Groenwold, Abrahamowicz, et al. (2020).\nMost of the paper may be skimmed through, but make sure to closely read the penultimate section named “An example of a statistical simulation”, since this will be this week’s case study."
+  },
+  {
+    "objectID": "weeks/week-4.html#optional-reading",
+    "href": "weeks/week-4.html#optional-reading",
+    "title": "Week 4: Reproducible Research",
+    "section": "Optional reading",
+    "text": "Optional reading\nThe interested reader may also consider reading the original Morris, White, & Crowther (2019) paper, that Boulesteix et al. (2020) is based on. This shouldn’t be too hard, because the target audience of ‘Using simulation studies to evaluate statistical methods’ overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master’s thesis!"
+  },
+  {
+    "objectID": "weeks/week-4.html#hint",
+    "href": "weeks/week-4.html#hint",
+    "title": "Week 4: Reproducible Research",
+    "section": "Hint",
+    "text": "Hint\nAfter this exercise, the YAML header for your Quarto document might look something like the code in the footnote1."
+  },
+  {
+    "objectID": "weeks/week-4.html#footnotes",
+    "href": "weeks/week-4.html#footnotes",
+    "title": "Week 4: Reproducible Research",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: \npdf: default\nbibliography: references.bib\n---\n↩︎"
+  },
+  {
+    "objectID": "weeks/week-1.html",
+    "href": "weeks/week-1.html",
+    "title": "Week 1: Markup Languages",
+    "section": "",
+    "text": "Important\n\n\n\nThis week’s slides can be found here"
+  },
+  {
+    "objectID": "weeks/week-1.html#installing-a-tex-framework",
+    "href": "weeks/week-1.html#installing-a-tex-framework",
+    "title": "Week 1: Markup Languages",
+    "section": "Installing a TeX framework",
+    "text": "Installing a TeX framework\nIf you are on Windows or Linux, I suggest you install the easy to install ProTeXt distribution or the TexLive distribution. If you are on a Mac, the MacTex distribution will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent (but basic) editor (Texworks in Texlive and TexShop in MacTex), but if you want to go the fancy way: there are very good alternatives. See this page for a comprehensive overview of all TeX editors and code editors with TeX capabilities.\nAlternatively, you can use the online TeX editor Overleaf. Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors."
+  },
+  {
+    "objectID": "weeks/week-1.html#handing-in-the-exercise",
+    "href": "weeks/week-1.html#handing-in-the-exercise",
+    "title": "Week 1: Markup Languages",
+    "section": "Handing in the exercise",
+    "text": "Handing in the exercise\nCreate a zipped archive of your all necessary (e.g. .bib .tex and .pdf files and upload it to the correct folder (Wk1) via Add File &gt; Upload Files in the course collaboration repository. Name the file yourname.zip.\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "",
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#general-information",
+    "href": "course-overview.html#general-information",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "",
+    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+  },
+  {
+    "objectID": "course-overview.html#course-description",
+    "href": "course-overview.html#course-description",
+    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "section": "Course description",
+    "text": "Course description\nThis course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages (\\(\\LaTeX\\) and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career."
   },
   {
     "objectID": "weeks/week-3.html",
@@ -406,67 +630,46 @@
     "text": "Solution\n\n% git branch Wk4_gerkovink \n% git checkout Wk4_gerkovink\nSwitched to branch 'Wk4_gerkovink'\n% mv add_text_file.txt gerkovink.txt\n% git add -A\n% git commit -m 'gerko`s commit'    \n[Wk4_gerkovink fb26e75] gerko`s commit\n 1 file changed, 0 insertions(+), 0 deletions(-)\n rename add_text_file.txt =&gt; gerkovink.txt (100%)\n% git push origin Wk4_gerkovink\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (10/10), 1002 bytes | 1002.00 KiB/s, done.\nTotal 10 (delta 7), reused 0 (delta 0)\nremote: Resolving deltas: 100% (7/7), completed with 3 local objects.\nremote: \nremote: Create a pull request for 'Wk4_gerkovink' on GitHub by visiting:\nremote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink\nremote: \nTo https://github.com/gerkovink/markup2020.git\n * [new branch]      Wk4_gerkovink -&gt; Wk4_gerkovink"
   },
   {
-    "objectID": "course-overview.html",
-    "href": "course-overview.html",
-    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "objectID": "weeks/week-2.html",
+    "href": "weeks/week-2.html",
+    "title": "Week 2: Markdown in (most) flavors",
     "section": "",
-    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+    "text": "Lecture Week 2\n\n\n\nThis week’s slides can be found here"
   },
   {
-    "objectID": "course-overview.html#general-information",
-    "href": "course-overview.html#general-information",
-    "title": "Markup Languages and Reproducible Programming in Statistics",
+    "objectID": "weeks/week-2.html#watch-this-video",
+    "href": "weeks/week-2.html#watch-this-video",
+    "title": "Week 2: Markdown in (most) flavors",
+    "section": "Watch this video",
+    "text": "Watch this video\nMine Çetinkaya-Rundel has a great video that highlights many of Quarto’s relevant features in our field."
+  },
+  {
+    "objectID": "weeks/week-2.html#browse-the-quarto-website",
+    "href": "weeks/week-2.html#browse-the-quarto-website",
+    "title": "Week 2: Markdown in (most) flavors",
+    "section": "Browse the Quarto website",
+    "text": "Browse the Quarto website\nThe people at Posit have designed this awesome companion website that details pretty much everything Quarto. Have a look around and remember this source when you’re in need of some additional functionality. Much of what you can do with Quarto is detailed here."
+  },
+  {
+    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "title": "Attribution-ShareAlike 4.0 International",
+    "section": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
+    "text": "Creative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+  },
+  {
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Course support",
     "section": "",
-    "text": "Course: Markup languages and reproducible programming in statistics (202000010)\nCourse coordinator: Gerko Vink (g.vink@uu.nl)\nTeachers: Gerko Vink (g.vink@uu.nl) & Hanne Oberman (h.i.oberman@uu.nl)\nSchedule: MyTimetable"
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
   },
   {
-    "objectID": "course-overview.html#course-description",
-    "href": "course-overview.html#course-description",
-    "title": "Markup Languages and Reproducible Programming in Statistics",
-    "section": "Course description",
-    "text": "Course description\nThis course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages (\\(\\LaTeX\\) and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career."
-  },
-  {
-    "objectID": "weeks/week-1.html",
-    "href": "weeks/week-1.html",
-    "title": "Week 1: Markup Languages",
+    "objectID": "course-support.html#support",
+    "href": "course-support.html#support",
+    "title": "Course support",
     "section": "",
-    "text": "Important\n\n\n\nThis week’s slides can be found here"
-  },
-  {
-    "objectID": "weeks/week-1.html#installing-a-tex-framework",
-    "href": "weeks/week-1.html#installing-a-tex-framework",
-    "title": "Week 1: Markup Languages",
-    "section": "Installing a TeX framework",
-    "text": "Installing a TeX framework\nIf you are on Windows or Linux, I suggest you install the easy to install ProTeXt distribution or the TexLive distribution. If you are on a Mac, the MacTex distribution will give you everything you need. If you use the default installation parameters, everything you might ever need is included in these distributions. Both distributions come with an excellent (but basic) editor (Texworks in Texlive and TexShop in MacTex), but if you want to go the fancy way: there are very good alternatives. See this page for a comprehensive overview of all TeX editors and code editors with TeX capabilities.\nAlternatively, you can use the online TeX editor Overleaf. Please pay attention to any data privacy regulations. It may not be an option for all your research endeavors."
-  },
-  {
-    "objectID": "weeks/week-1.html#handing-in-the-exercise",
-    "href": "weeks/week-1.html#handing-in-the-exercise",
-    "title": "Week 1: Markup Languages",
-    "section": "Handing in the exercise",
-    "text": "Handing in the exercise\nCreate a zipped archive of your all necessary (e.g. .bib .tex and .pdf files and upload it to the correct folder (Wk1) via Add File &gt; Upload Files in the course collaboration repository. Name the file yourname.zip.\n\n\nBack to course schedule ⏎"
-  },
-  {
-    "objectID": "course-team.html",
-    "href": "course-team.html",
-    "title": "Teaching team",
-    "section": "",
-    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
-  },
-  {
-    "objectID": "course-team.html#instructors",
-    "href": "course-team.html#instructors",
-    "title": "Teaching team",
-    "section": "",
-    "text": "I am a statistician masquerading as a dark data scientist with a passion for educating people. I aim to be at the cutting edge of both teaching and research and have an interest in new developments concerning the presentation of data, results and knowledge. I have a specific interest for problems where not all data is available (some information is left in the dark), information privacy, computational evaluation and programming. I am based in the Netherlands and work as an associate professor at Utrecht University (Utrecht, Netherlands).\nI live my life with a wife and two kids, a surfboard and a pair of hiking shoes. You can reach me via e-mail at g.vink@uu.nl\n\n\nHanne Oberman is my (see above) PhD student. Hanne is a key figure in Utrecht’s Open Science Community and has a knack for new developments in creating and maintaining robust software. Hanne is a contributor and developer to multiple R-packages, some of which are in the top 10 packages developed at Utrecht University. Oh, and Hanne is much too polite, which is why I wrote this text on her behalf. You can reach Hanne at h.i.oberman@uu.nl"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Markup Languages and Reproducible Programming in Statistics",
-    "section": "",
-    "text": "Week\nDate\nFocus\nLocation\n\n\n\n\n1\n13 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1062\n\n\n2\n27 Sep\nMarkdown in (most) Flavors\nBOL 1025\n\n\n3\n01 Nov\nVersion Control and Development Flow\nSGG 128\n\n\n4\n08 Nov\nReproducible Research Repositories\nBOL 1025\n\n\n5\n22 Nov\nDeveloper Portfolio\nBOL 1025\n\n\n6\n06 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1025"
+    "text": "We will not use the course page on Blackboard.\nInstead, all course materials can be found here on the course website, www.gerkovink.com/markup.\nFor handing in assignments, we will use the course repository on GitHub.\nPlease post your content-related questions as an issue in the course repository.\nQuestions regarding personal circumstances may be shared through e-mail with the teaching team."
   },
   {
     "objectID": "slides/lec-1.html#disclaimer",

@@ -1,0 +1,91 @@
+---
+title: "Week 4: Reproducible Research"
+subtitle: "Setting up simulation studies that everyone can replicate and reproduce"
+editor: source
+format: 
+  html:
+    code-fold: true
+---
+
+::: callout-tip
+## Lecture 4
+This week's slides can be found [here](../slides/lec-4.qmd)
+:::
+
+---
+
+# Introduction 
+
+Dear all, 
+
+This week, it's all coming together: you will apply your newly acquired markup language skills and build a reproducible research archive from scratch. We will assume that, by now, you're familiar with Git and GitHub. If that's not the case, please refer to last weeks' course materials.
+
+The contents of the research compendium will consist of the simulation study performed by [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921). In this week's exercises, you will make the simulation study easier to reproduce. By the end of the exercises you've created an improved version of how this simulation may be represented in the online supplement.
+
+All the best, 
+
+Gerko and Hanne
+
+---
+
+# Preparation
+
+## Required reading
+
+Read [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921).  
+
+Most of the paper may be skimmed through, but make sure to closely read the penultimate section named "An example of a statistical simulation", since this will be this week's case study.
+
+## Optional reading
+
+The interested reader may also consider reading the original [Morris, White, & Crowther (2019)](https://doi.org/10.1002/sim.8086) paper, that Boulesteix et al. (2020) is based on. This shouldn't be too hard, because the target audience of 'Using simulation studies to evaluate statistical methods' overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master's thesis!
+
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+<!-- ## Browse the `Quarto` website -->
+<!-- The people at `Posit` have designed [this awesome companion website](https://quarto.org/docs/guide/) that details pretty much everything `Quarto`. Have a look around and remember this source when you're in need of some additional functionality. Much of what you can do with `Quarto` is detailed here.  -->
+
+---
+
+# Exercise 1
+
+In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: [https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html). The link intentionally refers to the section named 'Introduction'; previous sections are not relevant for you. 
+Follow the instructions in the sections 'Introduction', 'Getting Started', 'Writing', and 'Code'. 
+
+In the section 'Rendering', you may skip the instructions for creating `docx` documents, using the terminal, and managing multiple file outputs. We will only need the `pdf` output.
+
+## Hint
+
+After this exercise, the YAML header for your Quarto document might look something like the code in the footnote[^1]. 
+
+[^1]: 
+  ```
+  ---
+  title: "My Reproducible Manuscript"
+  format: 
+    pdf: default
+  bibliography: references.bib
+  ---
+  ```
+
+<!-- The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next exercise for more information. -->
+<!-- Bring this presentation to the next class -->
+
+---
+
+# Exercise 2
+
+In this exercise, you will substitute the contents of the research compendium you've just created with Boulesteix et al.'s simulation study. 
+
+The original simulation script was supplemented as a `pdf` file. Lucky for you, we've already copied all of the `R` code from their `pdf` supplement for you. The resulting `R` script is available from [https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R](https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R). 
+
+Likewise, we've retrieved the data linked in the original script. The necessary data files can be downloaded from [https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data](https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data).
+
+Now it's up to you! Create a reproducible document that contains the simulation study and results. Submit the research compendium to this year's Markup Languages repository with a pull request on GitHub.
+
+<!-- The document should include the following statistics: -->
+
+<!--  - absolute bias -->
+<!--  - standard error -->
+<!--  - lower bound of the 95% confidence interval -->
+<!--  - upper bound of the 95% confidence interval -->
