@@ -658,6 +658,27 @@
     "text": "The course website serves as syllabus. Background information, e.g. about course aims, can be found on Osiris. If you really want to have a PDF version, you can download it here."
   },
   {
+    "objectID": "weeks/week-5.html",
+    "href": "weeks/week-5.html",
+    "title": "Week 5: Developer Portfolio",
+    "section": "",
+    "text": "Lecture Week 3\n\n\n\nThis week has no lecture slides. We discussed the flow of creating a website with Git, Quarto and GitHub pages.\nYou can join the Teams during the lecture (for screen sharing) here and see the recording after class here"
+  },
+  {
+    "objectID": "weeks/week-5.html#custom-domain",
+    "href": "weeks/week-5.html#custom-domain",
+    "title": "Week 5: Developer Portfolio",
+    "section": "Custom domain",
+    "text": "Custom domain\nIf you want to use a custom domain name, you need to buy one. You can do this on many websites. To use a custom domain with Github pages, you need to add a CNAME file to your repository. You can read more about this here. After addition of the CNAME, your website will be available at the custom domain. For example, where my website is available at https://gerkovink.github.io, I can also access it at https://www.gerkovink.com. Any repository converted to a GitHub pages website (such as this course webpage) will then not only be available at https://username.github.io/repositoryname, but also at and https://www.customdomain.com/repositoryname."
+  },
+  {
+    "objectID": "weeks/week-5.html#render-on-push-to-main",
+    "href": "weeks/week-5.html#render-on-push-to-main",
+    "title": "Week 5: Developer Portfolio",
+    "section": "Render on push to main",
+    "text": "Render on push to main\nIf you’d like your site to render when you push changes to the main branch, while your site is deployed from the gh-pages branch, you must\n\nfollow the flow outlined in the lecture\ncreate an empty gh-pages branch by running the following commands in your terminal:\n\n\n\nTerminal\n\ngit checkout --orphan gh-pages\ngit reset --hard # make sure all changes are committed before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\nGitHub will automatically deploy webpages with an action. To also build your Quarto project, add the following action to a file in the path .github/workflows/publish.yml:\n\n\n.github/workflows/publish.yml\n\non:\n  workflow_dispatch:\n  push:\n    branches: main\n\nname: Quarto Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: ?meta:provider\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  },
+  {
     "objectID": "weeks/week-1.html",
     "href": "weeks/week-1.html",
     "title": "Week 1: Markup Languages",
