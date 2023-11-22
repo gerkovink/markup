@@ -1034,5 +1034,299 @@
     "title": "Week 3: Version Control",
     "section": "Solution",
     "text": "Solution\n\n% git branch Wk4_gerkovink \n% git checkout Wk4_gerkovink\nSwitched to branch 'Wk4_gerkovink'\n% mv add_text_file.txt gerkovink.txt\n% git add -A\n% git commit -m 'gerko`s commit'    \n[Wk4_gerkovink fb26e75] gerko`s commit\n 1 file changed, 0 insertions(+), 0 deletions(-)\n rename add_text_file.txt =&gt; gerkovink.txt (100%)\n% git push origin Wk4_gerkovink\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (10/10), 1002 bytes | 1002.00 KiB/s, done.\nTotal 10 (delta 7), reused 0 (delta 0)\nremote: Resolving deltas: 100% (7/7), completed with 3 local objects.\nremote: \nremote: Create a pull request for 'Wk4_gerkovink' on GitHub by visiting:\nremote:      https://github.com/gerkovink/markup2020/pull/new/Wk4_gerkovink\nremote: \nTo https://github.com/gerkovink/markup2020.git\n * [new branch]      Wk4_gerkovink -&gt; Wk4_gerkovink"
+  },
+  {
+    "objectID": "weeks/week-5.html",
+    "href": "weeks/week-5.html",
+    "title": "Week 5: Developer Portfolio",
+    "section": "",
+    "text": "Lecture Week 3\n\n\n\nThis week has no lecture slides. We discussed the flow of creating a website with Git, Quarto and GitHub pages.\nYou can join the Teams during the lecture (for screen sharing) here and see the recording after class here"
+  },
+  {
+    "objectID": "weeks/week-5.html#custom-domain",
+    "href": "weeks/week-5.html#custom-domain",
+    "title": "Week 5: Developer Portfolio",
+    "section": "Custom domain",
+    "text": "Custom domain\nIf you want to use a custom domain name, you need to buy one. You can do this on many websites. To use a custom domain with Github pages, you need to add a CNAME file to your repository. You can read more about this here. After addition of the CNAME, your website will be available at the custom domain. For example, where my website is available at https://gerkovink.github.io, I can also access it at https://www.gerkovink.com. Any repository converted to a GitHub pages website (such as this course webpage) will then not only be available at https://username.github.io/repositoryname, but also at and https://www.customdomain.com/repositoryname."
+  },
+  {
+    "objectID": "weeks/week-5.html#render-on-push-to-main",
+    "href": "weeks/week-5.html#render-on-push-to-main",
+    "title": "Week 5: Developer Portfolio",
+    "section": "Render on push to main",
+    "text": "Render on push to main\nIf you’d like your site to render when you push changes to the main branch, while your site is deployed from the gh-pages branch, you must\n\nfollow the flow outlined in the lecture\ncreate an empty gh-pages branch by running the following commands in your terminal:\n\n\n\nTerminal\n\ngit checkout --orphan gh-pages\ngit reset --hard # make sure all changes are committed before running this!\ngit commit --allow-empty -m \"Initialising gh-pages branch\"\ngit push origin gh-pages\n\nGitHub will automatically deploy webpages with an action. To also build your Quarto project, add the following action to a file in the path .github/workflows/publish.yml:\n\n\n.github/workflows/publish.yml\n\non:\n  workflow_dispatch:\n  push:\n    branches: main\n\nname: Quarto Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: ?meta:provider\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
+  },
+  {
+    "objectID": "slides/lec-3.html",
+    "href": "slides/lec-3.html",
+    "title": "About me",
+    "section": "",
+    "text": "qua patet orbis\n\n\n\n\nWe all know that the first \\(n\\) odd numbers sum to \\(n^2\\):\n\n1 == 1^2\n\n[1] TRUE\n\n1 + 3 == 2^2\n\n[1] TRUE\n\n1 + 3 + 5 == 3^2\n\n[1] TRUE\n\n1 + 3 + 5 + 7 == 4^2\n\n[1] TRUE\n\n1 + 3 + 5 + 7 + 9 == 5^2\n\n[1] TRUE\n\n\nThis extension to the same property amazes me even more:\n\n2^3 == 3 + 5\n\n[1] TRUE\n\n3^3 == 7 + 9 + 11\n\n[1] TRUE\n\n#...\n7^3 == 43 + 45 + 47 + 49 + 51 + 53 + 55\n\n[1] TRUE\n\n\n\nThere is a nice post about the behaviour of consecutive odds and their sums here"
+  },
+  {
+    "objectID": "weeks/week-4.html",
+    "href": "weeks/week-4.html",
+    "title": "Week 4: Reproducible Research",
+    "section": "",
+    "text": "Lecture 4\n\n\n\nThis week’s slides can be found here"
+  },
+  {
+    "objectID": "weeks/week-4.html#required-reading",
+    "href": "weeks/week-4.html#required-reading",
+    "title": "Week 4: Reproducible Research",
+    "section": "Required reading",
+    "text": "Required reading\nRead Boulesteix, Groenwold, Abrahamowicz, et al. (2020).\nMost of the paper may be skimmed through, but make sure to closely read the penultimate section named “An example of a statistical simulation”, since this will be this week’s case study."
+  },
+  {
+    "objectID": "weeks/week-4.html#optional-reading",
+    "href": "weeks/week-4.html#optional-reading",
+    "title": "Week 4: Reproducible Research",
+    "section": "Optional reading",
+    "text": "Optional reading\nThe interested reader may also consider reading the original Morris, White, & Crowther (2019) paper, that Boulesteix et al. (2020) is based on. This shouldn’t be too hard, because the target audience of ‘Using simulation studies to evaluate statistical methods’ overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master’s thesis!"
+  },
+  {
+    "objectID": "weeks/week-4.html#hint",
+    "href": "weeks/week-4.html#hint",
+    "title": "Week 4: Reproducible Research",
+    "section": "Hint",
+    "text": "Hint\nAfter this exercise, the YAML header for your Quarto document might look something like the code in the footnote1."
+  },
+  {
+    "objectID": "weeks/week-4.html#hint-1",
+    "href": "weeks/week-4.html#hint-1",
+    "title": "Week 4: Reproducible Research",
+    "section": "Hint",
+    "text": "Hint\nExchange research compendiums with a classmate to make sure that your work is indeed completely reproducible."
+  },
+  {
+    "objectID": "weeks/week-4.html#footnotes",
+    "href": "weeks/week-4.html#footnotes",
+    "title": "Week 4: Reproducible Research",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n---\ntitle: \"My Reproducible Manuscript\"\nformat: \npdf: default\nbibliography: references.bib\n---\n↩︎"
+  },
+  {
+    "objectID": "slides/lec-4.html",
+    "href": "slides/lec-4.html",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "Week\nDate\nFocus\nLocation\n\n\n\n\n1\n13 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1062\n\n\n2\n27 Sep\nMarkdown in (most) Flavors\nBOL 1025\n\n\n3\n01 Nov\nVersion Control and Development Flow\nSGG 128\n\n\n4\n08 Nov\nReproducible Research Repositories\nBOL 1025\n\n\n5\n22 Nov\nDeveloper Portfolio\nBOL 1025\n\n\n6\n06 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1025\n\n\n\n\n\n\nAll materials can be found at\nwww.gerkovink.com/markup\n\n\nAll contributions to this course are to be delivered to this repository\ngithub.com/gerkovink/markup2023\nPlease post your content-related questions as an issue in the same repository\n\n\n\nDeadline for all is Jan 8 2024. Grades will be available Jan 12 2024\n\n\n\n\n\nReproducibility\nResearch compendiums\n\n\n\n\n\nWe would like our results to be as fully reproducible as possible:\nA. Reproducibility is one of the pillars of science\n\nIt is the standard by which to judge scientific claims\nIt helps the cumulative growth of knowledge - no duplication of effort\n\nB. Reproducibility may greatly benefit you\n\nYou’ll develop better work habits\nBetter teamwork - especially with new team members\nChanging or amending your work is much easier\nHigher research impact - more likely to be picked up and cited\n\n\n\n\n\n… you will have heard what reproducible research is and why it is important\n… you have applied this knowledge by critiquing the reproducibility of case study\n… you will be able to produce a reproducible research archive from scratch"
+  },
+  {
+    "objectID": "slides/lec-4.html#course-aims-outline",
+    "href": "slides/lec-4.html#course-aims-outline",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "Week\nDate\nFocus\nLocation\n\n\n\n\n1\n13 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1062\n\n\n2\n27 Sep\nMarkdown in (most) Flavors\nBOL 1025\n\n\n3\n01 Nov\nVersion Control and Development Flow\nSGG 128\n\n\n4\n08 Nov\nReproducible Research Repositories\nBOL 1025\n\n\n5\n22 Nov\nDeveloper Portfolio\nBOL 1025\n\n\n6\n06 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1025"
+  },
+  {
+    "objectID": "slides/lec-4.html#course-materials",
+    "href": "slides/lec-4.html#course-materials",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "All materials can be found at\nwww.gerkovink.com/markup\n\n\nAll contributions to this course are to be delivered to this repository\ngithub.com/gerkovink/markup2023\nPlease post your content-related questions as an issue in the same repository\n\n\n\nDeadline for all is Jan 8 2024. Grades will be available Jan 12 2024"
+  },
+  {
+    "objectID": "slides/lec-4.html#today",
+    "href": "slides/lec-4.html#today",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "Reproducibility\nResearch compendiums"
+  },
+  {
+    "objectID": "slides/lec-4.html#why-bother",
+    "href": "slides/lec-4.html#why-bother",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "We would like our results to be as fully reproducible as possible:\nA. Reproducibility is one of the pillars of science\n\nIt is the standard by which to judge scientific claims\nIt helps the cumulative growth of knowledge - no duplication of effort\n\nB. Reproducibility may greatly benefit you\n\nYou’ll develop better work habits\nBetter teamwork - especially with new team members\nChanging or amending your work is much easier\nHigher research impact - more likely to be picked up and cited"
+  },
+  {
+    "objectID": "slides/lec-4.html#by-the-end-of-this-class",
+    "href": "slides/lec-4.html#by-the-end-of-this-class",
+    "title": "Reproducible Research",
+    "section": "",
+    "text": "… you will have heard what reproducible research is and why it is important\n… you have applied this knowledge by critiquing the reproducibility of case study\n… you will be able to produce a reproducible research archive from scratch"
+  },
+  {
+    "objectID": "slides/lec-4.html#crisis",
+    "href": "slides/lec-4.html#crisis",
+    "title": "Reproducible Research",
+    "section": "Crisis?",
+    "text": "Crisis?\n\n\nBaker (2016)"
+  },
+  {
+    "objectID": "slides/lec-4.html#definition",
+    "href": "slides/lec-4.html#definition",
+    "title": "Reproducible Research",
+    "section": "Definition",
+    "text": "Definition\n\n\nA result is reproducible when the same analysis steps performed on the same dataset consistently produces the same answer.\n\n\nThe Turing way"
+  },
+  {
+    "objectID": "slides/lec-4.html#true-or-false",
+    "href": "slides/lec-4.html#true-or-false",
+    "title": "Reproducible Research",
+    "section": "True or false?",
+    "text": "True or false?\n\nIn computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible."
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducibility-of-r-scripts",
+    "href": "slides/lec-4.html#reproducibility-of-r-scripts",
+    "title": "Reproducible Research",
+    "section": "Reproducibility of R scripts",
+    "text": "Reproducibility of R scripts\nReproducible research is not the norm:\n\n74% of R files failed to complete without error\n\n\n{fig-align: right}\n\nTrisovic, Lau, Pasquier, et al., 2022"
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducibility-spectrum",
+    "href": "slides/lec-4.html#reproducibility-spectrum",
+    "title": "Reproducible Research",
+    "section": "Reproducibility spectrum",
+    "text": "Reproducibility spectrum\n\n\nPeng (2011)"
+  },
+  {
+    "objectID": "slides/lec-4.html#case-study",
+    "href": "slides/lec-4.html#case-study",
+    "title": "Reproducible Research",
+    "section": "Case study",
+    "text": "Case study\n\n\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+  },
+  {
+    "objectID": "slides/lec-4.html#case-study-1",
+    "href": "slides/lec-4.html#case-study-1",
+    "title": "Reproducible Research",
+    "section": "Case study",
+    "text": "Case study\n\nOur study is completely reproducible using the R code provided in online supplemental file 1, which uses freely available data.\n\n\n\n\n\n\n# ====================================================================\n# R CODE\n# small scale simulation study to investigate impact of measurement error\n# measurement error on (continuous) exposure and/or (continuous) confounding variable\n# ====================================================================\n# ====================================================================\n# libraries:\nlibrary(Hmisc)\nlibrary(mice)\nlibrary(tidyverse)\n\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020)"
+  },
+  {
+    "objectID": "slides/lec-4.html#making-research-reproducible",
+    "href": "slides/lec-4.html#making-research-reproducible",
+    "title": "Reproducible Research",
+    "section": "Making research reproducible",
+    "text": "Making research reproducible\n\nreproducible documents\nresearch compendiums"
+  },
+  {
+    "objectID": "slides/lec-4.html#research-compendium",
+    "href": "slides/lec-4.html#research-compendium",
+    "title": "Reproducible Research",
+    "section": "Research compendium",
+    "text": "Research compendium"
+  },
+  {
+    "objectID": "slides/lec-4.html#definition-1",
+    "href": "slides/lec-4.html#definition-1",
+    "title": "Reproducible Research",
+    "section": "Definition",
+    "text": "Definition\n\n“A research compendium is a collection of all digital parts of a research project including\n\ndata,\ncode,\ntexts\n…\n\nThe collection is created in such a way that reproducing all results is straightforward”1\n“The compendium serves as a means for distributing, managing, and updating the collection”2"
+  },
+  {
+    "objectID": "slides/lec-4.html#basic-compendium",
+    "href": "slides/lec-4.html#basic-compendium",
+    "title": "Reproducible Research",
+    "section": "Basic compendium",
+    "text": "Basic compendium\nA basic research compendium is just a folder…\n\n\ncompendium/\n├── data\n│   └── my_data.csv\n├── analysis\n│   └── my_script.R\n├── requirements.txt\n└── README.md"
+  },
+  {
+    "objectID": "slides/lec-4.html#not-so-basic-compendium",
+    "href": "slides/lec-4.html#not-so-basic-compendium",
+    "title": "Reproducible Research",
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n… but it can become extensive…\n|\n├── paper/\n│   ├── paper.qmd       \n│   └── references.bib  \n| \n├── figures/            \n|\n├── data/\n│   ├── raw_data/       \n│   └── clean_data/   \n|\n└── templates\n    └── journal_template.csl"
+  },
+  {
+    "objectID": "slides/lec-4.html#not-so-basic-compendium-1",
+    "href": "slides/lec-4.html#not-so-basic-compendium-1",
+    "title": "Reproducible Research",
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n…or even executable!\n|\n├── _targets.R\n├── R/\n│   ├── functions_data.R\n│   ├── functions_analysis.R\n│   ├── functions_visualization.R\n└── data/\n    └── input_data.csv"
+  },
+  {
+    "objectID": "slides/lec-4.html#not-so-basic-compendium-2",
+    "href": "slides/lec-4.html#not-so-basic-compendium-2",
+    "title": "Reproducible Research",
+    "section": "(Not so) basic compendium",
+    "text": "(Not so) basic compendium\n\n\nPeng (2011)"
+  },
+  {
+    "objectID": "slides/lec-4.html#guidelines",
+    "href": "slides/lec-4.html#guidelines",
+    "title": "Reproducible Research",
+    "section": "Guidelines",
+    "text": "Guidelines\n\nCompleteness\nOrganization\nEconomy\nTransparency\nDocumentation\nAccess\nProvenance\nMetadata\nAutomation\nReview"
+  },
+  {
+    "objectID": "slides/lec-4.html#in-practice",
+    "href": "slides/lec-4.html#in-practice",
+    "title": "Reproducible Research",
+    "section": "In practice",
+    "text": "In practice\n Research Data Management Support workshop:\nWriting Reproducible Manuscripts in R and Python"
+  },
+  {
+    "objectID": "slides/lec-4.html#how-to",
+    "href": "slides/lec-4.html#how-to",
+    "title": "Reproducible Research",
+    "section": "How to",
+    "text": "How to\n\nThink about a good folder structure\n\nSplit up ‘read-only’, ‘human-generated’, and ‘project-generated’ files\n\nCreate folder structure (main directory and sub directories)\n\nAdd a landing page in the form of a README document\nMake the compendium executable (to automatically generate the results; optional)\nMake the compendium into a git repository (optional)\n\nAdd all files needed for reproducing the results of the project\n\nAvoid ‘hard coded’ parameters or human intervention in the execution\n\nMake the compendium as clean and easy to use as possible\n\nInclude a citation file and a LICENSE file with info on how it can be used\n\nPublish your compendium\n\nE.g. on Zenodo (optional, more on this in the last course week)\n\n\n\nAdapted from The Turing Way"
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducible-research",
+    "href": "slides/lec-4.html#reproducible-research",
+    "title": "Reproducible Research",
+    "section": "‘Reproducible’ research",
+    "text": "‘Reproducible’ research\nBoulesteix, Groenwold, Abrahamowicz, et al. (2020) with the pdf supplement"
+  },
+  {
+    "objectID": "slides/lec-4.html#reproducible-but-not-replicable",
+    "href": "slides/lec-4.html#reproducible-but-not-replicable",
+    "title": "Reproducible Research",
+    "section": "Reproducible but not replicable",
+    "text": "Reproducible but not replicable\n\nResearch results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures\n\n\n\nKing (1995)"
+  },
+  {
+    "objectID": "slides/lec-4.html#take-aways",
+    "href": "slides/lec-4.html#take-aways",
+    "title": "Reproducible Research",
+    "section": "Take aways",
+    "text": "Take aways\n\n\n\n\n\nreproducibility\nresearch compendiums\nbuilding a compendium"
+  },
+  {
+    "objectID": "slides/lec-4.html#next-meeting",
+    "href": "slides/lec-4.html#next-meeting",
+    "title": "Reproducible Research",
+    "section": "Next meeting",
+    "text": "Next meeting\nNovember 22nd: Developer Portfolio + hand in the exercise in this week’s lab"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading",
+    "href": "slides/lec-4.html#references-and-further-reading",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nBaker, M. (2016). 1,500 scientists lift the lid on reproducibility. https://www.nature.com/articles/533452a\nBoulesteix, A.-L., Groenwold, R. H., Abrahamowicz, M., Binder, H., Briel, M., Hornung, R., Morris, T. P., Rahnenführer, J., & Sauerbrei, W. (2020). Introduction to statistical simulations in health research. BMJ Open, 10(12), e039921. https://doi.org/10.1136/bmjopen-2020-039921\nBryan, J., & TAs, T. S. 545. (n.d.-a). Chapter 33 Why and how we automate data analyses + examples | STAT 545. Retrieved October 30, 2023, from https://stat545.com/\nChecklist. (n.d.). Retrieved October 31, 2023, from https://guide.esciencecenter.nl/#/best_practices/checklist\nChecklist for a Software Management Plan. (n.d.). https://doi.org/10.5281/zenodo.2159713\nComment on Oberman & Vink: Should we fix or simulate the complete data in simulation studies evaluating missing data methods? - Morris—Biometrical Journal—Wiley Online Library. (n.d.). Retrieved October 30, 2023, from https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085\nDrost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos, P., Kuzak, M., Werkhoven, B., Attema, J., Hidding, J., Hees, V., Martinez-Ortiz, C., Spreeuw, H., Borgdorff, J., Leinweber, K., Diblen, F., Oord, G., Goncalves, R., … Bakker, T. (2020). Netherlands eScience Center—Software Development Guide (v0.9.1). Zenodo. https://doi.org/10.5281/ZENODO.4020564"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-1",
+    "href": "slides/lec-4.html#references-and-further-reading-1",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nGentleman, R., & Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. https://doi.org/10.1198/106186007X178663\nJiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. https://doi.org/10.12688/f1000research.11407.1\nKnuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. https://doi.org/10.1093/comjnl/27.2.97\nMarwick, B., Boettiger, C., & Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. https://doi.org/10.1080/00031305.2017.1375986\nMorris, T. P., White, I. R., & Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. https://doi.org/10.1002/sim.8086\nNHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-2",
+    "href": "slides/lec-4.html#references-and-further-reading-2",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nNüst, D., Ostermann, F., Sileryte, R., Hofer, B., Granell, C., Teperek, M., Graser, A., Broman, K., Hettne, K., & Clare, C. (2019). AGILE Reproducible Paper Guidelines. https://doi.org/10.17605/OSF.IO/CB7Z8\nPeng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226–1227. https://doi.org/10.1126/science.1213847\nReliability and reproducibility checklist for molecular dynamics simulations. (2023). Communications Biology, 6(1), Article 1. https://doi.org/10.1038/s42003-023-04653-0\nSandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285\nSayre, F., & Riegelman, A. (2019). Replicable Services for Reproducible Research: A Model for Academic Libraries | Sayre | College & Research Libraries. https://doi.org/10.5860/crl.80.2.260\nTable 1 Reliability and reproducibility checklist for molecular dynamics simulations. (n.d.). Retrieved October 30, 2023, from https://www.nature.com/articles/s42003-023-04653-0/tables/1\nTelford, R. J. (2023, September 6). Enough Markdown to Write a Thesis. https://biostats-r.github.io/biostats/quarto/"
+  },
+  {
+    "objectID": "slides/lec-4.html#references-and-further-reading-3",
+    "href": "slides/lec-4.html#references-and-further-reading-3",
+    "title": "Reproducible Research",
+    "section": "References and further reading",
+    "text": "References and further reading\nThe Turing Way Community (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2) [Computer software]. Zenodo. https://doi.org/10.5281/ZENODO.3233853\nThe Turing Way Community & Scriberia. (2023). Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse. Zenodo. https://doi.org/10.5281/ZENODO.3332807\nTIER Protocol 4.0 | Project TIER | Teaching Integrity in Empirical Research. (n.d.). Retrieved October 30, 2023, from https://www.projecttier.org/tier-protocol/protocol-4-0/\nTrisovic, A., Lau, M. K., Pasquier, T., & Crosas, M. (2022). A large-scale study on research code quality and execution. Scientific Data, 9(1), Article 1. https://doi.org/10.1038/s41597-022-01143-6\nUtrecht University (2023a, September 26). Best Practices for Writing Reproducible Code. https://utrechtuniversity.github.io/workshop-computational-reproducibility/\nUtrecht University (2023b, October 24). Writing Reproducible Manuscripts in R & Python. https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/"
+  },
+  {
+    "objectID": "slides/lec-4.html#footnotes",
+    "href": "slides/lec-4.html#footnotes",
+    "title": "Reproducible Research",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe Turing Way↩︎\nGentleman & Temple Lang (2007)↩︎"
   }
 ]
