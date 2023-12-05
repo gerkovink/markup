@@ -316,7 +316,7 @@ Lecture Week 3
 </div>
 <div class="callout-body-container callout-body">
 <p>This week has no lecture slides. We discussed the flow of creating a website with <code>Git</code>, <code>Quarto</code> and <code>GitHub pages</code>.</p>
-<p>You can join the Teams during the lecture (for screen sharing) <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjIwZmQ0MDItMmZjZC00ZDdiLThkYWEtZjA5OGM2N2ZjNTIw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d">here</a> and see the recording after class <a href="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/5551/images/nUn5augrQO8aiIU7N8Fw_patient_1.jpg">here</a></p>
+<p>You can join the Teams during the lecture (for screen sharing) <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjIwZmQ0MDItMmZjZC00ZDdiLThkYWEtZjA5OGM2N2ZjNTIw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d">here</a> and see the recording after class <a href="../documents/Wk5/meeting_recording.mp4">here</a></p>
 </div>
 </div>
 <section id="exercise" class="level1">
@@ -394,11 +394,11 @@ Alternative
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> </span><span class="kw">?</span><span class="at">meta:provider</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
