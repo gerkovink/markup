@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Markup Languages and Reproducible Programming in Statistics - Week 4: Reproducible Research Archives</title>
+<title>Markup Languages and Reproducible Programming in Statistics - Week 4: Reproducible Research</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <link href="../weeks/week-5.html" rel="next">
 <link href="../weeks/week-3.html" rel="prev">
+<link href="../images/logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,9 +65,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Week 4: Reproducible Research Archives">
+<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Week 4: Reproducible Research">
 <meta property="og:description" content="Setting up simulation studies that everyone can replicate and reproduce">
-<meta property="og:image" content="https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg">
 <meta property="og:site-name" content="Markup Languages and Reproducible Programming in Statistics">
 </head>
 
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
       <a href="" title="Gerko" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Gerko"><i class="bi bi-person-fill"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/gerkovink/markup/issues">
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/gerkovink/markup2023/issues">
             Discussion and questions
             </a>
           </li>
@@ -234,14 +234,33 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">Required reading</a></li>
+  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading">Optional reading</a></li>
+  </ul></li>
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a>
+  <ul class="collapse">
+  <li><a href="#hint" id="toc-hint" class="nav-link" data-scroll-target="#hint">Hint</a></li>
+  </ul></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a>
+  <ul class="collapse">
+  <li><a href="#hint-1" id="toc-hint-1" class="nav-link" data-scroll-target="#hint-1">Hint</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gerkovink/markup/edit/main/weeks/week-4.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 4: Reproducible Research Archives</h1>
+<h1 class="title">Week 4: Reproducible Research</h1>
 <p class="subtitle lead">Setting up simulation studies that everyone can replicate and reproduce</p>
 </div>
 
@@ -257,11 +276,90 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><img src="https://inspirationfeed.com/wp-content/uploads/2022/09/Construction-M32emes.jpg" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lecture 4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This week’s slides can be found <a href="../slides/lec-4.html">here</a></p>
+</div>
+</div>
+<hr>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Dear all,</p>
+<p>This week, it’s all coming together: you will apply your newly acquired markup language skills and build a reproducible research archive from scratch. We will assume that, by now, you’re familiar with Git and GitHub. If that’s not the case, please refer to last weeks’ course materials.</p>
+<p>The contents of the research compendium will consist of the simulation study performed by <a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a>. In this week’s exercises, you will make the simulation study easier to reproduce. By the end of the exercises you’ve created an improved version of how this simulation may be represented in the online supplement.</p>
+<p>All the best,</p>
+<p>Gerko and Hanne</p>
+<hr>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="required-reading" class="level2">
+<h2 class="anchored" data-anchor-id="required-reading">Required reading</h2>
+<p>Read <a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a>.</p>
+<p>Most of the paper may be skimmed through, but make sure to closely read the penultimate section named “An example of a statistical simulation”, since this will be this week’s case study.</p>
+</section>
+<section id="optional-reading" class="level2">
+<h2 class="anchored" data-anchor-id="optional-reading">Optional reading</h2>
+<p>The interested reader may also consider reading the original <a href="https://doi.org/10.1002/sim.8086">Morris, White, &amp; Crowther (2019)</a> paper, that Boulesteix et al.&nbsp;(2020) is based on. This shouldn’t be too hard, because the target audience of ‘Using simulation studies to evaluate statistical methods’ overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master’s thesis!</p>
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<!-- ## Browse the `Quarto` website -->
+<!-- The people at `Posit` have designed [this awesome companion website](https://quarto.org/docs/guide/) that details pretty much everything `Quarto`. Have a look around and remember this source when you're in need of some additional functionality. Much of what you can do with `Quarto` is detailed here.  -->
+<hr>
+</section>
+</section>
+<section id="exercise-1" class="level1">
+<h1>Exercise 1</h1>
+<p>In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: <a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html">https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html</a>. The link intentionally refers to the section named ‘Introduction’; previous sections are not relevant for you. Follow the instructions in the sections ‘Introduction’, ‘Getting Started’, ‘Writing’, and ‘Code’.</p>
+<p>In the section ‘Rendering’, you may skip the instructions for creating <code>docx</code> documents, using the terminal, and managing multiple file outputs. We will only need the <code>pdf</code> output.</p>
+<section id="hint" class="level2">
+<h2 class="anchored" data-anchor-id="hint">Hint</h2>
+<p>After this exercise, the YAML header for your Quarto document might look something like the code in the footnote<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<!-- The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next exercise for more information. -->
+<!-- Bring this presentation to the next class -->
+<hr>
+</section>
+</section>
+<section id="exercise-2" class="level1">
+<h1>Exercise 2</h1>
+<p>In this exercise, you will substitute the contents of the research compendium you’ve just created with Boulesteix et al.’s simulation study.</p>
+<p>The original simulation script was supplemented as a <code>pdf</code> file. Lucky for you, we’ve already copied all of the <code>R</code> code from their <code>pdf</code> supplement for you. The resulting <code>R</code> script is available from <a href="https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R">https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R</a>.</p>
+<p>Likewise, we’ve retrieved the necessary data for you. The complete database can be accessed through <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015">https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015</a>, whereas the relevant data files for this exercise can be downloaded directly from <a href="https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data">https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data</a>.</p>
+<p>Now it’s up to you! Create a reproducible document that contains the simulation study and results. Make sure that this document is part of a fully reproducible research compendium.</p>
+<p>Submit the research compendium to this year’s Markup Languages repository with a pull request on GitHub.</p>
+<section id="hint-1" class="level2">
+<h2 class="anchored" data-anchor-id="hint-1">Hint</h2>
+<p>Exchange research compendiums with a classmate to make sure that your work is indeed completely reproducible.</p>
+<!-- The document should include the following statistics: -->
+<!--  - absolute bias -->
+<!--  - standard error -->
+<!--  - lower bound of the 95% confidence interval -->
+<!--  - upper bound of the 95% confidence interval -->
 
 
+</section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><pre><code>---
+title: "My Reproducible Manuscript"
+format: 
+pdf: default
+bibliography: references.bib
+---</code></pre>
+<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -628,7 +726,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">© made by Gerko Vink - use as you please</div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gerkovink/markup/edit/main/weeks/week-4.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    </div>
     <div class="nav-footer-right">Built with <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

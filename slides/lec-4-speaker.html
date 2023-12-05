@@ -12,7 +12,8 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Gerko Vink">
-  <title>Markup Languages and Reproducible Programming in Statistics - About me</title>
+  <meta name="author" content="Hanne Oberman">
+  <title>Markup Languages and Reproducible Programming in Statistics - Reproducible Research</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,71 +31,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -309,7 +245,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -386,7 +321,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - About me">
+<meta property="og:title" content="Markup Languages and Reproducible Programming in Statistics - Reproducible Research">
 <meta property="og:site-name" content="Markup Languages and Reproducible Programming in Statistics">
 </head>
 <body class="quarto-light">
@@ -394,7 +329,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">About me</h1>
+  <h1 class="title">Reproducible Research</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -405,64 +340,458 @@ Gerko Vink <a href="https://orcid.org/0000-0001-9767-1924" class="quarto-title-a
 <a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>
 </div>
         <p class="quarto-title-affiliation">
-            Methodology &amp; Statistics @ UU University
+            Methodology &amp; Statistics @ UU
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Hanne Oberman <a href="https://orcid.org/0000-0003-3276-2141" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:h.i.oberman@uu.nl">h.i.oberman@uu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Methodology &amp; Statistics @ UU
           </p>
     </div>
 </div>
 
-  <p class="date">1 Nov 2023</p>
+  <p class="date">8 Nov 2023</p>
 </section>
-<section id="qua-patet-orbis" class="title-slide slide level1 center">
-<h1>qua patet orbis</h1>
+<section>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
 
-<img data-src="images/lec-3/marns.png" class="r-stretch"></section>
+</section>
+<section id="course-aims-outline" class="slide level2">
+<h2>Course Aims &amp; Outline</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Date</th>
+<th>Focus</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="weeks/week-1.qmd">1</a></td>
+<td>13 Sep</td>
+<td>Introduction to Markup Languages; and LaTeX</td>
+<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1062</a></td>
+</tr>
+<tr class="even">
+<td><a href="weeks/week-2.qmd">2</a></td>
+<td>27 Sep</td>
+<td>Markdown in (most) Flavors</td>
+<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
+</tr>
+<tr class="odd">
+<td><a href="weeks/week-3.qmd">3</a></td>
+<td>01 Nov</td>
+<td>Version Control and Development Flow</td>
+<td><a href="https://students.uu.nl/sjoerd-groenmangebouw">SGG 128</a></td>
+</tr>
+<tr class="even">
+<td><a href="weeks/week-4.qmd">4</a></td>
+<td>08 Nov</td>
+<td><strong>Reproducible Research Repositories</strong></td>
+<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
+</tr>
+<tr class="odd">
+<td><a href="weeks/week-5.qmd">5</a></td>
+<td>22 Nov</td>
+<td>Developer Portfolio</td>
+<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
+</tr>
+<tr class="even">
+<td><a href="weeks/week-6.qmd">6</a></td>
+<td>06 Dec</td>
+<td>Packages, Code Robustness and Unit Testing</td>
+<td><a href="https://students.uu.nl/bolognalaan-101">BOL 1025</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="course-materials" class="slide level2">
+<h2>Course materials</h2>
+<p>All materials can be found at</p>
+<p><a href="https://www.gerkovink.com/markup">www.gerkovink.com/markup</a></p>
+<h3 id="hand-in">Hand in</h3>
+<p>All contributions to this course are to be delivered to this repository</p>
+<p><a href="https://github.com/gerkovink/markup2023">github.com/gerkovink/markup2023</a></p>
+<p>Please post your content-related questions as <a href="https://github.com/gerkovink/markup2023/issues">an issue in the same repository</a></p>
+<h3 id="finalization">Finalization</h3>
+<p>Deadline for all is <strong>Jan 8 2024</strong>. Grades will be available <strong>Jan 12 2024</strong></p>
+</section>
+<section id="today" class="slide level2">
+<h2>Today</h2>
+<ul>
+<li class="fragment">Reproducibility</li>
+<li class="fragment">Research compendiums</li>
+</ul>
 
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-<p>We all know that the first <span class="math inline">\(n\)</span> odd numbers sum to <span class="math inline">\(n^2\)</span>:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">1</span><span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<img data-src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" class="r-stretch"></section>
+<section id="why-bother" class="slide level2">
+<h2>Why bother?</h2>
+<p>We would like our results to be as fully reproducible as possible:</p>
+<p>A. <strong>Reproducibility is one of the pillars of science</strong></p>
+<ul>
+<li class="fragment">It is the standard by which to judge scientific claims</li>
+<li class="fragment">It helps the cumulative growth of knowledge - no duplication of effort</li>
+</ul>
+<p>B. <strong>Reproducibility may greatly benefit you</strong></p>
+<ul>
+<li class="fragment">You’ll develop better work habits</li>
+<li class="fragment">Better teamwork - especially with new team members</li>
+<li class="fragment">Changing or amending your work is much easier</li>
+<li class="fragment">Higher research impact - more likely to be picked up and cited</li>
+</ul>
+</section>
+<section id="by-the-end-of-this-class" class="slide level2">
+<h2>By the end of this class…</h2>
+<ul>
+<li class="fragment">… you will have heard <em>what</em> reproducible research is and <em>why</em> it is important</li>
+<li class="fragment">… you have <em>applied</em> this knowledge by <em>critiquing</em> the reproducibility of case study</li>
+<li class="fragment">… you will be able to <em>produce</em> a reproducible research archive from scratch</li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="reproducibility" class="title-slide slide level1 center">
+<h1>Reproducibility</h1>
+
+</section>
+<section id="crisis" class="slide level2">
+<h2>Crisis?</h2>
+
+<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg" class="r-stretch"><div class="footer">
+<p><a href="https://www.nature.com/articles/533452a">Baker (2016)</a></p>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">3</span> <span class="sc">==</span> <span class="dv">2</span><span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">3</span><span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">+</span> <span class="dv">7</span> <span class="sc">==</span> <span class="dv">4</span><span class="sc">^</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-</div>
-<p>This extension to the same property amazes me even more:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="dv">2</span><span class="sc">^</span><span class="dv">3</span> <span class="sc">==</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="dv">3</span><span class="sc">^</span><span class="dv">3</span> <span class="sc">==</span> <span class="dv">7</span> <span class="sc">+</span> <span class="dv">9</span> <span class="sc">+</span> <span class="dv">11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">#...</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="dv">7</span><span class="sc">^</span><span class="dv">3</span> <span class="sc">==</span> <span class="dv">43</span> <span class="sc">+</span> <span class="dv">45</span> <span class="sc">+</span> <span class="dv">47</span> <span class="sc">+</span> <span class="dv">49</span> <span class="sc">+</span> <span class="dv">51</span> <span class="sc">+</span> <span class="dv">53</span> <span class="sc">+</span> <span class="dv">55</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-</div>
+</section>
+<section id="definition" class="slide level2">
+<h2>Definition</h2>
+
+<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch"><blockquote>
+<p>A result is reproducible when the <em>same</em> analysis steps performed on the <em>same</em> dataset consistently produces the <em>same</em> answer.</p>
+</blockquote>
 <div class="footer">
-<p>There is a nice post about the behaviour of consecutive odds and their sums <a href="https://cornellmath.wordpress.com/2008/02/15/odd-sums-of-consecutive-odds/">here</a></p>
-</div>
-
-
-<img src="https://avatars.githubusercontent.com/u/6791208?v=4" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>Gerko Vink - Markup Languages @ UU</p>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions">The Turing way</a></p>
 </div>
 </section>
+<section id="true-or-false" class="slide level2">
+<h2>True or false?</h2>
+
+<img data-src="https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg" class="r-stretch"><p>In computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible.</p>
+</section>
+<section id="reproducibility-of-r-scripts" class="slide level2">
+<h2>Reproducibility of <code>R</code> scripts</h2>
+<p>Reproducible research is not the norm:</p>
+<blockquote>
+<p>74% of <code>R</code> files failed to complete without error</p>
+</blockquote>
+<!-- 9000 unique R files published from 2010 to 2020 -->
+<p><img data-src="https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png">{fig-align: right}</p>
+<div class="footer">
+<p><a href="https://doi.org/10.1038/s41597-022-01143-6">Trisovic, Lau, Pasquier, et al., 2022</a></p>
+</div>
+</section>
+<section id="reproducibility-spectrum" class="slide level2">
+<h2>Reproducibility spectrum</h2>
+
+<img data-src="https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1126/science.1213847">Peng (2011)</a></p>
+</div>
+</section>
+<section id="case-study" class="slide level2">
+<h2>Case study</h2>
+
+<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
+</div>
+</section>
+<section id="case-study-1" class="slide level2">
+<h2>Case study</h2>
+<blockquote>
+<p>Our study is completely reproducible using the R code provided in <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf">online supplemental file 1</a>, which uses freely available data.</p>
+</blockquote>
+<pre><code>
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)</code></pre>
+<div class="footer">
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a></p>
+</div>
+</section>
+<section id="making-research-reproducible" class="slide level2">
+<h2>Making research reproducible</h2>
+<ul>
+<li class="fragment">reproducible documents</li>
+<li class="fragment">research compendiums</li>
+</ul>
+
+<img data-src="https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png" class="r-stretch"></section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="research-compendiums" class="title-slide slide level1 center">
+<h1>Research Compendiums</h1>
+
+</section>
+<section id="research-compendium" class="slide level2">
+<h2>Research compendium</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://the-turing-way.netlify.app/_images/research-compendium.svg" style="width:90.0%"> <a href="https://doi.org/10.5281/zenodo.8169292"><img data-src="https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg" alt="DOI"></a></p>
+</div><div class="column" style="width:45%;">
+
+</div>
+</div>
+</section>
+<section id="definition-1" class="slide level2">
+<h2>Definition</h2>
+<ul>
+<li class="fragment">“A research compendium is a collection of all digital parts of a research project including
+<ul>
+<li class="fragment">data,</li>
+<li class="fragment">code,</li>
+<li class="fragment">texts</li>
+<li class="fragment">…</li>
+</ul></li>
+<li class="fragment">The collection is created in such a way that reproducing all results is straightforward”<sup>1</sup></li>
+<li class="fragment">“The compendium serves as a means for distributing, managing, and updating the collection”<sup>2</sup></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://the-turing-way.netlify.app/reproducible-research/compendia">The Turing Way</a></p></li><li id="fn2"><p><a href="https://doi.org/10.1198/106186007X178663">Gentleman &amp; Temple Lang (2007)</a></p></li></ol></aside></section>
+<section id="basic-compendium" class="slide level2 build">
+<h2>Basic compendium</h2>
+<p>A basic research compendium is just a folder…</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<pre><code>compendium/
+├── data
+│   └── my_data.csv
+├── analysis
+│   └── my_script.R
+├── requirements.txt
+└── README.md</code></pre>
+</div><div class="column" style="width:45%;">
+<!-- Where would you add these? -->
+<!-- ``` -->
+<!-- └── manuscript.qmd -->
+<!-- ``` -->
+<!-- ``` -->
+<!-- └── figures -->
+<!-- ``` -->
+</div>
+</div>
+</section>
+<section id="not-so-basic-compendium" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
+<p>… but it can become extensive…</p>
+<pre><code>|
+├── paper/
+│   ├── paper.qmd       
+│   └── references.bib  
+| 
+├── figures/            
+|
+├── data/
+│   ├── raw_data/       
+│   └── clean_data/   
+|
+└── templates
+    └── journal_template.csl     </code></pre>
+</section>
+<section id="not-so-basic-compendium-1" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
+<p>…or even executable!</p>
+<pre><code>|
+├── _targets.R
+├── R/
+│   ├── functions_data.R
+│   ├── functions_analysis.R
+│   ├── functions_visualization.R
+└── data/
+    └── input_data.csv</code></pre>
+
+<img data-src="https://books.ropensci.org/targets/man/figures/drake-graph.png" style="width:30.0%" class="r-stretch"></section>
+<section id="not-so-basic-compendium-2" class="slide level2 build">
+<h2>(Not so) basic compendium</h2>
+
+<img data-src="https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1126/science.1213847">Peng (2011)</a></p>
+</div>
+</section>
+<section id="guidelines" class="slide level2">
+<h2>Guidelines</h2>
+<ul>
+<li class="fragment">Completeness</li>
+<li class="fragment">Organization</li>
+<li class="fragment">Economy</li>
+<li class="fragment">Transparency</li>
+<li class="fragment">Documentation</li>
+<li class="fragment">Access</li>
+<li class="fragment">Provenance</li>
+<li class="fragment">Metadata</li>
+<li class="fragment">Automation</li>
+<li class="fragment">Review</li>
+</ul>
+<div class="footer">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://doi.org/10.15497/RDA00074"><img data-src="https://zenodo.org/badge/DOI/10.15497/RDA00074.svg"></a></p>
+</figure>
+</div>
+</div>
+<!-- - Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome. -->
+<!-- - Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time. -->
+<!-- - Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time. -->
+<!-- - Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim. -->
+<!-- - Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium. -->
+<!-- - Access: It is clear who can use what, how, and under what conditions, with open access preferred. -->
+<!-- - Provenance: The origin of the components of the research compendium and how each has changed over time is evident. -->
+<!-- - Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code. -->
+<!-- - Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions. -->
+<!-- - Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary. -->
+</section>
+<section id="in-practice" class="slide level2">
+<h2>In practice</h2>
+<p><img data-src="https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg"> Research Data Management Support workshop:</p>
+<p><a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html"><strong>Writing Reproducible Manuscripts in R and Python</strong></a></p>
+</section>
+<section id="how-to" class="slide level2">
+<h2>How to</h2>
+<ul>
+<li class="fragment">Think about a good folder structure
+<ul>
+<li class="fragment">Split up ‘read-only’, ‘human-generated’, and ‘project-generated’ files</li>
+</ul></li>
+<li class="fragment">Create folder structure (main directory and sub directories)
+<ul>
+<li class="fragment">Add a landing page in the form of a README document</li>
+<li class="fragment">Make the compendium executable (to automatically generate the results; optional)</li>
+<li class="fragment">Make the compendium into a git repository (optional)</li>
+</ul></li>
+<li class="fragment">Add all files needed for reproducing the results of the project
+<ul>
+<li class="fragment">Avoid ‘hard coded’ parameters or human intervention in the execution</li>
+</ul></li>
+<li class="fragment">Make the compendium as clean and easy to use as possible
+<ul>
+<li class="fragment">Include a citation file and a LICENSE file with info on how it can be used</li>
+</ul></li>
+<li class="fragment">Publish your compendium
+<ul>
+<li class="fragment">E.g. on Zenodo (optional, more on this in the last course week)</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Adapted from <a href="https://the-turing-way.netlify.app/reproducible-research/compendia#checklist">The Turing Way</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="wrap-up" class="title-slide slide level1 center">
+<h1>Wrap-up</h1>
+
+</section>
+<section id="reproducible-research" class="slide level2">
+<h2>‘Reproducible’ research</h2>
+<p><a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a> with the <a href="https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf"><code>pdf</code> supplement</a></p>
+
+<img data-src="https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png" class="r-stretch"></section>
+<section id="reproducible-but-not-replicable" class="slide level2">
+<h2>Reproducible but not replicable</h2>
+<blockquote>
+<p>Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures</p>
+</blockquote>
+
+<img data-src="https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031" class="r-stretch"><div class="footer">
+<p><a href="https://gking.harvard.edu/files/gking/files/replication.pdf">King (1995)</a></p>
+</div>
+</section>
+<section id="take-aways" class="slide level2">
+<h2>Take aways</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://imgs.xkcd.com/comics/will_it_work.png"></p>
+</div><div class="column" style="width:45%;">
+<ul>
+<li class="fragment">reproducibility</li>
+<li class="fragment">research compendiums</li>
+<li class="fragment">building a compendium</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="next-meeting" class="slide level2">
+<h2>Next meeting</h2>
+<p>November 22nd: <strong>Developer Portfolio</strong> + hand in the exercise in <a href="../weeks/week-4.qmd">this week’s lab</a></p>
+<center>
+<img data-src="https://www.adamhammond.com/wp-content/uploads/2016/02/uglywebsitemontage.jpg">
+</center>
+</section>
+<section id="references-and-further-reading" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. <a href="https://www.nature.com/articles/533452a">https://www.nature.com/articles/533452a</a></p>
+<p>Boulesteix, A.-L., Groenwold, R. H., Abrahamowicz, M., Binder, H., Briel, M., Hornung, R., Morris, T. P., Rahnenführer, J., &amp; Sauerbrei, W. (2020). Introduction to statistical simulations in health research. BMJ Open, 10(12), e039921. <a href="https://doi.org/10.1136/bmjopen-2020-039921">https://doi.org/10.1136/bmjopen-2020-039921</a></p>
+<p>Bryan, J., &amp; TAs, T. S. 545. (n.d.-a). Chapter 33 Why and how we automate data analyses + examples | STAT 545. Retrieved October 30, 2023, from <a href="https://stat545.com/">https://stat545.com/</a></p>
+<p>Checklist. (n.d.). Retrieved October 31, 2023, from <a href="https://guide.esciencecenter.nl/#/best_practices/checklist">https://guide.esciencecenter.nl/#/best_practices/checklist</a></p>
+<p>Checklist for a Software Management Plan. (n.d.). <a href="https://doi.org/10.5281/zenodo.2159713">https://doi.org/10.5281/zenodo.2159713</a></p>
+<p>Comment on Oberman &amp; Vink: Should we fix or simulate the complete data in simulation studies evaluating missing data methods? - Morris—Biometrical Journal—Wiley Online Library. (n.d.). Retrieved October 30, 2023, from <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085">https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085</a></p>
+<p>Drost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos, P., Kuzak, M., Werkhoven, B., Attema, J., Hidding, J., Hees, V., Martinez-Ortiz, C., Spreeuw, H., Borgdorff, J., Leinweber, K., Diblen, F., Oord, G., Goncalves, R., … Bakker, T. (2020). Netherlands eScience Center—Software Development Guide (v0.9.1). Zenodo. <a href="https://doi.org/10.5281/ZENODO.4020564">https://doi.org/10.5281/ZENODO.4020564</a></p>
+</section>
+<section id="references-and-further-reading-1" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Gentleman, R., &amp; Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. <a href="https://doi.org/10.1198/106186007X178663">https://doi.org/10.1198/106186007X178663</a></p>
+<p>Jiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. <a href="https://doi.org/10.12688/f1000research.11407.1">https://doi.org/10.12688/f1000research.11407.1</a></p>
+<p>Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a></p>
+<p>Marwick, B., Boettiger, C., &amp; Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. <a href="https://doi.org/10.1080/00031305.2017.1375986">https://doi.org/10.1080/00031305.2017.1375986</a></p>
+<p>Morris, T. P., White, I. R., &amp; Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. <a href="https://doi.org/10.1002/sim.8086">https://doi.org/10.1002/sim.8086</a></p>
+<p>NHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015">https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015</a></p>
+</section>
+<section id="references-and-further-reading-2" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>Nüst, D., Ostermann, F., Sileryte, R., Hofer, B., Granell, C., Teperek, M., Graser, A., Broman, K., Hettne, K., &amp; Clare, C. (2019). AGILE Reproducible Paper Guidelines. <a href="https://doi.org/10.17605/OSF.IO/CB7Z8">https://doi.org/10.17605/OSF.IO/CB7Z8</a></p>
+<p>Peng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226–1227. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a></p>
+<p>Reliability and reproducibility checklist for molecular dynamics simulations. (2023). Communications Biology, 6(1), Article 1. <a href="https://doi.org/10.1038/s42003-023-04653-0">https://doi.org/10.1038/s42003-023-04653-0</a></p>
+<p>Sandve, G. K., Nekrutenko, A., Taylor, J., &amp; Hovig, E. (2013). Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 9(10), e1003285. <a href="https://doi.org/10.1371/journal.pcbi.1003285">https://doi.org/10.1371/journal.pcbi.1003285</a></p>
+<p>Sayre, F., &amp; Riegelman, A. (2019). Replicable Services for Reproducible Research: A Model for Academic Libraries | Sayre | College &amp; Research Libraries. <a href="https://doi.org/10.5860/crl.80.2.260">https://doi.org/10.5860/crl.80.2.260</a></p>
+<p>Table 1 Reliability and reproducibility checklist for molecular dynamics simulations. (n.d.). Retrieved October 30, 2023, from <a href="https://www.nature.com/articles/s42003-023-04653-0/tables/1">https://www.nature.com/articles/s42003-023-04653-0/tables/1</a></p>
+<p>Telford, R. J. (2023, September 6). Enough Markdown to Write a Thesis. <a href="https://biostats-r.github.io/biostats/quarto/">https://biostats-r.github.io/biostats/quarto/</a></p>
+</section>
+<section id="references-and-further-reading-3" class="slide level2 smaller">
+<h2>References and further reading</h2>
+<p>The Turing Way Community (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/ZENODO.3233853">https://doi.org/10.5281/ZENODO.3233853</a></p>
+<p>The Turing Way Community &amp; Scriberia. (2023). Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse. Zenodo. <a href="https://doi.org/10.5281/ZENODO.3332807">https://doi.org/10.5281/ZENODO.3332807</a></p>
+<p>TIER Protocol 4.0 | Project TIER | Teaching Integrity in Empirical Research. (n.d.). Retrieved October 30, 2023, from <a href="https://www.projecttier.org/tier-protocol/protocol-4-0/">https://www.projecttier.org/tier-protocol/protocol-4-0/</a></p>
+<p>Trisovic, A., Lau, M. K., Pasquier, T., &amp; Crosas, M. (2022). A large-scale study on research code quality and execution. Scientific Data, 9(1), Article 1. <a href="https://doi.org/10.1038/s41597-022-01143-6">https://doi.org/10.1038/s41597-022-01143-6</a></p>
+<p>Utrecht University (2023a, September 26). Best Practices for Writing Reproducible Code. <a href="https://utrechtuniversity.github.io/workshop-computational-reproducibility/">https://utrechtuniversity.github.io/workshop-computational-reproducibility/</a></p>
+<p>Utrecht University (2023b, October 24). Writing Reproducible Manuscripts in R &amp; Python. <a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/">https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/</a></p>
+
+
+<img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p>Gerko Vink and Hanne Oberman - Markup Languages @ UU</p>
+</div>
+</section></section>
+
     </div>
   </div>
 
@@ -497,7 +826,7 @@ Gerko Vink <a href="https://orcid.org/0000-0001-9767-1924" class="quarto-title-a
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":"16988189553934652219","id":"18b40af39f14e1b6","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"17018091802048716509","id":"48f024bb5a6d7728","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -643,7 +972,7 @@ Gerko Vink <a href="https://orcid.org/0000-0001-9767-1924" class="quarto-title-a
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1200,
 
         height: 700,
 
