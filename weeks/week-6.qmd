@@ -9,7 +9,7 @@ editor: source
 
 This week has no lecture slides. We discussed the flow of creating `R`-packages and [`Shiny`](https://shiny.posit.co) apps. 
 
-You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU5ZjRjMDgtNjMxOC00ZmQ2LWJkZDctMGFkMTIyNmEzMzUw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class [here](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/5551/images/nUn5augrQO8aiIU7N8Fw_patient_1.jpg)
+You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU5ZjRjMDgtNjMxOC00ZmQ2LWJkZDctMGFkMTIyNmEzMzUw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
 :::
 
 # `R`-packages
