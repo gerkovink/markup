@@ -483,7 +483,10 @@ We start by creating an empty text file
 % touch add_text_file.txt
 ```
 
-If the `touch` command does not work on your machine, you may also create this file by hand.
+If the `touch` command does not work on your machine, you may also create this file by hand. In a Windows-terminal, you can also use the comment:
+```{markdown}
+PS C:\GitHub\Markup2020> New-Item .\add_text_file.txt -type file
+```
 
 Now, if we would like to commit the addition of this file to our repo, we get the following:
 
