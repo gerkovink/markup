@@ -1,7 +1,9 @@
 # Deliverables {.unnumbered}
 
+
 This year we're shaking things up. To avoid any confusion about the deliverables for this course and to structure all our thoughts and efforts, we have created a wonderful template repository for this course.
 
+## What to hand in {#sec-deliv}
 Fork [this template repository](https://github.com/hanneoberman/markup_deliverables/tree/dev) following the flow below. You'll end up with a copy of the repository template on your GitHub account, with the full course exercise and deliverable structure in the `dev` branch. The full rationale about GitHub and branching will be explained in more detail in this course. 
 
 ![](images/deliv.gif)
