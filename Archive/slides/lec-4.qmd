@@ -1,0 +1,445 @@
+---
+title: "Reproducible Research"
+author: 
+  - name: Gerko Vink
+    orcid: 0000-0001-9767-1924
+    email: g.vink@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+  - name: Hanne Oberman
+    orcid: 0000-0003-3276-2141
+    email: h.i.oberman@uu.nl
+    affiliations:
+      - name: Methodology & Statistics @ UU
+date: "8 Nov 2023"
+date-format: "D MMM YYYY"
+execute: 
+  echo: true
+editor: source
+format: 
+  revealjs:
+    theme: [solarized, gerko.scss]
+    incremental: true  
+    progress: true
+    multiplex: true
+    transition: fade
+    slide-number: true
+    margin: 0.075
+    logo: "images/logo.png" 
+    toc: false
+    toc-depth: 1
+    toc-title: Outline
+    scrollable: false
+    width: 1200
+    reference-location: margin
+    footer: Gerko Vink and Hanne Oberman - Markup Languages @ UU
+---
+
+# Overview
+
+## Course Aims & Outline
+
+| Week | Date   | Focus                                       | Location |
+|------|--------|---------------------------------------------|----------|
+| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
+| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
+| [4](weeks/week-4.qmd)    | 08 Nov | **Reproducible Research Repositories**          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+
+## Course materials
+All materials can be found at
+
+[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
+
+### Hand in
+All contributions to this course are to be delivered to this repository 
+
+[github.com/gerkovink/markup2023](https://github.com/gerkovink/markup2023)
+
+Please post your content-related questions as [an issue in the same repository](https://github.com/gerkovink/markup2023/issues)
+
+### Finalization
+Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
+
+## Today
+
+- Reproducibility
+- Research compendiums
+
+![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+
+## Why bother?
+
+We would like our results to be as fully reproducible as possible:
+
+A. **Reproducibility is one of the pillars of science**
+
+  - It is the standard by which to judge scientific claims
+  - It helps the cumulative growth of knowledge - no duplication of effort
+
+B. **Reproducibility may greatly benefit you**
+
+  - You'll develop better work habits
+  - Better teamwork - especially with new team members
+  - Changing or amending your work is much easier
+  - Higher research impact - more likely to be picked up and cited
+
+## By the end of this class...
+
+- ... you will have heard *what* reproducible research is and *why* it is important
+- ... you have *applied* this knowledge by *critiquing* the reproducibility of case study
+- ... you will be able to *produce* a reproducible research archive from scratch
+
+
+---
+
+# Reproducibility
+
+## Crisis?
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg)
+
+::: footer
+[Baker (2016)](https://www.nature.com/articles/533452a)
+:::
+
+## Definition
+
+![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+
+> A result is reproducible when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer.
+
+::: footer
+[The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)
+:::
+
+## True or false?
+
+![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+
+In computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible. 
+
+
+## Reproducibility of `R` scripts
+
+Reproducible research is not the norm: 
+
+> 74% of `R` files failed to complete without error
+
+<!-- 9000 unique R files published from 2010 to 2020 -->
+
+![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
+
+::: footer
+[Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6) 
+:::
+
+
+## Reproducibility spectrum
+
+![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+
+::: footer
+[Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
+
+
+## Case study
+
+![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+
+::: footer
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+:::
+
+## Case study
+
+> Our study is completely reproducible using the R code provided in [online supplemental file 1](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf), which uses freely available data. 
+
+```
+
+
+
+
+
+# ====================================================================
+# R CODE
+# small scale simulation study to investigate impact of measurement error
+# measurement error on (continuous) exposure and/or (continuous) confounding variable
+# ====================================================================
+# ====================================================================
+# libraries:
+library(Hmisc)
+library(mice)
+library(tidyverse)
+```
+
+::: footer
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
+:::
+
+## Making research reproducible
+
+- reproducible documents
+- research compendiums
+
+![](https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png)
+
+---
+
+# Research Compendiums
+
+## Research compendium
+::: columns
+::: {.column width="50%"}
+![](https://the-turing-way.netlify.app/_images/research-compendium.svg){width=90%}
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg)](https://doi.org/10.5281/zenodo.8169292)
+:::
+
+::: {.column width="45%"}
+
+:::
+:::
+
+## Definition
+
+- "A research compendium is a collection of all digital parts of a research project including 
+  - data, 
+  - code, 
+  - texts
+  - ...
+- The collection is created in such a way that reproducing all results is straightforward"[^1]
+- "The compendium serves as a means for distributing, managing, and updating the collection"[^2]
+
+[^1]: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia)
+[^2]: [Gentleman & Temple Lang (2007)](https://doi.org/10.1198/106186007X178663)
+
+
+## Basic compendium{.build}
+A basic research compendium is just a folder...
+
+::: columns
+::: {.column width="50%"}
+```
+compendium/
+├── data
+│   └── my_data.csv
+├── analysis
+│   └── my_script.R
+├── requirements.txt
+└── README.md
+```
+:::
+
+::: {.column width="45%"}
+<!-- Where would you add these? -->
+<!-- ``` -->
+<!-- └── manuscript.qmd -->
+<!-- ``` -->
+<!-- ``` -->
+<!-- └── figures -->
+<!-- ``` -->
+:::
+:::
+
+## (Not so) basic compendium{.build}
+... but it can become extensive...
+
+```
+|
+├── paper/
+│   ├── paper.qmd       
+│   └── references.bib  
+| 
+├── figures/            
+|
+├── data/
+│   ├── raw_data/       
+│   └── clean_data/   
+|
+└── templates
+    └── journal_template.csl     
+```
+
+## (Not so) basic compendium{.build}
+...or even executable!
+
+```
+|
+├── _targets.R
+├── R/
+│   ├── functions_data.R
+│   ├── functions_analysis.R
+│   ├── functions_visualization.R
+└── data/
+    └── input_data.csv
+```
+![](https://books.ropensci.org/targets/man/figures/drake-graph.png){width=30%}
+
+## (Not so) basic compendium{.build}
+
+![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+
+::: footer
+[Peng (2011)](https://doi.org/10.1126/science.1213847)
+:::
+
+## Guidelines
+
+- Completeness
+- Organization
+- Economy
+- Transparency
+- Documentation
+- Access
+- Provenance
+- Metadata
+- Automation
+- Review
+
+::: footer
+[![](https://zenodo.org/badge/DOI/10.15497/RDA00074.svg)](https://doi.org/10.15497/RDA00074)
+:::
+
+<!-- - Completeness: The research compendium contains all of the objects needed to reproduce a predefined outcome. -->
+<!-- - Organization: It is easy to understand and keep track of the various objects in the research compendium and their relationship over time. -->
+<!-- - Economy: Fewer extraneous objects in the compendium mean fewer things that can break and require less maintenance over time. -->
+<!-- - Transparency: The research compendium provides full disclosure of the research process that produced the scientific claim. -->
+<!-- - Documentation: Information describing compendium objects is provided in enough detail to enable independent understanding and use of the compendium. -->
+<!-- - Access: It is clear who can use what, how, and under what conditions, with open access preferred. -->
+<!-- - Provenance: The origin of the components of the research compendium and how each has changed over time is evident. -->
+<!-- - Metadata: Information about the research compendium and its components is embedded in a standardized, machine-readable code. -->
+<!-- - Automation: As much as possible, the computational workflow is script- or workflow-based so that the workflow can be re-executed using minimal actions. -->
+<!-- - Review: A series of managed activities needed to ensure continued access to and functionality of the research compendium and its components for as long as necessary. -->
+
+
+## In practice
+
+![](https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg)
+Research Data Management Support workshop: 
+
+[**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
+
+## How to
+
+- Think about a good folder structure 
+  - Split up 'read-only', 'human-generated', and 'project-generated' files
+- Create folder structure (main directory and sub directories)
+  - Add a landing page in the form of a README document
+  - Make the compendium executable (to automatically generate the results; optional)
+  - Make the compendium into a git repository (optional)
+- Add all files needed for reproducing the results of the project
+  - Avoid 'hard coded' parameters or human intervention in the execution
+- Make the compendium as clean and easy to use as possible
+  - Include a citation file and a LICENSE file with info on how it can be used
+- Publish your compendium
+  - E.g. on Zenodo (optional, more on this in the last course week)
+
+::: footer
+Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia#checklist)
+::: 
+
+
+---
+
+# Wrap-up
+
+## 'Reproducible' research
+
+[Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921) with the [`pdf` supplement](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)
+
+
+![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+
+## Reproducible but not replicable
+
+> Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures
+
+![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
+
+::: footer
+[King (1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)
+:::
+
+## Take aways
+::: columns
+::: {.column width="50%"}
+![](https://imgs.xkcd.com/comics/will_it_work.png)
+:::
+::: {.column width="45%"}
+- reproducibility
+- research compendiums
+- building a compendium
+:::
+:::
+
+## Next meeting
+
+November 22nd: **Developer Portfolio** + hand in the exercise in [this week's lab](../weeks/week-4.qmd)
+
+<center>
+![](https://www.adamhammond.com/wp-content/uploads/2016/02/uglywebsitemontage.jpg)
+</center>
+
+## References and further reading{.smaller}
+
+Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. [https://www.nature.com/articles/533452a](https://www.nature.com/articles/533452a)
+
+Boulesteix, A.-L., Groenwold, R. H., Abrahamowicz, M., Binder, H., Briel, M., Hornung, R., Morris, T. P., Rahnenführer, J., & Sauerbrei, W. (2020). Introduction to statistical simulations in health research. BMJ Open, 10(12), e039921. [https://doi.org/10.1136/bmjopen-2020-039921](https://doi.org/10.1136/bmjopen-2020-039921)
+
+Bryan, J., & TAs, T. S. 545. (n.d.-a). Chapter 33 Why and how we automate data analyses + examples | STAT 545. Retrieved October 30, 2023, from [https://stat545.com/](https://stat545.com/)
+
+Checklist. (n.d.). Retrieved October 31, 2023, from [https://guide.esciencecenter.nl/#/best_practices/checklist](https://guide.esciencecenter.nl/#/best_practices/checklist)
+
+Checklist for a Software Management Plan. (n.d.). [https://doi.org/10.5281/zenodo.2159713](https://doi.org/10.5281/zenodo.2159713)
+
+Comment on Oberman & Vink: Should we fix or simulate the complete data in simulation studies evaluating missing data methods? - Morris—Biometrical Journal—Wiley Online Library. (n.d.). Retrieved October 30, 2023, from [https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085](https://onlinelibrary.wiley.com/doi/full/10.1002/bimj.202300085)
+
+Drost, N., Spaaks, J. H., Andela, B., Veen, L., Zwaan, J. M., Verhoeven, S., Bos, P., Kuzak, M., Werkhoven, B., Attema, J., Hidding, J., Hees, V., Martinez-Ortiz, C., Spreeuw, H., Borgdorff, J., Leinweber, K., Diblen, F., Oord, G., Goncalves, R., … Bakker, T. (2020). Netherlands eScience Center—Software Development Guide (v0.9.1). Zenodo. [https://doi.org/10.5281/ZENODO.4020564](https://doi.org/10.5281/ZENODO.4020564)
+
+
+## References and further reading{.smaller}
+
+Gentleman, R., & Temple Lang, D. (2007). Statistical Analyses and Reproducible Research. Journal of Computational and Graphical Statistics, 16(1), 1–23. [https://doi.org/10.1198/106186007X178663](https://doi.org/10.1198/106186007X178663)
+
+Jiménez, R. C., Kuzak, M., Alhamdoosh, M., Barker, M., Batut, B., Borg, M., Capella-Gutierrez, S., Hong, N. C., Cook, M., Corpas, M., Flannery, M., Garcia, L., Gelpí, J. L., Gladman, S., Goble, C., Ferreiro, M. G., Gonzalez-Beltran, A., Griffin, P. C., Grüning, B., … Crouch, S. (2017). Four simple recommendations to encourage best practices in research software (6:876). F1000Research. [https://doi.org/10.12688/f1000research.11407.1](https://doi.org/10.12688/f1000research.11407.1)
+
+Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111. [https://doi.org/10.1093/comjnl/27.2.97](https://doi.org/10.1093/comjnl/27.2.97)
+
+Marwick, B., Boettiger, C., & Mullen, L. (2018). Packaging Data Analytical Work Reproducibly Using R (and Friends). The American Statistician, 72(1), 80–88. [https://doi.org/10.1080/00031305.2017.1375986](https://doi.org/10.1080/00031305.2017.1375986)
+
+Morris, T. P., White, I. R., & Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38(11), 2074–2102. [https://doi.org/10.1002/sim.8086](https://doi.org/10.1002/sim.8086)
+
+NHANES Questionnaires, Datasets, and Related Documentation. (n.d.). Retrieved October 30, 2023, from [https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015)
+
+## References and further reading{.smaller}
+
+Nüst, D., Ostermann, F., Sileryte, R., Hofer, B., Granell, C., Teperek, M., Graser, A., Broman, K., Hettne, K., & Clare, C. (2019). AGILE Reproducible Paper Guidelines. [https://doi.org/10.17605/OSF.IO/CB7Z8](https://doi.org/10.17605/OSF.IO/CB7Z8)
+
+Peng, R. D. (2011). Reproducible Research in Computational Science. Science, 334(6060), 1226–1227. [https://doi.org/10.1126/science.1213847](https://doi.org/10.1126/science.1213847)
+
+Reliability and reproducibility checklist for molecular dynamics simulations. (2023). Communications Biology, 6(1), Article 1. [https://doi.org/10.1038/s42003-023-04653-0](https://doi.org/10.1038/s42003-023-04653-0)
+
+Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten Simple Rules for Reproducible Computational Research. PLOS Computational Biology, 9(10), e1003285. [https://doi.org/10.1371/journal.pcbi.1003285](https://doi.org/10.1371/journal.pcbi.1003285)
+
+Sayre, F., & Riegelman, A. (2019). Replicable Services for Reproducible Research: A Model for Academic Libraries | Sayre | College & Research Libraries. [https://doi.org/10.5860/crl.80.2.260](https://doi.org/10.5860/crl.80.2.260)
+
+Table 1 Reliability and reproducibility checklist for molecular dynamics simulations. (n.d.). Retrieved October 30, 2023, from [https://www.nature.com/articles/s42003-023-04653-0/tables/1](https://www.nature.com/articles/s42003-023-04653-0/tables/1)
+
+Telford, R. J. (2023, September 6). Enough Markdown to Write a Thesis. [https://biostats-r.github.io/biostats/quarto/](https://biostats-r.github.io/biostats/quarto/)
+
+## References and further reading{.smaller}
+
+The Turing Way Community (2022). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.2) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.3233853](https://doi.org/10.5281/ZENODO.3233853)
+
+The Turing Way Community & Scriberia. (2023). Illustrations from The Turing Way: Shared under CC-BY 4.0 for reuse. Zenodo. [https://doi.org/10.5281/ZENODO.3332807](https://doi.org/10.5281/ZENODO.3332807)
+
+TIER Protocol 4.0 | Project TIER | Teaching Integrity in Empirical Research. (n.d.). Retrieved October 30, 2023, from [https://www.projecttier.org/tier-protocol/protocol-4-0/](https://www.projecttier.org/tier-protocol/protocol-4-0/)
+
+Trisovic, A., Lau, M. K., Pasquier, T., & Crosas, M. (2022). A large-scale study on research code quality and execution. Scientific Data, 9(1), Article 1. [https://doi.org/10.1038/s41597-022-01143-6](https://doi.org/10.1038/s41597-022-01143-6)
+
+Utrecht University (2023a, September 26). Best Practices for Writing Reproducible Code. [https://utrechtuniversity.github.io/workshop-computational-reproducibility/](https://utrechtuniversity.github.io/workshop-computational-reproducibility/)
+
+Utrecht University (2023b, October 24). Writing Reproducible Manuscripts in R & Python.  [https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/)

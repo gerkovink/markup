@@ -1,12 +1,13 @@
----
-title: "Markup Languages and Reproducible Programming in Statistics"
----
+# Preface and schedule {.unnumbered}
+
+This [Quarto](https://quarto.org) book contains the course materials and information for [Markup Languages and Reproducible Programming in Statistics](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig). The numbered sections in this book correspond to the weeks, where every week is represented by a single chapter. 
 
 | Week                  | Date   | Focus                                       | Location                                                |
 |-----------------------|--------|---------------------------------------------|---------------------------------------------------------|
-| [1](weeks/week-1.qmd) | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101)      |
-| [2](weeks/week-2.qmd) | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| [3](weeks/week-3.qmd) | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
-| [4](weeks/week-4.qmd) | 08 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| [5](weeks/week-5.qmd) | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| [6](weeks/week-6.qmd) | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk1 | 11 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| Week 2 | 25 Sep | Markdown in (most) Flavors                  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
+| Week 3 | 16 Okt | Version Control and Development Flow        | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
+| Week 4 | 06 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| Week 5 | 20 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| Week 6 | 04 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
+

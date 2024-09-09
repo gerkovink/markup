@@ -11,7 +11,7 @@ author:
     email: h.i.oberman@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU
-date: 13 Sep 2023
+date: 11 Sep 2024
 date-format: "D MMM YYYY"
 execute: 
   echo: true
