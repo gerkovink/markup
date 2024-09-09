@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Course overview – Markup Languages and Reproducible Programming in Statistics</title>
+<title>GenAI rules – Markup Languages and Reproducible Programming in Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./team.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./week 1.html" rel="next">
+<link href="./deliverables.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -110,7 +81,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview.html">Course overview</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./genai.html">GenAI rules</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -146,7 +117,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="./overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Course overview</span></a>
   </div>
 </li>
@@ -164,7 +135,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./genai.html" class="sidebar-item-text sidebar-link">
+  <a href="./genai.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">GenAI rules</span></a>
   </div>
 </li>
@@ -184,19 +155,18 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#general-information" id="toc-general-information" class="nav-link active" data-scroll-target="#general-information">General information</a></li>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link" data-scroll-target="#course-description">Course description</a></li>
-  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
-  <li><a href="#syllabus" id="toc-syllabus" class="nav-link" data-scroll-target="#syllabus">Syllabus</a></li>
+  <li><a href="#copyright-and-intellectual-property" id="toc-copyright-and-intellectual-property" class="nav-link active" data-scroll-target="#copyright-and-intellectual-property">Copyright and intellectual property</a></li>
+  <li><a href="#what-about-this-course" id="toc-what-about-this-course" class="nav-link" data-scroll-target="#what-about-this-course">What about this course?</a></li>
+  <li><a href="#our-advice" id="toc-our-advice" class="nav-link" data-scroll-target="#our-advice">Our advice</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/dev/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/dev/genai.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Course overview</h1>
+<h1 class="title">GenAI rules</h1>
 </div>
 
 
@@ -213,31 +183,53 @@ window.Quarto = {
 </header>
 
 
-<section id="general-information" class="level2">
-<h2 class="anchored" data-anchor-id="general-information">General information</h2>
+<p>You may use generative AI in this course if and only if you read the below paragraphs.</p>
+<section id="copyright-and-intellectual-property" class="level2">
+<h2 class="anchored" data-anchor-id="copyright-and-intellectual-property">Copyright and intellectual property</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do you know your input rights?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At Methodology and Statistics we hold ethics, honesty, and the values of open science in the highest regard. These principles are the backbone of our academic community and guide our education as well as our pursuit of knowledge.</p>
+<p>Now that AI tools become more advanced and widespread, it is crucial to uphold these values. While much focus has been on the output of AI tools, I want to bring attention to a different concern: the unjust use of what we input into these tools.</p>
+<p>Many of us interact with AI in what feels like the privacy of our own devices. This perceived privacy can create a false sense of security, leading some to input information that was not theirs to share or should have remained confidential. To safeguard our integrity and respect intellectual property rights, we must be cautious about what we share with AI tools. Specifically,</p>
 <ul>
-<li>Course: <a href="https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&amp;taal=en&amp;collegejaar=huidig">Markup languages and reproducible programming in statistics (202000010)</a></li>
-<li>Course coordinator: Gerko Vink (<a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>)</li>
-<li>Teachers: Gerko Vink (<a href="mailto:g.vink@uu.nl">g.vink@uu.nl</a>) &amp; Hanne Oberman (<a href="mailto:h.i.oberman@uu.nl">h.i.oberman@uu.nl</a>)</li>
-<li>Schedule: <a href="https://mytimetable.uu.nl/link?timetable.type=timeedit_course&amp;timetable.key=202000010&amp;view=list&amp;ignoreNotFound=true&amp;ignoreEmpty=true">MyTimetable</a></li>
+<li>Do not input assignments, course materials, scientific manuscripts or any other work without explicit permission from the owners.</li>
+<li>Avoid using AI tools to process, summarize, grade or evaluate each other’s work unless you have the author’s consent.</li>
 </ul>
+<p>By following these guidelines, we protect and respect both the creative efforts and the intellectual property in our community.</p>
+</div>
+</div>
 </section>
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course description</h2>
-<p>This course gives an overview of the state-of-the-art in statistical markup, reproducible programming and scientific digital representation. Students will get to know the professional field of statistical markup and its innovations and challenges. It consists of meetings in which students will learn about markup languages (<span class="math inline">\(\LaTeX\)</span> and Markdown), learn efficient programming with R Markdown, experience developing Shiny web apps, get to know version control with Git and will create and maintain their own data archive repository and personal (business card) page through GitHub. Combining these lectures, the students get acquainted with different viewpoints on marking up statistical manuscripts, areas of innovation, and challenges that people face when working with, analyzing and reporting (simulated) data. Knowledge obtained from this course will help students face multidimensional problems during their professional career.</p>
-</section>
-<section id="support" class="level2">
-<h2 class="anchored" data-anchor-id="support">Support</h2>
-<p>We will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, <a href="https://www.gerkovink.com/markup">www.gerkovink.com/markup</a>.</p>
+<section id="what-about-this-course" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-this-course">What about this course?</h2>
+<p>The materials in this course are generated by M&amp;S teaching staff, who hold the copyright. The intellectual property belongs to Utrecht University. Images are either self-generated, directly linked, or generated with AI tools. That said, there is no information in these that exceeds legal use of copyright materials in academic settings, or that is not publicly available or should not be part of the public domain.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You <strong>may use</strong> any and all content in this course - including staff names - and submit it as input to generative AI tools, with the following <strong>exception</strong>:</p>
 <ul>
-<li>For handing in assignments, we will use <a href="https://github.com/gerkovink/markup2023">the course repository on GitHub</a>.</li>
-<li>Please post your content-related questions as <a href="https://github.com/gerkovink/markup2023/issues">an issue in the course repository</a>.</li>
+<li>You must ensure that the content is not used for further training of the model</li>
 </ul>
-<p>Questions regarding personal circumstances may be shared through e-mail with the teaching team.</p>
+</div>
+</div>
 </section>
-<section id="syllabus" class="level2">
-<h2 class="anchored" data-anchor-id="syllabus">Syllabus</h2>
-<p>This course website serves as syllabus. Background information, e.g.&nbsp;about course aims, can be found on <a href="https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&amp;taal=en&amp;collegejaar=huidig">Osiris</a></p>
+<section id="our-advice" class="level2">
+<h2 class="anchored" data-anchor-id="our-advice">Our advice</h2>
+<p>Generative AI can be a great assistant in the generating structured language. Most of the markup and programming languages that we will consider in this course are extremely structured and generative AI can be of great help. Mastering a new language, however, requires practice and becoming dependent on genAI will hinder your progression in the long run. Therefore we advice you to also interact with your instructors, peers and other resources around the web, as it will transform you from a leecher into a seeder. Or in educational terms: if you can explain to others what and why you are doing, you have transformed from student to master.</p>
 
 
 </section>
@@ -673,13 +665,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface and schedule">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface and schedule</span>
+      <a href="./deliverables.html" class="pagination-link" aria-label="Deliverables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Deliverables</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./team.html" class="pagination-link" aria-label="Teaching team">
-        <span class="nav-page-text">Teaching team</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week 1.html" class="pagination-link" aria-label="Markup Languages">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Markup Languages</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -688,4 +680,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/markup/edit/dev/overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/markup/edit/dev/genai.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

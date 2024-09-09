@@ -24,6 +24,7 @@ book:
     - overview.qmd
     - team.qmd
     - deliverables.qmd
+    - genai.qmd
     - week 1.qmd
     # - references.qmd
 
