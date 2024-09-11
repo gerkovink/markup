@@ -344,7 +344,7 @@ It's particularly useful for collaborative writing and when reviewing or revisin
 - Zotero
 
 ## Next meeting
-**Markdown** + hand in the exercise in [this week's lab](../weeks/week-1.qmd)
+**Markdown** + hand in the exercise in [this week's lab](../week 1.qmd)
 
 <center>
 ![](https://media.giphy.com/media/3orif0Pxk3I4WQj46k/giphy.gif?cid=ecf05e47pt25knfnoi0lccqh5rmr1ssjcee3rq82d0sn3mxr&ep=v1_gifs_search&rid=giphy.gif&ct=g)
