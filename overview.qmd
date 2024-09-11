@@ -14,10 +14,11 @@ This course gives an overview of the state-of-the-art in statistical markup, rep
 ## Support
 We will not use the course page on Blackboard. Instead, all course materials can be found here on the course website, [www.gerkovink.com/markup](https://www.gerkovink.com/markup).
 
-- For handing in assignments, we will use [the course repository on GitHub](https://github.com/gerkovink/markup2023).
-- Please post your content-related questions as [an issue in the course repository](https://github.com/gerkovink/markup2023/issues).
+- For handing in assignments and deliverables, you can fork this repository [this template repository](https://github.com/hanneoberman/markup_deliverables/tree/dev) following the flow outlined in @sec-deliv.
+  - If you regularly update your fork, we can keep track of your progress.
+- Please post your content-related questions as [an issue in the course repository](https://github.com/gerkovink/markup/issues).
 
-Questions regarding personal circumstances may be shared through e-mail with the teaching team.
+Questions regarding personal circumstances may be shared through e-mail with the teaching team. Please don't use e-mail for other questions unless it cannot be avoided - we'd prefer if you ask us in class or open an issue in the course repo. 
 
 ## Syllabus
 This course website serves as syllabus. Background information, e.g. about course aims, can be found on [Osiris](https://osiris-student.uu.nl/#/onderwijscatalogus/extern/cursus?cursuscode=202000010&taal=en&collegejaar=huidig)

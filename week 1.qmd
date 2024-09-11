@@ -2,6 +2,7 @@
 
 ::: callout-important
 This first week's slides can be found [here](slides/lec-1.html)
+
 Use [this meeting link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTUzYjBkZTctMDkwOS00MjhlLWFkZmQtMmM0MzE0MjE0MDli%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) to join online to be more zeNS.
 :::
 
@@ -54,7 +55,7 @@ Alternatively, you can use the online `TeX` editor [Overleaf](https://www.overle
 
 ## The structure of a `LaTeX` document
 
-Open the file [`LaTeX_template.tex`](../documents/Wk1/LaTeX_template.tex) from the course page. This file is a template that you may use for your documents in this course. The file [`LaTeX_template.pdf`](../documents/Wk1/LaTeX_template.pdf)  is the typeset version of this document (the output result). We will go through the document line-by-line:
+Open the file [`LaTeX_template.tex`](documents/Wk1/LaTeX_template.tex) from the course page. This file is a template that you may use for your documents in this course. The file [`LaTeX_template.pdf`](documents/Wk1/LaTeX_template.pdf)  is the typeset version of this document (the output result). We will go through the document line-by-line:
 
 ```{r eval=FALSE}
     \documentclass[10pt, fullpage, a4paper, titlepage]{article}
@@ -141,12 +142,12 @@ And we end the document by the `\end{}` command.
 ## Exercise on `TeX` classes - optional
 In this optional exercise you can make yourself familiar with some of the `TeX` classes. A class is a clear definition of the type of document. There are classes for books, articles, letters, resumes, and so on. There are even classes for journals and bookseries by publishers, such as Springer, Elsevier, CRC and Sage. 
 
-Classes are usually linked to style files, the files that define the looks of a document. Have a look at the [`LaTeX background`](../documents/Wk1/LaTeX background.zip) archive if you'd like to know more about how classes and styles make documents look different. It is important to realize that not every document by default accommodates for the type of content. Some classes make some content look ridiculous. Imagine printing an A5 document on an A1 canvas, or submitting a job application as a statistical journal manuscript. Choosing a proper class is therefore essential. The good thing with `LaTeX` is that different classes can easily be applied to the same content. 
+Classes are usually linked to style files, the files that define the looks of a document. Have a look at the [`LaTeX background`](documents/Wk1/LaTeX background.zip) archive if you'd like to know more about how classes and styles make documents look different. It is important to realize that not every document by default accommodates for the type of content. Some classes make some content look ridiculous. Imagine printing an A5 document on an A1 canvas, or submitting a job application as a statistical journal manuscript. Choosing a proper class is therefore essential. The good thing with `LaTeX` is that different classes can easily be applied to the same content. 
 
 ---
 
 ### Exercise
-Use the text in the [`Virgil - Aeneid.txt`](../documents/Wk1/Virgil - Aeneid.txt) file as the content for the following five documents:
+Use the text in the [`Virgil - Aeneid.txt`](documents/Wk1/Virgil - Aeneid.txt) file as the content for the following five documents:
 
 1. An article with 12 point font size on US letter paper.
 2. A book with 10 point font size on A4 paper.
@@ -154,7 +155,7 @@ Use the text in the [`Virgil - Aeneid.txt`](../documents/Wk1/Virgil - Aeneid.txt
 4. A minimal document with 12 point font size on A5 paper. 
 5. A letter with 12 point font size on A5 paper. 
 
-You just need to specify the paragraphs correctly. The solution to this exercise can be found [here](../documents/Wk1/Answers_box1.zip)
+You just need to specify the paragraphs correctly. The solution to this exercise can be found [here](documents/Wk1/Answers_box1.zip)
 :::
 
 ---
@@ -186,7 +187,7 @@ Chances are that you will struggle at some point with a problem or a compilation
 - [Short math guide](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk2/Exercise%203/LaTeX%20background/Math%20in%20LaTeX/short-math-guide.pdf)
 - [The Not So Short Introduction to `LaTeX` ](http://tug.ctan.org/info/lshort/english/lshort.pdf)
 
-Even though the internet may hold most answers to your problem, please don't struggle for too long. [Post an issue  on GitHub](https://github.com/gerkovink/markup2023).
+Even though the internet may hold most answers to your problem, please don't struggle for too long. [Post an issue  on GitHub](https://github.com/gerkovink/markup).
 
 ---
 
@@ -196,7 +197,7 @@ Create a document that contains [1-5] and then change the document with [6]. Sub
 1. A titlepage
 2. An equation
 3. A section and a subsection
-4. The resulting figure and table with captions from [this file](../documents/Wk1/Recreate This File.pdf) to be generated by the below code:
+4. The resulting figure and table with captions from [this file](documents/Wk1/Recreate This File.pdf) to be generated by the below code:
 ```{r eval=FALSE}
 #load package lattice
 library(lattice)
@@ -220,14 +221,15 @@ data.all <- cbind(data = data,
                   exponent = exp(data))
 ```
 
-5. The text from [this AI-generated fairytale](../documents/Wk1/Clara.txt)
-6. Also create another document with `LaTeXdiff` version where the text in fairytale is replaced by [this slight variation on the same fairytale](../documents/Wk1/Peter.txt)
+5. The text from [this AI-generated fairytale](documents/Wk1/Clara.txt)
+6. Also create another document with `LaTeXdiff` version where the text in fairytale is replaced by [this slight variation on the same fairytale](documents/Wk1/Peter.txt)
 
 ---
 
 ### Handing in the exercise
-1. Fork the template repository detailed in @sec-deliv
+1. Fork the template repository detailed in @sec-deliv. 
 2. Add your files to the respective folder in the `dev` branch. Not in the main branch!
+3. Share your repository link as an issue in the [course repository](https://github.com/gerkovink/markup/issues).
 
 If you know how to use `git`, go ahead. If you don't, no panic. We'll cover that in week 3. In the meantime you can use the `> add file` functionality on GitHub as illustrated below. 
 
