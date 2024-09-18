@@ -1,9 +1,63 @@
-# Introduction
+# Quarto {#sec-wk2}
 
-This is a book created from markdown and executable code.
+::: callout-tip
+## Lecture Week 2
+Now that we have learned $\LaTeX$ we'll consider Quarto. The slides for this week can be found [here](slides/lec-2.html)
+:::
 
-See @knuth84 for additional discussion of literate programming.
+---
 
-```{r}
-1 + 1
-```
+## Introduction 
+
+Dear all, 
+
+Welcome to `Quarto` - If you already know `rMarkdown`, it will be a breeze. If you don't know `rMarkdown` yet or if you feel that you need a refresher, please follow [this `Get Started`](https://quarto.org/docs/get-started/) guide.  For all others, we have outlined a couple of relevant links and videos to get a quick grasp on reproducible academic publishing with `Quarto`. 
+
+All the best, 
+
+Gerko and Hanne
+
+---
+
+## Preparation
+
+### Watch this video
+Mine Çetinkaya-Rundel has a great video that highlights many of Quarto's relevant features in our field. 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Browse the `Quarto` website
+The people at `Posit` have designed [this awesome companion website](https://quarto.org/docs/guide/) that details pretty much everything `Quarto`. Have a look around and remember this source when you're in need of some additional functionality. Much of what you can do with `Quarto` is detailed here. 
+
+---
+
+## Exercise 1
+
+Create a quarto presentation with 3 slides and a logo
+
+- a title slide with at least your name and ORCID
+- a slide with your favourite equation
+- a slide with some source of information about you that (most of) your classmates do not know
+
+Bring this presentation to the next class
+
+---
+
+## Exercise 2
+
+Create a presentation about any topic you like that consists of at least 7 slides and includes all of the following:
+
+- a logo
+- a centered still figure
+- an interactive table
+- a moving figure, interactive figure or movie
+- a 2-column slide
+- an aligned multi-row equation
+- a citation and reference list
+- a bibliographic reference
+- r-code, displayed but not executed
+- cached and labeled r-code (may overlap with the next requirement)
+- r-code, executed, but not displayed (e.g. a figure generation)
+- an `renv` reproducible enviroment
+
+Of course this presentation may serve as the basis for presentations that you may have to create for other courses. Submit the presentation to your fork of [the deliverables template](https://github.com/hanneoberman/markup_deliverables/tree/dev). If you have not yet forked the template, do so now. See @sec-deliv for more information.

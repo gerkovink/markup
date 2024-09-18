@@ -1,7 +1,8 @@
 # Markup Languages {#sec-wk1}
 
-::: callout-important
-This first week's slides can be found [here](slides/lec-1.html)
+::: callout-tip
+## Lecture Week 1
+We start this course about markup languages with a deep dive into $\LaTeX$ - the master of all publication platforms. The first week's slides can be found [here](slides/lec-1.html)
 
 Use [this meeting link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTUzYjBkZTctMDkwOS00MjhlLWFkZmQtMmM0MzE0MjE0MDli%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) to join online to be more zeNS.
 :::
