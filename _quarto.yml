@@ -26,6 +26,7 @@ book:
     - deliverables.qmd
     - genai.qmd
     - week 1.qmd
+    - week 2.qmd
     # - references.qmd
 
 bibliography: references.bib
