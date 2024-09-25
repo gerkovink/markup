@@ -5,7 +5,7 @@ project:
 book:
   title: "Markup Languages and Reproducible Programming in Statistics"
   repo-url: https://github.com/gerkovink/markup
-  repo-branch: dev
+  repo-branch: book
   repo-actions: [edit, issue]
   author: 
   - name: Gerko Vink
