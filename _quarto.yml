@@ -27,6 +27,8 @@ book:
     - genai.qmd
     - week 1.qmd
     - week 2.qmd
+    - week 3.qmd
+    - story.qmd
     # - references.qmd
 
 bibliography: references.bib

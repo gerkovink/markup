@@ -1,0 +1,14 @@
+# Contributors {.unnumbered}
+
+The following story is written together with students from the course. The story is a work in progress and will be updated in current and future iterations of this course. 
+
+---
+
+... [add three more words here]
+
+
+---
+
+Here is a list of contributors that helped to make this story possible.
+
+- [Gerko Vink](www.github.com/gerkovink)
