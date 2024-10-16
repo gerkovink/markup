@@ -85,7 +85,7 @@ In previous years, we also discussed Monte Carlo simulation in detail in class. 
 
 ------------------------------------------------------------------------
 
-## Exercise 1: `Git` and GitHub
+## `Git` and GitHub
 
 ### `Git`
 
