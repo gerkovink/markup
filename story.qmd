@@ -11,4 +11,4 @@ The following story is written together with students from the course. The story
 
 Here is a list of contributors that helped to make this story possible.
 
-- [Gerko Vink](www.github.com/gerkovink)
+- [add your name here]
