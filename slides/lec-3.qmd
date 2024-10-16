@@ -6,13 +6,14 @@ author:
     email: g.vink@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU University
-date: 01 Nov 2023
+date: 16 Oct 2024
 date-format: "D MMM YYYY"
 execute: 
   echo: true
 editor: source
 format: 
   revealjs:
+    embed-resources: true
     theme: [solarized, gerko.scss]
     progress: true
     multiplex: true
