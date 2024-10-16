@@ -4,7 +4,7 @@ The following story is written together with students from the course. The story
 
 ---
 
-I opened the door to the ... [add three more words here]
+I opened the door to the basement and encountered... [add three more words here]
 
 
 ---
@@ -13,4 +13,5 @@ Here is a list of contributors that helped to make this story possible.
 
 - [Gerko Vink](https:/wwww.github.com/gerkovink)
 - [Quinty Boer](https://github.com/quintyboer)
+- [Laura Jochim](https://github.com/laurajochim)
 - [add your name here]
