@@ -4,11 +4,12 @@ The following story is written together with students from the course. The story
 
 ---
 
-... [add three more words here]
+I opened the ... [add three more words here]
 
 
 ---
 
 Here is a list of contributors that helped to make this story possible.
 
+- [Gerko Vink](https:/wwww.github.com/gerkovink)
 - [add your name here]
