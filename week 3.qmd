@@ -71,7 +71,7 @@ Read [Excuse me, do you have a moment to talk about version control?](https://pe
 
 -   [Git](https://git-scm.com) The following links are very useful:
 
--   An [old video walkthrough](Archive/2019/Wk5/Solution%20Ex6.mp4) about `Git` and `Rstudio`
+-   An [old video walkthrough](https://www.gerkovink.com/oldmarkup/Archive/2019/Wk5/Solution%20Ex6.mp4) about `Git` and `Rstudio`
 
 -   [GitHub Glossary](https://help.github.com/articles/github-glossary) for all terminology
 
@@ -194,7 +194,7 @@ In `RStudio`, paste the generated token in the password field when `RStudio` ask
 
 ------------------------------------------------------------------------
 
-### `Git` exercise
+## Exercise 1: `Git` started with `GitHub`
 
 1.  Fork this year's course repository. You can do this by clicking the `Fork` button on the top right of the repository page. This will create a copy of the repository on your own `GitHub` account.
 2.  Clone the fork to your machine. You can do this by clicking the green `Code` button and copying the URL. Then open `RStudio` and go to `File > New Project > Version Control > Git`. Paste the URL in the `Repository URL` field and choose a directory where you want to store the repository on your machine.
@@ -241,7 +241,7 @@ d.  Present a table containing all simulated samples for which the resulting con
 
 ## Exercise 2: `Git` it done
 
-This week we will also learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork the an old course repository [here](https://github.com/gerkovink/markup2020), deselect! `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
+This week we will also learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository (https://github.com/gerkovink/markup2020), deselect! `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
 
 Let's continue this week with this second exercise.
 
@@ -756,7 +756,9 @@ After that, we can stage the changes and commit them in the `Exercise_wk4` branc
 5.  Commit the changes with a custom message
 6.  Publish your branch on GitHub
 7.  Do a pull request that can be automatically merged.
-8.  Post an issue in this year's repo, wherin you properly [reference](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) your PR to the old course repo.
+8.  Post an issue in your forked template (remember @sec-deliv), wherin you properly [reference](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) your PR to the old course repo.
+
+You should now have all the skills to fill your template with the course deliverables and exercises. Now would be a good time to update your deliverables repository. If you have any questions, please post them [as an issue to the course repository](https://github.com/gerkovink/markup/issues).
 
 ------------------------------------------------------------------------
 
