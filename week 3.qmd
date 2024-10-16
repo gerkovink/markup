@@ -718,15 +718,15 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 We've now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GiHub desktop, you'll see this pop-up
 
-![](week-3_image/conflict.png){width=50%}
+![](images/week-3/conflict.png){width=50%}
 
 You can use the drop-down menu to choose either modified file version as the one to keep after merging (which means you'll throw out the other version from the other branch)
 
-![](week-3_image/resolve.png){width=80%}
+![](images/week-3/resolve.png){width=80%}
 
 There is also the option to open the file in the editor and manually resolve the conflict.
 
-![](week-3_image/conflictdetail.png){width=80%}
+![](images/week-3/conflictdetail.png){width=80%}
 
 We now see the detail about this conflict. Remember that we took an old state as our point of departure? After that point I have changed the header of the `Readme.Rmd` file. This conflict needs to be resolved before we can merge these branches.
 
@@ -736,7 +736,7 @@ We now see the detail about this conflict. Remember that we took an old state as
 
 Choose `Wk4_markup` as the reference. Throw out the version from `Exercise_wk4`. You can do this manually or by choosing the following drop-down item in GitHub Desktop:
 
-![](week-3_image/dropdown.png){width=80%}
+![](images/week-3/dropdown.png){width=80%}
 
 After that, we can stage the changes and commit them in the `Exercise_wk4` branch:
 
