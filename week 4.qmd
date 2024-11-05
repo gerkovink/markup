@@ -10,7 +10,7 @@ This week's slides can be found [here](slides/lec-4.html)
 
 ---
 
-# Introduction 
+## Introduction 
 
 Dear all, 
 
@@ -20,19 +20,19 @@ The contents of the research compendium will consist of the simulation study per
 
 All the best, 
 
-Gerko and Hanne
+Hanne and Gerko
 
 ---
 
-# Preparation
+## Preparation
 
-## Required reading
+### Required reading
 
 Read [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921).  
 
 Most of the paper may be skimmed through, but make sure to closely read the penultimate section named "An example of a statistical simulation", since this will be this week's case study.
 
-## Optional reading
+### Optional reading
 
 The interested reader may also consider reading the original [Morris, White, & Crowther (2019)](https://doi.org/10.1002/sim.8086) paper, that Boulesteix et al. (2020) is based on. This shouldn't be too hard, because the target audience of 'Using simulation studies to evaluate statistical methods' overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master's thesis!
 
@@ -43,14 +43,14 @@ The interested reader may also consider reading the original [Morris, White, & C
 
 ---
 
-# Exercise 1
+## Exercise 1
 
 In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: [https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html). The link intentionally refers to the section named 'Introduction'; previous sections are not relevant for you. 
 Follow the instructions in the sections 'Introduction', 'Getting Started', 'Writing', and 'Code'. 
 
 In the section 'Rendering', you may skip the instructions for creating `docx` documents, using the terminal, and managing multiple file outputs. We will only need the `pdf` output.
 
-## Hint
+### Hint
 
 After this exercise, the YAML header for your Quarto document might look something like the code in the footnote[^1]. 
 
@@ -69,7 +69,7 @@ After this exercise, the YAML header for your Quarto document might look somethi
 
 ---
 
-# Exercise 2
+## Exercise 2
 
 In this exercise, you will substitute the contents of the research compendium you've just created with Boulesteix et al.'s simulation study. 
 
@@ -81,7 +81,7 @@ Now it's up to you! Create a reproducible document that contains the simulation 
 
 Submit the research compendium to this year's Markup Languages repository with a pull request on GitHub.
 
-## Hint
+### Hint
 
 Exchange research compendiums with a classmate to make sure that your work is indeed completely reproducible.
 
