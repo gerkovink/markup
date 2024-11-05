@@ -11,7 +11,7 @@ author:
     email: h.i.oberman@uu.nl
     affiliations:
       - name: Methodology & Statistics @ UU
-date: "8 Nov 2023"
+date: "6 Nov 2024"
 date-format: "D MMM YYYY"
 execute: 
   echo: true
@@ -37,38 +37,12 @@ format:
 
 # Overview
 
-## Course Aims & Outline
-
-| Week | Date   | Focus                                       | Location |
-|------|--------|---------------------------------------------|----------|
-| [1](weeks/week-1.qmd)    | 13 Sep | Introduction to Markup Languages; and LaTeX | [BOL 1062](https://students.uu.nl/bolognalaan-101) |
-| [2](weeks/week-2.qmd)    | 27 Sep | Markdown in (most) Flavors                  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [3](weeks/week-3.qmd)    | 01 Nov | Version Control and Development Flow        | [SGG 128](https://students.uu.nl/sjoerd-groenmangebouw) |
-| [4](weeks/week-4.qmd)    | 08 Nov | **Reproducible Research Repositories**          | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [5](weeks/week-5.qmd)    | 22 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-| [6](weeks/week-6.qmd)    | 06 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
-
-## Course materials
-All materials can be found at
-
-[www.gerkovink.com/markup](https://www.gerkovink.com/markup)
-
-### Hand in
-All contributions to this course are to be delivered to this repository 
-
-[github.com/gerkovink/markup2023](https://github.com/gerkovink/markup2023)
-
-Please post your content-related questions as [an issue in the same repository](https://github.com/gerkovink/markup2023/issues)
-
-### Finalization
-Deadline for all is **Jan 8 2024**. Grades will be available **Jan 12 2024**
-
-## Today
+## Today's class
 
 - Reproducibility
 - Research compendiums
 
-![](https://the-turing-way.netlify.app/_images/reproducibility.jpg)
+![](images/lec-4/researchroad.jpg)
 
 ## Why bother?
 
@@ -99,7 +73,7 @@ B. **Reproducibility may greatly benefit you**
 
 ## Crisis?
 
-![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg)
+![](images/lec-4/crisis.jpg)
 
 ::: footer
 [Baker (2016)](https://www.nature.com/articles/533452a)
@@ -107,19 +81,31 @@ B. **Reproducibility may greatly benefit you**
 
 ## Definition
 
-![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
+![](images/lec-4/matrix.jpg)
 
-> A result is reproducible when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer.
+> A result is **reproducible** when the *same* analysis steps performed on the *same* dataset consistently produces the *same* answer.
 
 ::: footer
 [The Turing way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions#rr-overview-definitions)
 :::
 
+## Definition
+
+![](images/lec-4/matrix.jpg)
+
+> Research results are **replicable** if there is sufficient information available for independent researchers to make the same findings using the same procedures.
+
+
+::: footer
+[King (1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)
+:::
+
 ## True or false?
 
-![](https://the-turing-way.netlify.app/_images/reproducible-matrix.jpg)
-
 In computational sciences - such as ours - simply having the data and code means that the results are not only replicable, but fully reproducible. 
+
+![](images/lec-4/matrix.jpg){fig-align="right"}
+
 
 
 ## Reproducibility of `R` scripts
@@ -130,7 +116,7 @@ Reproducible research is not the norm:
 
 <!-- 9000 unique R files published from 2010 to 2020 -->
 
-![](https://i1.rgstatic.net/publication/358754307_A_large-scale_study_on_research_code_quality_and_execution/links/621459fef02286737cb4084a/largepreview.png){fig-align: right}
+![](images/lec-4/scripts.png){fig-align="right"}
 
 ::: footer
 [Trisovic, Lau, Pasquier, et al., 2022](https://doi.org/10.1038/s41597-022-01143-6) 
@@ -139,7 +125,7 @@ Reproducible research is not the norm:
 
 ## Reproducibility spectrum
 
-![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+![](images/lec-4/spectrum.jpeg)
 
 ::: footer
 [Peng (2011)](https://doi.org/10.1126/science.1213847)
@@ -148,7 +134,7 @@ Reproducible research is not the norm:
 
 ## Case study
 
-![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+![](images/lec-4/casestudy.jpg)
 
 ::: footer
 [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921)
@@ -185,7 +171,7 @@ library(tidyverse)
 - reproducible documents
 - research compendiums
 
-![](https://rstudio.github.io/cheatsheets/html/images/quarto-illustration.png)
+![](images/lec-4/quarto.png)
 
 ---
 
@@ -194,7 +180,7 @@ library(tidyverse)
 ## Research compendium
 ::: columns
 ::: {.column width="50%"}
-![](https://the-turing-way.netlify.app/_images/research-compendium.svg){width=90%}
+![](images/lec-4/compendium.svg){width=90%}
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8169292.svg)](https://doi.org/10.5281/zenodo.8169292)
 :::
 
@@ -205,13 +191,17 @@ library(tidyverse)
 
 ## Definition
 
-- "A research compendium is a collection of all digital parts of a research project including 
-  - data, 
-  - code, 
-  - texts
-  - ...
-- The collection is created in such a way that reproducing all results is straightforward"[^1]
-- "The compendium serves as a means for distributing, managing, and updating the collection"[^2]
+::: {.incremental}
+
+> A research compendium is a collection of all digital parts of a research project including data, code, texts...
+> 
+> The collection is created in such a way that reproducing all results is straightforward[^1]
+
+<br>
+
+> The compendium serves as a means for distributing, managing, and updating the collection[^2]
+
+:::
 
 [^1]: [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/compendia)
 [^2]: [Gentleman & Temple Lang (2007)](https://doi.org/10.1198/106186007X178663)
@@ -276,11 +266,11 @@ compendium/
 └── data/
     └── input_data.csv
 ```
-![](https://books.ropensci.org/targets/man/figures/drake-graph.png){width=30%}
+![](images/lec-4/targets.png){width=30%}
 
 ## (Not so) basic compendium{.build}
 
-![](https://www.science.org/cms/10.1126/science.1213847/asset/f9cbf336-6179-40e1-876d-45f9591423a9/assets/graphic/334_1226_f1.jpeg)
+![](images/lec-4/spectrum.jpeg)
 
 ::: footer
 [Peng (2011)](https://doi.org/10.1126/science.1213847)
@@ -317,7 +307,7 @@ compendium/
 
 ## In practice
 
-![](https://www.uu.nl/sites/default/files/styles/image_1600x300/public/RDM%20internetbanner.jpg)
+![](images/lec-4/rdm.jpeg)
 Research Data Management Support workshop: 
 
 [**Writing Reproducible Manuscripts in R and Python**](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html)
@@ -351,17 +341,18 @@ Adapted from [The Turing Way](https://the-turing-way.netlify.app/reproducible-re
 [Boulesteix, Groenwold, Abrahamowicz, et al. (2020)](https://doi.org/10.1136/bmjopen-2020-039921) with the [`pdf` supplement](https://bmjopen.bmj.com/highwire/filestream/195583/field_highwire_adjunct_files/0/bmjopen-2020-039921supp001_data_supplement.pdf)
 
 
-![](https://i1.rgstatic.net/publication/347620710_Introduction_to_statistical_simulations_in_health_research/links/5fe2f1ad299bf1408837576b/largepreview.png)
+![](images/lec-4/casestudy.jpg)
 
 ## Reproducible but not replicable
 
-> Research results are replicable if there is sufficient information available for independent researchers to make the same findings using the same procedures
+```r
+set.seed(1)
+run_simulation()
+set.seed(2)
+run_simulation()
+set.seed(3)
+```
 
-![](https://onlinelibrary.wiley.com/cms/asset/56b2e72a-11f1-4b97-a98a-8a3abe6cd30f/bimj.v65.7.cover.jpg?trick=1697134430031)
-
-::: footer
-[King (1995)](https://gking.harvard.edu/files/gking/files/replication.pdf)
-:::
 
 ## Take aways
 ::: columns
