@@ -1,15 +1,11 @@
----
-title: "Week 4: Reproducible Research"
-subtitle: "Setting up simulation studies that everyone can replicate and reproduce"
-editor: source
-format: 
-  html:
-    code-fold: true
----
+# Reproducible Research {#sec-wk4}
+
+**Setting up simulation studies that everyone can replicate and reproduce**
+
 
 ::: callout-tip
 ## Lecture 4
-This week's slides can be found [here](../slides/lec-4.qmd)
+This week's slides can be found [here](slides/lec-4.html)
 :::
 
 ---
