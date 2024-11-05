@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Markup Languages and Reproducible Programming in Statistics",
     "section": "",
-    "text": "Preface and schedule\nThis Quarto book contains the course materials and information for Markup Languages and Reproducible Programming in Statistics. The numbered sections in this book correspond to the weeks, where every week is represented by a single chapter.\n\n\n\nWeek\nDate\nFocus\nLocation\n\n\n\n\n1  Markup Languages\n11 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1025\n\n\n2  Quarto\n25 Sep\nMarkdown in (most) Flavors\nBOL 1049\n\n\n3  Version Control\n16 Okt\nVersion Control and Development Flow\nBOL 1025\n\n\nWeek 4\n06 Nov\nReproducible Research Repositories\nBOL 1025\n\n\nWeek 5\n20 Nov\nDeveloper Portfolio\nBOL 1025\n\n\nWeek 6\n04 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1049",
+    "text": "Preface and schedule\nThis Quarto book contains the course materials and information for Markup Languages and Reproducible Programming in Statistics. The numbered sections in this book correspond to the weeks, where every week is represented by a single chapter.\n\n\n\nWeek\nDate\nFocus\nLocation\n\n\n\n\n1  Markup Languages\n11 Sep\nIntroduction to Markup Languages; and LaTeX\nBOL 1025\n\n\n2  Quarto\n25 Sep\nMarkdown in (most) Flavors\nBOL 1049\n\n\n3  Version Control\n16 Okt\nVersion Control and Development Flow\nBOL 1025\n\n\n4  Reproducible Research\n06 Nov\nReproducible Research Repositories\nBOL 1025\n\n\nWeek 5\n20 Nov\nDeveloper Portfolio\nBOL 1025\n\n\nWeek 6\n04 Dec\nPackages, Code Robustness and Unit Testing\nBOL 1049",
     "crumbs": [
       "Preface and schedule"
     ]
@@ -310,11 +310,61 @@
     ]
   },
   {
+    "objectID": "week 4.html",
+    "href": "week 4.html",
+    "title": "4  Reproducible Research",
+    "section": "",
+    "text": "4.1 Introduction\nDear all,\nThis week, it’s all coming together: you will apply your newly acquired markup language skills and build a reproducible research archive from scratch. We will assume that, by now, you’re familiar with Git and GitHub. If that’s not the case, please refer to last weeks’ course materials.\nThe contents of the research compendium will consist of the simulation study performed by Boulesteix, Groenwold, Abrahamowicz, et al. (2020). In this week’s exercises, you will make the simulation study easier to reproduce. By the end of the exercises you’ve created an improved version of how this simulation may be represented in the online supplement.\nAll the best,\nHanne and Gerko",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week 4.html#preparation",
+    "href": "week 4.html#preparation",
+    "title": "4  Reproducible Research",
+    "section": "4.2 Preparation",
+    "text": "4.2 Preparation\n\n4.2.1 Required reading\nRead Boulesteix, Groenwold, Abrahamowicz, et al. (2020).\nMost of the paper may be skimmed through, but make sure to closely read the penultimate section named “An example of a statistical simulation”, since this will be this week’s case study.\n\n\n4.2.2 Optional reading\nThe interested reader may also consider reading the original Morris, White, & Crowther (2019) paper, that Boulesteix et al. (2020) is based on. This shouldn’t be too hard, because the target audience of ‘Using simulation studies to evaluate statistical methods’ overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master’s thesis!",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week 4.html#exercise-1",
+    "href": "week 4.html#exercise-1",
+    "title": "4  Reproducible Research",
+    "section": "4.3 Exercise 1",
+    "text": "4.3 Exercise 1\nIn this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html. The link intentionally refers to the section named ‘Introduction’; previous sections are not relevant for you. Follow the instructions in the sections ‘Introduction’, ‘Getting Started’, ‘Writing’, and ‘Code’.\nIn the section ‘Rendering’, you may skip the instructions for creating docx documents, using the terminal, and managing multiple file outputs. We will only need the pdf output.\n\n4.3.1 Hint\nAfter this exercise, the YAML header for your Quarto document might look something like the code in the footnote1.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week 4.html#exercise-2",
+    "href": "week 4.html#exercise-2",
+    "title": "4  Reproducible Research",
+    "section": "4.4 Exercise 2",
+    "text": "4.4 Exercise 2\nIn this exercise, you will substitute the contents of the research compendium you’ve just created with Boulesteix et al.’s simulation study.\nThe original simulation script was supplemented as a pdf file. Lucky for you, we’ve already copied all of the R code from their pdf supplement for you. The resulting R script is available from https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R.\nLikewise, we’ve retrieved the necessary data for you. The complete database can be accessed through https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015, whereas the relevant data files for this exercise can be downloaded directly from https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data.\nNow it’s up to you! Create a reproducible document that contains the simulation study and results. Make sure that this document is part of a fully reproducible research compendium.\nSubmit the research compendium to this year’s Markup Languages repository with a pull request on GitHub.\n\n4.4.1 Hint\nExchange research compendiums with a classmate to make sure that your work is indeed completely reproducible.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Reproducible Research</span>"
+    ]
+  },
+  {
+    "objectID": "week 4.html#footnotes",
+    "href": "week 4.html#footnotes",
+    "title": "4  Reproducible Research",
+    "section": "",
+    "text": "---\ntitle: \"My Reproducible Manuscript\"\nformat: \npdf: default\nbibliography: references.bib\n---\n↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Reproducible Research</span>"
+    ]
+  },
+  {
     "objectID": "story.html",
     "href": "story.html",
     "title": "Contributors",
     "section": "",
-    "text": "The following story is written together with students from the course. The story is a work in progress and will be updated in current and future iterations of this course.\n\nI opened the … [add three more words here]\n\nHere is a list of contributors that helped to make this story possible.\n\nGerko Vink\n[add your name here]",
+    "text": "The following story is written together with students from the course. The story is a work in progress and will be updated in current and future iterations of this course.\n\nI opened the door to the … [add three more words here]\n\nHere is a list of contributors that helped to make this story possible.\n\nGerko Vink\nQuinty Boer\n[add your name here]",
     "crumbs": [
       "Contributors"
     ]
