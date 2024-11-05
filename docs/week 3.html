@@ -930,17 +930,17 @@ My solutions to the exercises
 <span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>Automatic merge failed; fix conflicts and then commit the result.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ve now effectively created a conflict. A conflict must be resolved before a merge is possible. If you switch to GiHub desktop, you’ll see this pop-up</p>
-<p><img src="week-3_image/conflict.png" class="img-fluid" style="width:50.0%"></p>
+<p><img src="images/wk3/conflict.png" class="img-fluid" style="width:50.0%"></p>
 <p>You can use the drop-down menu to choose either modified file version as the one to keep after merging (which means you’ll throw out the other version from the other branch)</p>
-<p><img src="week-3_image/resolve.png" class="img-fluid" style="width:80.0%"></p>
+<p><img src="images/wk3/resolve.png" class="img-fluid" style="width:80.0%"></p>
 <p>There is also the option to open the file in the editor and manually resolve the conflict.</p>
-<p><img src="week-3_image/conflictdetail.png" class="img-fluid" style="width:80.0%"></p>
+<p><img src="images/wk3/conflictdetail.png" class="img-fluid" style="width:80.0%"></p>
 <p>We now see the detail about this conflict. Remember that we took an old state as our point of departure? After that point I have changed the header of the <code>Readme.Rmd</code> file. This conflict needs to be resolved before we can merge these branches.</p>
 <hr>
 <section id="resolve-the-conflict" class="level4" data-number="3.6.11.1">
 <h4 data-number="3.6.11.1" class="anchored" data-anchor-id="resolve-the-conflict"><span class="header-section-number">3.6.11.1</span> Resolve the conflict</h4>
 <p>Choose <code>Wk4_markup</code> as the reference. Throw out the version from <code>Exercise_wk4</code>. You can do this manually or by choosing the following drop-down item in GitHub Desktop:</p>
-<p><img src="week-3_image/dropdown.png" class="img-fluid" style="width:80.0%"></p>
+<p><img src="images/wk3/dropdown.png" class="img-fluid" style="width:80.0%"></p>
 <p>After that, we can stage the changes and commit them in the <code>Exercise_wk4</code> branch:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>% git add <span class="sc">-</span>A</span>
