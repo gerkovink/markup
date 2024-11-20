@@ -8,6 +8,6 @@ This [Quarto](https://quarto.org) book contains the course materials and informa
 | @sec-wk2 | 25 Sep | Markdown in (most) Flavors                  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
 | @sec-wk3 | 16 Okt | Version Control and Development Flow        | [BOL 1025](https://students.uu.nl/bolognalaan-101) |
 | @sec-wk4 | 06 Nov | Reproducible Research Repositories          | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
-| Week 5 | 20 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
+| @sec-wk5 | 20 Nov | Developer Portfolio                         | [BOL 1025](https://students.uu.nl/bolognalaan-101)      |
 | Week 6 | 04 Dec | Packages, Code Robustness and Unit Testing  | [BOL 1049](https://students.uu.nl/bolognalaan-101)      |
 

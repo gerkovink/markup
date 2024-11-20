@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Reproducible Research – Markup Languages and Reproducible Programming in Statistics</title>
+<title>5&nbsp; Developer Portfolios – Markup Languages and Reproducible Programming in Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week 5.html" rel="next">
-<link href="./week 3.html" rel="prev">
+<link href="./story.html" rel="next">
+<link href="./week 4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 4.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reproducible Research</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week 5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Developer Portfolios</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -159,13 +193,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 4.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week 4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reproducible Research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week 5.html" class="sidebar-item-text sidebar-link">
+  <a href="./week 5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Developer Portfolios</span></span></a>
   </div>
 </li>
@@ -185,29 +219,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> Introduction</a></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation"><span class="header-section-number">4.2</span> Preparation</a>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise"><span class="header-section-number">6</span> Exercise</a>
   <ul class="collapse">
-  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading"><span class="header-section-number">4.2.1</span> Required reading</a></li>
-  <li><a href="#optional-reading" id="toc-optional-reading" class="nav-link" data-scroll-target="#optional-reading"><span class="header-section-number">4.2.2</span> Optional reading</a></li>
+  <li><a href="#custom-domain" id="toc-custom-domain" class="nav-link" data-scroll-target="#custom-domain"><span class="header-section-number">6.1</span> Custom domain</a></li>
+  <li><a href="#render-on-push-to-main" id="toc-render-on-push-to-main" class="nav-link" data-scroll-target="#render-on-push-to-main"><span class="header-section-number">6.2</span> Render on <code>push to main</code></a></li>
   </ul></li>
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1"><span class="header-section-number">4.3</span> Exercise 1</a>
-  <ul class="collapse">
-  <li><a href="#hint" id="toc-hint" class="nav-link" data-scroll-target="#hint"><span class="header-section-number">4.3.1</span> Hint</a></li>
-  </ul></li>
-  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">4.4</span> Exercise 2</a>
-  <ul class="collapse">
-  <li><a href="#hint-1" id="toc-hint-1" class="nav-link" data-scroll-target="#hint-1"><span class="header-section-number">4.4.1</span> Hint</a></li>
-  </ul></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">7</span> Further reading</a></li>
+  <li><a href="#other-means-of-publishing" id="toc-other-means-of-publishing" class="nav-link" data-scroll-target="#other-means-of-publishing"><span class="header-section-number">8</span> Other means of publishing</a></li>
+  <li><a href="#safe-and-compliant-cloud-storage" id="toc-safe-and-compliant-cloud-storage" class="nav-link" data-scroll-target="#safe-and-compliant-cloud-storage"><span class="header-section-number">9</span> Safe and compliant cloud storage</a></li>
+  <li><a href="#nothing-to-show-for" id="toc-nothing-to-show-for" class="nav-link" data-scroll-target="#nothing-to-show-for"><span class="header-section-number">10</span> Nothing to show for?</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/week 4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/week 5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-wk4" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reproducible Research</span></span></h1>
+<h1 class="title"><span id="sec-wk5" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Developer Portfolios</span></span></h1>
 </div>
 
 
@@ -224,88 +253,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Setting up simulation studies that everyone can replicate and reproduce</strong></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lecture 4
+Lecture Week 3
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This week’s slides can be found <a href="slides/lec-4.html">here</a></p>
+<p>This week has no lecture slides. We discussed the flow of creating a website with <code>Git</code>, <code>Quarto</code> and <code>GitHub pages</code>.</p>
+<p>You can join the Teams during the lecture (for screen sharing) <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMwYmE2OTItZTJhMS00MzljLWE4OWMtZjA4ZGU0NGQwMzk1%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d">here</a> and see the recording after class <a href="https://i.pinimg.com/736x/94/a9/7c/94a97cef39b7e202a1af94ae28c3aa84.jpg">here</a></p>
 </div>
 </div>
-<hr>
-<section id="introduction" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> Introduction</h2>
-<p>Dear all,</p>
-<p>This week, it’s all coming together: you will apply your newly acquired markup language skills and build a reproducible research archive from scratch. We will assume that, by now, you’re familiar with Git and GitHub. If that’s not the case, please refer to last weeks’ course materials.</p>
-<p>The contents of the research compendium will consist of the simulation study performed by <a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a>. In this week’s exercises, you will make the simulation study easier to reproduce. By the end of the exercises you’ve created an improved version of how this simulation may be represented in the online supplement.</p>
-<p>All the best,</p>
-<p>Hanne and Gerko</p>
-<hr>
-</section>
-<section id="preparation" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="preparation"><span class="header-section-number">4.2</span> Preparation</h2>
-<section id="required-reading" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="required-reading"><span class="header-section-number">4.2.1</span> Required reading</h3>
-<p>Read <a href="https://doi.org/10.1136/bmjopen-2020-039921">Boulesteix, Groenwold, Abrahamowicz, et al.&nbsp;(2020)</a>.</p>
-<p>Most of the paper may be skimmed through, but make sure to closely read the penultimate section named “An example of a statistical simulation”, since this will be this week’s case study.</p>
-</section>
-<section id="optional-reading" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="optional-reading"><span class="header-section-number">4.2.2</span> Optional reading</h3>
-<p>The interested reader may also consider reading the original <a href="https://doi.org/10.1002/sim.8086">Morris, White, &amp; Crowther (2019)</a> paper, that Boulesteix et al.&nbsp;(2020) is based on. This shouldn’t be too hard, because the target audience of ‘Using simulation studies to evaluate statistical methods’ overlaps significantly with graduate students in statistics. And moreover, you might find it extremely useful for your Master’s thesis!</p>
-<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbAAmrB0luA?si=i9kFFtDJ7T_XlGI3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-<!-- ## Browse the `Quarto` website -->
-<!-- The people at `Posit` have designed [this awesome companion website](https://quarto.org/docs/guide/) that details pretty much everything `Quarto`. Have a look around and remember this source when you're in need of some additional functionality. Much of what you can do with `Quarto` is detailed here.  -->
-<hr>
-</section>
-</section>
-<section id="exercise-1" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">4.3</span> Exercise 1</h2>
-<p>In this exercise you will follow the Utrecht University tutorial on creating reproducible manuscripts: <a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html">https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html</a>. The link intentionally refers to the section named ‘Introduction’; previous sections are not relevant for you. Follow the instructions in the sections ‘Introduction’, ‘Getting Started’, ‘Writing’, and ‘Code’.</p>
-<p>In the section ‘Rendering’, you may skip the instructions for creating <code>docx</code> documents, using the terminal, and managing multiple file outputs. We will only need the <code>pdf</code> output.</p>
-<section id="hint" class="level3" data-number="4.3.1">
-<h3 data-number="4.3.1" class="anchored" data-anchor-id="hint"><span class="header-section-number">4.3.1</span> Hint</h3>
-<p>After this exercise, the YAML header for your Quarto document might look something like the code in the footnote<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<!-- The contents of the compendium will consist of the simulation study performed by Boulesteix et al. (2020), see the next exercise for more information. -->
-<!-- Bring this presentation to the next class -->
-<hr>
-</section>
-</section>
-<section id="exercise-2" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="exercise-2"><span class="header-section-number">4.4</span> Exercise 2</h2>
-<p>In this exercise, you will substitute the contents of the research compendium you’ve just created with Boulesteix et al.’s simulation study.</p>
-<p>The original simulation script was supplemented as a <code>pdf</code> file. Lucky for you, we’ve already copied all of the <code>R</code> code from their <code>pdf</code> supplement for you. The resulting <code>R</code> script is available from <a href="https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R">https://github.com/gerkovink/markup/blob/main/documents/week-4/original_script.R</a>.</p>
-<p>Likewise, we’ve retrieved the necessary data for you. The complete database can be accessed through <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015">https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Begi-nYear=2015</a>, whereas the relevant data files for this exercise can be downloaded directly from <a href="https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data">https://github.com/gerkovink/markup/blob/main/documents/week-4/raw_data</a>.</p>
-<p>Now it’s up to you! Create a reproducible document that contains the simulation study and results. Make sure that this document is part of a fully reproducible research compendium.</p>
-<p>Submit the research compendium to this year’s Markup Languages repository with a pull request on GitHub.</p>
-<section id="hint-1" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="hint-1"><span class="header-section-number">4.4.1</span> Hint</h3>
-<p>Exchange research compendiums with a classmate to make sure that your work is indeed completely reproducible.</p>
-<!-- The document should include the following statistics: -->
-<!--  - absolute bias -->
-<!--  - standard error -->
-<!--  - lower bound of the 95% confidence interval -->
-<!--  - upper bound of the 95% confidence interval -->
-
-
-</section>
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><pre><code>---
-title: "My Reproducible Manuscript"
-format: 
-pdf: default
-bibliography: references.bib
----</code></pre>
-<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<section id="exercise" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Exercise</h1>
+<p>Do the following:</p>
+<ol type="1">
+<li>Create a new repository on GitHub called <code>developer-portfolio</code> or <code>yourname.github.io</code> (where <code>yourname</code> is your GitHub username).</li>
+<li>Build a website using <code>Quarto</code> and <code>GitHub pages</code> that showcases your work. Pay attention to e.g.</li>
 </ol>
+<ul>
+<li>who are you</li>
+<li>what do you do (e.g.&nbsp;expertise, service, product)</li>
+<li>where people may find you (GitHub, Company page, facebook, G+, twitter, etc.)</li>
+<li>accomplishments/publications/qualifications/skills etc.</li>
+<li>detailed curriculum vitae</li>
+</ul>
+<ol start="3" type="1">
+<li>Add a link to your website to the <code>README.md</code> file of your repository.</li>
+<li>Make your website into a <code>GitHub</code> template</li>
+<li>Hand in the link to your hosted personal repository as well as a link to your template on <code>GitHub</code> - it is a deliverable for this course. Also add a zip of the repo at the time of handing in - on your <code>GitHub</code> repo click the green <code>Code</code> button and choose <code>Download ZIP</code>.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alternative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you already know how to build a webpage with any other means, you can also use that. The goal is to have a webpage as a developer portfolio that showcases you and your work. Still, you need to hand in the link to a working web-page, a template on <code>GitHub</code> and an archive (on <code>GitHub</code> click the green <code>code</code> button and <code>Download ZIP</code>) of your site at the time of handing it in.</p>
+</div>
+</div>
+<section id="custom-domain" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="custom-domain"><span class="header-section-number">6.1</span> Custom domain</h2>
+<p>If you want to use a custom domain name, you need to buy one. You can do this on many websites. To use a custom domain with Github pages, you need to add a <code>CNAME</code> file to your repository. You can read more about this <a href="https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">here</a>. After addition of the <code>CNAME</code>, your website will be available at the custom domain. For example, where my website is available at <a href="https://gerkovink.github.io">https://gerkovink.github.io</a>, I can also access it at <a href="https://www.gerkovink.com">https://www.gerkovink.com</a>. Any repository converted to a <code>GitHub</code> pages website (such as this course webpage) will then not only be available at <code>https://username.github.io/repositoryname</code>, but also at and <code>https://www.customdomain.com/repositoryname</code>.</p>
+</section>
+<section id="render-on-push-to-main" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="render-on-push-to-main"><span class="header-section-number">6.2</span> Render on <code>push to main</code></h2>
+<p>If you’d like your site to render when you push changes to the <code>main</code> branch, while your site is deployed from the <code>gh-pages</code> branch, you must</p>
+<ol type="1">
+<li>follow the flow outlined in the lecture</li>
+<li>create an empty <code>gh-pages</code> branch by running the following commands in your terminal:</li>
+</ol>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">--orphan</span> gh-pages</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset <span class="at">--hard</span> <span class="co"># make sure all changes are committed before running this!</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--allow-empty</span> <span class="at">-m</span> <span class="st">"Initialising gh-pages branch"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>GitHub</code> will automatically deploy webpages with an action. To also build your <code>Quarto</code> project, add the following action to a file in the path <code>.github/workflows/publish.yml</code>:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.github/workflows/publish.yml</strong></pre>
+</div>
+<div class="sourceCode" id="cb2" data-filename=".github/workflows/publish.yml"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> main</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Quarto Publish</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build-deploy</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="further-reading" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Further reading</h1>
+<p>All details to set this up smoothly can be found in the <a href="https://quarto.org/docs/publishing/github-pages.html">Quarto GitHub pages documentation</a>. More information about building websites with <code>Quarto</code> can be found in the <a href="https://quarto.org/docs/websites/">Quarto websites documentation</a>.</p>
+</section>
+<section id="other-means-of-publishing" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Other means of publishing</h1>
+<p>More routes of creating and publishing websites with GitHub pages are discussed in <a href="https://www.gerkovink.com/oldmarkup/#week-6">last year’s markup exercise</a>. That said; <code>Quarto</code> is now by far the easiest means of realizing this week’s goal. That is why we only focus on <code>Quarto</code> in this year’s course iteration.</p>
+</section>
+<section id="safe-and-compliant-cloud-storage" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Safe and compliant cloud storage</h1>
+<p>If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5GB account on <a href="https://www.sync.com/?_sync_refer=d609f9a50">Sync.com</a>. If you use <a href="https://www.sync.com/?_sync_refer=d609f9a50">this link</a> you’ll get a free additional 1GB - so 6GB of super-secure storage. Don’t lose your 2FA recovery keys, though!</p>
+</section>
+<section id="nothing-to-show-for" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Nothing to show for?</h1>
+<p>Have a look at <a href="https://adventofcode.com">Advent of Code</a>. It is a yearly event where you can solve programming puzzles. You can use any language you like. It is a great way to learn a new language or to practice your skills. Plus you can use your solutions as a portfolio.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -739,13 +802,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week 3.html" class="pagination-link" aria-label="Version Control">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Version Control</span></span>
+      <a href="./week 4.html" class="pagination-link" aria-label="Reproducible Research">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reproducible Research</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week 5.html" class="pagination-link" aria-label="Developer Portfolios">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Developer Portfolios</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./story.html" class="pagination-link" aria-label="Contributors">
+        <span class="nav-page-text">Contributors</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -754,4 +817,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/week 4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/week 5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
