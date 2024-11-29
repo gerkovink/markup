@@ -1,9 +1,95 @@
-# Introduction
+# Packages, Code Robustness and Unit Testing {#sec-wk6}
 
-This is a book created from markdown and executable code.
+::: callout-tip
+## Lecture Week 6
 
-See @knuth84 for additional discussion of literate programming.
+This week has no lecture slides. We discussed the flow of creating [`R` packages](https://r-pkgs.org/) and [`Shiny` apps](https://shiny.posit.co). 
 
-```{r}
-1 + 1
+<!-- You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU5ZjRjMDgtNjMxOC00ZmQ2LWJkZDctMGFkMTIyNmEzMzUw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording) -->
+:::
+
+# `R` packages
+It is much easier to create, manage and co-develop an `R` package when you incorporate it into a distributed version control system like [Git](https://git-scm.com). The extension to a software development hosting service like [GitHub](https://github.com) is then a natural one. Although there are other procedures, devops systems and hosting services that may lend itself for package development, we outline the workflow with `Git` and `GitHub`. We also assume that you have [`RStudio`](https://posit.co/products/open-source/rstudio/) installed. 
+
+### Recap on `Git`
+`Git` is a free and open source version control system for text files. It can handle extensive change logging for you, no matter the size of the project. `Git` is fast and efficient, but its effectiveness depends also on the frequency you instruct it to log your project's changes. 
+
+You can see `Git` as a blank canvas that starts at a certain point in time. Every time you (or others) instruct `Git` to log any changes that have been made, `Git` adds the changes that are made to this canvas. We call the changes to the canvas [`commits`](https://help.github.com/articles/github-glossary/#commit). With every `commit` an extensive log is created that includes at least the following information:
+
+- the changes made
+- who made the changes
+- metadata
+- a small piece of text that describe the changes made
+
+The difference between two commits - or the changes between them - are called [`diffs`](https://help.github.com/articles/github-glossary/#diff). 
+
+If you'd like to know much more about `Git`, [this online book](https://git-scm.com/book/en/v2) is a very good resource. If you'd like to practice with the command line interface [use this webpage](https://learngitbranching.js.org) for a quick course. [This book](https://happygitwithr.com) covers pretty much everything you need to marry `Git` and `R`. 
+
+### Why GitHub
+`GitHub` is the social and user interface to `Git` that allows you to work in [repositories](https://help.github.com/articles/github-glossary/#repository). These repositories can be seen as project folders in which you publish your work, but you can also use them as test sites for development, testing, etcetera. There is a distinction between [private repositories](https://help.github.com/articles/github-glossary/#private-repository) (only for you and those you grant access) and public repositories (visible for everyone). 
+
+Your public repositories can be viewed and [forked](https://help.github.com/articles/github-glossary/#fork) by everyone. `Forking` is when other people create a copy of your repository on their own account. This allows them to work on a repository without affecting the `master`. You can also do this yourself, but then the process is called [`branching`](https://help.github.com/articles/github-glossary/#branch) instead of forking. If you create a copy of a repository that is offline, the process is called [`cloning`](https://help.github.com/articles/github-glossary/#clone). 
+
+`GitHub`'s ability to branch, fork and clone is very useful as it allows other people and yourself to experiment on (the code in) a repository before any definitive changes are [`merged`](https://help.github.com/articles/github-glossary/#merge) with the `master`. If you're working in a forked repository, you can submit a [`pull request`](https://help.github.com/articles/github-glossary/#pull-request) to the repository collaborators to accept (or reject) any suggested changes. 
+
+For now, this may be confusing, but I hope you recognize the benefits `GitHub` can have on the process of development and bug-fixing. For example, the most up-to-date version of the `mice` package in `R` can be directly installed from the `mice` repository with the following code:
+
+```{r eval=FALSE}
+install.packages("devtools")
+devtools::install_github(repo = "stefvanbuuren/mice")
 ```
+
+You can see that this process requires package `devtools` that expands the `R` functionality with essential development tools. Loading packages in `R` directly from their respective `GitHub` repositories, allows you to obtain the latest - often improved and less buggy - iteration of that software even before it is published on [`CRAN`](https://cran.r-project.org). 
+
+
+### Install `RStudio`
+Install `RStudio` from [Posit's website](https://posit.co/products/open-source/rstudio/). The free edition will suffice. 
+
+## Some R-code
+In order to demonstrate the creation of an R-package, we will identify some odd behaviour by `R`:
+```{r}
+#| warning: false
+
+library(dplyr)
+c(0.5, 1.5, 2.5, 3.5) %>% round()
+```
+We can see that `R` rounds - by default -  the number `1.5` to integer `2` and the number `2.5` also to integer `2`. The reason for this behaviour is the IEC 60559 standard where a 5 is expected to be rounded to the even digit. 
+
+If we'd like to round up to the next integer, we can easily define the following function:
+```{r}
+rounder <- function(x){
+  diff <- x - floor(x)
+  out <- x %>% ceiling()
+  out[diff < .5] <- floor(x)[diff < .5]
+  return(out)
+}
+```
+where the vector `c(0.5, 1.5, 2.5, 3.5)` is rounded up to the *next* integer
+```{r}
+c(0.5, 1.5, 2.5, 3.5) %>% rounder()
+```
+and where the vector `c(0.49, 1.49, 2.49, 3.49)` is rounded down to the *previous* integer
+```{r}
+c(0.49, 1.49, 2.49, 3.49) %>% rounder()
+```
+
+## Create `R`-package `roundR`
+The goal of this document is to create the code for the `rounder()` function into a stand-alone `R`-package with its referable [Digital Object Identifier](https://www.doi.org)
+
+### Steps in creating an `R`-package
+
+#### Packages and sources needed
+We need the following packages to help us with building, testing and maintaining our package:
+```{r}
+#| warning: false
+
+library(devtools) # development tools
+library(usethis)  # automated package and project setup
+library(testthat) # unit testing
+```
+
+#### Preparing the package structure
+We need a location for our `R`-package. The simplest approach to creating the skeleton for an `R`-package is to use `RStudio`. The following gif outlines this procedure:
+
+<center>
+![](images/wk6/packagefolder.gif){width=90%}
