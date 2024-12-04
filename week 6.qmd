@@ -5,12 +5,12 @@
 ::: callout-tip
 ## Lecture Week 6
 
-This week has no lecture slides. We discussed the flow of creating [`R` packages](https://r-pkgs.org/) and [`Shiny` apps](https://shiny.posit.co). 
+We discussed the flow of creating [`R` packages](https://r-pkgs.org/) and [`Shiny` apps](https://shiny.posit.co). Along the way, we touched upon the importance of version control, testing and documentation. A static version of Hanne's Shiny slides [can be found here](slides/lec-shiny.pdf).
 
-<!-- You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZTU5ZjRjMDgtNjMxOC00ZmQ2LWJkZDctMGFkMTIyNmEzMzUw%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording) -->
+You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTEzYzYxYTItNWE3NS00YTczLTg5MGEtMmY4YTM5NGI4Mjg2%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording of the R-package creation in the above teams link after class or see last year's recording [here](https://www.dropbox.com/scl/fi/hscfsrh30slk23k7z6d1d/wk6_recording.mp4?rlkey=yhy7wt8ldfmsybbb3000z1hl0&dl=0) (download for the 1h+ recording)
 :::
 
-# `R` packages
+## `R` packages
 It is much easier to create, manage and co-develop an `R` package when you incorporate it into a distributed version control system like [Git](https://git-scm.com). The extension to a software development hosting service like [GitHub](https://github.com) is then a natural one. Although there are other procedures, devops systems and hosting services that may lend itself for package development, we outline the workflow with `Git` and `GitHub`. We also assume that you have [`RStudio`](https://posit.co/products/open-source/rstudio/) installed. 
 
 ### Recap on `Git`

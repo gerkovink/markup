@@ -6,7 +6,7 @@
 
 This week has no lecture slides. We discussed the flow of creating a website with `Git`, `Quarto` and `GitHub pages`. 
 
-You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMwYmE2OTItZTJhMS00MzljLWE4OWMtZjA4ZGU0NGQwMzk1%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class [here](https://i.pinimg.com/736x/94/a9/7c/94a97cef39b7e202a1af94ae28c3aa84.jpg)
+You can join the Teams during the lecture (for screen sharing) [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMwYmE2OTItZTJhMS00MzljLWE4OWMtZjA4ZGU0NGQwMzk1%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d) and see the recording after class either in the above teams link, or [here](https://www.dropbox.com/scl/fi/l34q4hu4i4x66t4586k3b/wk5_recording.mp4?rlkey=sofbtgfo93zg3qd70imk5pwsq&st=u20v5b8w&dl=0)
 :::
 
 ## Exercise
