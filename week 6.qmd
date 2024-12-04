@@ -531,7 +531,7 @@ citEntry(
 )
 ```
 
-Modify this to your name and paste it into the `CITATION` file.
+Modify this to your name, DOI and repository url and paste it into the `CITATION` file.
 
 <center>
 ![](images/wk6/use_citation.gif){width=90%}
