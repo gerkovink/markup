@@ -341,7 +341,7 @@ Our package `CHECK` cannot find function `rounder()`. That may seem weird, since
 ...
 ```
 
-Try re-running the `CHECK` to see if you hit three green check marks (NO errors, warnings and notes). If all is well, you'll see:
+Try re-running the `CHECK` - first run `devtools::document()` - to see if you hit three green check marks (NO errors, warnings and notes). If all is well, you'll see:
 ```{r eval=FALSE}
 ── R CMD check results ────────────────────────────────────────── roundR 0.1.0 ────
 Duration: 6.6s
