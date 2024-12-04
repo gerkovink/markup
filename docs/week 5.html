@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./story.html" rel="next">
+<link href="./week 6.html" rel="next">
 <link href="./week 4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -205,6 +205,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week 6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Packages</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./story.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Contributors</span></a>
   </div>
@@ -219,15 +225,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise"><span class="header-section-number">6</span> Exercise</a>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise"><span class="header-section-number">5.1</span> Exercise</a>
   <ul class="collapse">
-  <li><a href="#custom-domain" id="toc-custom-domain" class="nav-link" data-scroll-target="#custom-domain"><span class="header-section-number">6.1</span> Custom domain</a></li>
-  <li><a href="#render-on-push-to-main" id="toc-render-on-push-to-main" class="nav-link" data-scroll-target="#render-on-push-to-main"><span class="header-section-number">6.2</span> Render on <code>push to main</code></a></li>
+  <li><a href="#custom-domain" id="toc-custom-domain" class="nav-link" data-scroll-target="#custom-domain"><span class="header-section-number">5.1.1</span> Custom domain</a></li>
+  <li><a href="#render-on-push-to-main" id="toc-render-on-push-to-main" class="nav-link" data-scroll-target="#render-on-push-to-main"><span class="header-section-number">5.1.2</span> Render on <code>push to main</code></a></li>
   </ul></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">7</span> Further reading</a></li>
-  <li><a href="#other-means-of-publishing" id="toc-other-means-of-publishing" class="nav-link" data-scroll-target="#other-means-of-publishing"><span class="header-section-number">8</span> Other means of publishing</a></li>
-  <li><a href="#safe-and-compliant-cloud-storage" id="toc-safe-and-compliant-cloud-storage" class="nav-link" data-scroll-target="#safe-and-compliant-cloud-storage"><span class="header-section-number">9</span> Safe and compliant cloud storage</a></li>
-  <li><a href="#nothing-to-show-for" id="toc-nothing-to-show-for" class="nav-link" data-scroll-target="#nothing-to-show-for"><span class="header-section-number">10</span> Nothing to show for?</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">5.2</span> Further reading</a></li>
+  <li><a href="#other-means-of-publishing" id="toc-other-means-of-publishing" class="nav-link" data-scroll-target="#other-means-of-publishing"><span class="header-section-number">5.3</span> Other means of publishing</a></li>
+  <li><a href="#safe-and-compliant-cloud-storage" id="toc-safe-and-compliant-cloud-storage" class="nav-link" data-scroll-target="#safe-and-compliant-cloud-storage"><span class="header-section-number">5.4</span> Safe and compliant cloud storage</a></li>
+  <li><a href="#nothing-to-show-for" id="toc-nothing-to-show-for" class="nav-link" data-scroll-target="#nothing-to-show-for"><span class="header-section-number">5.5</span> Nothing to show for?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/markup/edit/book/week 5.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/markup/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -267,8 +273,8 @@ Lecture Week 3
 <p>You can join the Teams during the lecture (for screen sharing) <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMwYmE2OTItZTJhMS00MzljLWE4OWMtZjA4ZGU0NGQwMzk1%40thread.v2/0?context=%7b%22Tid%22%3a%22d72758a0-a446-4e0f-a0aa-4bf95a4a10e7%22%2c%22Oid%22%3a%22cc7d7fcd-73aa-4668-936a-2ca38cace0f3%22%7d">here</a> and see the recording after class <a href="https://i.pinimg.com/736x/94/a9/7c/94a97cef39b7e202a1af94ae28c3aa84.jpg">here</a></p>
 </div>
 </div>
-<section id="exercise" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Exercise</h1>
+<section id="exercise" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="exercise"><span class="header-section-number">5.1</span> Exercise</h2>
 <p>Do the following:</p>
 <ol type="1">
 <li>Create a new repository on GitHub called <code>developer-portfolio</code> or <code>yourname.github.io</code> (where <code>yourname</code> is your GitHub username).</li>
@@ -299,12 +305,12 @@ Alternative
 <p>If you already know how to build a webpage with any other means, you can also use that. The goal is to have a webpage as a developer portfolio that showcases you and your work. Still, you need to hand in the link to a working web-page, a template on <code>GitHub</code> and an archive (on <code>GitHub</code> click the green <code>code</code> button and <code>Download ZIP</code>) of your site at the time of handing it in.</p>
 </div>
 </div>
-<section id="custom-domain" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="custom-domain"><span class="header-section-number">6.1</span> Custom domain</h2>
+<section id="custom-domain" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="custom-domain"><span class="header-section-number">5.1.1</span> Custom domain</h3>
 <p>If you want to use a custom domain name, you need to buy one. You can do this on many websites. To use a custom domain with Github pages, you need to add a <code>CNAME</code> file to your repository. You can read more about this <a href="https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site">here</a>. After addition of the <code>CNAME</code>, your website will be available at the custom domain. For example, where my website is available at <a href="https://gerkovink.github.io">https://gerkovink.github.io</a>, I can also access it at <a href="https://www.gerkovink.com">https://www.gerkovink.com</a>. Any repository converted to a <code>GitHub</code> pages website (such as this course webpage) will then not only be available at <code>https://username.github.io/repositoryname</code>, but also at and <code>https://www.customdomain.com/repositoryname</code>.</p>
 </section>
-<section id="render-on-push-to-main" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="render-on-push-to-main"><span class="header-section-number">6.2</span> Render on <code>push to main</code></h2>
+<section id="render-on-push-to-main" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="render-on-push-to-main"><span class="header-section-number">5.1.2</span> Render on <code>push to main</code></h3>
 <p>If you’d like your site to render when you push changes to the <code>main</code> branch, while your site is deployed from the <code>gh-pages</code> branch, you must</p>
 <ol type="1">
 <li>follow the flow outlined in the lecture</li>
@@ -352,20 +358,20 @@ Alternative
 </div>
 </section>
 </section>
-<section id="further-reading" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Further reading</h1>
+<section id="further-reading" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">5.2</span> Further reading</h2>
 <p>All details to set this up smoothly can be found in the <a href="https://quarto.org/docs/publishing/github-pages.html">Quarto GitHub pages documentation</a>. More information about building websites with <code>Quarto</code> can be found in the <a href="https://quarto.org/docs/websites/">Quarto websites documentation</a>.</p>
 </section>
-<section id="other-means-of-publishing" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Other means of publishing</h1>
+<section id="other-means-of-publishing" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="other-means-of-publishing"><span class="header-section-number">5.3</span> Other means of publishing</h2>
 <p>More routes of creating and publishing websites with GitHub pages are discussed in <a href="https://www.gerkovink.com/oldmarkup/#week-6">last year’s markup exercise</a>. That said; <code>Quarto</code> is now by far the easiest means of realizing this week’s goal. That is why we only focus on <code>Quarto</code> in this year’s course iteration.</p>
 </section>
-<section id="safe-and-compliant-cloud-storage" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Safe and compliant cloud storage</h1>
+<section id="safe-and-compliant-cloud-storage" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="safe-and-compliant-cloud-storage"><span class="header-section-number">5.4</span> Safe and compliant cloud storage</h2>
 <p>If you need some secure (GDPR or HIPAA compliant) file sharing, open up a free 5GB account on <a href="https://www.sync.com/?_sync_refer=d609f9a50">Sync.com</a>. If you use <a href="https://www.sync.com/?_sync_refer=d609f9a50">this link</a> you’ll get a free additional 1GB - so 6GB of super-secure storage. Don’t lose your 2FA recovery keys, though!</p>
 </section>
-<section id="nothing-to-show-for" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Nothing to show for?</h1>
+<section id="nothing-to-show-for" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="nothing-to-show-for"><span class="header-section-number">5.5</span> Nothing to show for?</h2>
 <p>Have a look at <a href="https://adventofcode.com">Advent of Code</a>. It is a yearly event where you can solve programming puzzles. You can use any language you like. It is a great way to learn a new language or to practice your skills. Plus you can use your solutions as a portfolio.</p>
 
 
@@ -807,8 +813,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./story.html" class="pagination-link" aria-label="Contributors">
-        <span class="nav-page-text">Contributors</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week 6.html" class="pagination-link" aria-label="Packages">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Packages</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

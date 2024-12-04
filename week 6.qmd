@@ -1,4 +1,6 @@
-# Packages, Code Robustness and Unit Testing {#sec-wk6}
+# Packages {#sec-wk6}
+
+## Real title: Packages, Code Robustness and Unit Testing
 
 ::: callout-tip
 ## Lecture Week 6
