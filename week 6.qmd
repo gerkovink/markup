@@ -172,7 +172,7 @@ The above call will add the following lines to our `DESCRIPTION` file:
 
 ```{r eval = FALSE}
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 ```
 
 We mentioned before that the `roxygen2` engine expects the function documentation in the same file as the function code. A good starting point for that documentation is the following block:
