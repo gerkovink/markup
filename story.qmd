@@ -4,8 +4,7 @@ The following story is written together with students from the course. The story
 
 ---
 
-I opened the door to the beautiful pink Lamborghini... [add three more words here]
-
+I opened the door to the beautiful pink Lamborghini and sat down...
 
 ---
 
@@ -13,4 +12,5 @@ Here is a list of contributors that helped to make this story possible.
 
 - [Gerko Vink](https:/wwww.github.com/gerkovink)
 - [Quinty Boer](https://github.com/quintyboer)
+- [Polina Revina](https://github.com/pr9vina)
 - [add your name here]
