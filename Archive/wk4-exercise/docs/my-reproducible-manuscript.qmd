@@ -1,11 +1,10 @@
 ---
 title: "My Reproducible Manuscript"
 author: "Adam Maghout"
-format: pdf: default
+format:
+  pdf: default
 bibliography: references.bib
 ---
-
-ADAM!!! renv has been initialised. MAKE SURE YOU TAKE A SNAPSHOT USING renv::snapshot()
 
 # Purpose of the project
 
@@ -23,14 +22,26 @@ library(tidyverse)
 
 # Data
 
-```{r full code}
-# The data can be downloaded in xpt form from https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2015
-# read data:
+Data from 5092 subjects in the 2015–2016 National Health and Nutrition Examination Survey (NHANES) are used to obtain an estimate of the effect of HbA1c on systolic blood pressure, while adjusting for age, gender and body mass index (BMI). Since the NHANES website provides the data in several datasets, we must first select only the variables of interest for our analysis. These are:
+
+-   RIAGENDR - Gender
+-   RIDAGEYR - Age in years at screening
+-   BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg
+-   BMXBMI - Body Mass Index (kg/m\*\*2)
+-   LBDTCSI - Total Cholesterol (mmol/L)
+-   LBXGH - Glycohemoglobin (\%)
+
+Information on other variables in the datasets is given on the [NHANES website](https://wwwn.cdc.gov/nchs/nhanes/) but also in the column descriptions in the datasets.
+
+```{r data transformation}
+# Read data:
 d1 <- sasxport.get("../data/DEMO_I.xpt")
 d2 <- sasxport.get("../data/BPX_I.xpt")
 d3 <- sasxport.get("../data/BMX_I.xpt")
 d4 <- sasxport.get("../data/GHB_I.xpt")
 d5 <- sasxport.get("../data/TCHOL_I.xpt")
+
+# Filter for variables of interest
 d1.t <- subset(d1,select=c("seqn","riagendr","ridageyr"))
 d2.t <- subset(d2,select=c("seqn","bpxsy1"))
 d3.t <- subset(d3,select=c("seqn","bmxbmi"))
@@ -40,14 +51,8 @@ d <- merge(d1.t,d2.t)
 d <- merge(d,d3.t)
 d <- merge(d,d4.t)
 d <- merge(d,d5.t)
-# ====================================================================
-# rename variables:
-# RIAGENDR - Gender
-# RIDAGEYR - Age in years at screening
-# BPXSY1 - Systolic: Blood pres (1st rdg) mm Hg
-# BMXBMI - Body Mass Index (kg/m**2)
-# LBDTCSI - Total Cholesterol (mmol/L)
-# LBXGH - Glycohemoglobin (%)
+
+# Rename variables:
 d$age <- d$ridageyr
 d$sex <- d$riagendr
 d$bp <- d$bpxsy1
@@ -55,36 +60,78 @@ d$bmi <- d$bmxbmi
 d$HbA1C <- d$lbxgh
 d$chol <- d$lbdtcsi
 d$age[d$age<18] <- NA
-# ====================================================================
+
 # select complete cases:
 dc <- cc(subset(d,select=c("age","sex","bmi","HbA1C","bp")))
-# analysis:
+```
+
+# Baseline Model
+
+The effect of HbA1c on systolic blood pressure is measured using a linear model. Initially, this model is given whilst adjusting for age and sex. Then, BMI is also used as an adjusting factor:
+
+```{r baseline model}
+# Model 1
 summary(lm(bp ~ HbA1C + age + as.factor(sex), data=dc))
 confint(lm(bp ~ HbA1C + age + as.factor(sex), data=dc))
+```
+
+In this first model, we find that HbA1c increases systolic blood pressure by 1.13 mmHg (95\% CI 0.73 to 1.52) per unit increase in HbA1c. This is given under the coefficients in the summary.
+
+```{r baseline model 2}
+# Model 2
 summary(lm(bp ~ HbA1C + bmi + age + as.factor(sex), data=dc))
 confint(lm(bp ~ HbA1C + bmi + age + as.factor(sex), data=dc))
-# ====================================================================
+```
+
+In this second model, adjusting for BMI, we find that HbA1c instead increases systolic blood pressure by  0.75 mmHg (95\% CI 0.35 to 1.16) per unit increase in HbA1c.
+
+# Added Measurement error
+
+Measurement error is added to the HbA1c and BMI data by setting a proportion of the observed variance in both variables to be due to measurement error. This proportion ranges from 0 to 50\%, yielding a total of $6*6=30$ scenarios across both variables. This process is repeated 1 000 times for each scenario to obtain measures of spread.
+
+```{r added measurement error, cache = T}
 # simulation of measurement error:
+# Baseline increase
 ref <- lm(bp ~ HbA1C + bmi + age + as.factor(sex), data=dc)$coef[2]
-n.sim <- 1e3
-perc.me.exp <- seq(0,.5,.1)
-perc.me.conf<- seq(0,.5,.1)
-scenarios <- expand.grid(perc.me.exp,perc.me.conf)
+
+n.sim <- 1e3 # Number of iterations
+
+# exp = exposure variable; conf = confounding variable
+perc.me.exp <- seq(0,.5,.1) # Proportion of measurement error variance for the HbA1c
+perc.me.conf<- seq(0,.5,.1) # Proportion of measurement error variance for the BMI
+scenarios <- expand.grid(perc.me.exp,perc.me.conf) # 36 scenarios
+
+# Variances without measurement error
 var.exp <- var(dc$HbA1C)
 var.conf <- var(dc$bmi)
-n <- dim(dc)[1]
-beta.hat <- matrix(ncol=dim(scenarios)[1], nrow=n.sim)
+
+n <- dim(dc)[1] # Number of observations
+
+beta.hat <- matrix(ncol=dim(scenarios)[1], nrow=n.sim) # Initialise results matrix
+
+# Simulate measurement error
 for (k in 1:n.sim){
-  print(k)
+  # print(k) # Can be used for tracking
   set.seed(k)
-  for (i in 1:dim(scenarios)[1]){
+  for (i in 1:dim(scenarios)[1]){ # 1 000 iterations
+    # Compute variances
     var.me.exp <- var.exp*scenarios[i,1]/(1-scenarios[i,1])
     var.me.conf <- var.conf*scenarios[i,2]/(1-scenarios[i,2])
+    
+    # Add meaurement error
     dc$HbA1C.me <- dc$HbA1C + rnorm(dim(dc)[1], 0, sqrt(var.me.exp) )
     dc$bmi.me <- dc$bmi + rnorm(dim(dc)[1], 0, sqrt(var.me.conf) )
+    
+    # Obtain desired coefficient
     beta.hat[k,i] <- lm(bp ~ HbA1C.me + age + bmi.me + as.factor(sex), data=dc)$coef[2]
   }}
-# ====================================================================
+```
+
+# Figure
+
+Given the results from the previous section, figure 2 is obtained as follows:
+
+```{r figure}
 # create figure:
 tot.mat <- cbind(100*scenarios,apply(beta.hat,2,mean))
 colnames(tot.mat) <- c("me.exp","me.conf","estimate")
@@ -104,12 +151,15 @@ FIGURE <- ggplot(tot.mat, aes(me.exp, me.conf)) +
         axis.text=element_text(size=10),
         legend.title=element_text(size=12),
         legend.text=element_text(size=10))
-FIGURE
-# savePlot("Figure_STRATOS.tif", type="tif")
-# ====================================================================
-# END OF R CODE
-# ===================================================================
 
+FIGURE # display the figure
+
+# Save the figure (optional)
+# savePlot("Figure_STRATOS.tif", type="tif")
 ```
 
+The relation between HbA1c and systolic blood pressure was attenuated when measurement error was added to HbA1c, but not when measurement error was added to BMI. The association became stronger as measurement error was added solely to the confounding variable BMI. The reason for this effect is that, with increasing levels of measurement error on BMI, adjustment for the confounding due to BMI becomes less efficient and the effect estimate gets closer to the unadjusted estimate (1.13 mmHg). Due to measurement error, a type of residual confounding is introduced. In the case of measurement error on HbA1c as well as BMI, both phenomena play a role and may cancel each other out.
 
+{{< pagebreak >}}
+
+# Bibliography
