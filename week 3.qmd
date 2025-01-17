@@ -241,7 +241,7 @@ d.  Present a table containing all simulated samples for which the resulting con
 
 ## Exercise 2: `Git` it done
 
-This week we will also learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository (https://github.com/gerkovink/markup2020), deselect! `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
+This week we will also learn how to use $git$ properly when we mess up. But let's not learn that on this year's repo ;-). Fork [this older course repository](https://github.com/gerkovink/markup2020), deselect! `Copy the master branch only` in order to copy all branches and checkout the `Exercise_wk4` branch.
 
 Let's continue this week with this second exercise.
 
